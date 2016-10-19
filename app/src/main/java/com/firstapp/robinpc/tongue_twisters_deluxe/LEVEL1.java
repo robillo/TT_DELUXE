@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters;
+package com.firstapp.robinpc.tongue_twisters_deluxe;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -12,16 +12,15 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 
-import org.w3c.dom.Text;
-
-public class LEVEL8 extends AppCompatActivity implements TextToSpeech.OnInitListener{
+public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
     private TextToSpeech tts;
+    private String temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.level8);
+        setContentView(R.layout.level1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -33,145 +32,148 @@ public class LEVEL8 extends AppCompatActivity implements TextToSpeech.OnInitList
                         .setAction("Action", null).show();
             }
         });
+
         tts = new TextToSpeech(this, this);
         autoSpeak("Tongue Twisters");
     }
 
+
+
     // DIALOG FOR TT NUMBER 1
     public void TT1(View view)
     {
+        temp=getResources().getString(R.string.oneone);
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightone)
-                .setTitle("Level 8 TT 1").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(temp)
+                .setTitle("Level 1 TT 1").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightone));
+        autoSpeak(temp);
+
     }
     // DIALOG FOR TT NUMBER 2
     public void TT2(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eighttwo)
-                .setTitle("Level 8 TT 2").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onetwo))
+                .setTitle("Level 1 TT 2").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eighttwo));
+        autoSpeak(getResources().getString(R.string.onetwo));
     }
     // DIALOG FOR TT NUMBER 3
     public void TT3(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightthree)
-                .setTitle("Level 8 TT 3").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onethree))
+                .setTitle("Level 1 TT 3").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightthree));
     }
     // DIALOG FOR TT NUMBER 4
     public void TT4(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightfour)
-                .setTitle("Level 8 TT 4").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onefour))
+                .setTitle("Level 1 TT 4").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightfour));
+        autoSpeak(getResources().getString(R.string.onefour));
     }
     // DIALOG FOR TT NUMBER 5
     public void TT5(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightfive)
-                .setTitle("Level 8 TT 5").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onefive))
+                .setTitle("Level 1 TT 5").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightfive));
+        autoSpeak(getResources().getString(R.string.onefive));
     }
     // DIALOG FOR TT NUMBER 6
     public void TT6(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightsix)
-                .setTitle("Level 8 TT 6").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onesix))
+                .setTitle("Level 1 TT 6").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightsix));
+        autoSpeak(getResources().getString(R.string.onesix));
     }
     // DIALOG FOR TT NUMBER 7
     public void TT7(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightseven)
-                .setTitle("Level 8 TT 7").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.oneseven))
+                .setTitle("Level 1 TT 7").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightseven));
+        autoSpeak(getResources().getString(R.string.oneseven));
     }
     // DIALOG FOR TT NUMBER 8
     public void TT8(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eighteight)
-                .setTitle("Level 8 TT 8").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.oneeight))
+                .setTitle("Level 1 TT 8").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eighteight));
+        autoSpeak(getResources().getString(R.string.oneeight));
     }
     // DIALOG FOR TT NUMBER 9
     public void TT9(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightnine)
-                .setTitle("Level 8 TT 9").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onenine))
+                .setTitle("Level 1 TT 9").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightnine));
+        autoSpeak(getResources().getString(R.string.onenine));
     }
     // DIALOG FOR TT NUMBER 10
     public void TT10(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightten)
-                .setTitle("Level 8 TT 10").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.oneten))
+                .setTitle("Level 1 TT 10").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightten));
+        autoSpeak(getResources().getString(R.string.oneten));
     }
     // DIALOG FOR TT NUMBER 11
     public void TT11(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eighteleven)
-                .setTitle("Level 8 TT 11").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.oneeleven))
+                .setTitle("Level 1 TT 11").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eighteleven));
+        autoSpeak(getResources().getString(R.string.oneeleven));
     }
     // DIALOG FOR TT NUMBER 12
     public void TT12(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eighttwelve)
-                .setTitle("Level 8 TT 12").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onetwelve))
+                .setTitle("Level 1 TT 12").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eighttwelve));
+        autoSpeak(getResources().getString(R.string.onetwelve));
     }
     // DIALOG FOR TT NUMBER 13
     public void TT13(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightthirteen)
-                .setTitle("Level 8 TT 13").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onethirteen))
+                .setTitle("Level 1 TT 13").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightthirteen));
+        autoSpeak(getResources().getString(R.string.onethirteen));
     }
     // DIALOG FOR TT NUMBER 14
     public void TT14(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage("14.\tMy friend Gladys Oh, the sadness of her sadness when she’s sad.\n" +
-                "Oh, the gladness of her gladness when she’s glad. But the sadness of her sadness, and the gladness of her gladness, are nothing like her madness when she’s mad.\n")
-                .setTitle("Level 8 TT 14").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.oneforteen))
+                .setTitle("Level 1 TT 14").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightforteen));
+        autoSpeak(getResources().getString(R.string.oneforteen));
     }
     // DIALOG FOR TT NUMBER 15
     public void TT15(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage(R.string.eightfifteen)
-                .setTitle("Level 8 TT 15").setIcon(R.drawable.dialog).create();
+        oneonealert.setMessage(getString(R.string.onefifteen))
+                .setTitle("Level 1 TT 15").setIcon(R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString(R.string.eightfifteen));
+        autoSpeak(getResources().getString(R.string.onefifteen));
     }
 
     private void autoSpeak(String text) {

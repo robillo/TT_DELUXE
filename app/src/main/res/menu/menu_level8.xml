@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.firstapp.robinpc.tongue_twisters.LEVEL8">
+    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.LEVEL8">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

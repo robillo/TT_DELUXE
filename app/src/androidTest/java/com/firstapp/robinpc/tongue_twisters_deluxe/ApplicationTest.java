@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters;
+package com.firstapp.robinpc.tongue_twisters_deluxe;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
