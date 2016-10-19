@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "536303407287",
+    "firebase_url": "https://tongue-twisters.firebaseio.com",
+    "project_id": "tongue-twisters",
+    "storage_bucket": "tongue-twisters.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536303407287:android:2eb5de03621a56a7",
+        "android_client_info": {
+          "package_name": "com.firstapp.robinpc.tongue_twisters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536303407287-5mfkgi36o1aim0oldstf351utrk4lnnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6fwZfDD9511TdCj3ZQeU9logZ4Ax-sXI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

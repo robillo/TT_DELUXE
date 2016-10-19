@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">Tongue Twisters DELUXE</string>
+    <string name="action_settings">About App</string>
+    <string name="title_activity_level1">LEVEL1</string>
+    <string name="title_activity_level2">LEVEL2</string>
+    <string name="title_activity_level3">LEVEL3</string>
+    <string name="title_activity_level4">LEVEL4</string>
+    <string name="title_activity_level5">LEVEL5</string>
+    <string name="title_activity_level6">LEVEL6</string>
+    <string name="title_activity_level7">LEVEL7</string>
+    <string name="title_activity_level8">LEVEL8</string>
+    <string name="title_activity_level9">LEVEL9</string>
+    <string name="title_activity_level10">LEVEL10</string>
+    <string name="title_activity_about">ABOUT</string>
+
+    <string name="about">
+    Tongue Twisters constitute diction/articulation exercises which help you learn how to speak clearly\n\n
+
+    The specific benefits of diction/articulation exercises are:\n
+    strengthening and stretching the muscles involved in speech\n
+    bringing to your attention habitual speech patterns which may be less than perfect.\n
+    Good diction is NOT about changing your accent or making you \"talk   posh\".\n
+     It is about clarity - making sure what you say is   heard.\n
+    By their very nature, tongue twisters are challenging to say. With their repetitive use of similar sounding sounds, words and syllables, they can trip up the tongues of even the most articulate individuals. However, as fun as they are, tongue twisters have a very practical application. As such, tongue twisters can be used to treat speech problems in speech therapy, and help reduce the prominence of a foreign accent. This use of tongue twisters in speech therapy is universal for all ages and users.\n
+    Speech Therapy Exercises Incorporate Tongue Twisters
+    There many uses and drills for speech therapy, which include more traditional uses such as treating stutters, lisps or reducing the presence of a foreign accent, to even treating and recovering the use of verbal speech in individuals who have suffered strokes, cerebral palsy and traumatic brain injuries. People who use tongue twisters in speech therapy exercise the muscles in their mouth, enabling clearer pronunciation, overall clearer speech patterns, and an easier time pronouncing previously difficult syllables. The use of tongue twisters can also make speech therapy drills more of an enjoyable game, particularly for children. Even individuals who have long surpassed their difficulties in speech continue to use tongue twisters as a warm-up exercise, especially individuals in the public realm such as actors, politicians, motivational speakers and other professions such as priests, teachers, scientists, and college students.\n
+    Often times when used as an exercise, the tongue twister is spoken slowly, in order to give the individual time to speak it correctly with proper pronunciation and articulation. and master the saying at a comfortable speed. After that, the speed increases until the person is able to say the tongue twister at various speeds with out tripping up their tongue. One recommendation is to read the twisters aloud, or practice in front of mirror until the flow of the words, the tone and the correct pronunciation and articulation becomes second nature. Sometimes the exercise is turned into a game, especially important when dealing with children who can become bored of the normal drills.\n
+    </string>
+
+
+    <string name="large_text">
+        ROBIN KAMBOJ\n
+        ANUBHAV NIRWAL\n
+        AMIT KUMAR SINGH\n
+        PULKIT KATHURIA
+    </string>
+    <string name="oneone">Denise sees the fleece, Denise sees the fleas. At least Denise could sneeze and feed and freeze the fleas.</string>
+    <string name="onetwo">2.\tSanta’s short suit shrunk</string>
+    <string name="onethree">3.\tI scream, you scream, we all scream for ice cream.</string>
+    <string name="onefour">4.\tSix slimy snails sailed silently.</string>
+    <string name="onefive">5.\tSinging Sammy Sung Songs on Sinking sands.</string>
+    <string name="onesix">6.\tA big black bug bit a big black dog on his big black nose.</string>
+    <string name="oneseven">7.\tTom threw Tim three thumbtacks.</string>
+    <string name="oneeight">8.\tYelling yellow yelping yeti.</string>
+    <string name="onenine">9.\tA happy hippo hopped and hiccupped.</string>
+    <string name="oneten">10.\tHe threw three free throws.</string>
+    <string name="oneeleven">11.\tWayne went to wales to watch walruses.</string>
+    <string name="onetwelve">12.\tI wish to wash my Irish wristwatch.</string>
+    <string name="onethirteen">13.\tOn a lazy laser raiser lies a laser ray eraser.</string>
+    <string name="oneforteen">14.\tTwo tiny tigers take two taxis to town.</string>
+    <string name="onefifteen">15.\tI see sea down by the seashore.</string>
+    <string name="twoone">1.\tHow can a clam cram in a clean cream can?</string>
+    <string name="twotwo">2.\tSend toast to ten tense stout saints’ ten tall tents.</string>
+    <string name="twothree">3.\tRobillo ran rings around the roman ruins.</string>
+    <string name="twofour">4.\tSix sick hicks nick six slick bricks with pricks and sticks.</string>
+    <string name="twofive">5.\tOne-one was a race horse, two-two was one too. One-one won a race. Two-two won one too.</string>
+    <string name="twosix">6.\tPickford’s packers packed a packet of crisps.</string>
+    <string name="twofifteen">15.\tSounding by sounds is a sound method of sounding sounds.</string>
+    <string name="twofourteen">14.\tThe great greek grape growers grow great greek grapes.</string>
+    <string name="twothirteen">13.\tI thought, I thought of thinking of thanking you.</string>
+    <string name="twotwelve">12.\tAs I was in Arkansas I saw a saw that could outsaw any saw I ever saw. If you happen to see a saw that could outsaw the saw I saw, I’d like to see the saw you saw.</string>
+    <string name="twoeleven">11.\tFour furious friends fought for the phone.</string>
+    <string name="twoten">10.\tBirdie birdie in the sky laid a turdie in my eye, If cows could fly I’d have a cow pie in my eye.</string>
+    <string name="twonine">9.\tShe saw Sherif’s shoes on the sofa. She was sure she saw Sherif’s shoes on the sofa.</string>
+    <string name="twoeight">8.\tMr. tongue twister tried to train his tongue to twist and turn, and twit and twat, to learn the letter “T”.</string>
+    <string name="twosecven">7.\tGobbling gorgoyles gobbled gobbling gobblings.</string>
+    <string name="threetwo">2.\tThe owner of the inside inn was inside his inside inn with his inside outside his inside inn.</string>
+    <string name="threeone">1.\tI wish you were a fish in my dish.</string>
+    <string name="threethree">3.\tIf you notice this notice, you will notice that this notice is not worth noticing.</string>
+    <string name="threefour">4.\tI saw Susan sitting in a shoe shine shop. Where she sits she shines,  and where she shines she sits.</string>
+    <string name="threefive">5.\tThere was a fisherman named Fisher who fished for some fish in a fissure. Till a fish with a grin, pulled the fisherman in. Now they are fishing the fissure for the Fisher.</string>
+    <string name="threesix">6.\tI wish to wish the wish you wish to wish, but if you wish to wish the wish the witch wishes, I won’t wish the wish you wish to wish.</string>
+    <string name="threeseven">7.\tHow many cookies could a good cook cook if a good cook could cook cookies? –A good cook could cook as much cookies as a good cook who could cook cookies.</string>
+    <string name="threeeight">8.\tHow much ground would a groundhog hog, if a groundhog could hog ground? – A groundhog would hog all the ground he could hog, if a groundhog could hog ground.</string>
+    <string name="threenine">9.\tYeelow butter, purple jelly, red jam, black bread. Spread it thick, say it quick. \t Yeelow butter, purple jelly, red jam, black bread. Spread it thicker, say it quicker.     Yeelow butter, purple jelly, red jam, black bread. Don’t eat with your mouthfull.</string>
+    <string name="threeten">10.\tIf you are keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.</string>
+    <string name="threeeleven">11.\tIf coloured caterpillars could change their colours constantly could they keep their coloured coat coloured properly?</string>
+    <string name="threetwelve">12.\tAs he gobbled the cakes on his plate, the greedy ape said as he ate, the greener green grapes are, the keener keen apes are to gobble green grape cakes, they’re great.</string>
+    <string name="threethirteen">13.\tA fly and flea flew into a flue, said the fly to the flea”what shall we do?” “let us fly” said the flea, said the fly “shall we flee”, so they flew through a flaw in the flue.</string>
+    <string name="threeforteen">14.\tHow much dew does a dewdrop drop if a dewdrop do drop dew? – They do drop, they do as do dewdrops drop if dewdrops do drop dew.</string>
+    <string name="threefifteen">15.\tI’am a sheet slitter. I slit sheets. I’m the sleekest sheet slitter that ever slit sheets.</string>
+    <string name="tenone">1.\tI saw a kitten eating chicken in the kitchen.</string>
+    <string name="tentwo">2.\tThe third time the three-toed tree toads tried tying their toes together, the third three-toed tree toad tied the two-toed tree toads toes to the third toads toes. Then the two tied three-toad tree toads told the third three-toed tree toad that tying their toes together thrilled them their toe tips.</string>
+    <string name="tenthree">3.\tThrifty theophilus, the theocratic thistle sifter, thrice thrust three thousand thistles through the slick thick of his softly throbbing thumb.</string>
+    <string name="tenfour">4.\tWilson Winston winced whilst he minced a squinting prince.</string>
+    <string name="tenfive">5.\tI thought the haughty professor tortoise taught onotology, but the naughty tortoise taught us tautology.</string>
+    <string name="tensix">6.\tHe thrusts his fists against the posts, and still insists he sees the ghost.</string>
+    <string name="tenseven">7.\tA synonym for cinnamon is a cinnamon synonym.</string>
+    <string name="teneight">8.\tTell a tall tale of a tall tailed dog, that told Tim it tap a tall ale and thump the top of Tim’s tomb.</string>
+    <string name="tennine">9.\tSlinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake’s leglessness.</string>
+    <string name="tenten">10.\tSilly Sally should shave the sheep, she should show soon so selling sheep shaved showed she shouldn’t show shaved sheep so soon.</string>
+    <string name="teneleven">11.\tCorythosaurus bit the gory esophagus of the dilapidated dilophasurus who lived in the sorest of forest’s with  the whacky packy-rhinosaurus and the ceratosaurus, but the most poorest and mourish panoplosaurus called Wang sang and rang chorus with the lurdusaurus and the brachiosaurus who was dying of staphylococcus-aureas.</string>
+    <string name="tentwelve">12.\tYou name it, we claim it. If we can’t get it, we will send you to get it. If we can’t send you to get it, forget it. Who’s  got it, if we don’t get it?</string>
+    <string name="tenthirteen">13.\tIf your Bob doesn’t give our Bob that bob that your Bob owes our Bob, our Bob will give your Bob a bob in the eye.</string>
+    <string name="tenforteen">14.\tThe sixth sick sheik’s sixth sheep’s sick.</string>
+    <string name="tenfifteen">15. Mr. Knott and Mr. Watt on the phone
+                Hello?
+                Who’s calling?
+                Watt.
+                What’s your name?
+                Watt’s my name.
+                Yes, what is your name?
+                My name is John Watt.
+                John what?
+                Yes.
+                All right, are you jones?
+                No, I am Knott.
+                Will you tell me your name, then?
+                Will Knott.
+                Why not?
+                My name is Knott.
+                Not what?
+                Not Watt. Knott.
+                What?</string>
+    <string name="fourone">1.\tCoy knows pseudonoise codes.</string>
+    <string name="fourtwo">2.\tThe thirty three thieves thought that they thrilled the throne throughout Thursday.</string>
+    <string name="fourthree">3.\tSomething in a thirty-acre thermal thicket of thorns and thistles thumped and thundered threatening the three-D thoughts of Amit the thug-although, theatrically, it was only the thirteen thousand thistles and thorns through the underneath of his thigh that the thirty year old thug thought of that morning.</string>
+    <string name="fourfour">4.\tLuke luck likes lakes. Luke’s duck likes lakes. Luke luck licks lakes. Luke’s duck licks lakes. Duck takes licks in lakes, Luke luck likes. Luke luck takes licks in lakes duck likes.</string>
+    <string name="fourfive">5.\tPick pickens prick his pinkie pickling cheap cling peaches in an inch of Pinch or framing his famed French finch potatoes.</string>
+    <string name="foursix">6.\tHow much wood could chuck wood’s woodchuck chuck, if chuck wood’s woodchuck could chuck wood?—If chuck wood’s woodchuck could and would chuck wood, as much as he could, and chuck as much wood as any woodchuck would, if a woodchuck could chuck wood.</string>
+    <string name="fourseven">7.\tPete’s pa pete poked to the pea patch to pick a peck of peas for the poor pink pig.</string>
+    <string name="foureight">8.\tSuzie, suzie , working in a shoeshine shop. All day long she sits and shines, all day long she shines and sits, and sits and shines, and shines and sits.</string>
+    <string name="fournine">9.\tSweet sagacious Sally sanders said she sure saw seven segregated seaplanes sailing swiftly southward Saturday.</string>
+    <string name="fourten">10.\tBetty Botter bought some butter but, said she, the butter’s bitter. If I put it in my batter, it will make my batter bitter. But a bit of better butter will make my bitter batter better, so she bought some better butter, better than the bitter butter, put it in her bitter batter, made her bitter batter better. So it was Betty Botter bought some better butter.</string>
+    <string name="foureleven">11.\tThere are two minutes difference from four to two to two to two, from two to two to two, too.</string>
+    <string name="fourtwelve">12.\tSwan swam over the sea, swim swan swim. Swan swam back again. Well swum swan.</string>
+    <string name="fourthirteen">13.\tA twister of twists once twisted a twist. And the twist that he twisted was a three twisted twist. Now in twisting this twist, if a twist should untwist, would the twist that untwisted untwist the twists.</string>
+    <string name="fourforteen">14.\tIf two witches would watch two watches, which witch would watch which watch.</string>
+    <string name="fourfifteen">"15.\tWhat to do to die today at a minute or two to two. A terribly difficult thing to say and a harder thing to do. "</string>
+    <string name="fiveone">1.\tHow many berries could a bare berry carry, if a bare berry could carry berries? Well they can’t carry berries but a bare berry carried is more scary.</string>
+    <string name="fivetwo">2.\tFresh French fried fly fritters.</string>
+    <string name="fivethree">3.\tChester Cheetah chews a chunk of cheap cheddar cheese.</string>
+    <string name="fivefour">4.\tYally Bally had a jolly golliwog. Feeling folly, Yally Bally Bought his jolly golli’ a dollie made of holly! The golli’, feeling jolly named the holly dollie, Polly. Yally Bally’s jolly golli’s holly dollie Polly’s also jolly!</string>
+    <string name="fivefive">5.\tPail of ale aiding ailing Al’s Travalis.</string>
+    <string name="six">6.\tI eat eel while you peel eel.</string>
+    <string name="fiveseven">7.\tIf you understand, say “understand”. But if you don’t understand, say “don’t understand”. But if you understand and say “don’t understand”. How do I understand that you understand. Understand!</string>
+    <string name="fiveeight">8.\tLove’s a feeling you feel when you feel you’re going to feel the feeling you’ve never felt before.</string>
+    <string name="fivenine">9.\tA pessimistic pest exists amidst us.</string>
+    <string name="fiveten">10.\tHow much myrtle would a wood turtle hurdle if a would turtle could hurdle myrtle? – A wood turtle would hurdle as much myrtle as a wood turtle could hurdle if a wood turtle could hurdle myrtle.</string>
+    <string name="fiveeleven">11.\tShut up the shutters and sit in the shop.</string>
+    <string name="fivetwelve">12.\tA black blake’s back brake-block broke.</string>
+    <string name="fivethirteen">13.\t Come, come stay calm, stay calm, no need for alarm, it only hums, it doesn’t harm.</string>
+    <string name="fiveforteen">14.\tWhile we were walking, we were watching window washers wash washington’s windows with warm washing water.</string>
+    <string name="fivefifteen">15.\tMr. See owned a saw and Mr. Soar owned a sea-saw. Now See’s saw sawed Soar’s see-saw before soar saw see.</string>
+    <string name="sixone">1.\tTommy tucker tried to tie Tammy Turtle’s tie.</string>
+    <string name="sixtwo">2.\tExcited executioner exercising his excising powers excessively.</string>
+    <string name="sixthree">3.\tI saw Esau kissing Kate. I saw Esau, he saw me, she saw I saw Esau.</string>
+    <string name="sixfour">4.\tSeven sleazy shysters in sharkskin suits sold sheared sealskins to seasick sailors.</string>
+    <string name="sixfive">5.\tA gazillion gigantic grapes gushed gradually giving gophers goey guts.</string>
+    <string name="sixsix">6.\tThe seething sea ceaseth; thus the seething sea sufficeth us.</string>
+    <string name="sixseven">7.\tBut she as far surpasseth sycorax, As a great’st does least.</string>
+    <string name="sixeight">8.\tThe batter with the butter is the batter that is better.</string>
+    <string name="sixnine">9.\tDon’t trouble trouble, until trouble troubles you! If you trouble trouble triple trouble troubles you.</string>
+    <string name="sixten">10.\tA smart fella, a fella smart. It takes a smart fella to say a fella smart.</string>
+    <string name="sixeleven">11.\tDon’t spring on the inner-spring this spring or there will be an offspring next spring.</string>
+    <string name="sixtwelve">12.\tWe will learn why her lowly lone, worn yarn loom will rarely earn immoral money.</string>
+    <string name="sixthirteen">13.\tA stunk sat on a stump and thunk the stump stunk, but the stump thunk the skunk stunk.</string>
+    <string name="sixforteen">14.\tLarry Hurley, a burly squirrel hurler, hurled a furry squirrel through a curly grill.</string>
+    <string name="sixfifteen">15.\tI thought a thought. But the thought I thought wasn’t the thought I thought I thought. If the thought I thought I thought, had been the thought I thought, I wouldn’t have thought I thought.</string>
+    <string name="sevenone">1.\tDouble bubble gum, bubbles double.</string>
+    <string name="seventwo">2.\tSuzie Seaword’s fish-sauce shop sells unsifted thistles for thistle-sifters to sift.</string>
+    <string name="seventhree">3.\tShe stood on the balcony, inexplicably mimicking him hiccupping, and amicably welcoming him in.</string>
+    <string name="sevenfour">4.\tI am not the fig plucker, not the fig plucker’s son, but I’ll pluck figs till the fig plucker comes.</string>
+    <string name="sevenfive">5.\tI slit a sheet, a sheet I slit, upon a slitted sheet I sit.</string>
+    <string name="sevensix">6.\tFresh Fried Fish, Fish Fresh Fried, Fried Fish Fresh, Fish Fried Fresh.</string>
+    <string name="sevenseven">7.\tCan you imagine an imaginary menagerie manager imagining managing an imaginary menagerie.</string>
+    <string name="seveneight">8.\tAdmist the mists and coldest frosts, with stoutest wrists and loudest boasts, He thrusts his fists against the posts, And still insists he sees the ghosts.</string>
+    <string name="sevennine">9.\tA Tudor who tooted the flute tried to tutor two tooters to toot. Said the two to the tutor, “Is it harder to toot or to tutor two tooters to Toot?”</string>
+    <string name="seventen">A nurse anesthetist unearthed a nest.</string>
+    <string name="seveneleven">11.\tShe sells sea shells on the seashore. The shells she sells are seashells she is sure.</string>
+    <string name="seventwelve">12.\tA noise annoys an oyster, but a noisy noise annoys an oyster more!</string>
+    <string name="seventhirteen">13.\tThe king would sing , about a ring that would go ding.</string>
+    <string name="sevenforteen">14.\tI wish I were what I was when I wished I were what I am.</string>
+    <string name="sevenfifteen">15.\tTo put a pipe in byte mode, type PIPE_TYPE_BYTE.</string>
+    <string name="eightone">1.\tOut in the pasture the nature watcher watches the catcher. While the catcher watches the pitcher who pitches the balls. Whether the temperature’s up or whether the temperature’s down, the nature watcher, the catcher and the pitcher are always around. The pitcher pitches, the catcher catches and the whether watches. So whether the temperature rises or whether the temperature falls the nature watcher just watches the catcher who’s watching the pitcher who’s watching the balls.</string>
+    <string name="eighttwo">2.\tA tree toad loved a she toad, who lived up in a tree. He was a three toad tree toad, but a two toed toad was she. The three-toed tree toad tried to win, the two-toed she-toad’s heart, for the three toed tree toad loved the ground, that the two-toed tree toad trod. But the three-toed tree toad tried in vain. He couldn’t please her whim. From her tree toad power, with her two toed-power, the she toad vetoed him.</string>
+    <string name="eightthree">3.\tKnife and a fork bottle and a cork, that is the way you spell new york. Chicken in the car and the car can go, that is the way you spell Chicago.</string>
+    <string name="eightfour">4.\tIf you stick a stock of liquor in your locker it is slick to stick a lock upon your stock or some joker who is slicker is going to trick you of your liquor if you fail to lock your liquor with a lock.</string>
+    <string name="eightfive">5.\tWhen a doctor doctors a doctor, does the doctor doing the doctoring doctor as the doctor being doctored wants to be doctored or does the doctor doing the doctoring doctor as he wants to doctor?</string>
+    <string name="eightsix">6.\tBut a harder thing still to do. What a to do to die today, at a quarter or two to two. A  terribly difficult thing to say but a harder thing still to do. The dragon will come at the beat of the drum, with a rat-a-tat-tat-a-tat-tat-a-tat-to, at a quarter or two to two today, at quarter or two to two.</string>
+    <string name="eightseven">7.\tI know a boy named tate who dined with his girl at eight eight. I’m unable to state what tate ate at eight eight or what tate’s tete ate at eight eight.</string>
+    <string name="eighteight">8.\tTheophilus thadeus thistle down, the successful thistle-sifter, while sifting a sieve-full of unsifted thistles, thrust three thousand thistles through the thick of his thumb. Now, if theophilus thadeus thistle down, the successful thistle-sifter, thrust three thousand thistles through the thick of his thumb, see that thou, while sifting a sieve-full of unsifted thisltes thrust not three thousand thistles through the thick of thy thumb.</string>
+    <string name="eightnine">9.\tEsau wood sawed wood. All the wood Esau wood saw, Esau wood would saw. All the wood wood saw, Esau sought to saw. One day Esau wood’s wood-saw would saw no wood. So Esau wood sought a new wood-saw. The new wood-saw would saw wood. Oh, the wood Esau wood would saw. Esau sought a saw that would saw wood as no other wood-saw would-saw. And Esau found a saw that would saw as no other wood-saw would saw. And Esau wood sawed wood.</string>
+    <string name="eightten">10.\tEd Nott was shot and Sam Shott was not. So its better to be Shott than Nott. Some say Nott was not shot. But Shott says he shot Nott. Either the shot Shott shot at Nott was not shot, or Nott was shot. If the shot Shott shot shot Nott, Nott was shot. But if the shot Shott shot shot Shott, the shot was Shott, not Nott. However, the shot Shott shot shot not Shott-but Nott. So, Ed Nott was shot and that’s hot! Is it not.</string>
+    <string name="eighteleven">11.\tChester chooses chestnuts, cheddar cheese with chewy chives. He chews them and he chooses them. He chooses them and he chews them. Those chestnuts, cheddar cheese and chives in cherry, charming chunks.</string>
+    <string name="eighttwelve">12.\tMoses supposes his tosses are roses. But moses supposes erroneously. Moses, he noses his toeses aren’t roses, as Moses supposes his toeses to be.</string>
+    <string name="eightthirteen">13.\tThree tree turtles took turns talking tongue twisters. If three tree turtles took turns talking tongue twisters, where’s the twisters the three tree turtles talked?</string>
+    <string name="nineone">1.\tTito and Tato were tattooed in total. But Toto was only tattooed on his toe. So Tato told Tito where Toto was tattooed. But Tito said Toto’s tattoo wouldn’t  show.</string>
+    <string name="ninetwo">2.\tTheda thought Thora was thumping her thimble but Thomas thought Thora was thumping her drum. Said Theda if Thora is not thumping her thimble, I think that she surely is thumping her thumb.</string>
+    <string name="ninethree">3.\tNow Charley is chary when choosing his cheeses and cheese is a challenge when Charley arrives. When Charley is charming and chooses a cheddar then chews it and chips it and chops in some chives.</string>
+    <string name="ninefour">4.\tHeda is hoping to hope to Tahiti, to hack a hibiscus to hang on her hat. Now Heda has hundreds of hats on her rack, so how can a hope to Tahiti help that.</string>
+    <string name="ninefive">5.\tSnobby Miss. Nora is sniffing her snuffer. The snuffer’s no sniffing it makes Nora sneeze. When Snyda let’s Nort know his Nora is sneezing, she snappily snorts Nora’s sneezing a breeze.</string>
+    <string name="ninesix">6.\tSheila is selling her shop at the seashore for shops at the seashore are so sure to loose and she is not so sure of what she should be selling. Should Sheila sell seashells or should she sell shoes.</string>
+    <string name="nineseven">7.\tThat’s tongue twisters and it seems so easy till the word gets sprung. If you insist you want to try a lisp, Then step up Mister and twist your tongue. Twista felt twister was trying to whistle but twister had twisted his tongue.</string>
+    <string name="nineeight">8.\tColliding, colt riding cowboys, combining colliding while gliding at night coinciding in their fight. It wasn’t quite trite even with slight sight, who was right? The fight like light, flashed bright, fast as bears byte flies flying near the bears eyes the fleeing flies dies.</string>
+    <string name="ninenine">9.\tNo need to light a night-light on a light night like tonight.</string>
+    <string name="nineten">10.\tI wish to wish, I dream to dream, I try to try, and I live to live, and I’d die to die, and I cry to cry but I don’t know why.</string>
+    <string name="nineeleven">11.\tTerry Teeter, a teeter-totter teacher, taught her daughter Tara to teeter-totter, but Tara Teeter didn’t teeter-totter as a Terry Teeter taught her to.</string>
+    <string name="ninetwelve">12.\tThe cat crept into then crypt, crapped and crept out.</string>
+    <string name="ninethirteen">13.\tWe need a plan to fan a pan; find a pan to fan, than find a fan to fan the pan, than fan than pan.</string>
+    <string name="nineforteen">14.\tOf all the felt I ever felt I never felt that felt like that felt felt.</string>
+    <string name="ninefifteen">15.\tFarell’s features fabulous food ‘n’ fantastic fountain fantasies for frolicking, fun filled festive families.</string>
+    <string name="eightfifteen">15.\tGive me the gift of a grip-top sock, a clip drape shipshape tip top sock. Not your spinslick  slapstick slapshod stock, but a plastic, elastic grip-top sock. Non of your fantastic slack swap slop. From a slap dash flash cash haberdash shop. Not a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock. Not a supersheet seersucker rucksack sock, not a spot speckled frog-freckled cheap sheik’s sock. Off a hodge-podge moss-blotched scotch-botched block. Nothing slipshod drip drop flip flop or glip glop. Tip me to a tip top grip-top sock.</string>
+    <string name="eightforteen">14.\tMy friend Gladys Oh, the sadness of her sadness when she’s sad.
+                "Oh, the gladness of her gladness when she’s glad. But the sadness of her sadness, and the gladness of her gladness, are nothing like her madness when she’s mad.</string>
+
+</resources>
