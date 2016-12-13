@@ -209,11 +209,15 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
 
     public void onClick(View v){
 
+        AlertDialog.Builder alert= new AlertDialog.Builder(this);
+        tts= new TextToSpeech(this,this);
+        String[] array={getString(R.string.oneone)};
 
         switch (v.getId()){
 
             case R.id.one1:{
-
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT 1").create().show();
+                autoSpeak(array[0]);
                 break;
             }
             case R.id.one2:{
