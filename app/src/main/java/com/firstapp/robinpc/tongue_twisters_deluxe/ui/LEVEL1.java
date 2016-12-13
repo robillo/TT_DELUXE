@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe;
+package com.firstapp.robinpc.tongue_twisters_deluxe.ui;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+
+import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 
 public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitListener{
 

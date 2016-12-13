@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.ui;
+package com.firstapp.robinpc.tongue_twisters_deluxe.model;
 
 import android.speech.tts.TextToSpeech;
 import android.util.Log;

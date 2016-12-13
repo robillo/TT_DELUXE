@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.LEVEL2"
+    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL2"
     tools:showIn="@layout/level2">
 
     <ScrollView

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.LEVEL9">
+    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL9">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"

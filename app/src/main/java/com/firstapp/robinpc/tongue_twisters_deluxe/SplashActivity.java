@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.MainActivity;
+
 /**
  * Created by Robin Pc on 11-07-2016.
  */
