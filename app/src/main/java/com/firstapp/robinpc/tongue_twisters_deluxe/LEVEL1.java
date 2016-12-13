@@ -15,7 +15,6 @@ import android.view.View;
 public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
     private TextToSpeech tts;
-    private String temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
