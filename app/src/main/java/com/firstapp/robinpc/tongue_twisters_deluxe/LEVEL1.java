@@ -206,4 +206,73 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
             tts = null;
         }
     }
+
+    public void onClick(View v){
+
+
+        switch (v.getId()){
+
+            case R.id.one1:{
+
+                break;
+            }
+            case R.id.one2:{
+
+                break;
+            }
+            case R.id.one3:{
+
+                break;
+            }
+            case R.id.one4:{
+
+                break;
+            }
+            case R.id.one5:{
+
+                break;
+            }
+            case R.id.one6:{
+
+                break;
+            }
+            case R.id.one7:{
+
+                break;
+            }
+            case R.id.one8:{
+
+                break;
+            }
+            case R.id.one9:{
+
+                break;
+            }
+            case R.id.one10:{
+
+                break;
+            }
+            case R.id.one11:{
+
+                break;
+            }
+            case R.id.one12:{
+
+                break;
+            }
+            case R.id.one13:{
+
+                break;
+            }
+            case R.id.one14:{
+
+                break;
+            }
+            case R.id.one15:{
+
+                break;
+            }
+        }
+    }
+
 }
