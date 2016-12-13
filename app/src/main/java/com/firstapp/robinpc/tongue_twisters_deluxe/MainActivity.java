@@ -53,54 +53,64 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void firstlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL1.class);
+    public void onClick(View v){
+
+        Intent i= new Intent();
+
+        switch (v.getId()){
+            case R.id.level1:
+            {
+                i= new Intent(this, LEVEL1.class);
+                break;
+            }
+            case R.id.level2:
+            {
+                i= new Intent(this, LEVEL2.class);
+                break;
+            }
+            case R.id.level3:
+            {
+                i= new Intent(this, LEVEL3.class);
+                break;
+            }
+            case R.id.level4:
+            {
+                i= new Intent(this, LEVEL4.class);
+                break;
+            }
+            case R.id.level5:
+            {
+                i= new Intent(this, LEVEL5.class);
+                break;
+            }
+            case R.id.level6:
+            {
+                i= new Intent(this, LEVEL6.class);
+                break;
+            }
+            case R.id.level7:
+            {
+                i= new Intent(this, LEVEL7.class);
+                break;
+            }
+            case R.id.level8:
+            {
+                i= new Intent(this, LEVEL8.class);
+                break;
+            }
+            case R.id.level9:
+            {
+                i= new Intent(this, LEVEL9.class);
+                break;
+            }
+            case R.id.level10:
+            {
+                i= new Intent(this, LEVEL10.class);
+                break;
+            }
+        }
         startActivity(i);
     }
-    public void secondlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL2.class);
-        startActivity(i);
-    }
-    public void thirdlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL3.class);
-        startActivity(i);
-    }
-    public void fourthlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL4.class);
-        startActivity(i);
-    }
-    public void fifthlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL5.class);
-        startActivity(i);
-    }
-    public void sixthlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL6.class);
-        startActivity(i);
-    }
-    public void seventhlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL7.class);
-        startActivity(i);
-    }
-    public void eighthlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL8.class);
-        startActivity(i);
-    }
-    public void ninthlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL9.class);
-        startActivity(i);
-    }
-    public void tenthlevel(View view)
-    {
-        Intent i=new Intent(this,LEVEL10.class);
-        startActivity(i);
-    }
+
+
 }
