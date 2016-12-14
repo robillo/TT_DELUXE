@@ -84,59 +84,59 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
                 break;
             }
             case R.id.one2:{
-
+                tts_index=1;
                 break;
             }
             case R.id.one3:{
-
+                tts_index=2;
                 break;
             }
             case R.id.one4:{
-
+                tts_index=3;
                 break;
             }
             case R.id.one5:{
-
+                tts_index=4;
                 break;
             }
             case R.id.one6:{
-
+                tts_index=5;
                 break;
             }
             case R.id.one7:{
-
+                tts_index=6;
                 break;
             }
             case R.id.one8:{
-
+                tts_index=7;
                 break;
             }
             case R.id.one9:{
-
+                tts_index=8;
                 break;
             }
             case R.id.one10:{
-
+                tts_index=9;
                 break;
             }
             case R.id.one11:{
-
+                tts_index=10;
                 break;
             }
             case R.id.one12:{
-
+                tts_index=11;
                 break;
             }
             case R.id.one13:{
-
+                tts_index=12;
                 break;
             }
             case R.id.one14:{
-
+                tts_index=13;
                 break;
             }
             case R.id.one15:{
-
+                tts_index=14;
                 break;
             }
         }
