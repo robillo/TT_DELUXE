@@ -57,7 +57,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav1" />
+                    android:id="@+id/fav1"
+                    android:onClick="fav"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -86,7 +87,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav2" />
+                    android:id="@+id/fav2"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -114,7 +116,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav3" />
+                    android:id="@+id/fav3"
+                    android:onClick="fav"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -142,7 +145,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav4" />
+                    android:id="@+id/fav4"
+                    android:onClick="fav"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -170,7 +174,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav5" />
+                    android:id="@+id/fav5"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -198,7 +203,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav6" />
+                    android:id="@+id/fav6"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -226,7 +232,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav7" />
+                    android:id="@+id/fav7"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -254,7 +261,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav8" />
+                    android:id="@+id/fav8"
+                    android:onClick="fav"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -282,7 +290,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav9" />
+                    android:id="@+id/fav9"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -310,7 +319,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav10" />
+                    android:id="@+id/fav10"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -337,7 +347,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav11" />
+                    android:id="@+id/fav11"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -365,7 +376,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav12" />
+                    android:id="@+id/fav12"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -393,7 +405,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav13" />
+                    android:id="@+id/fav13"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -421,7 +434,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav14" />
+                    android:id="@+id/fav14"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -449,7 +463,8 @@
                     android:clickable="true"
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
-                    android:id="@+id/fav15" />
+                    android:id="@+id/fav15"
+                    android:onClick="fav" />
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
