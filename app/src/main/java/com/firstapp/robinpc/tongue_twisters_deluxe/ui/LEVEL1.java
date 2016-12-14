@@ -148,4 +148,15 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
         
     }
 
+    public void favs(View v){
+
+        switch (v.getId()){
+
+            case R.id.fav1:
+            {
+                //code to add to favourites; side by side change the respective icon of the favs button
+                break;
+            }
+        }
+    }
 }
