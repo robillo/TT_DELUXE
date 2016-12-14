@@ -17,6 +17,8 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
     private TextToSpeech tts;
+    private boolean tts_on= true;
+    private int tts_index;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +80,7 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
         switch (v.getId()){
 
             case R.id.one1:{
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT 1").create().show();
-                autoSpeak(array[0]);
+                tts_index=0;
                 break;
             }
             case R.id.one2:{
@@ -139,6 +140,12 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
                 break;
             }
         }
+
+        alert.setMessage(array[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
+        if(tts_on){
+            autoSpeak(array[tts_index]);
+        }
+        
     }
 
 }
