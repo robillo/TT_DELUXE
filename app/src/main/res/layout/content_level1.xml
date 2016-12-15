@@ -60,7 +60,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav1"
-                    android:onClick="fav"/>
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -90,7 +91,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav2"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -119,7 +121,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav3"
-                    android:onClick="fav"/>
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -148,7 +151,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav4"
-                    android:onClick="fav"/>
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -177,7 +181,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav5"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -206,7 +211,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav6"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -235,7 +241,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav7"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -264,7 +271,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav8"
-                    android:onClick="fav"/>
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -285,7 +293,8 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick" />
+                    android:onClick="onClick"
+                    android:layout_gravity="center_vertical" />
                 <android.support.design.widget.FloatingActionButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -322,7 +331,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav10"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -350,7 +360,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav11"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -379,7 +390,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav12"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -408,7 +420,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav13"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -437,7 +450,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav14"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView android:layout_width="match_parent"
@@ -466,7 +480,8 @@
                     app:fabSize="mini"
                     app:srcCompat="@android:drawable/star_off"
                     android:id="@+id/fav15"
-                    android:onClick="fav" />
+                    android:onClick="fav"
+                    android:layout_gravity="center_vertical"/>
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
