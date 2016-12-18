@@ -66,7 +66,11 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
 
         AlertDialog.Builder alert= new AlertDialog.Builder(this);
         tts= new TextToSpeech(this,this);
-        String[] array={getString(R.string.oneone)};
+        String[] array={getString(R.string.oneone),getString(R.string.onetwo),getString(R.string.onethree),
+                getString(R.string.onefour),getString(R.string.onefive),getString(R.string.onesix),
+                getString(R.string.oneseven),getString(R.string.oneeight),getString(R.string.onenine),
+                getString(R.string.oneten),getString(R.string.oneeleven),getString(R.string.onetwelve),
+                getString(R.string.onethirteen),getString(R.string.oneforteen),getString(R.string.onefifteen)};
 
         switch (v.getId()){
 
@@ -146,6 +150,10 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
             case R.id.fav1:
             {
                 //code to add to favourites; side by side change the respective icon of the favs button
+                break;
+            }
+            case R.id.fav2:
+            {
                 break;
             }
         }
