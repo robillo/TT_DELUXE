@@ -34,19 +34,19 @@ public class LEVEL10 extends AppCompatActivity implements TextToSpeech.OnInitLis
     public void TT1(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage( R.string.tenone)
+        oneonealert.setMessage( R.string.ten1)
                 .setTitle("Level 10 TT 1").setIcon( R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString( R.string.tenone));
+        autoSpeak(getResources().getString( R.string.ten1));
     }
     // DIALOG FOR TT NUMBER 2
     public void TT2(View view)
     {
         AlertDialog.Builder oneonealert=new AlertDialog.Builder(this);
-        oneonealert.setMessage( R.string.tentwo)
+        oneonealert.setMessage( R.string.ten2)
                 .setTitle("Level 10 TT 2").setIcon( R.drawable.dialog).create();
         oneonealert.show();
-        autoSpeak(getResources().getString( R.string.tentwo));
+        autoSpeak(getResources().getString( R.string.ten2));
     }
     // DIALOG FOR TT NUMBER 3
     public void TT3(View view)
