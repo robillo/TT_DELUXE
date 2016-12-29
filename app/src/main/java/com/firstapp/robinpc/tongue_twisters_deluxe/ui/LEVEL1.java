@@ -73,11 +73,11 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
 
         AlertDialog.Builder alert= new AlertDialog.Builder(this);
         tts= new TextToSpeech(this,this);
-        String[] array={getString(R.string.oneone),getString(R.string.onetwo),getString(R.string.onethree),
-                getString(R.string.onefour),getString(R.string.onefive),getString(R.string.onesix),
-                getString(R.string.oneseven),getString(R.string.oneeight),getString(R.string.onenine),
-                getString(R.string.oneten),getString(R.string.oneeleven),getString(R.string.onetwelve),
-                getString(R.string.onethirteen),getString(R.string.oneforteen),getString(R.string.onefifteen)};
+        String[] array={getString(R.string.one1),getString(R.string.one2),getString(R.string.one3),
+                getString(R.string.one4),getString(R.string.one5),getString(R.string.one6),
+                getString(R.string.one7),getString(R.string.one8),getString(R.string.one9),
+                getString(R.string.one10),getString(R.string.one11),getString(R.string.one12),
+                getString(R.string.one13),getString(R.string.one14),getString(R.string.one15)};
 
         int tts_index;
 
@@ -85,8 +85,8 @@ public class LEVEL1 extends AppCompatActivity implements TextToSpeech.OnInitList
 
             case R.id.one1:{
                 tts_index=0;
-                alert.setMessage(array[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(array[tts_index]);
+                alert.setMessage(array[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 break;
             }
             case R.id.one2:{
