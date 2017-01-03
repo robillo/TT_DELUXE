@@ -50,91 +50,91 @@ public class LEVEL10 extends AppCompatActivity implements TextToSpeech.OnInitLis
 
         switch (v.getId()){
 
-            case R.id.one1:{
+            case R.id.ten1:{
                 tts_index=0;
                 autoSpeak(levelTen[tts_index]);
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 break;
             }
-            case R.id.one2:{
+            case R.id.ten2:{
                 tts_index=1;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one3:{
+            case R.id.ten3:{
                 tts_index=2;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one4:{
+            case R.id.ten4:{
                 tts_index=3;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one5:{
+            case R.id.ten5:{
                 tts_index=4;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one6:{
+            case R.id.ten6:{
                 tts_index=5;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one7:{
+            case R.id.ten7:{
                 tts_index=6;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one8:{
+            case R.id.ten8:{
                 tts_index=7;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one9:{
+            case R.id.ten9:{
                 tts_index=8;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one10:{
+            case R.id.ten10:{
                 tts_index=9;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one11:{
+            case R.id.ten11:{
                 tts_index=10;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one12:{
+            case R.id.ten12:{
                 tts_index=11;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one13:{
+            case R.id.ten13:{
                 tts_index=12;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one14:{
+            case R.id.ten14:{
                 tts_index=13;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);
                 break;
             }
-            case R.id.one15:{
+            case R.id.ten15:{
                 tts_index=14;
                 alert.setMessage(levelTen[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 1 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelTen[tts_index]);

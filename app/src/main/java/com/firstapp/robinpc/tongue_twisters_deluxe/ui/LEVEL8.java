@@ -40,91 +40,91 @@ public class LEVEL8 extends AppCompatActivity implements TextToSpeech.OnInitList
 
         switch (v.getId()){
 
-            case R.id.one1:{
+            case R.id.eight1:{
                 tts_index=0;
                 autoSpeak(levelNine[tts_index]);
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 break;
             }
-            case R.id.one2:{
+            case R.id.eight2:{
                 tts_index=1;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one3:{
+            case R.id.eight3:{
                 tts_index=2;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one4:{
+            case R.id.eight4:{
                 tts_index=3;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one5:{
+            case R.id.eight5:{
                 tts_index=4;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one6:{
+            case R.id.eight6:{
                 tts_index=5;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one7:{
+            case R.id.eight7:{
                 tts_index=6;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one8:{
+            case R.id.eight8:{
                 tts_index=7;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one9:{
+            case R.id.eight9:{
                 tts_index=8;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one10:{
+            case R.id.eight10:{
                 tts_index=9;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one11:{
+            case R.id.eight11:{
                 tts_index=10;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one12:{
+            case R.id.eight12:{
                 tts_index=11;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one13:{
+            case R.id.eight13:{
                 tts_index=12;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one14:{
+            case R.id.eight14:{
                 tts_index=13;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);
                 break;
             }
-            case R.id.one15:{
+            case R.id.eight15:{
                 tts_index=14;
                 alert.setMessage(levelNine[tts_index]).setIcon(R.drawable.dialog).setTitle("LEVEL 9 TT " + (tts_index+1)).create().show();
                 autoSpeak(levelNine[tts_index]);

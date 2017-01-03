@@ -33,7 +33,7 @@
                     android:text="Calm Cram"
                     android:id="@+id/level1"
                     android:textAlignment="center"
-                    android:onClick="TT1"
+                    android:onClick="onClick"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical" />
             </android.support.v7.widget.CardView>
@@ -56,7 +56,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT2"/>
+                    android:onClick="onClick2"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -77,7 +77,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT3"/>
+                    android:onClick="onClick3"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -98,7 +98,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT4"/>
+                    android:onClick="onClick4"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -119,7 +119,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT5"/>
+                    android:onClick="onClick5"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -140,7 +140,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT6"/>
+                    android:onClick="onClick6"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -161,7 +161,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT7"/>
+                    android:onClick="onClick7"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -182,7 +182,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT8"/>
+                    android:onClick="onClick8"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -203,7 +203,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT9"/>
+                    android:onClick="onClick9"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -224,7 +224,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT10"/>
+                    android:onClick="onClick10"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -244,7 +244,7 @@
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
-                    android:onClick="TT11"/>
+                    android:onClick="onClick11"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -265,7 +265,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT12"/>
+                    android:onClick="onClick12"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -286,7 +286,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT13"/>
+                    android:onClick="onClick13"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -307,7 +307,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT14"/>
+                    android:onClick="onClick14"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -328,7 +328,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="TT15"/>
+                    android:onClick="onClick15"/>
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
