@@ -31,11 +31,11 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Calm Cram"
-                    android:id="@+id/level1"
+                    android:id="@+id/two1"
                     android:textAlignment="center"
-                    android:onClick="onClick"
                     android:background="?attr/selectableItemBackground"
-                    android:gravity="center_vertical" />
+                    android:gravity="center_vertical"
+                    android:onClick="onClick" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -51,12 +51,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Saint's Tent"
-                    android:id="@+id/level2"
+                    android:id="@+id/two2"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick2"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -72,12 +72,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Robillo Ruins"
-                    android:id="@+id/level3"
+                    android:id="@+id/two3"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick3"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -93,12 +93,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Sick Hicks"
-                    android:id="@+id/level4"
+                    android:id="@+id/two4"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick4"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -114,12 +114,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Race Horse"
-                    android:id="@+id/level5"
+                    android:id="@+id/two5"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick5"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -135,12 +135,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Pickford's Packers"
-                    android:id="@+id/level6"
+                    android:id="@+id/two6"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick6"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -156,12 +156,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Gobbling Gobbles"
-                    android:id="@+id/level7"
+                    android:id="@+id/two7"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick7"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -177,12 +177,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Twit and Twat"
-                    android:id="@+id/level8"
+                    android:id="@+id/two8"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick8"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -198,12 +198,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Sheriff's Shoes"
-                    android:id="@+id/level9"
+                    android:id="@+id/two9"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick9"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -219,12 +219,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Cow Pie"
-                    android:id="@+id/level10"
+                    android:id="@+id/two10"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick10"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -240,11 +240,11 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Four Friends"
-                    android:id="@+id/level11"
+                    android:id="@+id/two11"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
-                    android:onClick="onClick11"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -260,12 +260,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Saw A Saw"
-                    android:id="@+id/level12"
+                    android:id="@+id/two12"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick12"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -281,12 +281,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Thought A Thought"
-                    android:id="@+id/level13"
+                    android:id="@+id/two13"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick13"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -302,12 +302,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Greek Grapes"
-                    android:id="@+id/level14"
+                    android:id="@+id/two14"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick14"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -323,12 +323,12 @@
                     android:layout_height="60dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Sounding Sounds"
-                    android:id="@+id/level15"
+                    android:id="@+id/two15"
                     android:textAlignment="center"
                     android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:elevation="4dp"
-                    android:onClick="onClick15"/>
+                    android:onClick="onClick"/>
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
