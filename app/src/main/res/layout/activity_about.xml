@@ -15,12 +15,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6sp"
-            android:padding="4sp"
             app:cardElevation="4sp"
             app:cardCornerRadius="3sp">
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical" android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:padding="8sp">
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -34,12 +34,15 @@
                         android:text="About The App:"
                         android:textAlignment="center"
                         android:gravity="center_vertical"
-                        android:textColor="@android:color/white"/>
+                        android:textColor="#000"/>
                 </FrameLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
                     android:text="By their very nature, tongue twisters are challenging to say. With their repetitive use of similar sounding sounds, words and syllables, they can trip up the tongues of even the most articulate individuals. However, as fun as they are, tongue twisters have a very practical application. As such, tongue twisters help reduce the prominence of a foreign accent.
 "/>
 
@@ -47,6 +50,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
                     android:text=
                         "The benefits of diction/articulation exercises or drills are:
  strengthening and stretching the muscles involved in speech, and bringing to your attention habitual speech patterns which may be less than perfect."
@@ -55,6 +61,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
                     android:text=
                         "Tips for beginners: Start slowly and carefully, Make sure the start and end of each word is crisp,Repeat the phrase, getting faster and faster while maintaining clarity,
 and If you trip over words, stop and start again."
@@ -63,6 +72,9 @@ and If you trip over words, stop and start again."
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="casual"
+                    android:textColor="#000"
                     android:text=
                         "Good diction is NOT about changing your accent or making you 'talk posh'.
 It is about clarity - making sure what you say is heard.
@@ -82,7 +94,7 @@ Tongue twisters have long been an integral part of a public speaker's tool kit. 
                         android:text="Made By:"
                         android:textAlignment="center"
                         android:gravity="center_vertical"
-                        android:textColor="@android:color/white" />
+                        android:textColor="#000" />
                 </FrameLayout>
 
                 <TextView

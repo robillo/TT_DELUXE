@@ -34,7 +34,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".view.LevelsActivity" />
         </activity>
-        <activity android:name=".view.AboutActivity"></activity>
+        <activity android:name=".view.AboutActivity"
+            android:parentActivityName=".view.LevelsActivity">
+
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".view.LevelsActivity" />
+        </activity>
     </application>
 
 </manifest>
