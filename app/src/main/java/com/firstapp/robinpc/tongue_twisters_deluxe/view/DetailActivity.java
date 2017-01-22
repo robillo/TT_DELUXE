@@ -226,47 +226,47 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
                 break;
             }
             case 2:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.two_headers);
                 level_twisters = getResources().getStringArray(R.array.two);
                 break;
             }
             case 3:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.three_headers);
                 level_twisters = getResources().getStringArray(R.array.three);
                 break;
             }
             case 4:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.four_headers);
                 level_twisters = getResources().getStringArray(R.array.four);
                 break;
             }
             case 5:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.five_headers);
                 level_twisters = getResources().getStringArray(R.array.five);
                 break;
             }
             case 6:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.six_headers);
                 level_twisters = getResources().getStringArray(R.array.six);
                 break;
             }
             case 7:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.seven_headers);
                 level_twisters = getResources().getStringArray(R.array.seven);
                 break;
             }
             case 8:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.eight_headers);
                 level_twisters = getResources().getStringArray(R.array.eight);
                 break;
             }
             case 9:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.nine_headers);
                 level_twisters = getResources().getStringArray(R.array.nine);
                 break;
             }
             case 10:{
-                level_headers = getResources().getStringArray(R.array.one_headers);
+                level_headers = getResources().getStringArray(R.array.ten_headers);
                 level_twisters = getResources().getStringArray(R.array.ten);
                 break;
             }

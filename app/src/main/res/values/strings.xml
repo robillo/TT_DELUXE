@@ -50,9 +50,175 @@
     <string name="slide_2_button">CLICK TO VIEW</string>
     <string name="slide_1_button">CLICK TO VIEW</string>
     <string name="title_activity_level">LEVEL</string>
-    <string name="title_activity_detail">Level Screen</string>
+    <string name="title_activity_detail">Tongue Twisters</string>
     <string name="previous"><![CDATA[<]]></string>
     <string name="next"><![CDATA[>]]></string>
+
+
+    <string-array name="two_headers">
+    <item>Calm Cram</item>
+    <item>Saint\’s Tent</item>
+    <item>Robillo Ruins</item>
+    <item>Sick Hicks</item>
+    <item>Race Horse</item>
+    <item>Pickford\’s Packers</item>
+    <item>Gobbling Gobbles</item>
+    <item>Twit and Tat</item>
+    <item>Sheriff\’s Shoes</item>
+    <item>Cow Pie</item>
+    <item>Four Friends</item>
+    <item>Saw a Saw</item>
+    <item>Thought A Thought</item>
+    <item>Greek Grapes</item>
+    <item>Sounding Sounds</item>
+</string-array>
+
+<string-array name="three_headers">
+<item>Dishy Fish</item>
+<item>Inside Out</item>
+<item>Noticing Notice</item>
+<item>Susan Shoe Shop</item>
+<item>Fisherman Fisher</item>
+<item>I Wish</item>
+<item>Cooking Cookies</item>
+<item>Hog Groundhog</item>
+<item>Jam Spreading</item>
+<item>Stunt Kite</item>
+<item>Coloured Caterpillars</item>
+<item>Green Grape Ape</item>
+<item>Fly and Flee</item>
+<item>Dew Drop</item>
+<item>Sheet Slitter</item>
+</string-array>
+
+<string-array name="four_headers">
+<item>Coy Codes</item>
+<item>Thirty Three Theives</item>
+<item>3-D Thoughts</item>
+<item>Luke Likes</item>
+<item>Pick Pickens</item>
+<item>Woods Woodchuck</item>
+<item>Papa Pete</item>
+<item>Shoeshine Shop</item>
+<item>Sagacios Sally Sanders</item>
+<item>Bitter Butter</item>
+<item>Two to Two, Too</item>
+<item>Swan Swam</item>
+<item>Twisty Twits</item>
+<item>Witches Watch Watches</item>
+<item>Two to Two, What to do?</item>
+</string-array>
+
+<string-array name="five_headers">
+<item>Bare Berry</item>
+<item>Fresh French</item>
+<item>Cheap Cheddar</item>
+<item>Yally Bally</item>
+<item>Ale\’s Pale</item>
+<item>Peel Eel</item>
+<item>Understand?</item>
+<item>Feeling Love</item>
+<item>Pessimistic Pest</item>
+<item>Turtle Hurdle</item>
+<item>Sit in Shop</item>
+<item>Black Blake</item>
+<item>Come and Calm</item>
+<item>Window Washer</item>
+<item>Mr. See and Mr. Soar</item>
+</string-array>
+
+
+<string-array name="six_headers">
+<item>Tommy Tucker</item>
+<item>Exercising Executioner</item>
+<item>I Saw Esau</item>
+<item>Sleazy Shysters</item>
+<item>Grapes</item>
+<item>Seething Sea</item>
+<item>Sycorax</item>
+<item>Butter Batter</item>
+<item>Trouble Trouble</item>
+<item>Smart Fella</item>
+<item>Springs</item>
+<item>Lowly Lone</item>
+<item>Stump Stunk</item>
+<item>Larry Hurley</item>
+<item>Thought a Thought</item>
+</string-array>
+
+<string-array name="seven_headers">
+<item>Double Bubble</item>
+<item>Suzie Seaword</item>
+<item>She Stood</item>
+<item>Fig Plucker</item>
+<item>Sheet</item>
+<item>Fried Fish</item>
+<item>Imaginary Menagerie</item>
+<item>Ghosts</item>
+<item>Tudor</item>
+<item>Nurse</item>
+<item>She Sells</item>
+<item>Noise Annoys</item>
+<item>King Sing</item>
+<item>I Wish</item>
+<item>Pipe_Type_Bite</item>
+</string-array>
+
+
+
+<string-array name="eight_headers">
+<item>Pasture</item>
+<item>Tree Toad</item>
+<item>Chicago</item>
+<item>Liquor Lock</item>
+<item>Doctor</item>
+<item>A Quarter</item>
+<item>Eight Eight</item>
+<item>Thopilus</item>
+<item>Esau Wood</item>
+<item>Ed Nott</item>
+<item>Chester Chose</item>
+<item>Moses Supposes</item>
+<item>Three Tree Turtle</item>
+<item>Gladys</item>
+<item>Gift</item>
+</string-array>
+
+<string-array name="nine_headers">
+<item>Tito and Tato</item>
+<item>Theda Thought</item>
+<item>Charley</item>
+<item>Heda Hopes</item>
+<item>Sniffing Snuffer</item>
+<item>Sheila Sells</item>
+<item>Tongue Twister</item>
+<item>Colliding</item>
+<item>Light Night</item>
+<item>Don\’t Know Why?</item>
+<item>Teery Teeter</item>
+<item>Cat Crept</item>
+<item>Plan To Fan Pan</item>
+<item>All I Felt</item>
+<item>Farells Feature</item>
+</string-array>
+
+<string-array name="ten_headers">
+<item>Kitten Eating Chicken</item>
+<item>Tree Toad</item>
+<item>Thifty Thephilus</item>
+<item>Wilson Winston</item>
+<item>Professor</item>
+<item>Thrusts</item>
+<item>Synonym Cinnamon</item>
+<item>A Tall Tale</item>
+<item>Sinious Snake</item>
+<item>Silly Sally</item>
+<item>Corythosaurus</item>
+<item>Tell It</item>
+<item>Bob and Bob</item>
+<item>Sixth Sick Sheils</item>
+<item>Mr Knott and Mr Watt</item>
+</string-array>
 
     <string-array name="one">
         <item>1.\tDenise sees the fleece, Denise sees the fleas. At least Denise could sneeze and feed and freeze the fleas.</item>
@@ -98,7 +264,7 @@
         <item>5.\tOne-one was a race horse, two-two was one too. One-one won a race. Two-two won one too.</item>
         <item>6.\tPickford’s packers packed a packet of crisps.</item>
         <item>7.\tGobbling gorgoyles gobbled gobbling gobblings.</item>
-        <item>8.\tMr. tongue twister tried to train his tongue to twist and turn, and twit and twat, to learn the letter “T”.</item>
+        <item>8.\tMr. tongue twister tried to train his tongue to twist and turn, and twit and twat, to learn the letter “T".</item>
         <item>9.\tShe saw Sherif\’s shoes on the sofa. She was sure she saw Sherif’s shoes on the sofa.</item>
         <item>10.\tBirdie birdie in the sky laid a turdie in my eye, If cows could fly I’d have a cow pie in my eye.</item>
         <item>11.\tFour furious friends fought for the phone.</item>
@@ -121,7 +287,7 @@
         <item>10.\tIf you are keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.</item>
         <item>11.\tIf coloured caterpillars could change their colours constantly could they keep their coloured coat coloured properly?</item>
         <item>12.\tAs he gobbled the cakes on his plate, the greedy ape said as he ate, the greener green grapes are, the keener keen apes are to gobble green grape cakes, they’re great.</item>
-        <item>13.\tA fly and flea flew into a flue, said the fly to the flea”what shall we do?” “let us fly” said the flea, said the fly “shall we flee”, so they flew through a flaw in the flue.</item>
+        <item>13.\tA fly and flea flew into a flue, said the fly to the flea"what shall we do?" “let us fly" said the flea, said the fly “shall we flee", so they flew through a flaw in the flue.</item>
         <item>14.\tHow much dew does a dewdrop drop if a dewdrop do drop dew? – They do drop, they do as do dewdrops drop if dewdrops do drop dew.</item>
         <item>15.\tI’am a sheet slitter. I slit sheets. I’m the sleekest sheet slitter that ever slit sheets.</item>
     </string-array>
@@ -187,7 +353,7 @@
         <item>4.\tYally Bally had a jolly golliwog. Feeling folly, Yally Bally Bought his jolly golli’ a dollie made of holly! The golli’, feeling jolly named the holly dollie, Polly. Yally Bally’s jolly golli’s holly dollie Polly’s also jolly!</item>
         <item>5.\tPail of ale aiding ailing Al’s Travalis.</item>
         <item>6.\tI eat eel while you peel eel.</item>
-        <item>7.\tIf you understand, say “understand”. But if you don’t understand, say “don’t understand”. But if you understand and say “don’t understand”. How do I understand that you understand. Understand!</item>
+        <item>7.\tIf you understand, say “understand". But if you don’t understand, say “don’t understand". But if you understand and say “don’t understand". How do I understand that you understand. Understand!</item>
         <item>8.\tLove’s a feeling you feel when you feel you’re going to feel the feeling you’ve never felt before.</item>
         <item>9.\tA pessimistic pest exists amidst us.</item>
         <item>10.\tHow much myrtle would a wood turtle hurdle if a would turtle could hurdle myrtle? – A wood turtle would hurdle as much myrtle as a wood turtle could hurdle if a wood turtle could hurdle myrtle.</item>
@@ -225,7 +391,7 @@
         <item>6.\tFresh Fried Fish, Fish Fresh Fried, Fried Fish Fresh, Fish Fried Fresh.</item>
         <item>7.\tCan you imagine an imaginary menagerie manager imagining managing an imaginary menagerie.</item>
         <item>8.\tAdmist the mists and coldest frosts, with stoutest wrists and loudest boasts, He thrusts his fists against the posts, And still insists he sees the ghosts.</item>
-        <item>9.\tA Tudor who tooted the flute tried to tutor two tooters to toot. Said the two to the tutor, “Is it harder to toot or to tutor two tooters to Toot?”</item>
+        <item>9.\tA Tudor who tooted the flute tried to tutor two tooters to toot. Said the two to the tutor, “Is it harder to toot or to tutor two tooters to Toot?"</item>
         <item>A nurse anesthetist unearthed a nest.</item>
         <item>11.\tShe sells sea shells on the seashore. The shells she sells are seashells she is sure.</item>
         <item>12.\tA noise annoys an oyster, but a noisy noise annoys an oyster more!</item>
