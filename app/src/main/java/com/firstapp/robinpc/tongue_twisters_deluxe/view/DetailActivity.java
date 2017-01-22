@@ -2,6 +2,7 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -195,6 +196,19 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
             }
             case R.id.action_about:{
                 Intent i = new Intent(this, AboutActivity.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.action_rate:{
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.firstapp.robinpc.tongue_twisters_deluxe"));
+                startActivity(i);
+                break;
+            }
+            case R.id.action_share:{
+                Intent i = new Intent();
+                i.setAction(Intent.ACTION_SEND);
+                i.putExtra(Intent.EXTRA_TEXT, "Hey, Check out this exciting App at: https://play.google.com/store/apps/details?id=com.firstapp.robinpc.tongue_twisters_deluxe");
+                i.setType("text/plain");
                 startActivity(i);
                 break;
             }

@@ -3,8 +3,6 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.view;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -33,8 +31,6 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide7Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide8Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide9Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.SlideFragment;
-
-import static android.provider.LiveFolders.INTENT;
 
 public class LevelsActivity extends AppCompatActivity {
 
