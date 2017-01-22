@@ -91,17 +91,24 @@ Tongue twisters have long been an integral part of a public speaker's tool kit. 
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Made By:"
+                        android:text="Contributors (And My Best Buds) :"
                         android:textAlignment="center"
                         android:gravity="center_vertical"
                         android:textColor="#000" />
                 </FrameLayout>
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350sp"
+                    android:background="#FFF"
+                    android:id="@+id/imageView1"/>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text=
-                        "Robin Kamboj          Anubhav Nirwal         Amit Kumar Singh" />
+                        "Anubhav Nirwal         Amit Kumar Singh" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
