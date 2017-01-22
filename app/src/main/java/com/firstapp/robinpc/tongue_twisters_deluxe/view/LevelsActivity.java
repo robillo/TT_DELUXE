@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.ui;
+package com.firstapp.robinpc.tongue_twisters_deluxe.view;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,12 +9,12 @@ import android.view.View;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 
-public class ABOUT extends AppCompatActivity {
+public class LevelsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.about);
+        setContentView(R.layout.activity_levels);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -22,9 +22,10 @@ public class ABOUT extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Master this app, Master your pronunciation skills!", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
     }
+
 }

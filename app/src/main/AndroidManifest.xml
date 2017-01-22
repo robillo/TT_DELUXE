@@ -1,71 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.firstapp.robinpc.tongue_twisters_deluxe">
 
-    <application
+<application>
+    <activity android:name="com.firstapp.robinpc.tongue_twisters_deluxe.view.LevelsActivity"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.SplashActivity"
-            android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL1"
-            android:label="@string/title_activity_level1"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL2"
-            android:label="@string/title_activity_level2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL3"
-            android:label="@string/title_activity_level3"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL4"
-            android:label="@string/title_activity_level4"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL5"
-            android:label="@string/title_activity_level5"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL6"
-            android:label="@string/title_activity_level6"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL7"
-            android:label="@string/title_activity_level7"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL8"
-            android:label="@string/title_activity_level8"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL9"
-            android:label="@string/title_activity_level9"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.LEVEL10"
-            android:label="@string/title_activity_level10"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.ABOUT"
-            android:label="@string/title_activity_about"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-    </application>
-
+        android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
 </manifest>
