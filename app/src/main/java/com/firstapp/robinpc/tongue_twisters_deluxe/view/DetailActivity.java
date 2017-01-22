@@ -191,6 +191,12 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
                 else {
                     Snackbar.make(coordinatorLayout, "TTS is already off.", Snackbar.LENGTH_SHORT).show();
                 }
+                break;
+            }
+            case R.id.action_about:{
+                Intent i = new Intent(this, AboutActivity.class);
+                startActivity(i);
+                break;
             }
         }
 

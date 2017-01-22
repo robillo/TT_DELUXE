@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6sp"
+            android:padding="4sp"
+            app:cardElevation="4sp"
+            app:cardCornerRadius="3sp">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="About The App:"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white"/>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By their very nature, tongue twisters are challenging to say. With their repetitive use of similar sounding sounds, words and syllables, they can trip up the tongues of even the most articulate individuals. However, as fun as they are, tongue twisters have a very practical application. As such, tongue twisters help reduce the prominence of a foreign accent.
+"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=
+                        "The benefits of diction/articulation exercises or drills are:
+ strengthening and stretching the muscles involved in speech, and bringing to your attention habitual speech patterns which may be less than perfect."
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=
+                        "Tips for beginners: Start slowly and carefully, Make sure the start and end of each word is crisp,Repeat the phrase, getting faster and faster while maintaining clarity,
+and If you trip over words, stop and start again."
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=
+                        "Good diction is NOT about changing your accent or making you 'talk posh'.
+It is about clarity - making sure what you say is heard.
+Tongue twisters have long been an integral part of a public speaker's tool kit. As well as being fun, they are extremely effective.  "
+                    android:layout_marginTop="7dp"/>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Made By:"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=
+                        "Robin Kamboj          Anubhav Nirwal         Amit Kumar Singh" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>
