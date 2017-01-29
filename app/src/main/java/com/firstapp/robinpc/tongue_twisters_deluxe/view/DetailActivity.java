@@ -53,6 +53,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         prev = (Button) findViewById(R.id.prev);
@@ -220,6 +221,10 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
                 i.putExtra(Intent.EXTRA_TEXT, header2.getText() + ": \n " + mainText.getText());
                 i.setType("text/plain");
                 startActivity(i);
+                break;
+            }
+            case android.R.id.home:{
+                onBackPressed();
                 break;
             }
         }
