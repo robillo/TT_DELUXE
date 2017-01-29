@@ -55,7 +55,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="9sp"
                 android:layout_marginRight="9sp"
-                android:layout_marginBottom="9sp"
+                android:layout_marginBottom="7sp"
                 xmlns:card="http://schemas.android.com/apk/res-auto"
                 card:cardBackgroundColor="#FFF"
                 card:cardCornerRadius="4sp"
