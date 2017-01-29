@@ -52,6 +52,8 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         prev = (Button) findViewById(R.id.prev);
         next = (Button) findViewById(R.id.next);
