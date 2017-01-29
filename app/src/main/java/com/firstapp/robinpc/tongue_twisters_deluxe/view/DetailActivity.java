@@ -214,6 +214,14 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
                 startActivity(i);
                 break;
             }
+            case R.id.action_share_current_twister:{
+                Intent i = new Intent();
+                i.setAction(Intent.ACTION_SEND);
+                i.putExtra(Intent.EXTRA_TEXT, header2.getText() + ": \n " + mainText.getText());
+                i.setType("text/plain");
+                startActivity(i);
+                break;
+            }
         }
 
         return super.onOptionsItemSelected(item);

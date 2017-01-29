@@ -13,18 +13,23 @@
         android:title="@string/stop_tts"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_about"
+        android:id="@+id/action_share_current_twister"
         android:orderInCategory="102"
+        android:title="Share Current Twister"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="103"
         android:title="About The App"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_rate"
-        android:orderInCategory="103"
-        android:title="Rate 5 Stars?"
+        android:orderInCategory="104"
+        android:title="Rate App"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_share"
-        android:orderInCategory="104"
+        android:orderInCategory="105"
         android:title="Share App"
         app:showAsAction="never" />
 </menu>
