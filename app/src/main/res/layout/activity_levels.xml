@@ -7,13 +7,17 @@
     android:fitsSystemWindows="true"
     tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.LevelsActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            android:elevation="@dimen/appbar_elevation">
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -27,6 +31,37 @@
                 android:id="@+id/textView"
                 android:textStyle="normal|bold" />
         </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:elevation="@dimen/appbar_elevation">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"/>
+
+            </FrameLayout>
+
+            <android.support.v4.view.ViewPager
+                android:elevation="@dimen/appbar_elevation"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="9sp"
+                android:paddingRight="9sp"
+                android:paddingBottom="9sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
     <include layout="@layout/content_levels" />
 
 </android.support.design.widget.CoordinatorLayout>
