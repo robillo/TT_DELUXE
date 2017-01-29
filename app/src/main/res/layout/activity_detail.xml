@@ -72,15 +72,52 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <TextView
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="LEVEL 1 TT 1"
-                            android:textSize="15sp"
-                            android:textColor="#000"
-                            android:fontFamily="sans-serif-smallcaps"
-                            android:id="@+id/header1"
-                            android:gravity="center" />
+                            android:orientation="horizontal"
+                            android:id="@+id/ll"
+                            android:gravity="center">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="@string/previous"
+                                android:textSize="25sp"
+                                android:textColor="#000"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:background="?attr/selectableItemBackground"
+                                android:id="@+id/prev"
+                                android:onClick="onClick"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LEVEL 1 TT 1"
+                                android:textSize="15sp"
+                                android:paddingTop="4sp"
+                                android:paddingBottom="4sp"
+                                android:textColor="#000"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:id="@+id/header1"
+                                android:gravity="center" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="@string/next"
+                                android:textSize="25sp"
+                                android:textColor="#000"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:background="?attr/selectableItemBackground"
+                                android:id="@+id/next"
+                                android:onClick="onClick"/>
+
+                        </LinearLayout>
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -90,30 +127,8 @@
                             android:fontFamily="sans-serif-smallcaps"
                             android:id="@+id/header2"
                             android:gravity="center"
-                            android:layout_below="@+id/header1"/>
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:text="@string/previous"
-                            android:textSize="25sp"
-                            android:textColor="#000"
-                            android:fontFamily="sans-serif-smallcaps"
-                            android:background="?attr/selectableItemBackground"
-                            android:id="@+id/prev"
-                            android:onClick="onClick"/>
+                            android:layout_below="@+id/ll"/>
 
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:text="@string/next"
-                            android:textSize="25sp"
-                            android:textColor="#000"
-                            android:fontFamily="sans-serif-smallcaps"
-                            android:background="?attr/selectableItemBackground"
-                            android:id="@+id/next"
-                            android:onClick="onClick"/>
                     </RelativeLayout>
 
                     <ScrollView
