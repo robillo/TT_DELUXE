@@ -8,34 +8,35 @@
     android:id="@+id/coordinatorLayout"
     tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.DetailActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Tongue Twisters"
+            android:textColor="#FFF"
+            android:fontFamily="cursive"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/textView"
+            android:textStyle="normal|bold" />
+    </android.support.v7.widget.Toolbar>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
-                android:text="Tongue Twisters"
-                android:textColor="#FFF"
-                android:fontFamily="cursive"
-                android:textSize="20sp"
-                android:layout_weight="1"
-                android:id="@+id/textView"
-                android:textStyle="normal|bold" />
-        </android.support.v7.widget.Toolbar>
+        android:orientation="horizontal">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
             android:layout_weight="1">
 
             <FrameLayout
@@ -46,7 +47,7 @@
 
                 <android.support.v4.widget.Space
                     android:layout_width="match_parent"
-                    android:layout_height="50sp"/>
+                    android:layout_height="20sp"/>
 
             </FrameLayout>
 
@@ -60,10 +61,11 @@
                 card:cardBackgroundColor="#FFF"
                 card:cardCornerRadius="4sp"
                 card:cardElevation="@dimen/appbar_elevation"
+                android:alpha="0.9"
                 android:id="@+id/cardView">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="10sp">
@@ -133,12 +135,30 @@
 
         </RelativeLayout>
 
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="?actionBarSize">
 
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="0sp"
-            android:id="@+id/recyclerView"
-            android:layout_weight="1"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:elevation="@dimen/appbar_elevation">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"/>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView"/>
+        </LinearLayout>
 
     </LinearLayout>
 

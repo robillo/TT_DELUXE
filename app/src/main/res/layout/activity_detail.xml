@@ -46,7 +46,7 @@
 
                 <android.support.v4.widget.Space
                     android:layout_width="match_parent"
-                    android:layout_height="50sp"/>
+                    android:layout_height="55sp"/>
 
             </FrameLayout>
 
@@ -60,6 +60,7 @@
                 card:cardBackgroundColor="#FFF"
                 card:cardCornerRadius="4sp"
                 card:cardElevation="@dimen/appbar_elevation"
+                android:alpha="0.9"
                 android:id="@+id/cardView">
 
                 <LinearLayout
