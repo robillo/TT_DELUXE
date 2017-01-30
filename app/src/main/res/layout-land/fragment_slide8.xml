@@ -28,7 +28,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/slide_1_title"
+                    android:text="@string/slide_8_title"
                     android:textSize="25sp"
                     android:textColor="#FFF"
                     android:layout_margin="4sp"
@@ -37,7 +37,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/slide_1_desc"
+                    android:text="@string/slide_8_desc"
                     android:textSize="20sp"
                     android:gravity="center"
                     android:layout_margin="4sp"
