@@ -30,6 +30,9 @@ public class YourActivity extends AppCompatActivity {
         imageView3 = (ImageView) findViewById(R.id.imageView3);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,6 +82,10 @@ public class YourActivity extends AppCompatActivity {
                 i.putExtra(Intent.EXTRA_TEXT, "Hey, Check out this exciting App at: https://play.google.com/store/apps/details?id=com.firstapp.robinpc.tongue_twisters_deluxe");
                 i.setType("text/plain");
                 startActivity(i);
+                break;
+            }
+            case android.R.id.home:{
+                onBackPressed();
                 break;
             }
         }
