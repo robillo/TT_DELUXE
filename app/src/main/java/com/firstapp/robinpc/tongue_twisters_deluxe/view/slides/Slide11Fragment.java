@@ -50,11 +50,11 @@ public class Slide11Fragment extends Fragment {
             public void onClick(View view) {
 
                 Toast.makeText(getActivity().getApplicationContext(), "Update Coming Soon", Toast.LENGTH_SHORT).show();
-                /*
+
                 Intent i = new Intent(getActivity(), DetailActivity.class);
                 i.putExtra("level_number", 10);
                 getActivity().startActivity(i);
-                */
+
             }
         });
 

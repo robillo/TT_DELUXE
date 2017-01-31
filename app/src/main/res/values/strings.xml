@@ -515,4 +515,5 @@
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="stop_tts">Stop TTS</string>
     <string name="title_activity_levels">LevelsActivity</string>
+    <string name="title_activity_your">YourActivity</string>
 </resources>
