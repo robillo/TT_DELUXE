@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:gravity="center"
-            android:text="Tongue Twisters"
+            android:text="Your Twisters"
             android:textColor="#FFF"
             android:fontFamily="cursive"
             android:textSize="20sp"
@@ -158,7 +158,6 @@
             </android.support.v7.widget.CardView>
 
         </RelativeLayout>
-
         <LinearLayout
             android:layout_width="0sp"
             android:layout_height="match_parent"
@@ -178,15 +177,58 @@
 
             </FrameLayout>
 
-            <android.support.v7.widget.RecyclerView
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/recyclerView"/>
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5sp"
+                        android:text="Oops!"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:fontFamily="cursive"
+                        android:textColor="#4CC7FF"
+                        android:layout_marginTop="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5sp"
+                        android:text="It seems like you have not added a Twister yet."
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:fontFamily="cursive"
+                        android:textColor="#4CC7FF"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:paddingLeft="25sp"
+                        android:paddingRight="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="#FF0000"
+                        android:textColor="#FFF"
+                        android:text="Add Twister"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recyclerView"/>
+
+            </FrameLayout>
         </LinearLayout>
 
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
+        android:visibility="gone"
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
