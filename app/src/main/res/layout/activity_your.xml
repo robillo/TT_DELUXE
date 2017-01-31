@@ -161,16 +161,57 @@
 
         </RelativeLayout>
 
-
-        <android.support.v7.widget.RecyclerView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0sp"
-            android:id="@+id/recyclerView"
-            android:layout_weight="1"/>
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="Oops!"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:fontFamily="cursive"
+                    android:textColor="#4CC7FF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="It seems like you have not added a Twister yet."
+                    android:gravity="center"
+                    android:textSize="27sp"
+                    android:fontFamily="cursive"
+                    android:textColor="#4CC7FF"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:paddingLeft="25sp"
+                    android:paddingRight="25sp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#FF0000"
+                    android:textColor="#FFF"
+                    android:text="Add Twister"/>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView"/>
+
+        </FrameLayout>
 
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
+        android:visibility="gone"
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
