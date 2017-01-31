@@ -112,6 +112,7 @@ public class LevelsActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        /*
         if (mPager.getCurrentItem() == 0) {
             // If the user is currently looking at the first step, allow the system to handle the
             // Back button. This calls finish() on this activity and pops the back stack.
@@ -119,7 +120,8 @@ public class LevelsActivity extends AppCompatActivity {
         } else {
             // Otherwise, select the previous step.
             mPager.setCurrentItem(mPager.getCurrentItem() - 1);
-        }
+        }*/
+        super.onBackPressed();
     }
 
     @Override

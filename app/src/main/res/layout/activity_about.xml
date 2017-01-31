@@ -81,6 +81,32 @@ It is about clarity - making sure what you say is heard.
 Tongue twisters have long been an integral part of a public speaker's tool kit. As well as being fun, they are extremely effective.  "
                     android:layout_marginTop="7dp"/>
 
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Developer :"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textColor="#000" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350sp"
+                    android:background="#FFF"
+                    android:id="@+id/imageView2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Robin Kamboj" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -107,8 +133,7 @@ Tongue twisters have long been an integral part of a public speaker's tool kit. 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text=
-                        "Anubhav Nirwal         Amit Kumar Singh" />
+                    android:text="Anubhav Nirwal         Amit Kumar Singh" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
