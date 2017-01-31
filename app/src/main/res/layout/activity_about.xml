@@ -98,7 +98,7 @@ Tongue twisters have long been an integral part of a public speaker's tool kit. 
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="350sp"
+                    android:layout_height="250sp"
                     android:background="#FFF"
                     android:id="@+id/imageView2"/>
 

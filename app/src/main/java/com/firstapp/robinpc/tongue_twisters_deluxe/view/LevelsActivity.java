@@ -22,6 +22,7 @@ import android.widget.TextView;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ZoomOutPageTransformer;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide10Fragment;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide11Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide2Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide3Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide4Fragment;
@@ -41,7 +42,7 @@ public class LevelsActivity extends AppCompatActivity {
     /**
      * The number of pages (wizard steps) to show in this demo.
      */
-    private static final int NUM_PAGES = 10;
+    private static final int NUM_PAGES = 11;
 
     /**
      * The pager widget, which handles animation and allows swiping horizontally to access previous
@@ -78,7 +79,8 @@ public class LevelsActivity extends AppCompatActivity {
                 R.layout.fragment_slide7,
                 R.layout.fragment_slide8,
                 R.layout.fragment_slide9,
-                R.layout.fragment_slide10};
+                R.layout.fragment_slide10,
+                R.layout.fragment_slide11};
 
         // adding bottom dots
         addBottomDots(0);
@@ -206,6 +208,9 @@ public class LevelsActivity extends AppCompatActivity {
                 }
                 case 9:{
                     return new Slide10Fragment();
+                }
+                case 10:{
+                    return new Slide11Fragment();
                 }
                 default:{
                     return new SlideFragment();
