@@ -44,7 +44,7 @@
                 android:value=".view.LevelsActivity" />
         </activity>
         <activity
-            android:name=".view.slides.YourActivity"
+            android:name=".view.YourActivity"
             android:label="@string/title_activity_your"
             android:theme="@style/AppTheme"></activity>
     </application>

@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.DetailActivity;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.YourActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -49,10 +49,7 @@ public class Slide11Fragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getActivity().getApplicationContext(), "Update Coming Soon", Toast.LENGTH_SHORT).show();
-
-                Intent i = new Intent(getActivity(), DetailActivity.class);
-                i.putExtra("level_number", 10);
+                Intent i = new Intent(getActivity(), YourActivity.class);
                 getActivity().startActivity(i);
 
             }

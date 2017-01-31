@@ -64,84 +64,97 @@
                 android:alpha="0.9"
                 android:id="@+id/cardView">
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="10sp">
+                    android:layout_height="match_parent">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center"
-                            android:id="@+id/ll">
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:text="@string/previous"
-                                android:textSize="25sp"
-                                android:textColor="#000"
-                                android:fontFamily="sans-serif-smallcaps"
-                                android:background="?attr/selectableItemBackground"
-                                android:id="@+id/prev"
-                                android:onClick="onClick"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="LEVEL 1 TT 1"
-                                android:textSize="15sp"
-                                android:textColor="#000"
-                                android:fontFamily="sans-serif-smallcaps"
-                                android:id="@+id/header1"
-                                android:gravity="center" />
-
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:text="@string/next"
-                                android:textSize="25sp"
-                                android:textColor="#000"
-                                android:fontFamily="sans-serif-smallcaps"
-                                android:background="?attr/selectableItemBackground"
-                                android:id="@+id/next"
-                                android:onClick="onClick"/>
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Denise and Fleece"
-                            android:textSize="22sp"
-                            android:textColor="#000"
-                            android:fontFamily="sans-serif-smallcaps"
-                            android:id="@+id/header2"
-                            android:gravity="center"
-                            android:layout_below="@+id/ll"/>
-
-                    </RelativeLayout>
-
-                    <ScrollView
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:paddingTop="5sp">
-                        <TextView
+                        android:id="@+id/imageView3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:visibility="gone">
+
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="17sp"
-                            android:layout_gravity="center_horizontal"
-                            android:textColor="#000"
-                            android:id="@+id/mainText"
-                            android:fontFamily="sans-serif-smallcaps"/>
-                    </ScrollView>
-                </LinearLayout>
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:id="@+id/ll">
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="@string/previous"
+                                    android:textSize="25sp"
+                                    android:textColor="#000"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:background="?attr/selectableItemBackground"
+                                    android:id="@+id/prev"
+                                    android:onClick="onClick"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="LEVEL 1 TT 1"
+                                    android:textSize="15sp"
+                                    android:textColor="#000"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:id="@+id/header1"
+                                    android:gravity="center" />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="@string/next"
+                                    android:textSize="25sp"
+                                    android:textColor="#000"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:background="?attr/selectableItemBackground"
+                                    android:id="@+id/next"
+                                    android:onClick="onClick"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Denise and Fleece"
+                                android:textSize="22sp"
+                                android:textColor="#000"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:id="@+id/header2"
+                                android:gravity="center"
+                                android:layout_below="@+id/ll"/>
+
+                        </RelativeLayout>
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#000"
+                                android:id="@+id/mainText"
+                                android:fontFamily="sans-serif-smallcaps"/>
+                        </ScrollView>
+                    </LinearLayout>
+
+                </FrameLayout>
+
             </android.support.v7.widget.CardView>
 
         </RelativeLayout>
