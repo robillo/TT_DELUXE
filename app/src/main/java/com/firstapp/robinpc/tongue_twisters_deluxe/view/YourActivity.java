@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -50,6 +51,14 @@ public class YourActivity extends AppCompatActivity {
     }
 
 
+    public void onClick(View v){
+        switch (v.getId()){
+            case R.id.add_twister:{
+                Toast.makeText(getApplicationContext(), "This Feature is to be added in the Next Update", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -61,6 +70,10 @@ public class YourActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()){
+            case R.id.add_twister:{
+                Toast.makeText(getApplicationContext(), "This Feature will be added in the Next Update.", Toast.LENGTH_SHORT).show();
+                break;
+            }
             case R.id.action_settings:{
                 Intent i = new Intent(this, SettingsActivity.class);
                 startActivity(i);

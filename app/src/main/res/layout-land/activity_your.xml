@@ -214,7 +214,9 @@
                         android:layout_gravity="center_horizontal"
                         android:backgroundTint="#FF0000"
                         android:textColor="#FFF"
-                        android:text="Add Twister"/>
+                        android:text="Add Twister"
+                        android:id="@+id/add_twister"
+                        android:onClick="onClick"/>
                 </LinearLayout>
 
                 <android.support.v7.widget.RecyclerView
