@@ -46,14 +46,15 @@
         <activity
             android:name=".view.YourActivity"
             android:label="@string/title_activity_your"
-            android:theme="@style/AppTheme"
-            android:parentActivityName=".view.LevelsActivity">
+            android:parentActivityName=".view.LevelsActivity"
+            android:theme="@style/AppTheme">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".view.LevelsActivity" />
         </activity>
+        <activity android:name=".view.AddActivity"></activity>
     </application>
 
 </manifest>

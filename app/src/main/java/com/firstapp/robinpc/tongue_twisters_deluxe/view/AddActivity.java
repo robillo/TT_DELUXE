@@ -2,68 +2,33 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.view;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 
-public class YourActivity extends AppCompatActivity {
-
-    ImageView imageView3;
+public class AddActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_your);
+        setContentView(R.layout.activity_add);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        imageView3 = (ImageView) findViewById(R.id.imageView3);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        Glide.with(this)
-                .load("https://3.bp.blogspot.com/-V6twr9315Fo/WJBgEtsEGoI/AAAAAAAAAF0/cXpZ1Uc_4u0Zn-XAIisWwlc7oOXK6Nv-gCLcB/s1600/ph7.png")
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .crossFade()
-                .centerCrop()
-                .into(imageView3);
     }
 
-
-    public void onClick(View v){
-        switch (v.getId()){
-            case R.id.add_twister:{
-                Intent i = new Intent(this, AddActivity.class);
-                startActivity(i);
-            }
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_your, menu);
+        getMenuInflater().inflate(R.menu.menu_add, menu);
         return true;
     }
 
@@ -71,9 +36,12 @@ public class YourActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()){
-            case R.id.add_twister:{
-                Intent i = new Intent(this, AddActivity.class);
-                startActivity(i);
+            case R.id.edit_twister:{
+                Toast.makeText(getApplicationContext(), "Edit", Toast.LENGTH_SHORT).show();
+                break;
+            }
+            case R.id.delete_twister:{
+                Toast.makeText(getApplicationContext(), "Delete", Toast.LENGTH_SHORT).show();
                 break;
             }
             case R.id.action_settings:{

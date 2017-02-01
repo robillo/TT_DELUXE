@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_twister"
+        android:orderInCategory="100"
+        android:title="Edit Twister"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete_twister"
+        android:orderInCategory="101"
+        android:title="Delete Twister"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="102"
+        android:title="About The App"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rate"
+        android:orderInCategory="103"
+        android:title="Rate 5 Stars?"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="104"
+        android:title="Share App"
+        app:showAsAction="never" />
+
+</menu>

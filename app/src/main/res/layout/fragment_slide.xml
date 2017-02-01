@@ -22,7 +22,7 @@
                 android:layout_height="0sp"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@color/colorPrimaryDark2">
+                android:background="@color/colorPrimaryDifferent">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
