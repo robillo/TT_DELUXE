@@ -17,15 +17,14 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:elevation="@dimen/appbar_elevation">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="?android:attr/listPreferredItemHeight"
-                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_height="wrap_content"
                 android:text="Add Twister"
                 android:textSize="25sp"
                 android:fontFamily="cursive"
@@ -47,20 +46,36 @@
                 android:rowCount="2">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowSpan="1"
-                    android:layout_columnSpan="1"
                     android:padding="7sp"
-                    android:gravity="center"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="left|top"
                     android:text="Twister Header"
                     android:textSize="25sp"
                     android:textColor="@color/colorPrimaryDark2"
                     android:fontFamily="cursive"/>
 
+                <EditText
+                    android:layout_columnSpan="1"
+                    android:inputType="textPersonName"
+                    android:hint="Peter Piper"
+                    android:layout_gravity="left|top"
+                    android:fontFamily="casual"
+                    android:layout_margin="4sp"
+                    android:ems="10"
+                    android:id="@+id/editText1" />
+
+
+                <Button
+                    android:layout_columnSpan="1"
+                    android:text="Add"
+                    android:backgroundTint="#FF0000"
+                    android:textColor="#FFF"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:layout_marginBottom="15sp"/>
+
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="1"
                     android:padding="7sp"
                     android:gravity="center"
                     android:text="Full Twister"
@@ -69,8 +84,7 @@
                     android:fontFamily="cursive"/>
 
                 <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
                     android:inputType="textMultiLine"
                     android:lines="4"
                     android:hint="Peter Piper Picked A Peck Of Pickled Peppers. A Peck Of Pickled Peppers Peter Piper Picked."
@@ -79,30 +93,6 @@
                     android:layout_margin="4sp"
                     android:ems="10"
                     android:id="@+id/editText2" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:backgroundTint="#FF0000"
-                    android:textColor="#FFF"
-                    android:layout_gravity="center_horizontal"
-                    android:padding="10sp"
-                    android:layout_marginBottom="15sp"/>
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowSpan="1"
-                    android:layout_columnSpan="2"
-                    android:inputType="textPersonName"
-                    android:hint="Peter Piper"
-                    android:gravity="center"
-                    android:fontFamily="casual"
-                    android:layout_margin="4sp"
-                    android:ems="10"
-                    android:id="@+id/editText1" />
-
 
             </GridLayout>
 
