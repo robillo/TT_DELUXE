@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#FF8F00</color>
     <color name="colorPrimaryDark2">#4CC7FF</color>
     <color name="colorPrimaryDark3">#0D47A1</color>
+    <color name="colorHighlightCard">#B3E5FC</color>
     <color name="colorPrimaryDifferent">#4CC7FF</color>
     <color name="colorAccent">#D84315</color>
     <color name="colorPrimaryLight">#FFCA28</color>
