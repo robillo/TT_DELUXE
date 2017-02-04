@@ -7,17 +7,22 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 
 public class AddActivity extends AppCompatActivity {
 
+    Button add;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
+        add = (Button)  findViewById(R.id.add);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -73,5 +78,16 @@ public class AddActivity extends AppCompatActivity {
             }
         }
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void onClick(View v){
+        switch (v.getId()){
+            case R.id.add:{
+                //Do something
+                Toast.makeText(getApplicationContext(), "Add Twister Pressed", Toast.LENGTH_SHORT).show();
+                break;
+            }
+        }
     }
 }

@@ -72,7 +72,9 @@
                     android:textColor="#FFF"
                     android:layout_gravity="center_horizontal"
                     android:padding="10sp"
-                    android:layout_marginBottom="15sp"/>
+                    android:layout_marginBottom="15sp"
+                    android:id="@+id/add"
+                    android:onClick="onClick"/>
 
                 <TextView
                     android:layout_columnSpan="1"
