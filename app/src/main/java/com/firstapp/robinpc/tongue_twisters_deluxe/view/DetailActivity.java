@@ -2,9 +2,11 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -44,11 +46,15 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
     ListIterator<Data> dataListIterator;
     Button prev, next;
     Data test_data;
+    int decide=0;
+    FloatingActionButton fb;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        fb=(FloatingActionButton)findViewById(R.id.fab);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
