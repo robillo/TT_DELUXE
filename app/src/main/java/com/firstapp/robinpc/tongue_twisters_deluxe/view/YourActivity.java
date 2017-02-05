@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,6 +31,7 @@ public class YourActivity extends AppCompatActivity {
     ImageView imageView3;
     private MyDBHelper myDBHelper;
     private RecyclerView recyclerView;
+    private static final String TAG = "ROBIN";
     List<Data> data;
     LinearLayout layout_alternate;
     @Override
@@ -48,7 +50,7 @@ public class YourActivity extends AppCompatActivity {
 
         LinearLayoutManager myLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(myLayoutManager);
-
+        registerForContextMenu(recyclerView);
         Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
 
         if(adapter.getItemCount()!=0){
@@ -131,4 +133,18 @@ public class YourActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    /*
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.edit_t:
+                // do your stuff
+                break;
+            case R.id.delete_t:
+                // do your stuff
+                break;
+        }
+        return super.onContextItemSelected(item);
+    }*/
 }

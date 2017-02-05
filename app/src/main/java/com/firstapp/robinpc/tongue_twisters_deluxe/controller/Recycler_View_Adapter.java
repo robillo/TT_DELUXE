@@ -1,8 +1,10 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.controller;
 
 import android.content.Context;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -19,9 +21,10 @@ import java.util.List;
 public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
 
     Context context;
+    Context p_context;
     List<Data> list= Collections.emptyList();
     String Title, subTitle, TT;
-    private int position;
+    private int position_;
 
     public Recycler_View_Adapter(List<Data> list, Context context) {
         this.list = list;
@@ -32,12 +35,14 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     public View_Holder onCreateViewHolder(ViewGroup parent, int viewType) {
         //inflate the layout, initialize the View_Holder
         View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.row_layout,parent,false);
+        p_context = parent.getContext();
         return new View_Holder(v); //holder is returned (converted to inline)
     }
 
     @Override
     public void onBindViewHolder(final View_Holder holder, int position) {
         //use the created empty VH created in onCreateVH to populate the current row of the RV
+        position_ = position;
         holder.Title.setText(list.get(position).Title);
         holder.subTitle.setText(list.get(position).subTitle);
         holder.setClickListener(new ItemClickListener() {
@@ -65,6 +70,27 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
+                //creating a popup menu
+                PopupMenu popup = new PopupMenu(p_context, holder.cardView);
+                //inflating menu from xml resource
+                popup.inflate(R.menu.menu_rv);
+                //adding click listener
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.menu1:
+                                //handle menu1 click
+                                break;
+                            case R.id.menu2:
+                                //handle menu2 click
+                                break;
+                        }
+                        return false;
+                    }
+                });
+                //displaying the popup
+                popup.show();
                 setPosition(holder.getAdapterPosition());
                 return false;
             }
@@ -99,11 +125,11 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     }
 
     public int getPosition() {
-        return position;
+        return position_;
     }
 
     public void setPosition(int position) {
-        this.position = position;
+        this.position_ = position;
     }
 
     @Override

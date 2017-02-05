@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,7 +13,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ItemClickListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.DetailActivity;
 
-public class View_Holder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener, View.OnCreateContextMenuListener{
+public class View_Holder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener /*, View.OnCreateContextMenuListener*/{
 
     public CardView cardView;
     public TextView Title;
@@ -30,7 +31,7 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
         itemView.setTag(itemView);
         itemView.setOnClickListener(this);
         itemView.setOnLongClickListener(this);
-        itemView.setOnCreateContextMenuListener(this);
+        /*itemView.setOnCreateContextMenuListener(this);*/
     }
 
     public void setClickListener(ItemClickListener itemClickListener){
@@ -56,10 +57,11 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
         context.startActivity(i);
     }
 
+    /*
     @Override
-    public void onCreateContextMenu(ContextMenu contextMenu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
+    public void onCreateContextMenu(ContextMenu contextMenu, View v, ContextMenu.ContextMenuInfo contextMenuInfo) {
         contextMenu.setHeaderTitle("Pick An Action");
-        contextMenu.add("Delete Twister");
-        contextMenu.add("Edit Twister");
-    }
+        contextMenu.add(Menu.NONE, R.id.edit_t, Menu.NONE, "Edit Twister");//groupId, itemId, order, title
+        contextMenu.add(Menu.NONE, R.id.delete_t, Menu.NONE, "Delete Twistr");
+    }*/
 }
