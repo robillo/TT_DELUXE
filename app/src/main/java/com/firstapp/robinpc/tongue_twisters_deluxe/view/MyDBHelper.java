@@ -51,7 +51,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
         return cursor;
     }
     //UPDATE
-    public boolean updateContact (Integer ID, String NAME, String DESCRIPTION) {
+    public boolean updateTwister(Integer ID, String NAME, String DESCRIPTION) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COLUMN_NAME, NAME);
@@ -60,14 +60,14 @@ public class MyDBHelper extends SQLiteOpenHelper{
         return true;
     }
     //DELETE
-    public Integer deleteContact (Integer ID) {
+    public Integer deleteTwister(Integer ID) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         return sqLiteDatabase.delete(TABLE_NAME,
                 COLUMN_ID + "= ? ",
                 new String[] { Integer.toString(ID) });
     }
 
-    public ArrayList<String> getAllCotacts() {
+    public ArrayList<String> getAllTwisters() {
         ArrayList<String> array_list = new ArrayList<>();
 
         //hp = new HashMap();
