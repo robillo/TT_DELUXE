@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.view;
+package com.firstapp.robinpc.tongue_twisters_deluxe.controller;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -1,19 +1,16 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.controller;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.View_Holder;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.MyDBHelper;
 
 import java.util.Collections;
 import java.util.List;

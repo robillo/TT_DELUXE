@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
 
 public class AddActivity extends AppCompatActivity {
 

@@ -9,21 +9,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.Recycler_View_Adapter;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class YourActivity extends AppCompatActivity {

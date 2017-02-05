@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.view.ContextMenu;
-import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,7 +11,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ItemClickListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.AddActivity;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.DetailActivity;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.MyDBHelper;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
 
 public class View_Holder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener /*, View.OnCreateContextMenuListener*/{
 
