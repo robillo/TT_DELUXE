@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,8 +33,11 @@ public class AddActivity extends AppCompatActivity {
         e_description = (EditText) findViewById(R.id.e_description);
 
         Intent i = getIntent();
-        e_name.setText(i.getStringExtra("subTitle"), TextView.BufferType.EDITABLE);
-        e_description.setText(i.getStringExtra("TT"), TextView.BufferType.EDITABLE);
+        name = i.getStringExtra("subTitle");
+        description = i.getStringExtra("TT");
+        e_name.setText(name, TextView.BufferType.EDITABLE);
+        e_description.setText(description, TextView.BufferType.EDITABLE);
+        Log.w("ROBIN", name + " " + description);
 
         add = (Button)  findViewById(R.id.add);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

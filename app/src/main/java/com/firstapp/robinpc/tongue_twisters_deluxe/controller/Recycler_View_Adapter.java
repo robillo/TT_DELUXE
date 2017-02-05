@@ -44,7 +44,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     }
 
     @Override
-    public void onBindViewHolder(final View_Holder holder, int position) {
+    public void onBindViewHolder(final View_Holder holder, final int position) {
         //use the created empty VH created in onCreateVH to populate the current row of the RV
         position_ = position;
         holder.Title.setText(list.get(position).Title);
@@ -85,8 +85,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()) {
                             case R.id.edit_t:
-                                holder.intentAdd(Title, subTitle, TT);
-                                Toast.makeText(p_context, "#" + (position_+1) + " - " + list.get(position_).subTitle, Toast.LENGTH_SHORT).show();
+                                holder.intentAdd(list.get(position).Title, list.get(position).subTitle, list.get(position).TT);
                                 break;
                             case R.id.delete_t:
                                 remove(position_);
