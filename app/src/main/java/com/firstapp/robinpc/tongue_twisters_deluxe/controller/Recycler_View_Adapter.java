@@ -71,7 +71,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                 }*/
             }
         });
-        myDBHelper = new MyDBHelper(p_context);
+        myDBHelper = new MyDBHelper(p_context.getApplicationContext());
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
@@ -89,7 +89,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                                 break;
                             case R.id.delete_t:
                                 remove(position_);
-                                myDBHelper.deleteTwister(position_);
+                                myDBHelper.deleteTwister(Integer.parseInt(list.get(position).Title)-1);
                                 count = myDBHelper.numberOfRows();
                                 if(count==0){
                                     //replace RV with layout_alternate

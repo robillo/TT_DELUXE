@@ -13,6 +13,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ItemClickListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.AddActivity;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.DetailActivity;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.MyDBHelper;
 
 public class View_Holder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener /*, View.OnCreateContextMenuListener*/{
 
@@ -64,6 +65,11 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
         i.putExtra("subTitle", subTitle);
         i.putExtra("TT", TT);
         context.startActivity(i);
+    }
+
+    public void deleteTwister(int position){
+        MyDBHelper myDBHelper = new MyDBHelper(context);
+        myDBHelper.deleteTwister(position);
     }
 
     /*
