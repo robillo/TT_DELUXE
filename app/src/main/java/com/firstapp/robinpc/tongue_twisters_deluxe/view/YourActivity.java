@@ -54,6 +54,7 @@ public class YourActivity extends AppCompatActivity {
         Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
 
         if(adapter.getItemCount()!=0){
+            recyclerView.setVisibility(View.VISIBLE);
             layout_alternate.setVisibility(View.GONE);
             recyclerView.setAdapter(adapter);
         }

@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
@@ -29,6 +30,10 @@ public class AddActivity extends AppCompatActivity {
         myDBHelper = new MyDBHelper(this);
         e_name = (EditText) findViewById(R.id.e_name);
         e_description = (EditText) findViewById(R.id.e_description);
+
+        Intent i = getIntent();
+        e_name.setText(i.getStringExtra("subTitle"), TextView.BufferType.EDITABLE);
+        e_description.setText(i.getStringExtra("TT"), TextView.BufferType.EDITABLE);
 
         add = (Button)  findViewById(R.id.add);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
