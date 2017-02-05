@@ -2,16 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu1"
-        android:title="Menu 1" />
+        android:id="@+id/edit_t"
+        android:title="Edit Twister" />
 
     <item
-        android:id="@+id/menu2"
-        android:title="Menu 2" />
-
-    <item
-        android:id="@+id/menu3"
-        android:title="Menu 3" />
-
+        android:id="@+id/delete_t"
+        android:title="Delete Twister" />
 
 </menu>

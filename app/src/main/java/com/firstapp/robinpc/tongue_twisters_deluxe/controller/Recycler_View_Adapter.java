@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
@@ -79,11 +80,11 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()) {
-                            case R.id.menu1:
-                                //handle menu1 click
+                            case R.id.edit_t:
+                                Toast.makeText(context, "#" + (position_+1) + " - " + list.get(position_).subTitle, Toast.LENGTH_SHORT).show();
                                 break;
-                            case R.id.menu2:
-                                //handle menu2 click
+                            case R.id.delete_t:
+                                Toast.makeText(context, "#" + (position_+1) + " - " + list.get(position_).subTitle, Toast.LENGTH_SHORT).show();
                                 break;
                         }
                         return false;
