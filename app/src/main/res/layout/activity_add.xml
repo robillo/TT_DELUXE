@@ -64,7 +64,7 @@
                     android:fontFamily="casual"
                     android:layout_margin="4sp"
                     android:ems="10"
-                    android:id="@+id/editText1" />
+                    android:id="@+id/e_name" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                     android:fontFamily="casual"
                     android:layout_margin="4sp"
                     android:ems="10"
-                    android:id="@+id/editText2" />
+                    android:id="@+id/e_description" />
 
                 <Button
                     android:layout_width="wrap_content"

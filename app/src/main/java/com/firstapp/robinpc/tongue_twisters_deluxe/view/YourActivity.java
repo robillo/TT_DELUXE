@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -30,8 +31,7 @@ public class YourActivity extends AppCompatActivity {
     private MyDBHelper myDBHelper;
     private RecyclerView recyclerView;
     List<Data> data;
-    ArrayList array_list;
-
+    LinearLayout layout_alternate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +42,7 @@ public class YourActivity extends AppCompatActivity {
         myDBHelper = new MyDBHelper(this);
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        layout_alternate= (LinearLayout) findViewById(R.id.layout_alternate);
 
         data = myDBHelper.getAllTwisters();
 
@@ -49,7 +50,11 @@ public class YourActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(myLayoutManager);
 
         Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
-        recyclerView.setAdapter(adapter);
+
+        if(adapter.getItemCount()!=0){
+            layout_alternate.setVisibility(View.GONE);
+            recyclerView.setAdapter(adapter);
+        }
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 

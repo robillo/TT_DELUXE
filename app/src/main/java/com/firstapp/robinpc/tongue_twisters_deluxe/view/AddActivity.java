@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
@@ -17,17 +18,23 @@ public class AddActivity extends AppCompatActivity {
 
     Button add;
     private MyDBHelper myDBHelper;
+    String name, description;
+    EditText e_name, e_description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
+        myDBHelper = new MyDBHelper(this);
+        e_name = (EditText) findViewById(R.id.e_name);
+        e_description = (EditText) findViewById(R.id.e_description);
+
         add = (Button)  findViewById(R.id.add);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
 
@@ -86,7 +93,13 @@ public class AddActivity extends AppCompatActivity {
         switch (v.getId()){
             case R.id.add:{
                 //Do something
-                Toast.makeText(getApplicationContext(), "Add Twister Pressed", Toast.LENGTH_SHORT).show();
+                name = e_name.getText().toString();
+                description = (e_description).getText().toString();
+                myDBHelper.insertTwister(name, description);
+
+                Intent i = new Intent(this, YourActivity.class);
+                startActivity(i);
+                Toast.makeText(getApplicationContext(), "Twister Added", Toast.LENGTH_SHORT).show();
                 break;
             }
         }
