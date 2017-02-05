@@ -81,10 +81,11 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()) {
                             case R.id.edit_t:
-                                Toast.makeText(context, "#" + (position_+1) + " - " + list.get(position_).subTitle, Toast.LENGTH_SHORT).show();
+                                holder.intentAdd(Title, subTitle, TT);
+                                Toast.makeText(p_context, "#" + (position_+1) + " - " + list.get(position_).subTitle, Toast.LENGTH_SHORT).show();
                                 break;
                             case R.id.delete_t:
-                                Toast.makeText(context, "#" + (position_+1) + " - " + list.get(position_).subTitle, Toast.LENGTH_SHORT).show();
+                                remove(position_);
                                 break;
                         }
                         return false;
