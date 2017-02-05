@@ -28,7 +28,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     List<Data> list= Collections.emptyList();
     String Title, subTitle, TT;
     MyDBHelper myDBHelper;
-    private int position_;
+    private int position_, count;
 
     public Recycler_View_Adapter(List<Data> list, Context context) {
         this.list = list;
@@ -91,6 +91,10 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                             case R.id.delete_t:
                                 remove(position_);
                                 myDBHelper.deleteTwister(position_);
+                                count = myDBHelper.numberOfRows();
+                                if(count==0){
+                                    //replace RV with layout_alternate
+                                }
                                 notifyDataSetChanged();
                                 break;
                         }

@@ -33,7 +33,7 @@ public class YourActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private static final String TAG = "ROBIN";
     List<Data> data;
-    LinearLayout layout_alternate;
+    public LinearLayout layout_alternate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
