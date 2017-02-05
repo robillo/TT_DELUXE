@@ -88,13 +88,12 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                                 holder.intentAdd(list.get(position).Title, list.get(position).subTitle, list.get(position).TT);
                                 break;
                             case R.id.delete_t:
+                                myDBHelper.deleteTwister(Integer.parseInt(list.get(position).Title));
                                 remove(position_);
-                                myDBHelper.deleteTwister(Integer.parseInt(list.get(position).Title)-1);
                                 count = myDBHelper.numberOfRows();
                                 if(count==0){
                                     //replace RV with layout_alternate
                                 }
-                                notifyDataSetChanged();
                                 break;
                         }
                         return false;

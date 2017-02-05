@@ -69,7 +69,7 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
 
     public void deleteTwister(int position){
         MyDBHelper myDBHelper = new MyDBHelper(context);
-        myDBHelper.deleteTwister(position);
+        myDBHelper.deleteTwister(position-1);
     }
 
     /*
