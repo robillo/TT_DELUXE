@@ -62,7 +62,7 @@
                     android:fontFamily="casual"
                     android:layout_margin="4sp"
                     android:ems="10"
-                    android:id="@+id/editText1" />
+                    android:id="@+id/e_name" />
 
 
                 <Button
@@ -94,7 +94,7 @@
                     android:fontFamily="casual"
                     android:layout_margin="4sp"
                     android:ems="10"
-                    android:id="@+id/editText2" />
+                    android:id="@+id/e_description" />
 
             </GridLayout>
 

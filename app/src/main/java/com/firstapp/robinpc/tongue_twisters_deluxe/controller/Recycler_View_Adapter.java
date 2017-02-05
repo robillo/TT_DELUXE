@@ -21,6 +21,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     Context context;
     List<Data> list= Collections.emptyList();
     String Title, subTitle, TT;
+    private int position;
 
     public Recycler_View_Adapter(List<Data> list, Context context) {
         this.list = list;
@@ -61,6 +62,14 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                 }*/
             }
         });
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                setPosition(holder.getAdapterPosition());
+                return false;
+            }
+        });
+
     }
 
     @Override
@@ -87,5 +96,19 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     public void remove(int position){
         list.remove(position);
         notifyItemRemoved(position);
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    @Override
+    public void onViewRecycled(View_Holder holder) {
+        holder.itemView.setOnLongClickListener(null);
+        super.onViewRecycled(holder);
     }
 }
