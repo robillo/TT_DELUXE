@@ -18,8 +18,8 @@ import android.widget.LinearLayout;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.Add_RV_Adapter;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
-import com.firstapp.robinpc.tongue_twisters_deluxe.controller.Recycler_View_Adapter;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 
 import java.util.List;
@@ -49,7 +49,7 @@ public class YourActivity extends AppCompatActivity {
         LinearLayoutManager myLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(myLayoutManager);
         registerForContextMenu(recyclerView);
-        Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
+        Add_RV_Adapter adapter = new Add_RV_Adapter(data, getApplicationContext());
 
         if(adapter.getItemCount()!=0){
             recyclerView.setVisibility(View.VISIBLE);

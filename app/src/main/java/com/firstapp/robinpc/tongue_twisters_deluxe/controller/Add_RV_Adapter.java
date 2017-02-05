@@ -16,9 +16,10 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by robinkamboj on 22/01/17.
+ * Created by robinkamboj on 05/02/17.
  */
-public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
+
+public class Add_RV_Adapter extends RecyclerView.Adapter<View_Holder>{
 
     Context context;
     Context p_context;
@@ -27,7 +28,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     MyDBHelper myDBHelper;
     private int position_, count;
 
-    public Recycler_View_Adapter(List<Data> list, Context context) {
+    public Add_RV_Adapter(List<Data> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -68,7 +69,6 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                 }*/
             }
         });
-        /*
         myDBHelper = new MyDBHelper(p_context.getApplicationContext());
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -103,7 +103,6 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                 return false;
             }
         });
-        */
 
     }
 
