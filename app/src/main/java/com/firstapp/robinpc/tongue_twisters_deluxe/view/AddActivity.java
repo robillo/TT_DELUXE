@@ -16,6 +16,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 public class AddActivity extends AppCompatActivity {
 
     Button add;
+    private MyDBHelper myDBHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

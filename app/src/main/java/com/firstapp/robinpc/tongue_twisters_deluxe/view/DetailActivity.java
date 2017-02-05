@@ -46,7 +46,6 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
     ListIterator<Data> dataListIterator;
     Button prev, next;
     Data test_data;
-    int decide=0;
     FloatingActionButton fb;
 
 

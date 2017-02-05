@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,10 +18,19 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.Recycler_View_Adapter;
+import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class YourActivity extends AppCompatActivity {
 
     ImageView imageView3;
+    private MyDBHelper myDBHelper;
+    private RecyclerView recyclerView;
+    List<Data> data;
+    ArrayList array_list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +39,17 @@ public class YourActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        myDBHelper = new MyDBHelper(this);
         imageView3 = (ImageView) findViewById(R.id.imageView3);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+
+        data = myDBHelper.getAllTwisters();
+
+        LinearLayoutManager myLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(myLayoutManager);
+
+        Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
+        recyclerView.setAdapter(adapter);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -49,7 +70,6 @@ public class YourActivity extends AppCompatActivity {
                 .centerCrop()
                 .into(imageView3);
     }
-
 
     public void onClick(View v){
         switch (v.getId()){

@@ -6,8 +6,15 @@ import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.support.annotation.NonNull;
+
+import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class MyDBHelper extends SQLiteOpenHelper{
 
@@ -67,6 +74,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
                 new String[] { Integer.toString(ID) });
     }
 
+    /*
     public ArrayList<String> getAllTwisters() {
         ArrayList<String> array_list = new ArrayList<>();
 
@@ -80,6 +88,22 @@ public class MyDBHelper extends SQLiteOpenHelper{
             res.moveToNext();
         }
         return array_list;
+    }
+    */
+
+    public List<Data> getAllTwisters() {
+        List<Data> data = new ArrayList<>();
+
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor res =  sqLiteDatabase.rawQuery( "SELECT * FROM " + TABLE_NAME + " ", null );
+        res.moveToFirst();
+
+        while(res.isAfterLast() == false){
+            data.add(new Data(res.getString(res.getColumnIndex(COLUMN_ID)),res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_DESCRIPTION))));
+            res.moveToNext();
+        }
+
+        return data;
     }
 
     public int numberOfRows(){

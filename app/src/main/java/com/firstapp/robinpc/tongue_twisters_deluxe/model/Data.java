@@ -1,9 +1,5 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.model;
 
-/**
- * Created by robinkamboj on 22/01/17.
- */
-
 public class Data {
 
     public String Title;
