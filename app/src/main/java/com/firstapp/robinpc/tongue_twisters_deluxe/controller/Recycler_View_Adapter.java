@@ -1,6 +1,7 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.controller;
 
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.View_Holder;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.MyDBHelper;
 
 import java.util.Collections;
 import java.util.List;
@@ -25,6 +27,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     Context p_context;
     List<Data> list= Collections.emptyList();
     String Title, subTitle, TT;
+    MyDBHelper myDBHelper;
     private int position_;
 
     public Recycler_View_Adapter(List<Data> list, Context context) {
@@ -68,6 +71,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                 }*/
             }
         });
+        myDBHelper = new MyDBHelper(p_context);
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
@@ -86,6 +90,8 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                                 break;
                             case R.id.delete_t:
                                 remove(position_);
+                                myDBHelper.deleteTwister(position_);
+                                notifyDataSetChanged();
                                 break;
                         }
                         return false;
