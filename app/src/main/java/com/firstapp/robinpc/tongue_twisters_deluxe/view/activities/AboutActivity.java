@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.view;
+package com.firstapp.robinpc.tongue_twisters_deluxe.view.activities;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;

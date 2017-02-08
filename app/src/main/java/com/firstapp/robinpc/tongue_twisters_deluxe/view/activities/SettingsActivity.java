@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.view;
+package com.firstapp.robinpc.tongue_twisters_deluxe.view.activities;
 
 
 import android.annotation.TargetApi;
@@ -22,6 +22,7 @@ import android.text.TextUtils;
 import android.view.MenuItem;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.AppCompatPreferenceActivity;
 
 import java.util.List;
 

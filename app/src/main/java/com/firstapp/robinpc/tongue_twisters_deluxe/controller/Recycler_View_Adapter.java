@@ -23,9 +23,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     Context context;
     Context p_context;
     List<Data> list= Collections.emptyList();
-    String Title, subTitle, TT;
-    MyDBHelper myDBHelper;
-    private int position_, count;
+    private int position_;
 
     public Recycler_View_Adapter(List<Data> list, Context context) {
         this.list = list;
@@ -37,7 +35,7 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
         //inflate the layout, initialize the View_Holder
         View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.row_layout,parent,false);
         p_context = parent.getContext();
-        return new View_Holder(v); //holder is returned (converted to inline)
+        return new View_Holder(v);
     }
 
     @Override

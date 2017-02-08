@@ -1,12 +1,10 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.view;
+package com.firstapp.robinpc.tongue_twisters_deluxe.view.activities;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;

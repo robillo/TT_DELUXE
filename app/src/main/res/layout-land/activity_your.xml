@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:id="@+id/coordinatorLayout"
-    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.DetailActivity">
+    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.activities.DetailActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

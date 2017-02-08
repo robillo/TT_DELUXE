@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.DetailActivity;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.activities.DetailActivity;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ItemClickListener;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.AddActivity;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.DetailActivity;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.activities.AddActivity;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.activities.DetailActivity;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
 
 public class View_Holder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener /*, View.OnCreateContextMenuListener*/{

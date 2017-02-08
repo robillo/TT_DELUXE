@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.YourActivity">
+    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.activities.YourActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

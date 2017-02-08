@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.view;
+package com.firstapp.robinpc.tongue_twisters_deluxe.view.activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -131,6 +131,12 @@ public class YourActivity extends AppCompatActivity {
             }
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        super.onBackPressed();
     }
 
     /*

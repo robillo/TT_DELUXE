@@ -5,7 +5,7 @@
     android:id="@+id/activity_about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.AboutActivity">
+    tools:context="com.firstapp.robinpc.tongue_twisters_deluxe.view.activities.AboutActivity">
 
     <ScrollView
         android:layout_width="match_parent"
