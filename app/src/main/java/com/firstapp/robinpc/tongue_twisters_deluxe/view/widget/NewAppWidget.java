@@ -1,11 +1,14 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.view.widget;
 
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
+import android.content.Intent;
 import android.widget.RemoteViews;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.activities.LevelsActivity;
 
 /**
  * Implementation of App Widget functionality.
@@ -30,6 +33,13 @@ public class NewAppWidget extends AppWidgetProvider {
         for (int appWidgetId : appWidgetIds) {
             updateAppWidget(context, appWidgetManager, appWidgetId);
         }
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.new_app_widget);
+        Intent configIntent = new Intent(context, LevelsActivity.class);
+
+        PendingIntent configPendingIntent = PendingIntent.getActivity(context, 0, configIntent, 0);
+
+        remoteViews.setOnClickPendingIntent(R.id.widget, configPendingIntent);
+        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
     }
 
     @Override
