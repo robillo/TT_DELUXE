@@ -516,7 +516,6 @@
     <string name="stop_tts">Stop TTS</string>
     <string name="title_activity_levels">LevelsActivity</string>
     <string name="title_activity_your">YourActivity</string>
-    <string name="appwidget_text">Widget Name</string>
-    <string name="configure">Configure</string>
+    <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
 </resources>

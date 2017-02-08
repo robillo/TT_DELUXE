@@ -55,6 +55,11 @@
                 android:value=".view.activities.LevelsActivity" />
         </activity>
         <activity android:name=".view.activities.AddActivity" />
+        <activity android:name=".view.widget.NewAppWidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
 
         <receiver android:name=".view.widget.NewAppWidget">
             <intent-filter>
@@ -65,12 +70,6 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/new_app_widget_info" />
         </receiver>
-
-        <activity android:name=".view.widget.NewAppWidgetConfigureActivity">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
