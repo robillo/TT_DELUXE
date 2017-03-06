@@ -87,7 +87,9 @@ public class Add_RV_Adapter extends RecyclerView.Adapter<View_Holder>{
                                 break;
                             case R.id.delete_t:
                                 myDBHelper.deleteTwister(Integer.parseInt(list.get(position).Title));
-                                remove(position_);
+                                list.remove(position);
+                                notifyItemRemoved(position);
+                                notifyDataSetChanged();
                                 count = myDBHelper.numberOfRows();
                                 if(count==0){
                                     //replace RV with layout_alternate

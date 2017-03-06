@@ -15,9 +15,6 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.model.View_Holder;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by robinkamboj on 22/01/17.
- */
 public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
 
     Context context;
