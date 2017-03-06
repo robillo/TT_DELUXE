@@ -55,11 +55,11 @@
                 android:value=".view.activities.LevelsActivity" />
         </activity>
         <activity android:name=".view.activities.AddActivity" />
-        <activity android:name=".view.widget.NewAppWidgetConfigureActivity">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
-            </intent-filter>
-        </activity>
+        <!--<activity android:name=".view.widget.NewAppWidgetConfigureActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
 
         <receiver android:name=".view.widget.NewAppWidget">
             <intent-filter>

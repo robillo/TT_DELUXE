@@ -1,37 +1,60 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.view.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.Add_RV_Adapter;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 
 import java.util.List;
+import java.util.ListIterator;
 
 public class YourActivity extends AppCompatActivity {
 
-    ImageView imageView3;
+    private CoordinatorLayout coordinatorLayout;
     private MyDBHelper myDBHelper;
     private RecyclerView recyclerView;
     private static final String TAG = "ROBIN";
+    TextView mainText, header1, header2;
+    Context context;
+    private TextToSpeech tts;
+    private int level_number;
+    private String[] level_headers, level_twisters;
     List<Data> data;
+    ListIterator<Data> dataListIterator;
+    Button prev, next;
+    Data test_data;
+    FloatingActionButton fab;
     private LinearLayout layout_alternate;
+    private ImageView layout_alternate2;
+    private LinearLayout linearLayout2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +63,29 @@ public class YourActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         myDBHelper = new MyDBHelper(this);
-        imageView3 = (ImageView) findViewById(R.id.imageView3);
+
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        prev = (Button) findViewById(R.id.prev);
+        next = (Button) findViewById(R.id.next);
+        header1 = (TextView) findViewById(R.id.header1);
+        header2 = (TextView) findViewById(R.id.header2);
+        mainText = (TextView) findViewById(R.id.mainText);
+        context = getApplicationContext();
+
+        linearLayout2 = (LinearLayout) findViewById(R.id.linear_layout2);
+        layout_alternate2 = (ImageView) findViewById(R.id.layout_alternate2);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         layout_alternate= (LinearLayout) findViewById(R.id.layout_alternate);
 
         data = myDBHelper.getAllTwisters();
+
+        dataListIterator = data.listIterator();
+        test_data = dataListIterator.next();
+
+        header1.setText(test_data.Title);
+        header2.setText(test_data.subTitle);
+        mainText.setText(test_data.TT);
 
         LinearLayoutManager myLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(myLayoutManager);
@@ -54,27 +95,59 @@ public class YourActivity extends AppCompatActivity {
         if(adapter.getItemCount()!=0){
             recyclerView.setVisibility(View.VISIBLE);
             layout_alternate.setVisibility(View.GONE);
+            layout_alternate2.setVisibility(View.GONE);
+            linearLayout2.setVisibility(View.VISIBLE);
+            fab.setVisibility(View.VISIBLE);
             recyclerView.setAdapter(adapter);
         }
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         Glide.with(this)
                 .load("https://3.bp.blogspot.com/-V6twr9315Fo/WJBgEtsEGoI/AAAAAAAAAF0/cXpZ1Uc_4u0Zn-XAIisWwlc7oOXK6Nv-gCLcB/s1600/ph7.png")
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .crossFade()
                 .centerCrop()
-                .into(imageView3);
+                .into(layout_alternate2);
+
+
+        recyclerView.addOnItemTouchListener(new RecyclerviewTouchListener(context, recyclerView, new RecyclerviewTouchListener.ClickListener() {
+            @Override
+            public void onClick(View v, int position) {
+                //Toast.makeText(context, "ROBIN " + position, Toast.LENGTH_SHORT).show();
+                //to take dataListIterator to 0 index
+                while (dataListIterator.hasPrevious()){
+                    test_data = dataListIterator.previous();
+                }
+
+                if(position == 0){
+                    header1.setText(test_data.Title);
+                    header2.setText(test_data.subTitle);
+                    mainText.setText(test_data.TT);
+                    prev.setEnabled(false);
+                    if(!next.isEnabled())
+                        next.setEnabled(true);
+                }
+                else {
+                    for(int i = 0; i <= position; i++){
+                        test_data = dataListIterator.next();
+                    }
+                    header1.setText(test_data.Title);
+                    header2.setText(test_data.subTitle);
+                    mainText.setText(test_data.TT);
+                }
+            }
+
+            @Override
+            public void onLongClick(View v, int position) {
+
+            }
+        }));
+
     }
 
     public void onClick(View v){
@@ -83,8 +156,66 @@ public class YourActivity extends AppCompatActivity {
                 Intent i = new Intent(this, AddActivity.class);
                 startActivity(i);
             }
+            case R.id.fab: {
+                //progressBar.setVisibility(View.VISIBLE);
+                //progressBar.setIndeterminate(true);
+                if (tts.isSpeaking()) {
+                    tts.stop();
+                }
+                autoSpeak((String) mainText.getText());
+                /*while (tts.isSpeaking()){
+                    stop_tts.setVisibility(View.VISIBLE);
+                }*/
+
+                //above part supposed to be in a thread
+
+                break;
+            }
+
+            case R.id.prev: {
+                if (dataListIterator.hasPrevious()) {
+                    test_data = dataListIterator.previous();
+                    if (test_data.Title != null) {
+                        if (!next.isEnabled()) {
+                            next.setEnabled(true);
+                        }
+                        header1.setText(test_data.Title);
+                        header2.setText(test_data.subTitle);
+                        mainText.setText(test_data.TT);
+                    }
+                } else {
+                    dataListIterator.next();
+                    dataListIterator.next();
+                    prev.setEnabled(false);
+                    Toast.makeText(context, "No previous element", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            }
+            case R.id.next: {
+                if (dataListIterator.hasNext()) {
+                    test_data = dataListIterator.next();
+                    if (test_data.Title != null) {
+                        if (!prev.isEnabled()) {
+                            prev.setEnabled(true);
+                        }
+                        header1.setText(test_data.Title);
+                        header2.setText(test_data.subTitle);
+                        mainText.setText(test_data.TT);
+                    }
+                } else {
+                    dataListIterator.previous();
+                    dataListIterator.previous();
+                    next.setEnabled(false);
+                    Toast.makeText(context, "No next element", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            }
         }
     }
+
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -107,6 +238,16 @@ public class YourActivity extends AppCompatActivity {
                 startActivity(i);
                 break;
             }
+            case R.id.action_stop_tts:{
+                if(tts.isSpeaking()){
+                    tts.stop();
+                    Snackbar.make(coordinatorLayout, "TTS Stopped.", Snackbar.LENGTH_SHORT).show();
+                }
+                else {
+                    Snackbar.make(coordinatorLayout, "TTS is already off.", Snackbar.LENGTH_SHORT).show();
+                }
+                break;
+            }
             case R.id.action_about:{
                 Intent i = new Intent(this, AboutActivity.class);
                 startActivity(i);
@@ -126,7 +267,7 @@ public class YourActivity extends AppCompatActivity {
                 break;
             }
             case android.R.id.home:{
-                onBackPressed();
+                super.onBackPressed();
                 break;
             }
         }
@@ -135,8 +276,58 @@ public class YourActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        Intent i = new Intent(this, LevelsActivity.class);
+        i.putExtra("tab", 11);
+        startActivity(i);
+    }
 
-        super.onBackPressed();
+
+
+    private void autoSpeak(String text) {
+        if (TextUtils.isEmpty(text) || tts == null) {
+            return;
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            tts.speak(text, TextToSpeech.QUEUE_ADD, null, "SpeakText");
+        } else {
+            tts.speak(text, TextToSpeech.QUEUE_ADD, null);
+        }
+    }
+
+
+
+    @Override
+    protected void onDestroy() {
+        if (tts.isSpeaking()) {
+            tts.stop();
+        }
+        super.onDestroy();
+
+        tts.shutdown();
+    }
+
+    @Override
+    protected void onStop() {
+        if (tts.isSpeaking()) {
+            tts.stop();
+        }
+        super.onStop();
+    }
+
+    @Override
+    protected void onStart() {
+
+        tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.SUCCESS) {
+                    Log.d("InitTextToSpeech", "init text to speech failed; status: " + status);
+                    tts = null;
+                }
+            }
+        });
+
+        super.onStart();
     }
 
     /*
