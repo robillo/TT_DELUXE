@@ -40,6 +40,7 @@ public class LevelsActivity extends AppCompatActivity {
     boolean doubleBackToExitPressedOnce = false;
     private LinearLayout dotsLayout;
     private TextView[] dots;
+    private int intent_page;
     private int[] layouts;
 
     /**
@@ -64,6 +65,9 @@ public class LevelsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_levels);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Intent i = getIntent();
+        intent_page = i.getIntExtra("tab", 1);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
@@ -195,6 +199,7 @@ public class LevelsActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+
             switch (position){
                 case 0:{
                     return new SlideFragment();
@@ -257,6 +262,7 @@ public class LevelsActivity extends AppCompatActivity {
 
         @Override
         public void onPageSelected(int position) {
+
             addBottomDots(position);
 
             // changing the next button text 'NEXT' / 'GOT IT'
