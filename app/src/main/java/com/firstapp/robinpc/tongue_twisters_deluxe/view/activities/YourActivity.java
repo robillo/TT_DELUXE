@@ -80,12 +80,16 @@ public class YourActivity extends AppCompatActivity {
 
         data = myDBHelper.getAllTwisters();
 
-        dataListIterator = data.listIterator();
-        test_data = dataListIterator.next();
+        if(data!=null){
+            dataListIterator = data.listIterator();
+            if(dataListIterator.hasNext()){
+                test_data = dataListIterator.next();
 
-        header1.setText(test_data.Title);
-        header2.setText(test_data.subTitle);
-        mainText.setText(test_data.TT);
+                header1.setText(test_data.Title);
+                header2.setText(test_data.subTitle);
+                mainText.setText(test_data.TT);
+            }
+        }
 
         LinearLayoutManager myLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(myLayoutManager);
