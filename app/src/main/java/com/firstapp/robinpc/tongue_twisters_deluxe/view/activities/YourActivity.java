@@ -38,18 +38,14 @@ import java.util.ListIterator;
 public class YourActivity extends AppCompatActivity {
 
     private CoordinatorLayout coordinatorLayout;
-    private MyDBHelper myDBHelper;
     private RecyclerView recyclerView;
     private static final String TAG = "ROBIN";
-    TextView mainText, header1, header2;
-    Context context;
+    private TextView mainText, header1, header2;
+    private Context context;
     private TextToSpeech tts;
-    private int level_number;
-    private String[] level_headers, level_twisters;
-    List<Data> data;
-    ListIterator<Data> dataListIterator;
-    Button prev, next;
-    Data test_data;
+    private ListIterator<Data> dataListIterator;
+    private Button prev, next;
+    private Data test_data;
     FloatingActionButton fab;
     private LinearLayout layout_alternate;
     private ImageView layout_alternate2;
@@ -62,7 +58,7 @@ public class YourActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        myDBHelper = new MyDBHelper(this);
+        MyDBHelper myDBHelper = new MyDBHelper(this);
 
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -78,9 +74,9 @@ public class YourActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         layout_alternate= (LinearLayout) findViewById(R.id.layout_alternate);
 
-        data = myDBHelper.getAllTwisters();
+        List<Data> data = myDBHelper.getAllTwisters();
 
-        if(data!=null){
+        if(data !=null){
             dataListIterator = data.listIterator();
             if(dataListIterator.hasNext()){
                 test_data = dataListIterator.next();
