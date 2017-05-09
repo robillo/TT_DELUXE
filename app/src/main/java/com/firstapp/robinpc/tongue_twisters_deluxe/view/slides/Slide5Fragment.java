@@ -38,7 +38,7 @@ public class Slide5Fragment extends Fragment {
 
         imageView1 = (ImageView) v.findViewById(R.id.imageView1);
         Glide.with(this)
-                .load("https://3.bp.blogspot.com/-uoAG2sMlvcA/WIO2bRdNVcI/AAAAAAAAACo/_0_upTCame4-yj01GIT-dJF5hqse9DsrQCLcB/s1600/nineteen_copy.jpg")
+                .load("http://2.bp.blogspot.com/-VYU5OWGtee8/WRH6N-hvs0I/AAAAAAAAARE/T5Bc-heYbEQWyJ8UHQ2yY4x9JAtorNN3QCK4B/s1600/wall2.png")
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .crossFade()
                 .centerCrop()

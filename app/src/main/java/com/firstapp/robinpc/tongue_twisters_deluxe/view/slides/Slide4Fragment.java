@@ -39,7 +39,7 @@ public class Slide4Fragment extends Fragment {
         detail = (Button) v.findViewById(R.id.detail);
 
         Glide.with(this)
-                .load("https://2.bp.blogspot.com/-QLoaFzk3t0E/WIO2aoTBcfI/AAAAAAAAACk/-IJQS4i8aTQi04PqUWmN631YMVgFjcKvgCLcB/s1600/forteen_copy.jpg")
+                .load("http://2.bp.blogspot.com/-k1SRZ0vh8MI/WRH6PNTiE1I/AAAAAAAAARc/y57FJha4pHIs0vm2v9DMJuKcS9PpEHyqQCK4B/s1600/wall3.jpg")
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .crossFade()
                 .centerCrop()

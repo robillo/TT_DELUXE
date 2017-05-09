@@ -37,7 +37,7 @@ public class SlideFragment extends Fragment {
         detail = (Button) v.findViewById(R.id.detail);
         imageView1 = (ImageView) v.findViewById(R.id.imageView1);
         Glide.with(this)
-                .load("https://4.bp.blogspot.com/-oiWKfUis994/WIO2hEruskI/AAAAAAAAAC4/0vj8hv7kc04YXVyzCqm-i4s4u9E9dx47QCLcB/s1600/thirteen%2Bcopy.jpg")
+                .load("https://2.bp.blogspot.com/-IY-IOkq2V5A/WJBfTUFfrTI/AAAAAAAAAFY/rurHHcN20r0EVurB8NFU3BB15B1wubJJgCLcB/s1600/placeholder.png")
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .crossFade()
                 .centerCrop()
