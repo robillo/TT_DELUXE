@@ -10,6 +10,8 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -21,7 +23,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RVAFeature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ZoomOutPageTransformer;
+import com.firstapp.robinpc.tongue_twisters_deluxe.model.Feature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide10Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide11Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide2Fragment;
@@ -34,6 +38,9 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide8Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide9Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.SlideFragment;
 
+import java.util.Collections;
+import java.util.List;
+
 public class LevelsActivity extends AppCompatActivity {
 
 
@@ -42,6 +49,8 @@ public class LevelsActivity extends AppCompatActivity {
     private TextView[] dots;
     private int intent_page;
     private int[] layouts;
+    private RecyclerView recyclerView;
+    private List<Feature> list;
 
     /**
      * The number of pages (wizard steps) to show in this demo.
@@ -72,6 +81,7 @@ public class LevelsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // Instantiate a ViewPager and a PagerAdapter.
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         mPager = (ViewPager) findViewById(R.id.pager);
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
         // layouts of all welcome sliders
@@ -97,6 +107,12 @@ public class LevelsActivity extends AppCompatActivity {
         mPager.setClipToPadding(false);
         mPager.setPageTransformer(true, new ZoomOutPageTransformer());
         mPager.addOnPageChangeListener(viewPagerPageChangeListener);
+
+        list = Collections.emptyList();
+        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new RVAFeature(getApplicationContext(), list));
+
     }
 
     private void addBottomDots(int currentPage) {
