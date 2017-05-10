@@ -34,12 +34,18 @@ public class RVAFeature extends RecyclerView.Adapter<VHFeature>{
     }
 
     @Override
-    public void onBindViewHolder(VHFeature holder, int position) {
+    public void onBindViewHolder(final VHFeature holder, int position) {
         holder.header.setText(list.get(position).getHeader() + ": " + list.get(position).getDescription());
         Glide.with(context)
                 .load(list.get(position).getPhotoLink())
                 .bitmapTransform(new BrightnessFilterTransformation(context, -0.4f))
                 .into(holder.photo);
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.intent();
+            }
+        });
     }
 
     @Override

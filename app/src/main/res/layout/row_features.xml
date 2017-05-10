@@ -6,6 +6,7 @@
     app:cardElevation="3sp"
     app:cardBackgroundColor="@color/colorBlackShade"
     android:layout_margin="10sp"
+    android:id="@+id/cardView"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <FrameLayout
