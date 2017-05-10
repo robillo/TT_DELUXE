@@ -38,6 +38,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide8Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide9Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.SlideFragment;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -108,9 +109,12 @@ public class LevelsActivity extends AppCompatActivity {
         mPager.setPageTransformer(true, new ZoomOutPageTransformer());
         mPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
-        list = Collections.emptyList();
+        list = new ArrayList<>();
         list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
+        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
+        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(new RVAFeature(getApplicationContext(), list));
 
     }
