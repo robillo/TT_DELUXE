@@ -9,12 +9,12 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 
 public class VHFeature extends RecyclerView.ViewHolder{
 
-    private ImageView imageView;
-    private TextView textView;
+    public ImageView photo;
+    public TextView header;
 
     public VHFeature(View itemView) {
         super(itemView);
-        imageView = (ImageView) itemView.findViewById(R.id.image);
-        textView = (TextView) itemView.findViewById(R.id.text);
+        photo = (ImageView) itemView.findViewById(R.id.image);
+        header = (TextView) itemView.findViewById(R.id.text);
     }
 }

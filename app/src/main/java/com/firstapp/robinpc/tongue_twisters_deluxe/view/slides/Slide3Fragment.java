@@ -36,9 +36,9 @@ public class Slide3Fragment extends Fragment {
         CardView cardView = (CardView) v.findViewById(R.id.cardView);
         ImageView imageView = (ImageView) v.findViewById(R.id.imageView);
         TextView level = (TextView) v.findViewById(R.id.level);
-        level.setText(getResources().getString(R.string.slide_1_title));
+        level.setText(getResources().getString(R.string.slide_3_title));
         TextView level_header = (TextView) v.findViewById(R.id.level_header);
-        level_header.setText(getResources().getString(R.string.slide_1_desc));
+        level_header.setText(getResources().getString(R.string.slide_3_desc));
         Glide.with(this)
                 .load("https://1.bp.blogspot.com/-OYwFn64dzV0/WJBfWvYaXaI/AAAAAAAAAFc/1egquqeEF30HrOgarJflAGp8fXqyBeKDQCLcB/s1600/ph4.jpg")
                 .diskCacheStrategy(DiskCacheStrategy.ALL)

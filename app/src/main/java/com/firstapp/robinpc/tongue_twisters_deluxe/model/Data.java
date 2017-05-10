@@ -12,7 +12,6 @@ public class Data {
         this.TT = TT;
     }
 
-
     //getters and setters
 
     public String getTitle() {

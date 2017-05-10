@@ -40,7 +40,7 @@ public class Slide11Fragment extends Fragment {
         level_header.setText(getResources().getString(R.string.slide_11_desc));
 
         Glide.with(this)
-                .load("https://3.bp.blogspot.com/-7Fbv9Mcj8Ho/WIo5cjN-EOI/AAAAAAAAAEM/CtwvYPu184goLOWknhMyxSg8eQX55EaCACLcB/s1600/5.jpg")
+                .load("https://1.bp.blogspot.com/-e3cvqWcBdhc/WJBgDvUM6BI/AAAAAAAAAFk/SOlb9rdvi7gm5iThWrCoH273_kn0rQo3gCLcB/s1600/ph2.png")
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .crossFade()
                 .centerCrop()

@@ -34,7 +34,7 @@
     <string name="slide_10_desc">Jarring Jigsaw</string>
 
     <string name="slide_11_title">Your Twisters</string>
-    <string name="slide_11_desc">Create, Modiy, Customize Your Own Twisters. Play With Your Imagination, It is More Fun With Friends And Family. </string>
+    <string name="slide_11_desc">Create, Modiy, Customize Your Own Twisters With Your Imagination.</string>
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
@@ -518,4 +518,7 @@
     <string name="title_activity_your">YourActivity</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="level">Level</string>
+    <string name="level_header">Level Header</string>
+    <string name="feature_header">Feature Header</string>
 </resources>

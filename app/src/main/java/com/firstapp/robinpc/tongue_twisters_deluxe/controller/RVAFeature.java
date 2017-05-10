@@ -37,7 +37,7 @@ public class RVAFeature extends RecyclerView.Adapter<VHFeature>{
     public void onBindViewHolder(VHFeature holder, int position) {
         holder.header.setText(list.get(position).getHeader() + ": " + list.get(position).getDescription());
         Glide.with(context)
-                .load("https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png")
+                .load(list.get(position).getPhotoLink())
                 .bitmapTransform(new BrightnessFilterTransformation(context, -0.4f))
                 .into(holder.photo);
     }
