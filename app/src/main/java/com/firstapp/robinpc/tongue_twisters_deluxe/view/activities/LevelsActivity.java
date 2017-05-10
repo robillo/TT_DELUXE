@@ -27,7 +27,6 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RVAFeature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ZoomOutPageTransformer;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Feature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide10Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide11Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide2Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide3Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide4Fragment;
@@ -39,7 +38,6 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide9Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.SlideFragment;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class LevelsActivity extends AppCompatActivity {
@@ -56,7 +54,7 @@ public class LevelsActivity extends AppCompatActivity {
     /**
      * The number of pages (wizard steps) to show in this demo.
      */
-    private static final int NUM_PAGES = 11;
+    private static final int NUM_PAGES = 10;
 
     /**
      * The pager widget, which handles animation and allows swiping horizontally to access previous
@@ -97,8 +95,7 @@ public class LevelsActivity extends AppCompatActivity {
                 R.layout.fragment_slide7,
                 R.layout.fragment_slide8,
                 R.layout.fragment_slide9,
-                R.layout.fragment_slide10,
-                R.layout.fragment_slide11};
+                R.layout.fragment_slide10};
 
         // adding bottom dots
         addBottomDots(0);
@@ -111,9 +108,7 @@ public class LevelsActivity extends AppCompatActivity {
 
         list = new ArrayList<>();
         list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
-        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
-        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
-        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
+        list.add(new Feature("Share App With Friends", "Enable Your Friends Gain Access To The Vast Collection Of Tongue Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(new RVAFeature(getApplicationContext(), list));
 
@@ -215,8 +210,6 @@ public class LevelsActivity extends AppCompatActivity {
             super(fm);
         }
 
-        private LayoutInflater layoutInflater;
-
         @Override
         public Fragment getItem(int position) {
 
@@ -250,9 +243,6 @@ public class LevelsActivity extends AppCompatActivity {
                 }
                 case 9:{
                     return new Slide10Fragment();
-                }
-                case 10:{
-                    return new Slide11Fragment();
                 }
                 default:{
                     return new SlideFragment();

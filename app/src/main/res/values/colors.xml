@@ -31,7 +31,6 @@
     <color name="dot_dark_screen8">#2278d4</color>
     <color name="dot_dark_screen9">#a854d4</color>
     <color name="dot_dark_screen10">#d1395c</color>
-    <color name="dot_dark_screen11">#14a895</color>
 
     <!-- dots active colors -->
     <color name="dot_light_screen1">#f98da5</color>
@@ -44,7 +43,6 @@
     <color name="dot_light_screen8">#93c6fd</color>
     <color name="dot_light_screen9">#e4b5fc</color>
     <color name="dot_light_screen10">#f98da5</color>
-    <color name="dot_light_screen11">#8cf9eb</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>
@@ -57,7 +55,6 @@
         <item>@color/dot_light_screen8</item>
         <item>@color/dot_light_screen9</item>
         <item>@color/dot_light_screen10</item>
-        <item>@color/dot_light_screen11</item>
     </array>
 
     <array name="array_dot_inactive">
@@ -71,6 +68,5 @@
         <item>@color/dot_dark_screen8</item>
         <item>@color/dot_dark_screen9</item>
         <item>@color/dot_dark_screen10</item>
-        <item>@color/dot_dark_screen11</item>
     </array>
 </resources>
