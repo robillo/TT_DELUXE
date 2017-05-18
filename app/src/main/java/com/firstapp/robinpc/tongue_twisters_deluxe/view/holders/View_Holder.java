@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.model;
+package com.firstapp.robinpc.tongue_twisters_deluxe.view.holders;
 
 import android.content.Context;
 import android.content.Intent;

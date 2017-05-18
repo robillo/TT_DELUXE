@@ -1,16 +1,15 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.controller;
+package com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
-import com.firstapp.robinpc.tongue_twisters_deluxe.model.Feature;
-import com.firstapp.robinpc.tongue_twisters_deluxe.model.VHFeature;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.holders.Feature;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.holders.VHFeature;
 
 import java.util.Collections;
 import java.util.List;
@@ -21,6 +20,7 @@ public class RVAFeature extends RecyclerView.Adapter<VHFeature>{
 
     private Context context;
     private List<Feature> list = Collections.emptyList();
+    private int pos;
 
     public RVAFeature(Context context, List<Feature> list) {
         this.context = context;
@@ -34,7 +34,8 @@ public class RVAFeature extends RecyclerView.Adapter<VHFeature>{
     }
 
     @Override
-    public void onBindViewHolder(final VHFeature holder, int position) {
+    public void onBindViewHolder(final VHFeature holder, final int position) {
+        pos = position;
         holder.header.setText(list.get(position).getHeader() + ": " + list.get(position).getDescription());
         Glide.with(context)
                 .load(list.get(position).getPhotoLink())
@@ -43,7 +44,7 @@ public class RVAFeature extends RecyclerView.Adapter<VHFeature>{
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                holder.intent();
+                holder.intent(list.get(position).getPosition());
             }
         });
     }

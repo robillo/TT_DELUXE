@@ -14,7 +14,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -23,9 +22,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
-import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RVAFeature;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.RVAFeature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ZoomOutPageTransformer;
-import com.firstapp.robinpc.tongue_twisters_deluxe.model.Feature;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.holders.Feature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide10Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide2Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide3Fragment;
@@ -107,11 +106,10 @@ public class LevelsActivity extends AppCompatActivity {
         mPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
         list = new ArrayList<>();
-        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
-        list.add(new Feature("Share App With Friends", "Enable Your Friends Gain Access To The Vast Collection Of Tongue Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png"));
+        list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png", 1));
+        list.add(new Feature("Share App With Friends", "Enable Your Friends Gain Access To The Vast Collection Of Tongue Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png", 2));
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(new RVAFeature(getApplicationContext(), list));
-
     }
 
     private void addBottomDots(int currentPage) {

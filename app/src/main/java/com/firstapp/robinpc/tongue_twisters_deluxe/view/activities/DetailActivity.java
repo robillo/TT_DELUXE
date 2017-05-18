@@ -23,7 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
-import com.firstapp.robinpc.tongue_twisters_deluxe.controller.Recycler_View_Adapter;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.Recycler_View_Adapter;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 

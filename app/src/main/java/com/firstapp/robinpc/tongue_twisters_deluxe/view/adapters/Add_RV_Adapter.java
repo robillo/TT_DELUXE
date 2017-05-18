@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.controller;
+package com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.PopupMenu;
@@ -9,8 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ItemClickListener;
+import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
-import com.firstapp.robinpc.tongue_twisters_deluxe.model.View_Holder;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.holders.View_Holder;
 
 import java.util.Collections;
 import java.util.List;

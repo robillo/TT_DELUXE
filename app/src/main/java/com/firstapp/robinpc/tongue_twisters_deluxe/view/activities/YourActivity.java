@@ -27,7 +27,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
-import com.firstapp.robinpc.tongue_twisters_deluxe.controller.Add_RV_Adapter;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.Add_RV_Adapter;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
