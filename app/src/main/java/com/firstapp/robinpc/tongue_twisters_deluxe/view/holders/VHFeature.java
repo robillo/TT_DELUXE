@@ -2,6 +2,7 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.view.holders;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -37,6 +38,11 @@ public class VHFeature extends RecyclerView.ViewHolder{
                 i.setAction(Intent.ACTION_SEND);
                 i.putExtra(Intent.EXTRA_TEXT, "Hey, Check out this exciting App at: https://play.google.com/store/apps/details?id=com.firstapp.robinpc.tongue_twisters_deluxe");
                 i.setType("text/plain");
+                context.startActivity(i);
+                break;
+            }
+            case 3:{
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.firstapp.robinpc.tongue_twisters_deluxe"));
                 context.startActivity(i);
                 break;
             }
