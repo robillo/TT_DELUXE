@@ -26,16 +26,6 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.RVAFeature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ZoomOutPageTransformer;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.fragments.LevelsFragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.holders.Feature;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide10Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide2Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide3Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide4Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide5Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide6Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide7Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide8Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide9Fragment;
-import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.SlideFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,16 +79,16 @@ public class LevelsActivity extends AppCompatActivity {
         // layouts of all welcome sliders
         // add few more layouts if you want
         layouts = new int[]{
-                R.layout.fragment_slide,
-                R.layout.fragment_slide2,
-                R.layout.fragment_slide3,
-                R.layout.fragment_slide4,
-                R.layout.fragment_slide5,
-                R.layout.fragment_slide6,
-                R.layout.fragment_slide7,
-                R.layout.fragment_slide8,
-                R.layout.fragment_slide9,
-                R.layout.fragment_slide10};
+                R.layout.fragment_levels,
+                R.layout.fragment_levels,
+                R.layout.fragment_levels,
+                R.layout.fragment_levels,
+                R.layout.fragment_levels,
+                R.layout.fragment_levels,
+                R.layout.fragment_levels,
+                R.layout.fragment_levels,
+                R.layout.fragment_levels,
+                R.layout.fragment_levels};
 
         // adding bottom dots
         addBottomDots(0);
