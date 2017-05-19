@@ -49,7 +49,6 @@ public class SlideFragment extends Fragment {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent i = new Intent(getActivity(), DetailActivity.class);
                 i.putExtra("level_number", 1);
                 getActivity().startActivity(i);

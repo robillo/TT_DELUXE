@@ -282,6 +282,7 @@ public class LevelsActivity extends AppCompatActivity {
         args.putString("level", levels[position]);
         args.putString("levelHeader", levelHeaders[position]);
         args.putString("photoUrl", photoUrls[position]);
+        args.putInt("levelNumber", position + 1);
         fragment.setArguments(args);
         return fragment;
     }
