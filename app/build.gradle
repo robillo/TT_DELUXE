@@ -8,8 +8,8 @@ android {
         applicationId "com.firstapp.robinpc.tongue_twisters_deluxe"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 11
-        versionName "4.5"
+        versionCode 12
+        versionName "4.7"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
