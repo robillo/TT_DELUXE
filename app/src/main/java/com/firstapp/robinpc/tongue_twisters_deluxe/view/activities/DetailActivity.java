@@ -365,6 +365,28 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
             return;
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+//                @Override
+//                public void onStart(String utteranceId) {
+//                    Toast.makeText(context, utteranceId, Toast.LENGTH_SHORT).show();
+//                    if(utteranceId.equals("uttered")){
+//                        Toast.makeText(context, "STARTED", Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+//
+//                @Override
+//                public void onDone(String utteranceId) {
+//                    Toast.makeText(context, utteranceId, Toast.LENGTH_SHORT).show();
+//                    if(utteranceId.equals("uttered")){
+//                        Toast.makeText(context, "ENDED", Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+//
+//                @Override
+//                public void onError(String utteranceId) {
+//
+//                }
+//            });
             tts.speak(text, TextToSpeech.QUEUE_ADD, null, "uttered");
         } else {
             tts.speak(text, TextToSpeech.QUEUE_ADD, null);
@@ -388,26 +410,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
             tts = null;
         }
         else {
-            tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-                @Override
-                public void onStart(String utteranceId) {
-                    if(utteranceId.equals("uttered")){
-                        Toast.makeText(context, "STARTED", Toast.LENGTH_SHORT).show();
-                    }
-                }
 
-                @Override
-                public void onDone(String utteranceId) {
-                    if(utteranceId.equals("uttered")){
-                        Toast.makeText(context, "ENDED", Toast.LENGTH_SHORT).show();
-                    }
-                }
-
-                @Override
-                public void onError(String utteranceId) {
-
-                }
-            });
         }
     }
 
@@ -421,9 +424,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
 
     @Override
     protected void onStart() {
-
         tts = new TextToSpeech(DetailActivity.this, DetailActivity.this);
-
         super.onStart();
     }
 }
