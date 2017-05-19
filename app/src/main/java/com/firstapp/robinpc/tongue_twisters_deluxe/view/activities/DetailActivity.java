@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 import android.support.design.widget.CoordinatorLayout;
@@ -29,6 +30,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchL
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -40,6 +42,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
     private TextToSpeech tts;
     private int level_number;
     private String[] level_headers, level_twisters;
+    private HashMap<String, String> map = new HashMap<String, String>();
     List<Data> data;
     ListIterator<Data> dataListIterator;
     Button prev, next;
@@ -69,6 +72,8 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
 
         Intent i = getIntent();
         level_number = i.getIntExtra("level_number", 1);
+
+        map.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "uttered");
 
         inflateInfo();
 
@@ -365,31 +370,9 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
             return;
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-//                @Override
-//                public void onStart(String utteranceId) {
-//                    Toast.makeText(context, utteranceId, Toast.LENGTH_SHORT).show();
-//                    if(utteranceId.equals("uttered")){
-//                        Toast.makeText(context, "STARTED", Toast.LENGTH_SHORT).show();
-//                    }
-//                }
-//
-//                @Override
-//                public void onDone(String utteranceId) {
-//                    Toast.makeText(context, utteranceId, Toast.LENGTH_SHORT).show();
-//                    if(utteranceId.equals("uttered")){
-//                        Toast.makeText(context, "ENDED", Toast.LENGTH_SHORT).show();
-//                    }
-//                }
-//
-//                @Override
-//                public void onError(String utteranceId) {
-//
-//                }
-//            });
-            tts.speak(text, TextToSpeech.QUEUE_ADD, null, "uttered");
+            tts.speak(text, TextToSpeech.QUEUE_ADD, map);
         } else {
-            tts.speak(text, TextToSpeech.QUEUE_ADD, null);
+            tts.speak(text, TextToSpeech.QUEUE_ADD, map);
         }
     }
 
@@ -410,7 +393,41 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
             tts = null;
         }
         else {
+            Toast.makeText(context, "LISTENER HERE", Toast.LENGTH_SHORT).show();
+            tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                @Override
+                public void onStart(String s) {
+                    if(s.equals("uttered")) {
+                        Log.e(TAG, "onStart");
+                        Handler handler = new Handler();
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(context, "STARTED", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                }
 
+                @Override
+                public void onDone(String s) {
+                    if(s.equals("uttered")) {
+                        Log.e(TAG, "onDone");
+                        Handler handler = new Handler();
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(context, "DONE", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                }
+
+                @Override
+                public void onError(String s) {
+                    Toast.makeText(context, "ERROR", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 
