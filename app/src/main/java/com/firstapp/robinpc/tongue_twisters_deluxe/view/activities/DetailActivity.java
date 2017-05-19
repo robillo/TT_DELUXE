@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -33,7 +34,6 @@ import java.util.ListIterator;
 
 public class DetailActivity extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
-
     CoordinatorLayout coordinatorLayout;
     TextView mainText, header1, header2;
     Context context;
@@ -45,7 +45,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
     Button prev, next;
     Data test_data;
     FloatingActionButton fb;
-
+    private static  final String TAG = "UTTERANCE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -365,7 +365,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
             return;
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            tts.speak(text, TextToSpeech.QUEUE_ADD, null, "SpeakText");
+            tts.speak(text, TextToSpeech.QUEUE_ADD, null, "uttered");
         } else {
             tts.speak(text, TextToSpeech.QUEUE_ADD, null);
         }
@@ -386,6 +386,28 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
         if (status != TextToSpeech.SUCCESS) {
             Log.d("InitTextToSpeech", "init text to speech failed; status: " + status);
             tts = null;
+        }
+        else {
+            tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                @Override
+                public void onStart(String utteranceId) {
+                    if(utteranceId.equals("uttered")){
+                        Toast.makeText(context, "STARTED", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+                @Override
+                public void onDone(String utteranceId) {
+                    if(utteranceId.equals("uttered")){
+                        Toast.makeText(context, "ENDED", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+                @Override
+                public void onError(String utteranceId) {
+
+                }
+            });
         }
     }
 
