@@ -3,6 +3,7 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.view.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,8 +43,11 @@ public class LevelsFragment extends Fragment {
 
     private void setPlayground(Bundle args){
         String Level = args.getString("level");
+        Log.e("TEST", Level);
         String levelHeader = args.getString("levelHeader");
+        Log.e("TEST", levelHeader);
         String photoUrl = args.getString("photoUrl");
+        Log.e("TEST", photoUrl);
 
         levelTV.setText(Level);
         levelHeaderTV.setText(levelHeader);

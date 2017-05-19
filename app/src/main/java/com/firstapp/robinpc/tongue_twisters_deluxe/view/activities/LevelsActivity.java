@@ -220,6 +220,7 @@ public class LevelsActivity extends AppCompatActivity {
                     args.putString("level", "test");
                     args.putString("levelHeader", "test");
                     args.putString("photoUrl", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png");
+                    fragment.setArguments(args);
                     return fragment;
                 }
                 case 1:{
