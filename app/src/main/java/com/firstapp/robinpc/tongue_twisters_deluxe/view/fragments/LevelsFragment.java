@@ -18,11 +18,7 @@ import butterknife.BindView;
 
 public class LevelsFragment extends Fragment {
 
-    @BindView(R.id.level)
-    TextView levelTV;
-    @BindView(R.id.level_header)
-    TextView levelHeaderTV;
-    @BindView(R.id.imageView)
+    TextView levelTV, levelHeaderTV;
     ImageView Photo;
 
     public LevelsFragment() {
@@ -34,6 +30,10 @@ public class LevelsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_levels, container, false);
+
+        levelTV = (TextView) v.findViewById(R.id.level);
+        levelHeaderTV = (TextView) v.findViewById(R.id.level_header);
+        Photo = (ImageView) v.findViewById(R.id.imageView);
 
         Bundle args = getArguments();
         setPlayground(args);

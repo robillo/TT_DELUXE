@@ -57,6 +57,31 @@
     <string name="previous"><![CDATA[<]]></string>
     <string name="next"><![CDATA[>]]></string>
 
+    <string-array name="levels">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+        <item>Level 5</item>
+        <item>Level 6</item>
+        <item>Level 7</item>
+        <item>Level 8</item>
+        <item>Level 9</item>
+        <item>Level 10</item>
+    </string-array>
+
+    <string-array name="levelHeaders">
+        <item>Annihilatory Armageddon</item>
+        <item>Brain Blaster</item>
+        <item>Cosmic Clusters</item>
+        <item>Doomsday Destruction</item>
+        <item>Extensive Extremety</item>
+        <item>Fatal Frost</item>
+        <item>Gliding Gears</item>
+        <item>Hefty Harks</item>
+        <item>Inclusive Incompetence</item>
+        <item>Jarring Jigsaw</item>
+    </string-array>
 
     <string-array name="two_headers">
         <item>Calm Cram</item>

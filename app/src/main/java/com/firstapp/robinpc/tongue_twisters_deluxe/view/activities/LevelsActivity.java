@@ -50,6 +50,7 @@ public class LevelsActivity extends AppCompatActivity {
     private int[] layouts;
     private RecyclerView recyclerView;
     private List<Feature> list;
+    private String[] levels, levelHeaders, photoUrls;
 
     /**
      * The number of pages (wizard steps) to show in this demo.
@@ -78,6 +79,8 @@ public class LevelsActivity extends AppCompatActivity {
         intent_page = i.getIntExtra("tab", 1);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        assignStringValues();
 
         // Instantiate a ViewPager and a PagerAdapter.
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
@@ -112,6 +115,12 @@ public class LevelsActivity extends AppCompatActivity {
         list.add(new Feature("Review App?", "Like the App? Or Do You Want an additional feature to be added to be app? Here's The Place You Seek.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png", 3));
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(new RVAFeature(getApplicationContext(), list));
+    }
+
+    private void assignStringValues(){
+        levels = getResources().getStringArray(R.array.levels);
+        levelHeaders = getResources().getStringArray(R.array.levelHeaders);
+        photoUrls = getResources().getStringArray(R.array.photoUrls);
     }
 
     private void addBottomDots(int currentPage) {
@@ -271,6 +280,16 @@ public class LevelsActivity extends AppCompatActivity {
             return 1.0f;
         }
 
+    }
+
+    private Fragment assignFragment(int position){
+        Fragment fragment = new LevelsFragment();
+        Bundle args = new Bundle();
+        args.putString("level", );
+        args.putString("levelHeader", );
+        args.putString("photoUrl", );
+        fragment.setArguments(args);
+        return fragment;
     }
 
     //  viewpager change listener
