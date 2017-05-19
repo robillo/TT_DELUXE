@@ -34,6 +34,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchL
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 import com.github.jorgecastilloprz.FABProgressCircle;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -49,6 +50,7 @@ public class YourActivity extends AppCompatActivity {
     private Button prev, next;
     private Data test_data;
     FloatingActionButton fab;
+    private HashMap<String, String> map = new HashMap<String, String>();
     private LinearLayout layout_alternate;
     private ImageView layout_alternate2;
     private LinearLayout linearLayout2;
@@ -70,6 +72,7 @@ public class YourActivity extends AppCompatActivity {
         header1 = (TextView) findViewById(R.id.header1);
         header2 = (TextView) findViewById(R.id.header2);
         mainText = (TextView) findViewById(R.id.mainText);
+        map.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "uttered");
         mFabProgressCircle = (FABProgressCircle) findViewById(R.id.fabProgressCircle);
         context = getApplicationContext();
 
@@ -284,9 +287,9 @@ public class YourActivity extends AppCompatActivity {
             return;
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            tts.speak(text, TextToSpeech.QUEUE_ADD, null, "SpeakText");
+            tts.speak(text, TextToSpeech.QUEUE_ADD, map);
         } else {
-            tts.speak(text, TextToSpeech.QUEUE_ADD, null);
+            tts.speak(text, TextToSpeech.QUEUE_ADD, map);
         }
     }
 
