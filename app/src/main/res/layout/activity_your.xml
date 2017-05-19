@@ -218,14 +218,23 @@
 
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:visibility="gone"
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        android:layout_gravity="bottom|center"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        android:onClick="onClick"/>
+        app:arcWidth="8sp"
+        app:arcColor="#C6FF00"
+        android:layout_width="80sp"
+        android:layout_height="80sp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+            android:onClick="onClick"/>
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
 
 </android.support.design.widget.CoordinatorLayout>
