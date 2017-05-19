@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.RVAFeature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ZoomOutPageTransformer;
+import com.firstapp.robinpc.tongue_twisters_deluxe.view.fragments.LevelsFragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.holders.Feature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide10Fragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.slides.Slide2Fragment;
@@ -214,7 +215,12 @@ public class LevelsActivity extends AppCompatActivity {
 
             switch (position){
                 case 0:{
-                    return new SlideFragment();
+                    Fragment fragment = new LevelsFragment();
+                    Bundle args = new Bundle();
+                    args.putString("level", "test");
+                    args.putString("levelHeader", "test");
+                    args.putString("photoUrl", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png");
+                    return fragment;
                 }
                 case 1:{
                     return new Slide2Fragment();
