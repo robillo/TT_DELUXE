@@ -28,6 +28,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.Recycler_View_Adapter;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
+import com.github.jorgecastilloprz.FABProgressCircle;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,6 +50,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
     Data test_data;
     FloatingActionButton fb;
     private static  final String TAG = "UTTERANCE";
+    private FABProgressCircle mFabProgressCircle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +66,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         prev = (Button) findViewById(R.id.prev);
         next = (Button) findViewById(R.id.next);
-
+        mFabProgressCircle = (FABProgressCircle) findViewById(R.id.fabProgressCircle);
         header1 = (TextView) findViewById(R.id.header1);
         header2 = (TextView) findViewById(R.id.header2);
         mainText = (TextView) findViewById(R.id.mainText);
@@ -392,7 +394,6 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
             tts = null;
         }
         else {
-            Toast.makeText(context, "LISTENER HERE", Toast.LENGTH_SHORT).show();
             tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
                 @Override
                 public void onStart(String s) {
@@ -400,7 +401,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                Toast.makeText(context, "STARTED", Toast.LENGTH_SHORT).show();
+                                mFabProgressCircle.show();
                             }
                         });
                     }
@@ -412,7 +413,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                Toast.makeText(context, "DONE", Toast.LENGTH_SHORT).show();
+                                mFabProgressCircle.hide();
                             }
                         });
                     }
@@ -420,7 +421,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
 
                 @Override
                 public void onError(String s) {
-                    Toast.makeText(context, "ERROR", Toast.LENGTH_SHORT).show();
+
                 }
             });
         }

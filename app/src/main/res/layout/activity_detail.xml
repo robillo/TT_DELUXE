@@ -160,10 +160,12 @@
 
     <com.github.jorgecastilloprz.FABProgressCircle
         android:id="@+id/fabProgressCircle"
-        android:layout_gravity="bottom|end"
+        android:layout_gravity="bottom|center"
         android:layout_margin="@dimen/fab_margin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        app:arcWidth="8sp"
+        app:arcColor="#C6FF00"
+        android:layout_width="80sp"
+        android:layout_height="80sp">
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
