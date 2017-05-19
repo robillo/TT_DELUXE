@@ -224,43 +224,37 @@ public class LevelsActivity extends AppCompatActivity {
 
             switch (position){
                 case 0:{
-                    Fragment fragment = new LevelsFragment();
-                    Bundle args = new Bundle();
-                    args.putString("level", "test");
-                    args.putString("levelHeader", "test");
-                    args.putString("photoUrl", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png");
-                    fragment.setArguments(args);
-                    return fragment;
+                    return assignFragment(0);
                 }
                 case 1:{
-                    return new Slide2Fragment();
+                    return assignFragment(1);
                 }
                 case 2:{
-                    return new Slide3Fragment();
+                    return assignFragment(2);
                 }
                 case 3:{
-                    return new Slide4Fragment();
+                    return assignFragment(3);
                 }
                 case 4:{
-                    return new Slide5Fragment();
+                    return assignFragment(4);
                 }
                 case 5:{
-                    return new Slide6Fragment();
+                    return assignFragment(5);
                 }
                 case 6:{
-                    return new Slide7Fragment();
+                    return assignFragment(6);
                 }
                 case 7:{
-                    return new Slide8Fragment();
+                    return assignFragment(7);
                 }
                 case 8:{
-                    return new Slide9Fragment();
+                    return assignFragment(8);
                 }
                 case 9:{
-                    return new Slide10Fragment();
+                    return assignFragment(9);
                 }
                 default:{
-                    return new SlideFragment();
+                    return assignFragment(0);
                 }
             }
         }
@@ -285,9 +279,9 @@ public class LevelsActivity extends AppCompatActivity {
     private Fragment assignFragment(int position){
         Fragment fragment = new LevelsFragment();
         Bundle args = new Bundle();
-        args.putString("level", );
-        args.putString("levelHeader", );
-        args.putString("photoUrl", );
+        args.putString("level", levels[position]);
+        args.putString("levelHeader", levelHeaders[position]);
+        args.putString("photoUrl", photoUrls[position]);
         fragment.setArguments(args);
         return fragment;
     }

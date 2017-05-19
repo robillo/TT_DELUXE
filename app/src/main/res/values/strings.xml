@@ -83,6 +83,19 @@
         <item>Jarring Jigsaw</item>
     </string-array>
 
+    <string-array name="photoUrls">
+        <item>https://2.bp.blogspot.com/-IY-IOkq2V5A/WJBfTUFfrTI/AAAAAAAAAFY/rurHHcN20r0EVurB8NFU3BB15B1wubJJgCLcB/s1600/placeholder.png</item>
+        <item>https://1.bp.blogspot.com/-e3cvqWcBdhc/WJBgDvUM6BI/AAAAAAAAAFk/SOlb9rdvi7gm5iThWrCoH273_kn0rQo3gCLcB/s1600/ph2.png</item>
+        <item>https://1.bp.blogspot.com/-OYwFn64dzV0/WJBfWvYaXaI/AAAAAAAAAFc/1egquqeEF30HrOgarJflAGp8fXqyBeKDQCLcB/s1600/ph4.jpg</item>
+        <item>http://2.bp.blogspot.com/-k1SRZ0vh8MI/WRH6PNTiE1I/AAAAAAAAARc/y57FJha4pHIs0vm2v9DMJuKcS9PpEHyqQCK4B/s1600/wall3.jpg</item>
+        <item>http://2.bp.blogspot.com/-VYU5OWGtee8/WRH6N-hvs0I/AAAAAAAAARE/T5Bc-heYbEQWyJ8UHQ2yY4x9JAtorNN3QCK4B/s1600/wall2.png</item>
+        <item>https://3.bp.blogspot.com/-wCIrRQkOkBI/WJBgD7IU0cI/AAAAAAAAAFo/TvEV52hMIdMrmPF2nYqe4rBt6MQl4hXzwCLcB/s1600/ph3.jpg</item>
+        <item>http://2.bp.blogspot.com/-nZ1SleMQpAE/WRH6OEqit8I/AAAAAAAAARU/J3FXjkgy-W08Z-R52vonP-kU48YkacQMACK4B/s1600/whale_3-wallpaper-1440x900.jpg</item>
+        <item>https://4.bp.blogspot.com/-PQ2dFPxs6dA/WIo5arONKII/AAAAAAAAAD8/_KPNyZuSY0IOhtZf7h2ByJWd7xvWZMjZgCLcB/s1600/3.jpg</item>
+        <item>https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png</item>
+        <item>https://2.bp.blogspot.com/-Cos2v7ZoI8o/WJBgDyUENNI/AAAAAAAAAFs/EGDcj0Sp2HEkM82_Z8A8Dl-1P_4B3bvAgCLcB/s320/ph5.png</item>
+    </string-array>
+
     <string-array name="two_headers">
         <item>Calm Cram</item>
         <item>Saint\’s Tent</item>
