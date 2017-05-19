@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -31,6 +32,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.Add_RV_Adapter;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
+import com.github.jorgecastilloprz.FABProgressCircle;
 
 import java.util.List;
 import java.util.ListIterator;
@@ -50,6 +52,7 @@ public class YourActivity extends AppCompatActivity {
     private LinearLayout layout_alternate;
     private ImageView layout_alternate2;
     private LinearLayout linearLayout2;
+    private FABProgressCircle mFabProgressCircle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +70,7 @@ public class YourActivity extends AppCompatActivity {
         header1 = (TextView) findViewById(R.id.header1);
         header2 = (TextView) findViewById(R.id.header2);
         mainText = (TextView) findViewById(R.id.mainText);
+        mFabProgressCircle = (FABProgressCircle) findViewById(R.id.fabProgressCircle);
         context = getApplicationContext();
 
         linearLayout2 = (LinearLayout) findViewById(R.id.linear_layout2);
@@ -100,8 +104,6 @@ public class YourActivity extends AppCompatActivity {
             fab.setVisibility(View.VISIBLE);
             recyclerView.setAdapter(adapter);
         }
-
-
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -213,10 +215,6 @@ public class YourActivity extends AppCompatActivity {
         }
     }
 
-
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -281,8 +279,6 @@ public class YourActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-
-
     private void autoSpeak(String text) {
         if (TextUtils.isEmpty(text) || tts == null) {
             return;
@@ -323,6 +319,38 @@ public class YourActivity extends AppCompatActivity {
                 if (status != TextToSpeech.SUCCESS) {
                     Log.d("InitTextToSpeech", "init text to speech failed; status: " + status);
                     tts = null;
+                }
+                else {
+                    tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                        @Override
+                        public void onStart(String s) {
+                            if(s.equals("uttered")) {
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        mFabProgressCircle.show();
+                                    }
+                                });
+                            }
+                        }
+
+                        @Override
+                        public void onDone(String s) {
+                            if(s.equals("uttered")) {
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        mFabProgressCircle.hide();
+                                    }
+                                });
+                            }
+                        }
+
+                        @Override
+                        public void onError(String s) {
+
+                        }
+                    });
                 }
             }
         });
