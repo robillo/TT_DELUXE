@@ -382,7 +382,6 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
             tts.stop();
         }
         super.onDestroy();
-
         tts.shutdown();
     }
 
@@ -398,9 +397,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
                 @Override
                 public void onStart(String s) {
                     if(s.equals("uttered")) {
-                        Log.e(TAG, "onStart");
-                        Handler handler = new Handler();
-                        handler.post(new Runnable() {
+                        runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 Toast.makeText(context, "STARTED", Toast.LENGTH_SHORT).show();
@@ -412,9 +409,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
                 @Override
                 public void onDone(String s) {
                     if(s.equals("uttered")) {
-                        Log.e(TAG, "onDone");
-                        Handler handler = new Handler();
-                        handler.post(new Runnable() {
+                        runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 Toast.makeText(context, "DONE", Toast.LENGTH_SHORT).show();
