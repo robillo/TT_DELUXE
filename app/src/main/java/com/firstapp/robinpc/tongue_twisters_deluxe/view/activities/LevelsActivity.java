@@ -32,7 +32,6 @@ import java.util.List;
 
 public class LevelsActivity extends AppCompatActivity {
 
-
     boolean doubleBackToExitPressedOnce = false;
     private LinearLayout dotsLayout;
     private TextView[] dots;
@@ -69,7 +68,6 @@ public class LevelsActivity extends AppCompatActivity {
         intent_page = i.getIntExtra("tab", 1);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
         assignStringValues();
 
         // Instantiate a ViewPager and a PagerAdapter.

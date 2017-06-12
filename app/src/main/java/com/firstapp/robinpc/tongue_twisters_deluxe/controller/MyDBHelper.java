@@ -11,19 +11,16 @@ import android.support.annotation.NonNull;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 public class MyDBHelper extends SQLiteOpenHelper{
 
-    public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "AddTwisters.db";
-    public static final String TABLE_NAME = "AddTwisters";
-    public static final String COLUMN_ID = "ID";
-    public static final String COLUMN_NAME = "NAME";
-    public static final String COLUMN_DESCRIPTION = "DESCRIPTION";
+    private static final int DATABASE_VERSION = 1;
+    private static final String DATABASE_NAME = "AddTwisters.db";
+    private static final String TABLE_NAME = "AddTwisters";
+    private static final String COLUMN_ID = "ID";
+    private static final String COLUMN_NAME = "NAME";
+    private static final String COLUMN_DESCRIPTION = "DESCRIPTION";
 
     public MyDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -53,9 +50,8 @@ public class MyDBHelper extends SQLiteOpenHelper{
     //READ
     public Cursor getTwister(int ID){
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME +
+        return sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME +
                 " WHERE " + COLUMN_ID + "=" + ID + " ", null);
-        return cursor;
     }
     //UPDATE
     public boolean updateTwister(Integer ID, String NAME, String DESCRIPTION) {
@@ -74,23 +70,6 @@ public class MyDBHelper extends SQLiteOpenHelper{
                 new String[] { Integer.toString(ID) });
     }
 
-    /*
-    public ArrayList<String> getAllTwisters() {
-        ArrayList<String> array_list = new ArrayList<>();
-
-        //hp = new HashMap();
-        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor res =  sqLiteDatabase.rawQuery( "SELECT * FROM " + TABLE_NAME + " ", null );
-        res.moveToFirst();
-
-        while(res.isAfterLast() == false){
-            array_list.add(res.getString(res.getColumnIndex(COLUMN_NAME)));
-            res.moveToNext();
-        }
-        return array_list;
-    }
-    */
-
     public List<Data> getAllTwisters() {
         List<Data> data = new ArrayList<>();
 
@@ -98,7 +77,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
         Cursor res =  sqLiteDatabase.rawQuery( "SELECT * FROM " + TABLE_NAME + " ", null );
         res.moveToFirst();
 
-        while(res.isAfterLast() == false){
+        while(!res.isAfterLast()){
             data.add(new Data(res.getString(res.getColumnIndex(COLUMN_ID)),res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_DESCRIPTION))));
             res.moveToNext();
         }
@@ -108,7 +87,6 @@ public class MyDBHelper extends SQLiteOpenHelper{
 
     public int numberOfRows(){
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
-        int numRows = (int) DatabaseUtils.queryNumEntries(sqLiteDatabase, TABLE_NAME);
-        return numRows;
+        return (int) DatabaseUtils.queryNumEntries(sqLiteDatabase, TABLE_NAME);
     };
 }
