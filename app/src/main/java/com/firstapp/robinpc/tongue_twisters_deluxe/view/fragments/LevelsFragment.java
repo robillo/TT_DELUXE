@@ -16,6 +16,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.activities.DetailActivity;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class LevelsFragment extends Fragment {
 
@@ -23,6 +24,7 @@ public class LevelsFragment extends Fragment {
     private ImageView Photo;
     private CardView cardView;
     private int levelNumber;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     public LevelsFragment() {
         // Required empty public constructor
@@ -33,6 +35,9 @@ public class LevelsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_levels, container, false);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(getActivity());
 
         levelTV = (TextView) v.findViewById(R.id.level);
         levelHeaderTV = (TextView) v.findViewById(R.id.level_header);
