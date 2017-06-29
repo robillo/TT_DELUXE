@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class AddActivity extends AppCompatActivity {
 
@@ -23,11 +24,15 @@ public class AddActivity extends AppCompatActivity {
     private MyDBHelper myDBHelper;
     String name, description;
     EditText e_name, e_description;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         myDBHelper = new MyDBHelper(this);
         e_name = (EditText) findViewById(R.id.e_name);

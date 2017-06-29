@@ -33,6 +33,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.controller.MyDBHelper;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 import com.github.jorgecastilloprz.FABProgressCircle;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.HashMap;
 import java.util.List;
@@ -55,6 +56,7 @@ public class YourActivity extends AppCompatActivity {
     private ImageView layout_alternate2;
     private LinearLayout linearLayout2;
     private FABProgressCircle mFabProgressCircle;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,9 @@ public class YourActivity extends AppCompatActivity {
         setContentView(R.layout.activity_your);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         MyDBHelper myDBHelper = new MyDBHelper(this);
 

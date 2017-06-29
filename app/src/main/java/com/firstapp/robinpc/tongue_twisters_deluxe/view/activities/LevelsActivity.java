@@ -26,6 +26,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.RVAFeature;
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.ZoomOutPageTransformer;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.fragments.LevelsFragment;
 import com.firstapp.robinpc.tongue_twisters_deluxe.view.holders.Feature;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,28 +35,10 @@ public class LevelsActivity extends AppCompatActivity {
 
     boolean doubleBackToExitPressedOnce = false;
     private LinearLayout dotsLayout;
-    private TextView[] dots;
-    private int intent_page;
     private int[] layouts;
-    private RecyclerView recyclerView;
-    private List<Feature> list;
     private String[] levels, levelHeaders, photoUrls;
-
-    /**
-     * The number of pages (wizard steps) to show in this demo.
-     */
     private static final int NUM_PAGES = 10;
-
-    /**
-     * The pager widget, which handles animation and allows swiping horizontally to access previous
-     * and next wizard steps.
-     */
-    private ViewPager mPager;
-
-    /**
-     * The pager adapter, which provides the pages to the view pager widget.
-     */
-    private PagerAdapter mPagerAdapter;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,17 +48,18 @@ public class LevelsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Intent i = getIntent();
-        intent_page = i.getIntExtra("tab", 1);
+        int intent_page = i.getIntExtra("tab", 1);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         assignStringValues();
 
-        // Instantiate a ViewPager and a PagerAdapter.
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        mPager = (ViewPager) findViewById(R.id.pager);
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        ViewPager mPager = (ViewPager) findViewById(R.id.pager);
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
-        // layouts of all welcome sliders
-        // add few more layouts if you want
+
         layouts = new int[]{
                 R.layout.fragment_levels,
                 R.layout.fragment_levels,
@@ -88,16 +72,15 @@ public class LevelsActivity extends AppCompatActivity {
                 R.layout.fragment_levels,
                 R.layout.fragment_levels};
 
-        // adding bottom dots
         addBottomDots(0);
 
-        mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
+        PagerAdapter mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
         mPager.setClipToPadding(false);
         mPager.setPageTransformer(true, new ZoomOutPageTransformer());
         mPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
-        list = new ArrayList<>();
+        List<Feature> list = new ArrayList<>();
         list.add(new Feature("Your Twisters", "Use Your Imagination To Create Your Own Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png", 1));
         list.add(new Feature("Share App With Friends", "Enable Your Friends Gain Access To The Vast Collection Of Tongue Twisters.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png", 2));
         list.add(new Feature("Review App?", "Like the App? Or Do You Want an additional feature to be added to be app? Here's The Place You Seek.", "https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png", 3));
@@ -111,8 +94,9 @@ public class LevelsActivity extends AppCompatActivity {
         photoUrls = getResources().getStringArray(R.array.photoUrls);
     }
 
+    @SuppressWarnings("deprecation")
     private void addBottomDots(int currentPage) {
-        dots = new TextView[layouts.length];
+        TextView[] dots = new TextView[layouts.length];
 
         int[] colorsActive = getResources().getIntArray(R.array.array_dot_active);
         int[] colorsInactive = getResources().getIntArray(R.array.array_dot_inactive);
@@ -203,7 +187,7 @@ public class LevelsActivity extends AppCompatActivity {
      * sequence.
      */
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
-        public ScreenSlidePagerAdapter(FragmentManager fm) {
+        ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
@@ -283,16 +267,6 @@ public class LevelsActivity extends AppCompatActivity {
 
             addBottomDots(position);
 
-            // changing the next button text 'NEXT' / 'GOT IT'
-            if (position == layouts.length - 1) {
-                // last page. make button text to GOT IT
-                //btnNext.setText(getString(R.string.start));
-                //btnSkip.setVisibility(View.GONE);
-            } else {
-                // still pages are left
-                //btnNext.setText(getString(R.string.next));
-                //btnSkip.setVisibility(View.VISIBLE);
-            }
         }
 
         @Override

@@ -28,6 +28,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.view.adapters.Recycler_View_A
 import com.firstapp.robinpc.tongue_twisters_deluxe.controller.RecyclerviewTouchListener;
 import com.firstapp.robinpc.tongue_twisters_deluxe.model.Data;
 import com.github.jorgecastilloprz.FABProgressCircle;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -48,6 +49,7 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
     Button prev, next;
     private Data test_data;
     private FABProgressCircle mFabProgressCircle;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,9 @@ public class DetailActivity extends AppCompatActivity implements TextToSpeech.On
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         //INSTANTIATION
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);

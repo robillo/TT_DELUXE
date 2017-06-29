@@ -8,8 +8,8 @@ android {
         applicationId "com.firstapp.robinpc.tongue_twisters_deluxe"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 13
-        versionName "4.8"
+        versionCode 15
+        versionName "5.0"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
@@ -31,6 +31,7 @@ dependencies {
     compile 'com.android.support:support-vector-drawable:25.3.1'
     compile 'jp.wasabeef:glide-transformations:2.0.2'
     compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    compile 'com.google.firebase:firebase-core:10.0.1'
     testCompile 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'

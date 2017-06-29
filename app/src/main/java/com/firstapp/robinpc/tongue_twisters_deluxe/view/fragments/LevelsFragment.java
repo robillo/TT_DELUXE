@@ -55,18 +55,20 @@ public class LevelsFragment extends Fragment {
     }
 
     private void setPlayground(Bundle args){
-        String Level = args.getString("level");
-        String levelHeader = args.getString("levelHeader");
-        String photoUrl = args.getString("photoUrl");
-        levelNumber = args.getInt("levelNumber");
+        if(args!=null){
+            String Level = args.getString("level");
+            String levelHeader = args.getString("levelHeader");
+            String photoUrl = args.getString("photoUrl");
+            levelNumber = args.getInt("levelNumber");
 
-        levelTV.setText(Level);
-        levelHeaderTV.setText(levelHeader);
-        Glide.with(this)
-                .load(photoUrl)
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .crossFade()
-                .centerCrop()
-                .into(Photo);
+            levelTV.setText(Level);
+            levelHeaderTV.setText(levelHeader);
+            Glide.with(this)
+                    .load(photoUrl)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .crossFade()
+                    .centerCrop()
+                    .into(Photo);
+        }
     }
 }
