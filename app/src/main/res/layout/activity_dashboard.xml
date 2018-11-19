@@ -20,4 +20,23 @@
         fontPath="fonts/historia.ttf"
         tools:ignore="MissingPrefix" />
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorIntensity7"
+            android:id="@+id/hint_select_level_text_view"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="10sp"
+            android:text="@string/select_level_of_difficulty"
+            android:textSize="28sp"
+            android:gravity="center"
+            fontPath="fonts/blacklite.ttf"
+            tools:ignore="MissingPrefix" />
+
+    </android.support.v4.widget.NestedScrollView>
+
 </LinearLayout>

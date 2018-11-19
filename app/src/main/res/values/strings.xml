@@ -559,4 +559,5 @@
     <string name="level">Level</string>
     <string name="level_header">Level Header</string>
     <string name="feature_header">Feature Header</string>
+    <string name="select_level_of_difficulty">select difficulty level</string>
 </resources>
