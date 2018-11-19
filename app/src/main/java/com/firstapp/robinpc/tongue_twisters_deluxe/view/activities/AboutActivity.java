@@ -29,15 +29,9 @@ public class AboutActivity extends AppCompatActivity {
         imageView2 = (ImageView) findViewById(R.id.imageView2);
         Glide.with(this)
                 .load("https://2.bp.blogspot.com/-uj-cptq9ELE/WITQa8VA1xI/AAAAAAAAADg/In0g-bhXoUscy1xR8PTjdueG8PjOTgi3gCLcB/s1600/IMG-20161006-WA0009.jpg")
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .crossFade()
-                .fitCenter()
                 .into(imageView1);
         Glide.with(this)
                 .load("https://3.bp.blogspot.com/-YjGwQN3cJqQ/WJA0np9XwBI/AAAAAAAAAEo/V5n452vyVVsTTLEh-6jluIhO5mgWhwEOwCLcB/s1600/1485676792605a.jpg")
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .crossFade()
-                .fitCenter()
                 .into(imageView2);
     }
 

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Tongue Twisters</string>
     <string name="action_settings">Settings</string>
 
@@ -134,7 +134,7 @@
 
     <string-array name="four_headers">
         <item>Coy Codes</item>
-        <item>Thirty Three Theives</item>
+        <item>Thirty Three Thieves</item>
         <item>3-D Thoughts</item>
         <item>Luke Likes</item>
         <item>Pick Pickens</item>
@@ -305,7 +305,7 @@
         <item>6.\tPickford’s packers packed a packet of crisps.</item>
         <item>7.\tGobbling gorgoyles gobbled gobbling gobblings.</item>
         <item>8.\tMr. tongue twister tried to train his tongue to twist and turn, and twit and twat, to learn the letter “T".</item>
-        <item>9.\tShe saw Sherif\’s shoes on the sofa. She was sure she saw Sherif’s shoes on the sofa.</item>
+        <item>9.\tShe saw Sherif\’s shoes on the sofa. She was sure she saw Sheriff’s shoes on the sofa.</item>
         <item>10.\tBirdie birdie in the sky laid a turdie in my eye, If cows could fly I’d have a cow pie in my eye.</item>
         <item>11.\tFour furious friends fought for the phone.</item>
         <item>12.\tAs I was in Arkansas I saw a saw that could outsaw any saw I ever saw. If you happen to see a saw that could outsaw the saw I saw, I’d like to see the saw you saw.</item>
@@ -321,7 +321,7 @@
         <item>4.\tI saw Susan sitting in a shoe shine shop. Where she sits she shines,  and where she shines she sits.</item>
         <item>5.\tThere was a fisherman named Fisher who fished for some fish in a fissure. Till a fish with a grin, pulled the fisherman in. Now they are fishing the fissure for the Fisher.</item>
         <item>6.\tI wish to wish the wish you wish to wish, but if you wish to wish the wish the witch wishes, I won’t wish the wish you wish to wish.</item>
-        <item>7.\tHow many cookies could a good cook cook if a good cook could cook cookies? –A good cook could cook as much cookies as a good cook who could cook cookies.</item>
+        <item tools:ignore="Typos">7.\tHow many cookies could a good cook cook if a good cook could cook cookies? –A good cook could cook as much cookies as a good cook who could cook cookies.</item>
         <item>8.\tHow much ground would a groundhog hog, if a groundhog could hog ground? – A groundhog would hog all the ground he could hog, if a groundhog could hog ground.</item>
         <item>9.\tYeelow butter, purple jelly, red jam, black bread. Spread it thick, say it quick. \t Yeelow butter, purple jelly, red jam, black bread. Spread it thicker, say it quicker.     Yeelow butter, purple jelly, red jam, black bread. Don’t eat with your mouthfull.</item>
         <item>10.\tIf you are keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.</item>
@@ -413,7 +413,7 @@
         <item>6.\tThe seething sea ceaseth; thus the seething sea sufficeth us.</item>
         <item>7.\tBut she as far surpasseth sycorax, As a great’st does least.</item>
         <item>8.\tThe batter with the butter is the batter that is better.</item>
-        <item>9.\tDon’t trouble trouble, until trouble troubles you! If you trouble trouble triple trouble troubles you.</item>
+        <item tools:ignore="Typos">9.\tDon’t trouble trouble, until trouble troubles you! If you trouble trouble triple trouble troubles you.</item>
         <item>10.\tA smart fella, a fella smart. It takes a smart fella to say a fella smart.</item>
         <item>11.\tDon’t spring on the inner-spring this spring or there will be an offspring next spring.</item>
         <item>12.\tWe will learn why her lowly lone, worn yarn loom will rarely earn immoral money.</item>
@@ -447,14 +447,14 @@
         <item>4.\tIf you stick a stock of liquor in your locker it is slick to stick a lock upon your stock or some joker who is slicker is going to trick you of your liquor if you fail to lock your liquor with a lock.</item>
         <item>5.\tWhen a doctor doctors a doctor, does the doctor doing the doctoring doctor as the doctor being doctored wants to be doctored or does the doctor doing the doctoring doctor as he wants to doctor?</item>
         <item>6.\tBut a harder thing still to do. What a to do to die today, at a quarter or two to two. A  terribly difficult thing to say but a harder thing still to do. The dragon will come at the beat of the drum, with a rat-a-tat-tat-a-tat-tat-a-tat-to, at a quarter or two to two today, at quarter or two to two.</item>
-        <item>7.\tI know a boy named tate who dined with his girl at eight eight. I’m unable to state what tate ate at eight eight or what tate’s tete ate at eight eight.</item>
+        <item tools:ignore="Typos">7.\tI know a boy named tate who dined with his girl at eight eight. I’m unable to state what tate ate at eight eight or what tate’s tete ate at eight eight.</item>
         <item>8.\tTheophilus thadeus thistle down, the successful thistle-sifter, while sifting a sieve-full of unsifted thistles, thrust three thousand thistles through the thick of his thumb. Now, if theophilus thadeus thistle down, the successful thistle-sifter, thrust three thousand thistles through the thick of his thumb, see that thou, while sifting a sieve-full of unsifted thisltes thrust not three thousand thistles through the thick of thy thumb.</item>
-        <item>9.\tEsau wood sawed wood. All the wood Esau wood saw, Esau wood would saw. All the wood wood saw, Esau sought to saw. One day Esau wood’s wood-saw would saw no wood. So Esau wood sought a new wood-saw. The new wood-saw would saw wood. Oh, the wood Esau wood would saw. Esau sought a saw that would saw wood as no other wood-saw would-saw. And Esau found a saw that would saw as no other wood-saw would saw. And Esau wood sawed wood.</item>
-        <item>10.\tEd Nott was shot and Sam Shott was not. So its better to be Shott than Nott. Some say Nott was not shot. But Shott says he shot Nott. Either the shot Shott shot at Nott was not shot, or Nott was shot. If the shot Shott shot shot Nott, Nott was shot. But if the shot Shott shot shot Shott, the shot was Shott, not Nott. However, the shot Shott shot shot not Shott-but Nott. So, Ed Nott was shot and that’s hot! Is it not.</item>
+        <item tools:ignore="Typos">9.\tEsau wood sawed wood. All the wood Esau wood saw, Esau wood would saw. All the wood wood saw, Esau sought to saw. One day Esau wood’s wood-saw would saw no wood. So Esau wood sought a new wood-saw. The new wood-saw would saw wood. Oh, the wood Esau wood would saw. Esau sought a saw that would saw wood as no other wood-saw would-saw. And Esau found a saw that would saw as no other wood-saw would saw. And Esau wood sawed wood.</item>
+        <item tools:ignore="Typos">10.\tEd Nott was shot and Sam Shott was not. So its better to be Shott than Nott. Some say Nott was not shot. But Shott says he shot Nott. Either the shot Shott shot at Nott was not shot, or Nott was shot. If the shot Shott shot shot Nott, Nott was shot. But if the shot Shott shot shot Shott, the shot was Shott, not Nott. However, the shot Shott shot shot not Shott-but Nott. So, Ed Nott was shot and that’s hot! Is it not.</item>
         <item>11.\tChester chooses chestnuts, cheddar cheese with chewy chives. He chews them and he chooses them. He chooses them and he chews them. Those chestnuts, cheddar cheese and chives in cherry, charming chunks.</item>
         <item>12.\tMoses supposes his tosses are roses. But moses supposes erroneously. Moses, he noses his toeses aren’t roses, as Moses supposes his toeses to be.</item>
         <item>13.\tThree tree turtles took turns talking tongue twisters. If three tree turtles took turns talking tongue twisters, where’s the twisters the three tree turtles talked?</item>
-        <item>14.\tOf all the felt I ever felt I never felt that felt like that felt felt.</item>
+        <item tools:ignore="Typos">14.\tOf all the felt I ever felt I never felt that felt like that felt felt.</item>
         <item>15.\tFarell\'s features fabulous food \'n\' fantastic fountain fantasies for frolicking, fun filled festive families.</item>
     </string-array>
 
@@ -472,7 +472,7 @@
         <item>11.\tTerry Teeter, a teeter-totter teacher, taught her daughter Tara to teeter-totter, but Tara Teeter didn’t teeter-totter as a Terry Teeter taught her to.</item>
         <item>12.\tThe cat crept into then crypt, crapped and crept out.</item>
         <item>13.\tWe need a plan to fan a pan; find a pan to fan, than find a fan to fan the pan, than fan than pan.</item>
-        <item>14.\tOf all the felt I ever felt I never felt that felt like that felt felt.</item>
+        <item tools:ignore="Typos">14.\tOf all the felt I ever felt I never felt that felt like that felt felt.</item>
         <item>15.\tFarell’s features fabulous food ‘n’ fantastic fountain fantasies for frolicking, fun filled festive families.</item>
         <item>15.\tGive me the gift of a grip-top sock, a clip drape shipshape tip top sock. Not your spinslick  slapstick slapshod stock, but a plastic, elastic grip-top sock. Non of your fantastic slack swap slop. From a slap dash flash cash haberdash shop. Not a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock. Not a supersheet seersucker rucksack sock, not a spot speckled frog-freckled cheap sheik’s sock. Off a hodge-podge moss-blotched scotch-botched block. Nothing slipshod drip drop flip flop or glip glop. Tip me to a tip top grip-top sock.</item>
         <item>14.\tMy friend Gladys Oh, the sadness of her sadness when she’s sad.

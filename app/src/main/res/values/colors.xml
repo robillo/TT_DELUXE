@@ -1,18 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFB300</color>
-    <color name="colorPrimaryDark">#FF8F00</color>
+    <color name="colorPrimary">#318cf4</color>
+    <color name="colorPrimaryDark">#2b81e2</color>
+    <color name="colorAccent">#de4c0e</color>
+
+    <color name="colorWhiteShade">#FFFFFF</color>
+    <color name="colorBlackShade">#000000</color>
+
+    <color name="colorTransparentPrimary">#e1e9f1</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <color name="colorBlackShade2">#7F7F7F</color>
+    <color name="colorBlackShade3">#CCCBCA</color>
+
     <color name="colorPrimaryDark2">#4CC7FF</color>
     <color name="colorPrimaryDark3">#0D47A1</color>
     <color name="colorHighlightCard">#00B0FF</color>
     <color name="colorPrimaryDifferent">#4CC7FF</color>
-    <color name="colorAccent">#D84315</color>
     <color name="colorPrimaryLight">#FFCA28</color>
     <color name="colorPrimaryLightLight">#FFE082</color>
-    <color name="colorWhiteShade">#FFFFFF</color>
-    <color name="colorBlackShade">#000000</color>
-    <color name="colorBlackShade2">#7F7F7F</color>
-    <color name="colorBlackShade3">#CCCBCA</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#CC0048</color>

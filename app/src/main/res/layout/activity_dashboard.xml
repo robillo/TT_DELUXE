@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".new_app.DashboardActivity"
+    android:background="@color/colorWhiteShade">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/app_name_text_view"
+        android:layout_marginTop="20sp"
+        android:text="@string/app_name"
+        android:textSize="35sp"
+        android:gravity="center"
+        fontPath="fonts/historia.ttf"
+        tools:ignore="MissingPrefix" />
+
+</LinearLayout>

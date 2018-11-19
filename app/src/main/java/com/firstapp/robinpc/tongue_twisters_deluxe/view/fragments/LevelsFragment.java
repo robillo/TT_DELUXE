@@ -70,9 +70,6 @@ public class LevelsFragment extends Fragment {
             levelHeaderTV.setText(levelHeader);
             Glide.with(this)
                     .load(photoUrl)
-                    .diskCacheStrategy(DiskCacheStrategy.ALL)
-                    .crossFade()
-                    .centerCrop()
                     .into(Photo);
         }
     }

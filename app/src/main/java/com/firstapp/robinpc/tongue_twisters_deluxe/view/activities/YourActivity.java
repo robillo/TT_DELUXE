@@ -51,7 +51,7 @@ public class YourActivity extends AppCompatActivity {
     private Button prev, next;
     private Data test_data;
     FloatingActionButton fab;
-    private HashMap<String, String> map = new HashMap<String, String>();
+    private HashMap<String, String> map = new HashMap<>();
     private LinearLayout layout_alternate;
     private ImageView layout_alternate2;
     private LinearLayout linearLayout2;
@@ -119,9 +119,6 @@ public class YourActivity extends AppCompatActivity {
 
         Glide.with(this)
                 .load("https://3.bp.blogspot.com/-V6twr9315Fo/WJBgEtsEGoI/AAAAAAAAAF0/cXpZ1Uc_4u0Zn-XAIisWwlc7oOXK6Nv-gCLcB/s1600/ph7.png")
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .crossFade()
-                .centerCrop()
                 .into(layout_alternate2);
 
 
