@@ -56,7 +56,8 @@
                 android:resource="@xml/new_app_widget_info" />
         </receiver>
 
-        <activity android:name=".new_app.DashboardActivity">
+        <activity android:name=".new_app.dashboard.DashboardActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

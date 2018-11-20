@@ -14,6 +14,10 @@
     <color name="colorIntensity5">#9E9E9E</color>
     <color name="colorIntensity6">#BDBDBD</color>
     <color name="colorIntensity7">#cfcfcf</color>
+    <color name="colorIntensity8">#dfdfdf</color>
+    <color name="colorIntensity9">#efefef</color>
+    <color name="colorIntensity10">#f2f2f2</color>
+    <color name="colorIntensity11">#f9f9f9</color>
 
     <color name="colorTransparentPrimary">#e1e9f1</color>
 

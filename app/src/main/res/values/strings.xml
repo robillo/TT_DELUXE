@@ -39,6 +39,33 @@
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
 
+
+    <string-array name="level_number_headers">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+        <item>Level 5</item>
+        <item>Level 6</item>
+        <item>Level 7</item>
+        <item>Level 8</item>
+        <item>Level 9</item>
+        <item>Level 10</item>
+    </string-array>
+
+    <string-array name="level_names">
+        <item>Annihilatory Armageddon</item>
+        <item>Brain Blaster</item>
+        <item>Cosmic Clusters</item>
+        <item>Doomsday Destruction</item>
+        <item>Extensive Extremety</item>
+        <item>Fatal Frost</item>
+        <item>Gliding Gears</item>
+        <item>Hefty Harks</item>
+        <item>Inclusive Incompetence</item>
+        <item>Jarring Jigsaw</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
