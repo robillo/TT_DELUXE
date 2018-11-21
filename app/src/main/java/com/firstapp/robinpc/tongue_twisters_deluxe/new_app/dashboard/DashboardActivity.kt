@@ -53,7 +53,7 @@ class DashboardActivity : AppCompatActivity() {
     }
 
     private fun inflateLevelFiguresList() {
-        levelFiguresList = RetrieveLevelFigures(this).levelFiguresList
+        levelFiguresList = RetrieveLevelFigures(this).getLevelFiguresList()
     }
 
     override fun attachBaseContext(newBase: Context) {
