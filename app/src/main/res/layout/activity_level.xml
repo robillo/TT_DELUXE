@@ -111,7 +111,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
-                    android:alpha="0.8"
+                    android:alpha="0.7"
                     android:layout_marginTop="20sp"
                     android:src="@drawable/share_with_friends"
                     tools:ignore="ContentDescription" />
@@ -178,10 +178,78 @@
 
         </LinearLayout>
 
-        <View
+        <FrameLayout
             android:layout_width="0sp"
-            android:layout_height="12sp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingRight="10sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                    <ImageView
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:padding="5sp"
+                        android:tint="@color/colorPrimaryIntensity7"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_loop_black_48"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12sp"
+                        android:textColor="@color/colorPrimaryIntensity5"
+                        android:text="SELF PLAY"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        tools:ignore="MissingPrefix,RtlHardcoded"
+                        fontPath="fonts/Comfortaa-Light.ttf"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                    <ImageView
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:padding="5sp"
+                        android:tint="@color/colorPrimaryIntensity7"
+                        android:layout_gravity="center"
+                        android:src="@drawable/round_volume_up_black_48"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12sp"
+                        android:textColor="@color/colorPrimaryIntensity5"
+                        android:text="SPEECH ON"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        tools:ignore="MissingPrefix,RtlHardcoded"
+                        fontPath="fonts/Comfortaa-Light.ttf"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"

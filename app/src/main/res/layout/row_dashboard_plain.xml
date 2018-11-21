@@ -28,8 +28,9 @@
                 tools:ignore="ContentDescription"
                 android:layout_marginTop="8sp"
                 android:layout_marginBottom="8sp"
-                android:tint="@color/colorPrimaryIntensity4"
-                android:padding="8sp"/>
+                tools:src="@drawable/level_one"
+                android:tint="@color/colorAccentIntensityOpaque4"
+                android:padding="6sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
