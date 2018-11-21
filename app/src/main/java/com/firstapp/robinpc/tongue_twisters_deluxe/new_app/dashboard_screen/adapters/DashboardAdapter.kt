@@ -1,6 +1,8 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard.adapters
+package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard_screen.adapters
 
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +13,7 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.data.LevelFigures
+import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.level_screen.LevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.RetrieveLevelFigures
 
 internal class DashboardAdapter(private val context: Context, private val list: List<LevelFigures>?) : RecyclerView.Adapter<DashboardAdapter.DashboardHolder>() {
@@ -32,6 +35,12 @@ internal class DashboardAdapter(private val context: Context, private val list: 
             holder.levelHeaderTextView.text = list[position].levelNumberHeader
             Glide.with(context).load(list[position].levelDrawable)
                     .into(holder.levelImageView)
+        }
+
+        holder.itemView.setOnClickListener {
+            context.startActivity(Intent(context, LevelActivity::class.java))
+            (context as Activity)
+                    .overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
         }
     }
 

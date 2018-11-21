@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard
+package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard_screen
 
 import android.content.Context
 import android.os.Build
@@ -8,7 +8,7 @@ import android.support.v4.content.ContextCompat
 import android.view.View
 import android.view.WindowManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard.adapters.DashboardAdapter
+import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard_screen.adapters.DashboardAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.data.LevelFigures
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.RetrieveLevelFigures
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
@@ -21,7 +21,6 @@ class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
-
         setup()
     }
 
