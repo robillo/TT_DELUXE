@@ -64,7 +64,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".new_app.level_screen.LevelActivity"></activity>
+        <activity android:name=".new_app.level_screen.LevelActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

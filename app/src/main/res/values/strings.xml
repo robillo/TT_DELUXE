@@ -589,4 +589,9 @@
     <string name="level_header">Level Header</string>
     <string name="feature_header">Feature Header</string>
     <string name="select_level_of_difficulty">select difficulty level</string>
+
+    <string name="level_number_header_dummy_example">Level 1</string>
+    <string name="level_name_dummy_example">Annihilatory Armageddon</string>
+    <string name="twister_number_dummy_example">Twister 1</string>
+    <string name="twister_name_dummy_example">Robillo Ruins</string>
 </resources>

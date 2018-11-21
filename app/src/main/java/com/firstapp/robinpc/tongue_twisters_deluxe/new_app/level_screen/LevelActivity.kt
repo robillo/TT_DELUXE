@@ -1,5 +1,6 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.level_screen
 
+import android.content.Context
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +8,7 @@ import android.support.v4.content.ContextCompat
 import android.view.View
 import android.view.WindowManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
+import io.github.inflationx.viewpump.ViewPumpContextWrapper
 
 class LevelActivity : AppCompatActivity() {
 
@@ -25,7 +27,7 @@ class LevelActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             flags = flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-            window.statusBarColor = ContextCompat.getColor(this, R.color.colorWhiteShade)
+            window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryIntensity7)
         setWindowFlags(flags)
     }
 
@@ -40,5 +42,9 @@ class LevelActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         overridePendingTransition(R.anim.slide_in_left_activity, R.anim.slide_out_right_activity);
+    }
+
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase))
     }
 }

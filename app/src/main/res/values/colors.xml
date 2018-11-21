@@ -7,6 +7,22 @@
     <color name="colorWhiteShade">#FFFFFF</color>
     <color name="colorBlackShade">#000000</color>
 
+    <color name="colorPrimaryIntensity2">#4895ec</color>
+    <color name="colorPrimaryIntensity3">#5a9ce7</color>
+    <color name="colorPrimaryIntensity4">#6aa3e2</color>
+    <color name="colorPrimaryIntensity5">#74aae6</color>
+    <color name="colorPrimaryIntensity6">#81b2e7</color>
+    <color name="colorPrimaryIntensity7">#91bcea</color>
+    <color name="colorPrimaryIntensity8">#a4c8ef</color>
+    <color name="colorPrimaryIntensity9">#b4d0ef</color>
+
+    <color name="colorAccentIntensity2">#e25417</color>
+    <color name="colorAccentIntensity3">#e1df6531</color>
+    <color name="colorAccentIntensity4">#bddf6531</color>
+    <color name="colorAccentIntensity5">#9adf6531</color>
+    <color name="colorAccentIntensity6">#88df6531</color>
+    <color name="colorAccentIntensity7">#70df6531</color>
+
     <color name="colorIntensity1">#212121</color>
     <color name="colorIntensity2">#424242</color>
     <color name="colorIntensity3">#616161</color>
