@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.data.LevelFigures
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.level_screen.LevelActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.IntentExtras
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.RetrieveLevelFigures
 
 internal class DashboardAdapter(private val context: Context, private val list: List<LevelFigures>?) : RecyclerView.Adapter<DashboardAdapter.DashboardHolder>() {
@@ -38,7 +39,9 @@ internal class DashboardAdapter(private val context: Context, private val list: 
         }
 
         holder.itemView.setOnClickListener {
-            context.startActivity(Intent(context, LevelActivity::class.java))
+            val intent = Intent(context, LevelActivity::class.java)
+            intent.putExtra(IntentExtras.EXTRA_LEVEL_NUMBER, list.get(position).levelNumberHeader)
+            context.startActivity(intent)
             (context as Activity)
                     .overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
         }
