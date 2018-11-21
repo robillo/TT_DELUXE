@@ -350,7 +350,7 @@
         <item>\tI saw Susan sitting in a shoe shine shop. Where she sits she shines,  and where she shines she sits.</item>
         <item>\tThere was a fisherman named Fisher who fished for some fish in a fissure. Till a fish with a grin, pulled the fisherman in. Now they are fishing the fissure for the Fisher.</item>
         <item>\tI wish to wish the wish you wish to wish, but if you wish to wish the wish the witch wishes, I won’t wish the wish you wish to wish.</item>
-        <item tools:ignore="Typos">7.\tHow many cookies could a good cook cook if a good cook could cook cookies? –A good cook could cook as much cookies as a good cook who could cook cookies.</item>
+        <item tools:ignore="Typos">\tHow many cookies could a good cook cook if a good cook could cook cookies? –A good cook could cook as much cookies as a good cook who could cook cookies.</item>
         <item>\tHow much ground would a groundhog hog, if a groundhog could hog ground? – A groundhog would hog all the ground he could hog, if a groundhog could hog ground.</item>
         <item>\tYeelow butter, purple jelly, red jam, black bread. Spread it thick, say it quick. \t Yeelow butter, purple jelly, red jam, black bread. Spread it thicker, say it quicker.     Yeelow butter, purple jelly, red jam, black bread. Don’t eat with your mouthfull.</item>
         <item>\tIf you are keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.</item>
@@ -600,4 +600,6 @@
     <string name="share_with_friends">share with friends</string>
     <string name="next_twister">NEXT</string>
     <string name="previous_twister">PREV</string>
+    <string name="auto_play_on">AUTO ON</string>
+    <string name="auto_play_off">AUTO OFF</string>
 </resources>

@@ -195,7 +195,8 @@
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:paddingRight="10sp"
-                    tools:ignore="RtlHardcoded,RtlSymmetry">
+                    tools:ignore="RtlHardcoded,RtlSymmetry"
+                    android:id="@+id/auto_play_button">
 
                     <ImageView
                         android:layout_width="50sp"
@@ -203,18 +204,21 @@
                         android:padding="5sp"
                         android:tint="@color/colorPrimaryIntensity7"
                         android:layout_gravity="center"
-                        android:src="@drawable/baseline_loop_black_48"/>
+                        android:src="@drawable/baseline_loop_black_48"
+                        tools:ignore="ContentDescription"
+                        android:id="@+id/auto_play_image_view"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="12sp"
                         android:textColor="@color/colorPrimaryIntensity5"
-                        android:text="SELF PLAY"
+                        android:text="@string/auto_play_on"
                         android:textSize="12sp"
                         android:layout_gravity="center"
                         tools:ignore="MissingPrefix,RtlHardcoded"
-                        fontPath="fonts/Comfortaa-Light.ttf"/>
+                        fontPath="fonts/Comfortaa-Light.ttf"
+                        android:id="@+id/auto_play_text_view"/>
 
                 </LinearLayout>
 
@@ -224,26 +228,30 @@
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:paddingLeft="10sp"
-                    tools:ignore="RtlHardcoded,RtlSymmetry">
+                    tools:ignore="RtlHardcoded,RtlSymmetry"
+                    android:id="@+id/play_button">
 
                     <ImageView
                         android:layout_width="50sp"
                         android:layout_height="50sp"
                         android:padding="5sp"
-                        android:tint="@color/colorPrimaryIntensity7"
+                        android:tint="@color/colorPrimaryIntensity4"
                         android:layout_gravity="center"
-                        android:src="@drawable/round_volume_up_black_48"/>
+                        android:src="@drawable/round_volume_up_black_48"
+                        tools:ignore="ContentDescription"
+                        android:id="@+id/play_image"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="12sp"
                         android:textColor="@color/colorPrimaryIntensity5"
-                        android:text="SPEECH ON"
+                        android:text="PLAY"
                         android:textSize="12sp"
                         android:layout_gravity="center"
                         tools:ignore="MissingPrefix,RtlHardcoded"
-                        fontPath="fonts/Comfortaa-Light.ttf"/>
+                        fontPath="fonts/Comfortaa-Light.ttf"
+                        android:id="@+id/play_hint"/>
 
                 </LinearLayout>
 

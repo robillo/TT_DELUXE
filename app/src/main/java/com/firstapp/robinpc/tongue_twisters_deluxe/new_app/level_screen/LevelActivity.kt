@@ -5,19 +5,25 @@ import android.content.Context
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import android.support.v4.content.ContextCompat
 import android.view.View
 import android.view.WindowManager
 import android.widget.ScrollView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
+import com.firstapp.robinpc.tongue_twisters_deluxe.R.color.*
+import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.AppPreferencesHelper
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.IntentExtras
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 import kotlinx.android.synthetic.main.activity_level.*
-import kotlinx.android.synthetic.main.activity_your.*
+import java.lang.Exception
+import java.util.*
 
-class LevelActivity : AppCompatActivity() {
+class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private var LEVEL_NUMBER: Int = -1
+    private var IS_AUTO_PLAY_ON: Boolean = false
+    private lateinit var textToSpeech: TextToSpeech
     private var currentTwisterIndex = 0
     private lateinit var LEVEL_NAME: String
     private lateinit var levelTwistersHeadersArray: Array<String>
@@ -33,20 +39,83 @@ class LevelActivity : AppCompatActivity() {
         setStatusBarColor()
         setLevelNumberAndNameFromIntent()
         setLevelTwistersFromIntent()
+        getAutoPlayFromPreferences()
         setLevelNumberAndNameToViews()
-        showTwisterForCurrentTwisterIndex()
+        instantiateVariables()
         setClickListeners()
+        showTwisterForCurrentTwisterIndex()
+    }
+
+    private fun getAutoPlayFromPreferences() {
+        IS_AUTO_PLAY_ON = AppPreferencesHelper(this).isAutoPlayOn
+    }
+
+    private fun instantiateVariables() {
+        textToSpeech = TextToSpeech(this, this)
+        renderAutoPlayViews()
+    }
+
+    private fun renderAutoPlayViews() {
+        IS_AUTO_PLAY_ON = AppPreferencesHelper(this).isAutoPlayOn
+        if(IS_AUTO_PLAY_ON) {
+            auto_play_image_view.setColorFilter(ContextCompat.getColor(this, colorPrimaryIntensity7))
+            auto_play_text_view.setTextColor(ContextCompat.getColor(this, colorPrimaryIntensity7))
+            auto_play_text_view.text = getString(R.string.auto_play_on)
+        }
+        else {
+            auto_play_image_view.setColorFilter(ContextCompat.getColor(this, colorIntensity5))
+            auto_play_text_view.setTextColor(ContextCompat.getColor(this, colorIntensity5))
+            auto_play_text_view.text = getString(R.string.auto_play_off)
+        }
     }
 
     private fun setClickListeners() {
         previous_twister_button_card.setOnClickListener {
             currentTwisterIndex--
+            pauseTextToSpeakIfSpeaking()
             showTwisterForCurrentTwisterIndex()
         }
         next_twister_button_card.setOnClickListener {
             currentTwisterIndex++
+            pauseTextToSpeakIfSpeaking()
             showTwisterForCurrentTwisterIndex()
         }
+        play_button.setOnClickListener {
+            playTextToSpeech()
+        }
+        auto_play_button.setOnClickListener {
+            AppPreferencesHelper(this).setIsAutoPlayOn(!IS_AUTO_PLAY_ON)
+            renderAutoPlayViews()
+        }
+    }
+
+    private fun playTextToSpeech() {
+        val text: String = twister_text_view.text.toString()
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
+            else
+                @Suppress("DEPRECATION")
+                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null)
+        }
+        catch (e: Exception) {}
+    }
+
+    private fun pauseTextToSpeakIfSpeaking() {
+        if(textToSpeech.isSpeaking) textToSpeech.stop()
+    }
+
+    override fun onPause() {
+        pauseTextToSpeakIfSpeaking()
+        super.onPause()
+    }
+
+    override fun onDestroy() {
+        if(textToSpeech.isSpeaking){
+            textToSpeech.stop()
+            textToSpeech.shutdown()
+        }
+        super.onDestroy()
     }
 
     @SuppressLint("SetTextI18n")
@@ -56,16 +125,17 @@ class LevelActivity : AppCompatActivity() {
         twister_scroll_view.fullScroll(ScrollView.FOCUS_UP)
         twister_text_view.text = levelTwistersArray[currentTwisterIndex]
         setCursorsVisibilityAccordingToIndex()
+        if(IS_AUTO_PLAY_ON) playTextToSpeech()
     }
 
     private fun setCursorsVisibilityAccordingToIndex() {
-        if(currentTwisterIndex == 0)
-            hidePreviousButtonAndHint()
-        else if(currentTwisterIndex == levelTwistersHeadersArray.size - 1)
-            hideNextButtonAndHint()
-        else {
-            showPreviousButtonAndHint()
-            showNextButtonAndHint()
+        when (currentTwisterIndex) {
+            0 -> hidePreviousButtonAndHint()
+            levelTwistersHeadersArray.size - 1 -> hideNextButtonAndHint()
+            else -> {
+                showPreviousButtonAndHint()
+                showNextButtonAndHint()
+            }
         }
     }
 
@@ -163,6 +233,17 @@ class LevelActivity : AppCompatActivity() {
         level_name_text_view.text = LEVEL_NAME
     }
 
+    override fun onInit(status: Int) {
+        if (status == TextToSpeech.SUCCESS) {
+//            initialized = true;
+            textToSpeech.language = Locale.ENGLISH
+
+//            if (queuedText != null) {
+//                speak(queuedText);
+//            }
+        }
+    }
+
     private fun setStatusBarColor() {
         var flags = window.decorView.systemUiVisibility
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
@@ -182,7 +263,7 @@ class LevelActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        overridePendingTransition(R.anim.slide_in_left_activity, R.anim.slide_out_right_activity);
+        overridePendingTransition(R.anim.slide_in_left_activity, R.anim.slide_out_right_activity)
     }
 
     override fun attachBaseContext(newBase: Context) {
