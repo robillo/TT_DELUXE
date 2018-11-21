@@ -34,7 +34,7 @@ class DashboardActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             flags = flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-            window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
+            window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryIntensity3)
         setWindowFlags(flags)
     }
 

@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".new_app.dashboard_screen.DashboardActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimaryIntensity3">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:textColor="@color/colorWhiteShade"
         android:id="@+id/app_name_text_view"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="5sp"
         android:text="@string/app_name"
         android:textSize="35sp"
         android:gravity="center"
@@ -23,7 +24,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimaryIntensity3">
 
         <TextView
             android:layout_width="match_parent"

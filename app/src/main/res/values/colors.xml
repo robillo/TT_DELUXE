@@ -23,6 +23,11 @@
     <color name="colorAccentIntensity6">#88df6531</color>
     <color name="colorAccentIntensity7">#70df6531</color>
 
+    <color name="colorAccentIntensityOpaque2">#de6b3a</color>
+    <color name="colorAccentIntensityOpaque3">#dc8c69</color>
+    <color name="colorAccentIntensityOpaque4">#dc9d81</color>
+    <color name="colorAccentIntensityOpaque5">#dfac95</color>
+
     <color name="colorIntensity1">#212121</color>
     <color name="colorIntensity2">#424242</color>
     <color name="colorIntensity3">#616161</color>

@@ -13,8 +13,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="1sp"
-            android:background="@color/colorPrimary"
-            tools:ignore="SmallSp" />
+            android:background="@color/colorPrimaryIntensity8"
+            tools:ignore="ContentDescription,SmallSp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                 tools:ignore="ContentDescription"
                 android:layout_marginTop="8sp"
                 android:layout_marginBottom="8sp"
-                android:tint="@color/colorPrimary"
+                android:tint="@color/colorPrimaryIntensity4"
                 android:padding="8sp"/>
 
             <LinearLayout
@@ -42,7 +42,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorPrimaryIntensity2"
                     android:id="@+id/level_number"
                     android:textSize="22sp"
                     tools:text="Level 1"/>
@@ -54,7 +54,7 @@
                     tools:text="Annihilatory Armageddon"
                     android:id="@+id/level_name"
                     android:textSize="15sp"
-                    fontPath="fonts/Comfortaa-Bold.ttf"
+                    fontPath="fonts/Comfortaa-Light.ttf"
                     tools:ignore="MissingPrefix"/>
 
             </LinearLayout>

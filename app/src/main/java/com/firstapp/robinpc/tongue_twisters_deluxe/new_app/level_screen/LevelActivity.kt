@@ -27,7 +27,7 @@ class LevelActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             flags = flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-            window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryIntensity7)
+            window.statusBarColor = ContextCompat.getColor(this, R.color.colorWhiteShade)
         setWindowFlags(flags)
     }
 
