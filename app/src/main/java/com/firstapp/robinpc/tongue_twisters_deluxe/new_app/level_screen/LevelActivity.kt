@@ -18,6 +18,10 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper
 import kotlinx.android.synthetic.main.activity_level.*
 import java.lang.Exception
 import java.util.*
+import android.content.Intent
+import android.text.Html
+
+
 
 class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
@@ -87,6 +91,25 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             AppPreferencesHelper(this).setIsAutoPlayOn(!IS_AUTO_PLAY_ON)
             renderAutoPlayViews()
         }
+        share_with_friends_image.setOnClickListener {
+            shareCurrentTwisterWithFriends()
+        }
+        share_with_friends_text.setOnClickListener {
+            shareCurrentTwisterWithFriends()
+        }
+    }
+
+    private fun shareCurrentTwisterWithFriends() {
+        val sharingIntent = Intent(Intent.ACTION_SEND)
+        sharingIntent.type = "text/plain"
+        sharingIntent.putExtra(
+                android.content.Intent.EXTRA_TEXT,
+                "Hey buddy, speak this out loud...\n\n" +
+                        twister_text_view.text + "\n\n" +
+                        "For more tongue twisters:\n" +
+                        "http://bit.ly/tonguetwisterapp"
+        )
+        startActivity(Intent.createChooser(sharingIntent, "Share using"))
     }
 
     private fun playTextToSpeech() {
@@ -235,12 +258,9 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
-//            initialized = true;
             textToSpeech.language = Locale.ENGLISH
 
-//            if (queuedText != null) {
-//                speak(queuedText);
-//            }
+            if(IS_AUTO_PLAY_ON) playTextToSpeech()
         }
     }
 

@@ -114,7 +114,8 @@
                     android:alpha="0.7"
                     android:layout_marginTop="20sp"
                     android:src="@drawable/share_with_friends"
-                    tools:ignore="ContentDescription" />
+                    tools:ignore="ContentDescription"
+                    android:id="@+id/share_with_friends_image"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -123,7 +124,8 @@
                     android:textColor="@color/colorIntensity8"
                     android:text="@string/share_with_friends"
                     android:textSize="20sp"
-                    android:layout_gravity="center_horizontal"/>
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/share_with_friends_text"/>
 
             </LinearLayout>
 
