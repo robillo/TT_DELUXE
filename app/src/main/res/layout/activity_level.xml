@@ -82,7 +82,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/twister_scroll_view">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,16 +102,17 @@
                     android:lineSpacingExtra="10.0sp"
                     fontPath="fonts/Comfortaa-Bold.ttf"
                     tools:ignore="MissingPrefix"
-                    android:textSize="20sp"
+                    android:textSize="30sp"
                     android:paddingTop="15sp"
                     android:paddingLeft="15sp"
-                    android:paddingRight="15sp"/>
+                    android:paddingRight="15sp"
+                    android:gravity="center_horizontal"/>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
                     android:alpha="0.8"
-                    android:layout_marginTop="10sp"
+                    android:layout_marginTop="20sp"
                     android:src="@drawable/share_with_friends"
                     tools:ignore="ContentDescription" />
 
@@ -166,7 +168,8 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="5sp"
                 android:textColor="@color/colorAccentIntensity5"
-                android:text="PREV"
+                android:text="@string/previous_twister"
+                android:id="@+id/previous_hint_text_view"
                 android:layout_marginLeft="7sp"
                 android:textSize="14sp"
                 android:layout_gravity="center_horizontal"
@@ -211,7 +214,8 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="5sp"
                 android:textColor="@color/colorAccentIntensity5"
-                android:text="NEXT"
+                android:text="@string/next_twister"
+                android:id="@+id/next_hint_text_view"
                 android:layout_marginRight="7sp"
                 android:textSize="14sp"
                 android:layout_gravity="center_horizontal"

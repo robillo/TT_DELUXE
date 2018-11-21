@@ -125,6 +125,24 @@
         <item>https://2.bp.blogspot.com/-Cos2v7ZoI8o/WJBgDyUENNI/AAAAAAAAAFs/EGDcj0Sp2HEkM82_Z8A8Dl-1P_4B3bvAgCLcB/s320/ph5.png</item>
     </string-array>
 
+    <string-array name="one_headers">
+        <item>Denise And Fleas</item>
+        <item>Santa\’s Suit</item>
+        <item>Ice Cream Screams</item>
+        <item>Slimy Snails</item>
+        <item>Sinking Sand</item>
+        <item>Black Dog</item>
+        <item>Tom</item>
+        <item>Yelling Yeti</item>
+        <item>Happy Hippo</item>
+        <item>Free Throws</item>
+        <item>Wayne\'s Walruses</item>
+        <item>Irish Wristwatch</item>
+        <item>Laser Raiser</item>
+        <item>Tiny Tigers</item>
+        <item>See Sea</item>
+    </string-array>
+
     <string-array name="two_headers">
         <item>Calm Cram</item>
         <item>Saint\’s Tent</item>
@@ -290,93 +308,75 @@
     </string-array>
 
     <string-array name="one">
-        <item>1.\tDenise sees the fleece, Denise sees the fleas. At least Denise could sneeze and feed and freeze the fleas.</item>
-        <item>2.\tSanta’s short suit shrunk</item>
-        <item>3.\tI scream, you scream, we all scream for ice cream.</item>
-        <item>4.\tSix slimy snails sailed silently.</item>
-        <item>5.\tSinging Sammy Sung Songs on Sinking sands.</item>
-        <item>6.\tA big black bug bit a big black dog on his big black nose.</item>
-        <item>7.\tTom threw Tim three thumbtacks.</item>
-        <item>8.\tYelling yellow yelping yeti.</item>
-        <item>9.\tA happy hippo hopped and hiccupped.</item>
-        <item>10.\tHe threw three free throws.</item>
-        <item>11.\tWayne went to wales to watch walruses.</item>
-        <item>12.\tI wish to wash my Irish wristwatch.</item>
-        <item>13.\tOn a lazy laser raiser lies a laser ray eraser.</item>
-        <item>14.\tTwo tiny tigers take two taxis to town.</item>
-        <item>15.\tI see sea down by the seashore.</item>
-    </string-array>
-
-    <string-array name="one_headers">
-        <item>Denise And Fleas</item>
-        <item>Santa\’s Suit</item>
-        <item>Ice Cream Screams</item>
-        <item>Slimy Snails</item>
-        <item>Sinking Sand</item>
-        <item>Black Dog</item>
-        <item>Tom</item>
-        <item>Yelling Yeti</item>
-        <item>Happy Hippo</item>
-        <item>Free Throws</item>
-        <item>Wayne\'s Walruses</item>
-        <item>Irish Wristwatch</item>
-        <item>Laser Raiser</item>
-        <item>Tiny Tigers</item>
-        <item>See Sea</item>
+        <item>\tDenise sees the fleece, Denise sees the fleas. At least Denise could sneeze and feed and freeze the fleas.</item>
+        <item>\tSanta’s short suit shrunk</item>
+        <item>\tI scream, you scream, we all scream for ice cream.</item>
+        <item>\tSix slimy snails sailed silently.</item>
+        <item>\tSinging Sammy Sung Songs on Sinking sands.</item>
+        <item>\tA big black bug bit a big black dog on his big black nose.</item>
+        <item>\tTom threw Tim three thumbtacks.</item>
+        <item>\tYelling yellow yelping yeti.</item>
+        <item>\tA happy hippo hopped and hiccupped.</item>
+        <item>\tHe threw three free throws.</item>
+        <item>\tWayne went to wales to watch walruses.</item>
+        <item>\tI wish to wash my Irish wristwatch.</item>
+        <item>\tOn a lazy laser raiser lies a laser ray eraser.</item>
+        <item>\tTwo tiny tigers take two taxis to town.</item>
+        <item>\tI see sea down by the seashore.</item>
     </string-array>
 
     <string-array name="two">
-        <item>1.\tHow can a clam cram in a clean cream can?</item>
-        <item>2.\tSend toast to ten tense stout saints’ ten tall tents.</item>
-        <item>3.\tRobillo ran rings around the roman ruins.</item>
-        <item>4.\tSix sick hicks nick six slick bricks with pricks and sticks.</item>
-        <item>5.\tOne-one was a race horse, two-two was one too. One-one won a race. Two-two won one too.</item>
-        <item>6.\tPickford’s packers packed a packet of crisps.</item>
-        <item>7.\tGobbling gorgoyles gobbled gobbling gobblings.</item>
-        <item>8.\tMr. tongue twister tried to train his tongue to twist and turn, and twit and twat, to learn the letter “T".</item>
-        <item>9.\tShe saw Sherif\’s shoes on the sofa. She was sure she saw Sheriff’s shoes on the sofa.</item>
-        <item>10.\tBirdie birdie in the sky laid a turdie in my eye, If cows could fly I’d have a cow pie in my eye.</item>
-        <item>11.\tFour furious friends fought for the phone.</item>
-        <item>12.\tAs I was in Arkansas I saw a saw that could outsaw any saw I ever saw. If you happen to see a saw that could outsaw the saw I saw, I’d like to see the saw you saw.</item>
-        <item>13.\tI thought, I thought of thinking of thanking you.</item>
-        <item>14.\tThe great greek grape growers grow great greek grapes.</item>
-        <item>15.\tSounding by sounds is a sound method of sounding sounds.</item>
+        <item>\tHow can a clam cram in a clean cream can?</item>
+        <item>\tSend toast to ten tense stout saints’ ten tall tents.</item>
+        <item>\tRobillo ran rings around the roman ruins.</item>
+        <item>\tSix sick hicks nick six slick bricks with pricks and sticks.</item>
+        <item>\tOne-one was a race horse, two-two was one too. One-one won a race. Two-two won one too.</item>
+        <item>\tPickford’s packers packed a packet of crisps.</item>
+        <item>\tGobbling gorgoyles gobbled gobbling gobblings.</item>
+        <item>\tMr. tongue twister tried to train his tongue to twist and turn, and twit and twat, to learn the letter “T".</item>
+        <item>\tShe saw Sherif\’s shoes on the sofa. She was sure she saw Sheriff’s shoes on the sofa.</item>
+        <item>\tBirdie birdie in the sky laid a turdie in my eye, If cows could fly I’d have a cow pie in my eye.</item>
+        <item>\tFour furious friends fought for the phone.</item>
+        <item>\tAs I was in Arkansas I saw a saw that could outsaw any saw I ever saw. If you happen to see a saw that could outsaw the saw I saw, I’d like to see the saw you saw.</item>
+        <item>\tI thought, I thought of thinking of thanking you.</item>
+        <item>\tThe great greek grape growers grow great greek grapes.</item>
+        <item>\tSounding by sounds is a sound method of sounding sounds.</item>
     </string-array>
 
     <string-array name="three">
-        <item>1.\tI wish you were a fish in my dish.</item>
-        <item>2.\tThe owner of the inside inn was inside his inside inn with his inside outside his inside inn.</item>
-        <item>3.\tIf you notice this notice, you will notice that this notice is not worth noticing.</item>
-        <item>4.\tI saw Susan sitting in a shoe shine shop. Where she sits she shines,  and where she shines she sits.</item>
-        <item>5.\tThere was a fisherman named Fisher who fished for some fish in a fissure. Till a fish with a grin, pulled the fisherman in. Now they are fishing the fissure for the Fisher.</item>
-        <item>6.\tI wish to wish the wish you wish to wish, but if you wish to wish the wish the witch wishes, I won’t wish the wish you wish to wish.</item>
+        <item>\tI wish you were a fish in my dish.</item>
+        <item>\tThe owner of the inside inn was inside his inside inn with his inside outside his inside inn.</item>
+        <item>\tIf you notice this notice, you will notice that this notice is not worth noticing.</item>
+        <item>\tI saw Susan sitting in a shoe shine shop. Where she sits she shines,  and where she shines she sits.</item>
+        <item>\tThere was a fisherman named Fisher who fished for some fish in a fissure. Till a fish with a grin, pulled the fisherman in. Now they are fishing the fissure for the Fisher.</item>
+        <item>\tI wish to wish the wish you wish to wish, but if you wish to wish the wish the witch wishes, I won’t wish the wish you wish to wish.</item>
         <item tools:ignore="Typos">7.\tHow many cookies could a good cook cook if a good cook could cook cookies? –A good cook could cook as much cookies as a good cook who could cook cookies.</item>
-        <item>8.\tHow much ground would a groundhog hog, if a groundhog could hog ground? – A groundhog would hog all the ground he could hog, if a groundhog could hog ground.</item>
-        <item>9.\tYeelow butter, purple jelly, red jam, black bread. Spread it thick, say it quick. \t Yeelow butter, purple jelly, red jam, black bread. Spread it thicker, say it quicker.     Yeelow butter, purple jelly, red jam, black bread. Don’t eat with your mouthfull.</item>
-        <item>10.\tIf you are keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.</item>
-        <item>11.\tIf coloured caterpillars could change their colours constantly could they keep their coloured coat coloured properly?</item>
-        <item>12.\tAs he gobbled the cakes on his plate, the greedy ape said as he ate, the greener green grapes are, the keener keen apes are to gobble green grape cakes, they’re great.</item>
-        <item>13.\tA fly and flea flew into a flue, said the fly to the flea"what shall we do?" “let us fly" said the flea, said the fly “shall we flee", so they flew through a flaw in the flue.</item>
-        <item>14.\tHow much dew does a dewdrop drop if a dewdrop do drop dew? – They do drop, they do as do dewdrops drop if dewdrops do drop dew.</item>
-        <item>15.\tI’am a sheet slitter. I slit sheets. I’m the sleekest sheet slitter that ever slit sheets.</item>
+        <item>\tHow much ground would a groundhog hog, if a groundhog could hog ground? – A groundhog would hog all the ground he could hog, if a groundhog could hog ground.</item>
+        <item>\tYeelow butter, purple jelly, red jam, black bread. Spread it thick, say it quick. \t Yeelow butter, purple jelly, red jam, black bread. Spread it thicker, say it quicker.     Yeelow butter, purple jelly, red jam, black bread. Don’t eat with your mouthfull.</item>
+        <item>\tIf you are keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.</item>
+        <item>\tIf coloured caterpillars could change their colours constantly could they keep their coloured coat coloured properly?</item>
+        <item>\tAs he gobbled the cakes on his plate, the greedy ape said as he ate, the greener green grapes are, the keener keen apes are to gobble green grape cakes, they’re great.</item>
+        <item>\tA fly and flea flew into a flue, said the fly to the flea"what shall we do?" “let us fly" said the flea, said the fly “shall we flee", so they flew through a flaw in the flue.</item>
+        <item>\tHow much dew does a dewdrop drop if a dewdrop do drop dew? – They do drop, they do as do dewdrops drop if dewdrops do drop dew.</item>
+        <item>\tI’am a sheet slitter. I slit sheets. I’m the sleekest sheet slitter that ever slit sheets.</item>
     </string-array>
 
     <string-array name="ten">
-        <item>1.\tI saw a kitten eating chicken in the kitchen.</item>
-        <item>2.\tThe third time the three-toed tree toads tried tying their toes together, the third three-toed tree toad tied the two-toed tree toads toes to the third toads toes. Then the two tied three-toad tree toads told the third three-toed tree toad that tying their toes together thrilled them their toe tips.</item>
-        <item>3.\tThrifty theophilus, the theocratic thistle sifter, thrice thrust three thousand thistles through the slick thick of his softly throbbing thumb.</item>
-        <item>4.\tWilson Winston winced whilst he minced a squinting prince.</item>
-        <item>5.\tI thought the haughty professor tortoise taught onotology, but the naughty tortoise taught us tautology.</item>
-        <item>6.\tHe thrusts his fists against the posts, and still insists he sees the ghost.</item>
-        <item>7.\tA synonym for cinnamon is a cinnamon synonym.</item>
-        <item>8.\tTell a tall tale of a tall tailed dog, that told Tim it tap a tall ale and thump the top of Tim’s tomb.</item>
-        <item>9.\tSlinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake’s leglessness.</item>
-        <item>10.\tSilly Sally should shave the sheep, she should show soon so selling sheep shaved showed she shouldn’t show shaved sheep so soon.</item>
-        <item>11.\tCorythosaurus bit the gory esophagus of the dilapidated dilophasurus who lived in the sorest of forest’s with  the whacky packy-rhinosaurus and the ceratosaurus, but the most poorest and mourish panoplosaurus called Wang sang and rang chorus with the lurdusaurus and the brachiosaurus who was dying of staphylococcus-aureas.</item>
-        <item>12.\tYou name it, we claim it. If we can’t get it, we will send you to get it. If we can’t send you to get it, forget it. Who’s  got it, if we don’t get it?</item>
-        <item>13.\tIf your Bob doesn’t give our Bob that bob that your Bob owes our Bob, our Bob will give your Bob a bob in the eye.</item>
-        <item>14.\tThe sixth sick sheik’s sixth sheep’s sick.</item>
-        <item>15. Mr. Knott and Mr. Watt on the phone
+        <item>\tI saw a kitten eating chicken in the kitchen.</item>
+        <item>\tThe third time the three-toed tree toads tried tying their toes together, the third three-toed tree toad tied the two-toed tree toads toes to the third toads toes. Then the two tied three-toad tree toads told the third three-toed tree toad that tying their toes together thrilled them their toe tips.</item>
+        <item>\tThrifty theophilus, the theocratic thistle sifter, thrice thrust three thousand thistles through the slick thick of his softly throbbing thumb.</item>
+        <item>\tWilson Winston winced whilst he minced a squinting prince.</item>
+        <item>\tI thought the haughty professor tortoise taught onotology, but the naughty tortoise taught us tautology.</item>
+        <item>\tHe thrusts his fists against the posts, and still insists he sees the ghost.</item>
+        <item>\tA synonym for cinnamon is a cinnamon synonym.</item>
+        <item>\tTell a tall tale of a tall tailed dog, that told Tim it tap a tall ale and thump the top of Tim’s tomb.</item>
+        <item>\tSlinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake’s leglessness.</item>
+        <item>\tSilly Sally should shave the sheep, she should show soon so selling sheep shaved showed she shouldn’t show shaved sheep so soon.</item>
+        <item>\tCorythosaurus bit the gory esophagus of the dilapidated dilophasurus who lived in the sorest of forest’s with  the whacky packy-rhinosaurus and the ceratosaurus, but the most poorest and mourish panoplosaurus called Wang sang and rang chorus with the lurdusaurus and the brachiosaurus who was dying of staphylococcus-aureas.</item>
+        <item>\tYou name it, we claim it. If we can’t get it, we will send you to get it. If we can’t send you to get it, forget it. Who’s  got it, if we don’t get it?</item>
+        <item>\tIf your Bob doesn’t give our Bob that bob that your Bob owes our Bob, our Bob will give your Bob a bob in the eye.</item>
+        <item>\tThe sixth sick sheik’s sixth sheep’s sick.</item>
+        <item>\tMr. Knott and Mr. Watt on the phone
                 Hello?
                 Who’s calling?
                 Watt.
@@ -398,112 +398,112 @@
     </string-array>
 
     <string-array name="four">
-        <item>1.\tCoy knows pseudonoise codes.</item>
-        <item>2.\tThe thirty three thieves thought that they thrilled the throne throughout Thursday.</item>
-        <item>3.\tSomething in a thirty-acre thermal thicket of thorns and thistles thumped and thundered threatening the three-D thoughts of Amit the thug-although, theatrically, it was only the thirteen thousand thistles and thorns through the underneath of his thigh that the thirty year old thug thought of that morning.</item>
+        <item>\tCoy knows pseudonoise codes.</item>
+        <item>\tThe thirty three thieves thought that they thrilled the throne throughout Thursday.</item>
+        <item>\tSomething in a thirty-acre thermal thicket of thorns and thistles thumped and thundered threatening the three-D thoughts of Amit the thug-although, theatrically, it was only the thirteen thousand thistles and thorns through the underneath of his thigh that the thirty year old thug thought of that morning.</item>
         <item>4.\tLuke luck likes lakes. Luke’s duck likes lakes. Luke luck licks lakes. Luke’s duck licks lakes. Duck takes licks in lakes, Luke luck likes. Luke luck takes licks in lakes duck likes.</item>
-        <item>5.\tPick pickens prick his pinkie pickling cheap cling peaches in an inch of Pinch or framing his famed French finch potatoes.</item>
-        <item>6.\tHow much wood could chuck wood’s woodchuck chuck, if chuck wood’s woodchuck could chuck wood?—If chuck wood’s woodchuck could and would chuck wood, as much as he could, and chuck as much wood as any woodchuck would, if a woodchuck could chuck wood.</item>
-        <item>7.\tPete’s pa pete poked to the pea patch to pick a peck of peas for the poor pink pig.</item>
-        <item>8.\tSuzie, suzie , working in a shoeshine shop. All day long she sits and shines, all day long she shines and sits, and sits and shines, and shines and sits.</item>
-        <item>9.\tSweet sagacious Sally sanders said she sure saw seven segregated seaplanes sailing swiftly southward Saturday.</item>
-        <item>10.\tBetty Botter bought some butter but, said she, the butter’s bitter. If I put it in my batter, it will make my batter bitter. But a bit of better butter will make my bitter batter better, so she bought some better butter, better than the bitter butter, put it in her bitter batter, made her bitter batter better. So it was Betty Botter bought some better butter.</item>
-        <item>11.\tThere are two minutes difference from four to two to two to two, from two to two to two, too.</item>
-        <item>12.\tSwan swam over the sea, swim swan swim. Swan swam back again. Well swum swan.</item>
-        <item>13.\tA twister of twists once twisted a twist. And the twist that he twisted was a three twisted twist. Now in twisting this twist, if a twist should untwist, would the twist that untwisted untwist the twists.</item>
-        <item>14.\tIf two witches would watch two watches, which witch would watch which watch.</item>
-        <item>15.\tWhat to do to die today at a minute or two to two. A terribly difficult thing to say and a harder thing to do.</item>
+        <item>\tPick pickens prick his pinkie pickling cheap cling peaches in an inch of Pinch or framing his famed French finch potatoes.</item>
+        <item>\tHow much wood could chuck wood’s woodchuck chuck, if chuck wood’s woodchuck could chuck wood?—If chuck wood’s woodchuck could and would chuck wood, as much as he could, and chuck as much wood as any woodchuck would, if a woodchuck could chuck wood.</item>
+        <item>\tPete’s pa pete poked to the pea patch to pick a peck of peas for the poor pink pig.</item>
+        <item>\tSuzie, suzie , working in a shoeshine shop. All day long she sits and shines, all day long she shines and sits, and sits and shines, and shines and sits.</item>
+        <item>\tSweet sagacious Sally sanders said she sure saw seven segregated seaplanes sailing swiftly southward Saturday.</item>
+        <item>\tBetty Botter bought some butter but, said she, the butter’s bitter. If I put it in my batter, it will make my batter bitter. But a bit of better butter will make my bitter batter better, so she bought some better butter, better than the bitter butter, put it in her bitter batter, made her bitter batter better. So it was Betty Botter bought some better butter.</item>
+        <item>\tThere are two minutes difference from four to two to two to two, from two to two to two, too.</item>
+        <item>\tSwan swam over the sea, swim swan swim. Swan swam back again. Well swum swan.</item>
+        <item>\tA twister of twists once twisted a twist. And the twist that he twisted was a three twisted twist. Now in twisting this twist, if a twist should untwist, would the twist that untwisted untwist the twists.</item>
+        <item>\tIf two witches would watch two watches, which witch would watch which watch.</item>
+        <item>\tWhat to do to die today at a minute or two to two. A terribly difficult thing to say and a harder thing to do.</item>
     </string-array>
 
     <string-array name="five">
-        <item>1.\tHow many berries could a bare berry carry, if a bare berry could carry berries? Well they can’t carry berries but a bare berry carried is more scary.</item>
-        <item>2.\tFresh French fried fly fritters.</item>
-        <item>3.\tChester Cheetah chews a chunk of cheap cheddar cheese.</item>
-        <item>4.\tYally Bally had a jolly golliwog. Feeling folly, Yally Bally Bought his jolly golli’ a dollie made of holly! The golli’, feeling jolly named the holly dollie, Polly. Yally Bally’s jolly golli’s holly dollie Polly’s also jolly!</item>
-        <item>5.\tPail of ale aiding ailing Al’s Travalis.</item>
-        <item>6.\tI eat eel while you peel eel.</item>
-        <item>7.\tIf you understand, say “understand". But if you don’t understand, say “don’t understand". But if you understand and say “don’t understand". How do I understand that you understand. Understand!</item>
-        <item>8.\tLove’s a feeling you feel when you feel you’re going to feel the feeling you’ve never felt before.</item>
-        <item>9.\tA pessimistic pest exists amidst us.</item>
-        <item>10.\tHow much myrtle would a wood turtle hurdle if a would turtle could hurdle myrtle? – A wood turtle would hurdle as much myrtle as a wood turtle could hurdle if a wood turtle could hurdle myrtle.</item>
-        <item>11.\tShut up the shutters and sit in the shop.</item>
-        <item>12.\tA black blake’s back brake-block broke.</item>
-        <item>13.\t Come, come stay calm, stay calm, no need for alarm, it only hums, it doesn’t harm.</item>
-        <item>14.\tWhile we were walking, we were watching window washers wash washington’s windows with warm washing water.</item>
-        <item>15.\tMr. See owned a saw and Mr. Soar owned a sea-saw. Now See’s saw sawed Soar’s see-saw before soar saw see.</item>
+        <item>\tHow many berries could a bare berry carry, if a bare berry could carry berries? Well they can’t carry berries but a bare berry carried is more scary.</item>
+        <item>\tFresh French fried fly fritters.</item>
+        <item>\tChester Cheetah chews a chunk of cheap cheddar cheese.</item>
+        <item>\tYally Bally had a jolly golliwog. Feeling folly, Yally Bally Bought his jolly golli’ a dollie made of holly! The golli’, feeling jolly named the holly dollie, Polly. Yally Bally’s jolly golli’s holly dollie Polly’s also jolly!</item>
+        <item>\tPail of ale aiding ailing Al’s Travalis.</item>
+        <item>\tI eat eel while you peel eel.</item>
+        <item>\tIf you understand, say “understand". But if you don’t understand, say “don’t understand". But if you understand and say “don’t understand". How do I understand that you understand. Understand!</item>
+        <item>\tLove’s a feeling you feel when you feel you’re going to feel the feeling you’ve never felt before.</item>
+        <item>\tA pessimistic pest exists amidst us.</item>
+        <item>\tHow much myrtle would a wood turtle hurdle if a would turtle could hurdle myrtle? – A wood turtle would hurdle as much myrtle as a wood turtle could hurdle if a wood turtle could hurdle myrtle.</item>
+        <item>\tShut up the shutters and sit in the shop.</item>
+        <item>\tA black blake’s back brake-block broke.</item>
+        <item>\t Come, come stay calm, stay calm, no need for alarm, it only hums, it doesn’t harm.</item>
+        <item>\tWhile we were walking, we were watching window washers wash washington’s windows with warm washing water.</item>
+        <item>\tMr. See owned a saw and Mr. Soar owned a sea-saw. Now See’s saw sawed Soar’s see-saw before soar saw see.</item>
     </string-array>
 
     <string-array name="six">
-        <item>1.\tTommy tucker tried to tie Tammy Turtle’s tie.</item>
-        <item>2.\tExcited executioner exercising his excising powers excessively.</item>
-        <item>3.\tI saw Esau kissing Kate. I saw Esau, he saw me, she saw I saw Esau.</item>
-        <item>4.\tSeven sleazy shysters in sharkskin suits sold sheared sealskins to seasick sailors.</item>
-        <item>5.\tA gazillion gigantic grapes gushed gradually giving gophers goey guts.</item>
-        <item>6.\tThe seething sea ceaseth; thus the seething sea sufficeth us.</item>
-        <item>7.\tBut she as far surpasseth sycorax, As a great’st does least.</item>
-        <item>8.\tThe batter with the butter is the batter that is better.</item>
-        <item tools:ignore="Typos">9.\tDon’t trouble trouble, until trouble troubles you! If you trouble trouble triple trouble troubles you.</item>
-        <item>10.\tA smart fella, a fella smart. It takes a smart fella to say a fella smart.</item>
-        <item>11.\tDon’t spring on the inner-spring this spring or there will be an offspring next spring.</item>
-        <item>12.\tWe will learn why her lowly lone, worn yarn loom will rarely earn immoral money.</item>
-        <item>13.\tA stunk sat on a stump and thunk the stump stunk, but the stump thunk the skunk stunk.</item>
-        <item>14.\tLarry Hurley, a burly squirrel hurler, hurled a furry squirrel through a curly grill.</item>
-        <item>15.\tI thought a thought. But the thought I thought wasn’t the thought I thought I thought. If the thought I thought I thought, had been the thought I thought, I wouldn’t have thought I thought.</item>
+        <item>\tTommy tucker tried to tie Tammy Turtle’s tie.</item>
+        <item>\tExcited executioner exercising his excising powers excessively.</item>
+        <item>\tI saw Esau kissing Kate. I saw Esau, he saw me, she saw I saw Esau.</item>
+        <item>\tSeven sleazy shysters in sharkskin suits sold sheared sealskins to seasick sailors.</item>
+        <item>\tA gazillion gigantic grapes gushed gradually giving gophers goey guts.</item>
+        <item>\tThe seething sea ceaseth; thus the seething sea sufficeth us.</item>
+        <item>\tBut she as far surpasseth sycorax, As a great’st does least.</item>
+        <item>\tThe batter with the butter is the batter that is better.</item>
+        <item tools:ignore="Typos">\tDon’t trouble trouble, until trouble troubles you! If you trouble trouble triple trouble troubles you.</item>
+        <item>\tA smart fella, a fella smart. It takes a smart fella to say a fella smart.</item>
+        <item>\tDon’t spring on the inner-spring this spring or there will be an offspring next spring.</item>
+        <item>\tWe will learn why her lowly lone, worn yarn loom will rarely earn immoral money.</item>
+        <item>\tA stunk sat on a stump and thunk the stump stunk, but the stump thunk the skunk stunk.</item>
+        <item>\tLarry Hurley, a burly squirrel hurler, hurled a furry squirrel through a curly grill.</item>
+        <item>\tI thought a thought. But the thought I thought wasn’t the thought I thought I thought. If the thought I thought I thought, had been the thought I thought, I wouldn’t have thought I thought.</item>
     </string-array>
 
     <string-array name="seven">
-        <item>1.\tDouble bubble gum, bubbles double.</item>
-        <item>2.\tSuzie Seaword’s fish-sauce shop sells unsifted thistles for thistle-sifters to sift.</item>
-        <item>3.\tShe stood on the balcony, inexplicably mimicking him hiccupping, and amicably welcoming him in.</item>
-        <item>4.\tI am not the fig plucker, not the fig plucker’s son, but I’ll pluck figs till the fig plucker comes.</item>
-        <item>5.\tI slit a sheet, a sheet I slit, upon a slitted sheet I sit.</item>
-        <item>6.\tFresh Fried Fish, Fish Fresh Fried, Fried Fish Fresh, Fish Fried Fresh.</item>
-        <item>7.\tCan you imagine an imaginary menagerie manager imagining managing an imaginary menagerie.</item>
-        <item>8.\tAdmist the mists and coldest frosts, with stoutest wrists and loudest boasts, He thrusts his fists against the posts, And still insists he sees the ghosts.</item>
-        <item>9.\tA Tudor who tooted the flute tried to tutor two tooters to toot. Said the two to the tutor, “Is it harder to toot or to tutor two tooters to Toot?"</item>
+        <item>\tDouble bubble gum, bubbles double.</item>
+        <item>\tSuzie Seaword’s fish-sauce shop sells unsifted thistles for thistle-sifters to sift.</item>
+        <item>\tShe stood on the balcony, inexplicably mimicking him hiccupping, and amicably welcoming him in.</item>
+        <item>\tI am not the fig plucker, not the fig plucker’s son, but I’ll pluck figs till the fig plucker comes.</item>
+        <item>\tI slit a sheet, a sheet I slit, upon a slitted sheet I sit.</item>
+        <item>\tFresh Fried Fish, Fish Fresh Fried, Fried Fish Fresh, Fish Fried Fresh.</item>
+        <item>\tCan you imagine an imaginary menagerie manager imagining managing an imaginary menagerie.</item>
+        <item>\tAdmist the mists and coldest frosts, with stoutest wrists and loudest boasts, He thrusts his fists against the posts, And still insists he sees the ghosts.</item>
+        <item>\tA Tudor who tooted the flute tried to tutor two tooters to toot. Said the two to the tutor, “Is it harder to toot or to tutor two tooters to Toot?"</item>
         <item>A nurse anesthetist unearthed a nest.</item>
-        <item>11.\tShe sells sea shells on the seashore. The shells she sells are seashells she is sure.</item>
-        <item>12.\tA noise annoys an oyster, but a noisy noise annoys an oyster more!</item>
-        <item>13.\tThe king would sing , about a ring that would go ding.</item>
-        <item>14.\tI wish I were what I was when I wished I were what I am.</item>
-        <item>15.\tTo put a pipe in byte mode, type PIPE_TYPE_BYTE.</item>
+        <item>\tShe sells sea shells on the seashore. The shells she sells are seashells she is sure.</item>
+        <item>\tA noise annoys an oyster, but a noisy noise annoys an oyster more!</item>
+        <item>\tThe king would sing , about a ring that would go ding.</item>
+        <item>\tI wish I were what I was when I wished I were what I am.</item>
+        <item>\tTo put a pipe in byte mode, type PIPE_TYPE_BYTE.</item>
     </string-array>
 
     <string-array name="eight">
-        <item>1.\tOut in the pasture the nature watcher watches the catcher. While the catcher watches the pitcher who pitches the balls. Whether the temperature’s up or whether the temperature’s down, the nature watcher, the catcher and the pitcher are always around. The pitcher pitches, the catcher catches and the whether watches. So whether the temperature rises or whether the temperature falls the nature watcher just watches the catcher who’s watching the pitcher who’s watching the balls.</item>
-        <item>2.\tA tree toad loved a she toad, who lived up in a tree. He was a three toad tree toad, but a two toed toad was she. The three-toed tree toad tried to win, the two-toed she-toad’s heart, for the three toed tree toad loved the ground, that the two-toed tree toad trod. But the three-toed tree toad tried in vain. He couldn’t please her whim. From her tree toad power, with her two toed-power, the she toad vetoed him.</item>
-        <item>3.\tKnife and a fork bottle and a cork, that is the way you spell new york. Chicken in the car and the car can go, that is the way you spell Chicago.</item>
-        <item>4.\tIf you stick a stock of liquor in your locker it is slick to stick a lock upon your stock or some joker who is slicker is going to trick you of your liquor if you fail to lock your liquor with a lock.</item>
-        <item>5.\tWhen a doctor doctors a doctor, does the doctor doing the doctoring doctor as the doctor being doctored wants to be doctored or does the doctor doing the doctoring doctor as he wants to doctor?</item>
-        <item>6.\tBut a harder thing still to do. What a to do to die today, at a quarter or two to two. A  terribly difficult thing to say but a harder thing still to do. The dragon will come at the beat of the drum, with a rat-a-tat-tat-a-tat-tat-a-tat-to, at a quarter or two to two today, at quarter or two to two.</item>
-        <item tools:ignore="Typos">7.\tI know a boy named tate who dined with his girl at eight eight. I’m unable to state what tate ate at eight eight or what tate’s tete ate at eight eight.</item>
-        <item>8.\tTheophilus thadeus thistle down, the successful thistle-sifter, while sifting a sieve-full of unsifted thistles, thrust three thousand thistles through the thick of his thumb. Now, if theophilus thadeus thistle down, the successful thistle-sifter, thrust three thousand thistles through the thick of his thumb, see that thou, while sifting a sieve-full of unsifted thisltes thrust not three thousand thistles through the thick of thy thumb.</item>
-        <item tools:ignore="Typos">9.\tEsau wood sawed wood. All the wood Esau wood saw, Esau wood would saw. All the wood wood saw, Esau sought to saw. One day Esau wood’s wood-saw would saw no wood. So Esau wood sought a new wood-saw. The new wood-saw would saw wood. Oh, the wood Esau wood would saw. Esau sought a saw that would saw wood as no other wood-saw would-saw. And Esau found a saw that would saw as no other wood-saw would saw. And Esau wood sawed wood.</item>
-        <item tools:ignore="Typos">10.\tEd Nott was shot and Sam Shott was not. So its better to be Shott than Nott. Some say Nott was not shot. But Shott says he shot Nott. Either the shot Shott shot at Nott was not shot, or Nott was shot. If the shot Shott shot shot Nott, Nott was shot. But if the shot Shott shot shot Shott, the shot was Shott, not Nott. However, the shot Shott shot shot not Shott-but Nott. So, Ed Nott was shot and that’s hot! Is it not.</item>
-        <item>11.\tChester chooses chestnuts, cheddar cheese with chewy chives. He chews them and he chooses them. He chooses them and he chews them. Those chestnuts, cheddar cheese and chives in cherry, charming chunks.</item>
-        <item>12.\tMoses supposes his tosses are roses. But moses supposes erroneously. Moses, he noses his toeses aren’t roses, as Moses supposes his toeses to be.</item>
-        <item>13.\tThree tree turtles took turns talking tongue twisters. If three tree turtles took turns talking tongue twisters, where’s the twisters the three tree turtles talked?</item>
+        <item>\tOut in the pasture the nature watcher watches the catcher. While the catcher watches the pitcher who pitches the balls. Whether the temperature’s up or whether the temperature’s down, the nature watcher, the catcher and the pitcher are always around. The pitcher pitches, the catcher catches and the whether watches. So whether the temperature rises or whether the temperature falls the nature watcher just watches the catcher who’s watching the pitcher who’s watching the balls.</item>
+        <item>\tA tree toad loved a she toad, who lived up in a tree. He was a three toad tree toad, but a two toed toad was she. The three-toed tree toad tried to win, the two-toed she-toad’s heart, for the three toed tree toad loved the ground, that the two-toed tree toad trod. But the three-toed tree toad tried in vain. He couldn’t please her whim. From her tree toad power, with her two toed-power, the she toad vetoed him.</item>
+        <item>\tKnife and a fork bottle and a cork, that is the way you spell new york. Chicken in the car and the car can go, that is the way you spell Chicago.</item>
+        <item>\tIf you stick a stock of liquor in your locker it is slick to stick a lock upon your stock or some joker who is slicker is going to trick you of your liquor if you fail to lock your liquor with a lock.</item>
+        <item>\tWhen a doctor doctors a doctor, does the doctor doing the doctoring doctor as the doctor being doctored wants to be doctored or does the doctor doing the doctoring doctor as he wants to doctor?</item>
+        <item>\tBut a harder thing still to do. What a to do to die today, at a quarter or two to two. A  terribly difficult thing to say but a harder thing still to do. The dragon will come at the beat of the drum, with a rat-a-tat-tat-a-tat-tat-a-tat-to, at a quarter or two to two today, at quarter or two to two.</item>
+        <item tools:ignore="Typos">\tI know a boy named tate who dined with his girl at eight eight. I’m unable to state what tate ate at eight eight or what tate’s tete ate at eight eight.</item>
+        <item>\tTheophilus thadeus thistle down, the successful thistle-sifter, while sifting a sieve-full of unsifted thistles, thrust three thousand thistles through the thick of his thumb. Now, if theophilus thadeus thistle down, the successful thistle-sifter, thrust three thousand thistles through the thick of his thumb, see that thou, while sifting a sieve-full of unsifted thisltes thrust not three thousand thistles through the thick of thy thumb.</item>
+        <item tools:ignore="Typos">\tEsau wood sawed wood. All the wood Esau wood saw, Esau wood would saw. All the wood wood saw, Esau sought to saw. One day Esau wood’s wood-saw would saw no wood. So Esau wood sought a new wood-saw. The new wood-saw would saw wood. Oh, the wood Esau wood would saw. Esau sought a saw that would saw wood as no other wood-saw would-saw. And Esau found a saw that would saw as no other wood-saw would saw. And Esau wood sawed wood.</item>
+        <item tools:ignore="Typos">\tEd Nott was shot and Sam Shott was not. So its better to be Shott than Nott. Some say Nott was not shot. But Shott says he shot Nott. Either the shot Shott shot at Nott was not shot, or Nott was shot. If the shot Shott shot shot Nott, Nott was shot. But if the shot Shott shot shot Shott, the shot was Shott, not Nott. However, the shot Shott shot shot not Shott-but Nott. So, Ed Nott was shot and that’s hot! Is it not.</item>
+        <item>\tChester chooses chestnuts, cheddar cheese with chewy chives. He chews them and he chooses them. He chooses them and he chews them. Those chestnuts, cheddar cheese and chives in cherry, charming chunks.</item>
+        <item>\tMoses supposes his tosses are roses. But moses supposes erroneously. Moses, he noses his toeses aren’t roses, as Moses supposes his toeses to be.</item>
+        <item>\tThree tree turtles took turns talking tongue twisters. If three tree turtles took turns talking tongue twisters, where’s the twisters the three tree turtles talked?</item>
         <item tools:ignore="Typos">14.\tOf all the felt I ever felt I never felt that felt like that felt felt.</item>
-        <item>15.\tFarell\'s features fabulous food \'n\' fantastic fountain fantasies for frolicking, fun filled festive families.</item>
+        <item>\tFarell\'s features fabulous food \'n\' fantastic fountain fantasies for frolicking, fun filled festive families.</item>
     </string-array>
 
     <string-array name="nine">
-        <item>1.\tTito and Tato were tattooed in total. But Toto was only tattooed on his toe. So Tato told Tito where Toto was tattooed. But Tito said Toto’s tattoo wouldn’t  show.</item>
-        <item>2.\tTheda thought Thora was thumping her thimble but Thomas thought Thora was thumping her drum. Said Theda if Thora is not thumping her thimble, I think that she surely is thumping her thumb.</item>
-        <item>3.\tNow Charley is chary when choosing his cheeses and cheese is a challenge when Charley arrives. When Charley is charming and chooses a cheddar then chews it and chips it and chops in some chives.</item>
-        <item>4.\tHeda is hoping to hope to Tahiti, to hack a hibiscus to hang on her hat. Now Heda has hundreds of hats on her rack, so how can a hope to Tahiti help that.</item>
-        <item>5.\tSnobby Miss. Nora is sniffing her snuffer. The snuffer’s no sniffing it makes Nora sneeze. When Snyda let’s Nort know his Nora is sneezing, she snappily snorts Nora’s sneezing a breeze.</item>
-        <item>6.\tSheila is selling her shop at the seashore for shops at the seashore are so sure to loose and she is not so sure of what she should be selling. Should Sheila sell seashells or should she sell shoes.</item>
-        <item>7.\tThat’s tongue twisters and it seems so easy till the word gets sprung. If you insist you want to try a lisp, Then step up Mister and twist your tongue. Twista felt twister was trying to whistle but twister had twisted his tongue.</item>
-        <item>8.\tColliding, colt riding cowboys, combining colliding while gliding at night coinciding in their fight. It wasn’t quite trite even with slight sight, who was right? The fight like light, flashed bright, fast as bears byte flies flying near the bears eyes the fleeing flies dies.</item>
-        <item>9.\tNo need to light a night-light on a light night like tonight.</item>
-        <item>10.\tI wish to wish, I dream to dream, I try to try, and I live to live, and I’d die to die, and I cry to cry but I don’t know why.</item>
-        <item>11.\tTerry Teeter, a teeter-totter teacher, taught her daughter Tara to teeter-totter, but Tara Teeter didn’t teeter-totter as a Terry Teeter taught her to.</item>
-        <item>12.\tThe cat crept into then crypt, crapped and crept out.</item>
-        <item>13.\tWe need a plan to fan a pan; find a pan to fan, than find a fan to fan the pan, than fan than pan.</item>
+        <item>\tTito and Tato were tattooed in total. But Toto was only tattooed on his toe. So Tato told Tito where Toto was tattooed. But Tito said Toto’s tattoo wouldn’t  show.</item>
+        <item>\tTheda thought Thora was thumping her thimble but Thomas thought Thora was thumping her drum. Said Theda if Thora is not thumping her thimble, I think that she surely is thumping her thumb.</item>
+        <item>\tNow Charley is chary when choosing his cheeses and cheese is a challenge when Charley arrives. When Charley is charming and chooses a cheddar then chews it and chips it and chops in some chives.</item>
+        <item>\tHeda is hoping to hope to Tahiti, to hack a hibiscus to hang on her hat. Now Heda has hundreds of hats on her rack, so how can a hope to Tahiti help that.</item>
+        <item>\tSnobby Miss. Nora is sniffing her snuffer. The snuffer’s no sniffing it makes Nora sneeze. When Snyda let’s Nort know his Nora is sneezing, she snappily snorts Nora’s sneezing a breeze.</item>
+        <item>\tSheila is selling her shop at the seashore for shops at the seashore are so sure to loose and she is not so sure of what she should be selling. Should Sheila sell seashells or should she sell shoes.</item>
+        <item>\tThat’s tongue twisters and it seems so easy till the word gets sprung. If you insist you want to try a lisp, Then step up Mister and twist your tongue. Twista felt twister was trying to whistle but twister had twisted his tongue.</item>
+        <item>\tColliding, colt riding cowboys, combining colliding while gliding at night coinciding in their fight. It wasn’t quite trite even with slight sight, who was right? The fight like light, flashed bright, fast as bears byte flies flying near the bears eyes the fleeing flies dies.</item>
+        <item>\tNo need to light a night-light on a light night like tonight.</item>
+        <item>\tI wish to wish, I dream to dream, I try to try, and I live to live, and I’d die to die, and I cry to cry but I don’t know why.</item>
+        <item>\tTerry Teeter, a teeter-totter teacher, taught her daughter Tara to teeter-totter, but Tara Teeter didn’t teeter-totter as a Terry Teeter taught her to.</item>
+        <item>\tThe cat crept into then crypt, crapped and crept out.</item>
+        <item>\tWe need a plan to fan a pan; find a pan to fan, than find a fan to fan the pan, than fan than pan.</item>
         <item tools:ignore="Typos">14.\tOf all the felt I ever felt I never felt that felt like that felt felt.</item>
-        <item>15.\tFarell’s features fabulous food ‘n’ fantastic fountain fantasies for frolicking, fun filled festive families.</item>
-        <item>15.\tGive me the gift of a grip-top sock, a clip drape shipshape tip top sock. Not your spinslick  slapstick slapshod stock, but a plastic, elastic grip-top sock. Non of your fantastic slack swap slop. From a slap dash flash cash haberdash shop. Not a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock. Not a supersheet seersucker rucksack sock, not a spot speckled frog-freckled cheap sheik’s sock. Off a hodge-podge moss-blotched scotch-botched block. Nothing slipshod drip drop flip flop or glip glop. Tip me to a tip top grip-top sock.</item>
+        <item>\tFarell’s features fabulous food ‘n’ fantastic fountain fantasies for frolicking, fun filled festive families.</item>
+        <item>\tGive me the gift of a grip-top sock, a clip drape shipshape tip top sock. Not your spinslick  slapstick slapshod stock, but a plastic, elastic grip-top sock. Non of your fantastic slack swap slop. From a slap dash flash cash haberdash shop. Not a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock. Not a supersheet seersucker rucksack sock, not a spot speckled frog-freckled cheap sheik’s sock. Off a hodge-podge moss-blotched scotch-botched block. Nothing slipshod drip drop flip flop or glip glop. Tip me to a tip top grip-top sock.</item>
         <item>14.\tMy friend Gladys Oh, the sadness of her sadness when she’s sad.
                 "Oh, the gladness of her gladness when she’s glad. But the sadness of her sadness, and the gladness of her gladness, are nothing like her madness when she’s mad.</item>
     </string-array>
@@ -598,4 +598,6 @@
         \tSomething in a thirty-acre thermal thicket of thorns and thistles thumped and thundered threatening the three-D thoughts of Amit the thug-although, theatrically, it was only the thirteen thousand thistles and thorns through the underneath of his thigh that the thirty year old thug thought of that morning.\n
     </string>
     <string name="share_with_friends">share with friends</string>
+    <string name="next_twister">NEXT</string>
+    <string name="previous_twister">PREV</string>
 </resources>
