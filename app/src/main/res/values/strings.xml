@@ -41,6 +41,7 @@
 
 
     <string-array name="level_number_headers">
+        <item>NULL</item>
         <item>Level 1</item>
         <item>Level 2</item>
         <item>Level 3</item>
@@ -54,6 +55,7 @@
     </string-array>
 
     <string-array name="level_names">
+        <item>NULL</item>
         <item>Annihilatory Armageddon</item>
         <item>Brain Blaster</item>
         <item>Cosmic Clusters</item>

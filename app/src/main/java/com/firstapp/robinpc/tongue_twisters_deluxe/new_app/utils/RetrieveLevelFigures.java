@@ -14,6 +14,7 @@ public class RetrieveLevelFigures {
     private Context context;
 
     private List<LevelFigures> levelFiguresList = new ArrayList<>();
+    public static final int NULL_EQUIVALENT_DRAWABLE_ID = -1;
     private String[] levelNumberHeaders, levelNames;
     private int[] levelImages;
 
@@ -31,6 +32,7 @@ public class RetrieveLevelFigures {
 
     private void fetchLevelImages() {
         levelImages = new int[] {
+                NULL_EQUIVALENT_DRAWABLE_ID,
                 R.drawable.level_one,
                 R.drawable.level_two,
                 R.drawable.level_three,

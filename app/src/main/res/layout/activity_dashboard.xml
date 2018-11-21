@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".new_app.dashboard.DashboardActivity"
-    android:background="@color/colorIntensity10">
+    android:background="@color/colorPrimary">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorWhiteShade"
         android:id="@+id/app_name_text_view"
         android:layout_marginTop="20sp"
         android:text="@string/app_name"
@@ -19,27 +19,23 @@
         android:gravity="center"
         fontPath="fonts/historia.ttf"
         tools:ignore="MissingPrefix"/>
-    
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="2sp"
-        android:background="@color/colorPrimary"
-        tools:ignore="ContentDescription,SmallSp" />
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorWhiteShade"
-            android:background="@color/colorPrimary"
             android:padding="5sp"
             android:id="@+id/hint_select_level_text_view"
             android:text="@string/select_level_of_difficulty"
-            android:textSize="22sp"
-            android:gravity="center"/>
+            android:textSize="18sp"
+            android:gravity="center"
+            fontPath="fonts/Comfortaa-Light.ttf"
+            tools:ignore="MissingPrefix"/>
 
         <android.support.v7.widget.RecyclerView
             app:layoutManager="android.support.v7.widget.LinearLayoutManager"

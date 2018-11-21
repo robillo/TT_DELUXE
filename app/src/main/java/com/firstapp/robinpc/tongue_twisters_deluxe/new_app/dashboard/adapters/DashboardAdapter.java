@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.data.LevelFigures;
+import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.RetrieveLevelFigures;
 
 import java.util.List;
 
@@ -36,10 +37,17 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
 
     @Override
     public void onBindViewHolder(@NonNull DashboardHolder holder, int position) {
-        holder.levelNameTextView.setText(list.get(position).getLevelName());
-        holder.levelHeaderTextView.setText(list.get(position).getLevelNumberHeader());
-        Glide.with(context).load(list.get(position).getLevelDrawable())
-                .into(holder.levelImageView);
+        if(list.get(position).getLevelDrawable() == RetrieveLevelFigures.NULL_EQUIVALENT_DRAWABLE_ID) {
+            holder.itemView.setVisibility(View.INVISIBLE);
+            holder.levelImageView.setVisibility(View.GONE);
+            holder.itemView.setClickable(false);
+        }
+        else {
+            holder.levelNameTextView.setText(list.get(position).getLevelName());
+            holder.levelHeaderTextView.setText(list.get(position).getLevelNumberHeader());
+            Glide.with(context).load(list.get(position).getLevelDrawable())
+                    .into(holder.levelImageView);
+        }
     }
 
     @Override
