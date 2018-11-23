@@ -13,50 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.activities.LevelsActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".view.activities.DetailActivity"
-            android:label="@string/title_activity_detail"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".view.activities.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName=".view.activities.LevelsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".view.activities.LevelsActivity" />
-        </activity>
-        <activity
-            android:name=".view.activities.AboutActivity"
-            android:parentActivityName=".view.activities.LevelsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".view.activities.LevelsActivity" />
-        </activity>
-        <activity
-            android:name=".view.activities.YourActivity"
-            android:label="@string/title_activity_your"
-            android:parentActivityName=".view.activities.LevelsActivity"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".view.activities.LevelsActivity" />
-        </activity>
-        <activity android:name=".view.activities.AddActivity" />
-
-        <receiver android:name=".view.widget.NewAppWidget">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/new_app_widget_info" />
-        </receiver>
-
-        <activity
             android:name=".new_app.dashboard_screen.DashboardActivity"
             android:screenOrientation="portrait">
             <intent-filter>
