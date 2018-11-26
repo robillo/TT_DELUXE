@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils;
+package com.firstapp.robinpc.tongue_twisters_deluxe.utils;
 
 public class IntentExtras {
 

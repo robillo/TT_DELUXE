@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".new_app.level_screen.LevelActivity">
+    tools:context=".level_screen.LevelActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -137,168 +137,194 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorWhiteShade"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:spb_sections_count="4"
+            app:spb_colors="@array/gplus_colors"
+            app:spb_speed="2.0"
+            app:spb_stroke_width="10sp"
+            app:spb_stroke_separator_length="10sp"
+            app:spb_reversed="true"
+            app:spb_mirror_mode="true"
+            app:spb_progressiveStart_speed="1.5"
+            app:spb_progressiveStop_speed="3.4"
+            android:id="@+id/smooth_progress_bar"
+            android:visibility="invisible"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="25sp"
-                android:layout_marginTop="8sp"
-                android:layout_marginLeft="15sp"
-                android:layout_marginBottom="5sp"
-                app:cardBackgroundColor="@color/colorAccentIntensityOpaque2"
-                android:id="@+id/previous_twister_button_card"
-                tools:ignore="RtlHardcoded">
-
-                <ImageView
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:tint="@color/colorWhiteShade"
-                    android:padding="5sp"
-                    android:src="@drawable/round_chevron_left_black_48"
-                    tools:ignore="ContentDescription" />
-
-            </android.support.v7.widget.CardView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5sp"
-                android:textColor="@color/colorAccentIntensity5"
-                android:text="@string/previous_twister"
-                android:id="@+id/previous_hint_text_view"
-                android:layout_marginLeft="7sp"
-                android:textSize="14sp"
-                android:layout_gravity="center_horizontal"
-                tools:ignore="MissingPrefix,RtlHardcoded"
-                fontPath="fonts/Comfortaa-Light.ttf"/>
-
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="0sp"
-            android:layout_weight="1"
-            android:layout_height="match_parent">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal|bottom">
+                android:orientation="vertical">
 
-                <LinearLayout
+                <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:paddingRight="10sp"
-                    tools:ignore="RtlHardcoded,RtlSymmetry"
-                    android:id="@+id/auto_play_button">
+                    app:cardCornerRadius="25sp"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginBottom="5sp"
+                    app:cardBackgroundColor="@color/colorAccentIntensityOpaque2"
+                    android:id="@+id/previous_twister_button_card"
+                    tools:ignore="RtlHardcoded">
 
                     <ImageView
                         android:layout_width="50sp"
                         android:layout_height="50sp"
+                        android:tint="@color/colorWhiteShade"
                         android:padding="5sp"
-                        android:tint="@color/colorPrimaryIntensity7"
-                        android:layout_gravity="center"
-                        android:src="@drawable/baseline_loop_black_48"
-                        tools:ignore="ContentDescription"
-                        android:id="@+id/auto_play_image_view"/>
+                        android:src="@drawable/round_chevron_left_black_48"
+                        tools:ignore="ContentDescription" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="12sp"
-                        android:textColor="@color/colorPrimaryIntensity5"
-                        android:text="@string/auto_play_on"
-                        android:textSize="12sp"
-                        android:layout_gravity="center"
-                        tools:ignore="MissingPrefix,RtlHardcoded"
-                        fontPath="fonts/Comfortaa-Light.ttf"
-                        android:id="@+id/auto_play_text_view"/>
+                </android.support.v7.widget.CardView>
 
-                </LinearLayout>
-
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:paddingLeft="10sp"
-                    tools:ignore="RtlHardcoded,RtlSymmetry"
-                    android:id="@+id/play_button">
-
-                    <ImageView
-                        android:layout_width="50sp"
-                        android:layout_height="50sp"
-                        android:padding="5sp"
-                        android:tint="@color/colorPrimaryIntensity4"
-                        android:layout_gravity="center"
-                        android:src="@drawable/round_volume_up_black_48"
-                        tools:ignore="ContentDescription"
-                        android:id="@+id/play_image"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="12sp"
-                        android:textColor="@color/colorPrimaryIntensity5"
-                        android:text="PLAY"
-                        android:textSize="12sp"
-                        android:layout_gravity="center"
-                        tools:ignore="MissingPrefix,RtlHardcoded"
-                        fontPath="fonts/Comfortaa-Light.ttf"
-                        android:id="@+id/play_hint"/>
-
-                </LinearLayout>
+                    android:paddingBottom="5sp"
+                    android:textColor="@color/colorAccentIntensity5"
+                    android:text="@string/previous_twister"
+                    android:id="@+id/previous_hint_text_view"
+                    android:layout_marginLeft="7sp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="MissingPrefix,RtlHardcoded"
+                    fontPath="fonts/Comfortaa-Light.ttf"/>
 
             </LinearLayout>
 
-        </FrameLayout>
+            <FrameLayout
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal|bottom">
 
-            <android.support.v7.widget.CardView
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:paddingRight="10sp"
+                        tools:ignore="RtlHardcoded,RtlSymmetry"
+                        android:id="@+id/auto_play_button">
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:padding="5sp"
+                            android:tint="@color/colorPrimaryIntensity7"
+                            android:layout_gravity="center"
+                            android:src="@drawable/baseline_loop_black_48"
+                            tools:ignore="ContentDescription"
+                            android:id="@+id/auto_play_image_view"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="12sp"
+                            android:textColor="@color/colorPrimaryIntensity5"
+                            android:text="@string/auto_play_on"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            tools:ignore="MissingPrefix,RtlHardcoded"
+                            fontPath="fonts/Comfortaa-Light.ttf"
+                            android:id="@+id/auto_play_text_view"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10sp"
+                        tools:ignore="RtlHardcoded,RtlSymmetry"
+                        android:id="@+id/play_button">
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:padding="5sp"
+                            android:tint="@color/colorPrimaryIntensity4"
+                            android:layout_gravity="center"
+                            android:src="@drawable/round_volume_up_black_48"
+                            tools:ignore="ContentDescription"
+                            android:id="@+id/play_image"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="12sp"
+                            android:textColor="@color/colorPrimaryIntensity5"
+                            android:text="PLAY"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            tools:ignore="MissingPrefix,RtlHardcoded"
+                            fontPath="fonts/Comfortaa-Light.ttf"
+                            android:id="@+id/play_hint"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="25sp"
-                android:layout_marginTop="8sp"
-                android:layout_marginRight="15sp"
-                android:layout_marginBottom="5sp"
-                app:cardBackgroundColor="@color/colorAccentIntensityOpaque2"
-                android:id="@+id/next_twister_button_card"
-                tools:ignore="RtlHardcoded">
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:tint="@color/colorWhiteShade"
-                    android:padding="5sp"
-                    android:src="@drawable/round_chevron_right_black_48"
-                    tools:ignore="ContentDescription" />
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="25sp"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginBottom="5sp"
+                    app:cardBackgroundColor="@color/colorAccentIntensityOpaque2"
+                    android:id="@+id/next_twister_button_card"
+                    tools:ignore="RtlHardcoded">
 
-            </android.support.v7.widget.CardView>
+                    <ImageView
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:tint="@color/colorWhiteShade"
+                        android:padding="5sp"
+                        android:src="@drawable/round_chevron_right_black_48"
+                        tools:ignore="ContentDescription" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5sp"
-                android:textColor="@color/colorAccentIntensity5"
-                android:text="@string/next_twister"
-                android:id="@+id/next_hint_text_view"
-                android:layout_marginRight="7sp"
-                android:textSize="14sp"
-                android:layout_gravity="center_horizontal"
-                tools:ignore="MissingPrefix,RtlHardcoded"
-                fontPath="fonts/Comfortaa-Light.ttf"/>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5sp"
+                    android:textColor="@color/colorAccentIntensity5"
+                    android:text="@string/next_twister"
+                    android:id="@+id/next_hint_text_view"
+                    android:layout_marginRight="7sp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="MissingPrefix,RtlHardcoded"
+                    fontPath="fonts/Comfortaa-Light.ttf"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 

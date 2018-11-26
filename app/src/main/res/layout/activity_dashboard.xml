@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".new_app.dashboard_screen.DashboardActivity"
+    tools:context=".dashboard_screen.DashboardActivity"
     android:background="@color/colorPrimaryIntensity3">
 
     <TextView

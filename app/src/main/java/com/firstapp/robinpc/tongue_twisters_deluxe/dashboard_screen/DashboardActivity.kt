@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard_screen
+package com.firstapp.robinpc.tongue_twisters_deluxe.dashboard_screen
 
 import android.content.Context
 import android.os.Build
@@ -8,9 +8,9 @@ import android.support.v4.content.ContextCompat
 import android.view.View
 import android.view.WindowManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard_screen.adapters.DashboardAdapter
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.data.LevelFigures
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.RetrieveLevelFigures
+import com.firstapp.robinpc.tongue_twisters_deluxe.dashboard_screen.adapters.DashboardAdapter
+import com.firstapp.robinpc.tongue_twisters_deluxe.data.LevelFigures
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.RetrieveLevelFigures
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 import kotlinx.android.synthetic.main.activity_dashboard.*
 

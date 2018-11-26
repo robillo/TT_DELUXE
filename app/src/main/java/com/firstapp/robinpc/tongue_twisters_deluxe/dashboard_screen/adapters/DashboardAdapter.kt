@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.dashboard_screen.adapters
+package com.firstapp.robinpc.tongue_twisters_deluxe.dashboard_screen.adapters
 
 import android.app.Activity
 import android.content.Context
@@ -12,10 +12,10 @@ import android.widget.TextView
 
 import com.bumptech.glide.Glide
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.data.LevelFigures
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.level_screen.LevelActivity
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.IntentExtras
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.RetrieveLevelFigures
+import com.firstapp.robinpc.tongue_twisters_deluxe.data.LevelFigures
+import com.firstapp.robinpc.tongue_twisters_deluxe.level_screen.LevelActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.IntentExtras
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.RetrieveLevelFigures
 
 internal class DashboardAdapter(private val context: Context, private val list: List<LevelFigures>?) : RecyclerView.Adapter<DashboardAdapter.DashboardHolder>() {
 

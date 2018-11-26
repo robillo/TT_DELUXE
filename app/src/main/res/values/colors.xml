@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+    </integer-array>
+
     <color name="colorPrimary">#318cf4</color>
     <color name="colorPrimaryDark">#2b81e2</color>
     <color name="colorAccent">#de4c0e</color>
@@ -41,5 +46,8 @@
     <color name="colorIntensity11">#f9f9f9</color>
 
     <color name="colorTransparentPrimary">#e1e9f1</color>
+
+    <color name="gplus_color_1">#32427fed</color>
+    <color name="gplus_color_2">#32b23424</color>
 
 </resources>

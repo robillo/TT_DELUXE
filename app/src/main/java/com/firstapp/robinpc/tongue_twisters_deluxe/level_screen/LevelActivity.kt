@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.level_screen
+package com.firstapp.robinpc.tongue_twisters_deluxe.level_screen
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -12,19 +12,22 @@ import android.view.WindowManager
 import android.widget.ScrollView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.R.color.*
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.AppPreferencesHelper
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.IntentExtras
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppPreferencesHelper
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.IntentExtras
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 import kotlinx.android.synthetic.main.activity_level.*
 import java.lang.Exception
 import java.util.*
 import android.content.Intent
-import android.text.Html
-
+import android.speech.tts.UtteranceProgressListener
+import android.util.Log
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppConstants.CONSTANT_UTTERANCE_ID
 
 
 class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
+    var utteranceMap = HashMap<String, String>()
+    var utteranceBundle: Bundle = Bundle()
     private var LEVEL_NUMBER: Int = -1
     private var IS_AUTO_PLAY_ON: Boolean = false
     private lateinit var textToSpeech: TextToSpeech
@@ -55,7 +58,25 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun instantiateVariables() {
+        smooth_progress_bar.progressiveStop()
+
         textToSpeech = TextToSpeech(this, this)
+        utteranceBundle.putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, CONSTANT_UTTERANCE_ID)
+        utteranceMap.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, CONSTANT_UTTERANCE_ID)
+
+        textToSpeech.setOnUtteranceProgressListener(object : UtteranceProgressListener() {
+            override fun onDone(utteranceId: String?) {
+                smooth_progress_bar.progressiveStop()
+            }
+
+            @Suppress("OverridingDeprecatedMember")
+            override fun onError(utteranceId: String?) {}
+
+            override fun onStart(utteranceId: String?) {}
+        })
+
+        smooth_progress_bar
+
         renderAutoPlayViews()
     }
 
@@ -89,6 +110,7 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
         auto_play_button.setOnClickListener {
             AppPreferencesHelper(this).setIsAutoPlayOn(!IS_AUTO_PLAY_ON)
+            pauseTextToSpeakIfSpeaking()
             renderAutoPlayViews()
         }
         share_with_friends_image.setOnClickListener {
@@ -115,17 +137,27 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun playTextToSpeech() {
         val text: String = twister_text_view.text.toString()
         try {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
-            else
+            if(smooth_progress_bar.visibility == View.INVISIBLE)
+                smooth_progress_bar.visibility = View.VISIBLE
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, utteranceBundle, CONSTANT_UTTERANCE_ID)
+                smooth_progress_bar.progressiveStart()
+            }
+            else {
                 @Suppress("DEPRECATION")
-                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null)
+                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, utteranceMap)
+                smooth_progress_bar.progressiveStart()
+            }
         }
         catch (e: Exception) {}
     }
 
     private fun pauseTextToSpeakIfSpeaking() {
-        if(textToSpeech.isSpeaking) textToSpeech.stop()
+        if(textToSpeech.isSpeaking) {
+            smooth_progress_bar.progressiveStop()
+            textToSpeech.stop()
+        }
     }
 
     override fun onPause() {

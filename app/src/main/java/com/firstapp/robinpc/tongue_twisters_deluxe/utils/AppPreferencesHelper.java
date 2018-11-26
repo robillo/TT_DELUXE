@@ -1,11 +1,10 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils;
+package com.firstapp.robinpc.tongue_twisters_deluxe.utils;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import static com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.AppConstants.PREFERENCE_FILE_NAME;
-import static com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils.AppConstants.PREFERENCE_IS_AUTO_PLAY_ON;
+import static com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppConstants.PREFERENCE_FILE_NAME;
+import static com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppConstants.PREFERENCE_IS_AUTO_PLAY_ON;
 
 public class AppPreferencesHelper {
 

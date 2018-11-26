@@ -1,9 +1,9 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.new_app.utils
+package com.firstapp.robinpc.tongue_twisters_deluxe.utils
 
 import android.content.Context
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
-import com.firstapp.robinpc.tongue_twisters_deluxe.new_app.data.LevelFigures
+import com.firstapp.robinpc.tongue_twisters_deluxe.data.LevelFigures
 
 import java.util.ArrayList
 
