@@ -2,44 +2,6 @@
     <string name="app_name">Tongue Twisters</string>
     <string name="action_settings">Settings</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="slide_1_title">Level 1</string>
-    <string name="slide_1_desc">Annihilatory Armageddon</string>
-
-    <string name="slide_2_title">Level 2</string>
-    <string name="slide_2_desc">Brain Blaster</string>
-
-    <string name="slide_3_title">Level 3</string>
-    <string name="slide_3_desc">Cosmic Clusters</string>
-
-    <string name="slide_4_title">Level 4</string>
-    <string name="slide_4_desc">Doomsday Destruction</string>
-
-    <string name="slide_5_title">Level 5</string>
-    <string name="slide_5_desc">Extensive Extremety</string>
-
-    <string name="slide_6_title">Level 6</string>
-    <string name="slide_6_desc">Fatal Frost</string>
-
-    <string name="slide_7_title">Level 7</string>
-    <string name="slide_7_desc">Gliding Gears</string>
-
-    <string name="slide_8_title">Level 8</string>
-    <string name="slide_8_desc">Hefty Harks</string>
-
-    <string name="slide_9_title">Level 9</string>
-    <string name="slide_9_desc">Inclusive Incompetence</string>
-
-    <string name="slide_10_title">Level 10</string>
-    <string name="slide_10_desc">Jarring Jigsaw</string>
-
-    <string name="slide_11_title">Your Twisters</string>
-    <string name="slide_11_desc">Create, Modiy, Customize Your Own Twisters With Your Imagination.</string>
-
-    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
-    <string name="play_again">Play Again</string>
-
-
     <string-array name="level_number_headers">
         <item>NULL</item>
         <item>Level 1</item>
@@ -71,21 +33,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="slide_10_button">CLICK TO VIEW</string>
-    <string name="slide_9_button">CLICK TO VIEW</string>
-    <string name="slide_8_button">CLICK TO VIEW</string>
-    <string name="slide_7_button">CLICK TO VIEW</string>
-    <string name="slide_6_button">CLICK TO VIEW</string>
-    <string name="slide_5_button">CLICK TO VIEW</string>
-    <string name="slide_4_button">CLICK TO VIEW</string>
-    <string name="slide_3_button">CLICK TO VIEW</string>
-    <string name="slide_2_button">CLICK TO VIEW</string>
-    <string name="slide_1_button">CLICK TO VIEW</string>
-    <string name="title_activity_level">LEVEL</string>
-    <string name="title_activity_detail">Tongue Twisters</string>
-    <string name="previous"><![CDATA[<]]></string>
-    <string name="next"><![CDATA[>]]></string>
-
     <string-array name="levels">
         <item>Level 1</item>
         <item>Level 2</item>
@@ -110,19 +57,6 @@
         <item>Hefty Harks</item>
         <item>Inclusive Incompetence</item>
         <item>Jarring Jigsaw</item>
-    </string-array>
-
-    <string-array name="photoUrls">
-        <item>https://2.bp.blogspot.com/-IY-IOkq2V5A/WJBfTUFfrTI/AAAAAAAAAFY/rurHHcN20r0EVurB8NFU3BB15B1wubJJgCLcB/s1600/placeholder.png</item>
-        <item>https://1.bp.blogspot.com/-e3cvqWcBdhc/WJBgDvUM6BI/AAAAAAAAAFk/SOlb9rdvi7gm5iThWrCoH273_kn0rQo3gCLcB/s1600/ph2.png</item>
-        <item>https://1.bp.blogspot.com/-OYwFn64dzV0/WJBfWvYaXaI/AAAAAAAAAFc/1egquqeEF30HrOgarJflAGp8fXqyBeKDQCLcB/s1600/ph4.jpg</item>
-        <item>http://2.bp.blogspot.com/-k1SRZ0vh8MI/WRH6PNTiE1I/AAAAAAAAARc/y57FJha4pHIs0vm2v9DMJuKcS9PpEHyqQCK4B/s1600/wall3.jpg</item>
-        <item>http://2.bp.blogspot.com/-VYU5OWGtee8/WRH6N-hvs0I/AAAAAAAAARE/T5Bc-heYbEQWyJ8UHQ2yY4x9JAtorNN3QCK4B/s1600/wall2.png</item>
-        <item>https://3.bp.blogspot.com/-wCIrRQkOkBI/WJBgD7IU0cI/AAAAAAAAAFo/TvEV52hMIdMrmPF2nYqe4rBt6MQl4hXzwCLcB/s1600/ph3.jpg</item>
-        <item>http://2.bp.blogspot.com/-nZ1SleMQpAE/WRH6OEqit8I/AAAAAAAAARU/J3FXjkgy-W08Z-R52vonP-kU48YkacQMACK4B/s1600/whale_3-wallpaper-1440x900.jpg</item>
-        <item>https://4.bp.blogspot.com/-PQ2dFPxs6dA/WIo5arONKII/AAAAAAAAAD8/_KPNyZuSY0IOhtZf7h2ByJWd7xvWZMjZgCLcB/s1600/3.jpg</item>
-        <item>https://3.bp.blogspot.com/-FTKj7QUV61w/WJBgEaJclgI/AAAAAAAAAFw/dX-wb54JX-AYiDGPPB1Z3lvS7ZCoUNKBACLcB/s1600/ph6.png</item>
-        <item>https://2.bp.blogspot.com/-Cos2v7ZoI8o/WJBgDyUENNI/AAAAAAAAAFs/EGDcj0Sp2HEkM82_Z8A8Dl-1P_4B3bvAgCLcB/s320/ph5.png</item>
     </string-array>
 
     <string-array name="one_headers">
@@ -567,24 +501,6 @@
         <item>3</item>
     </string-array>
 
-    <string-array name="multi_select_list_preference_default_value" />
-
-    <string name="pref_title_system_sync_settings">System sync settings</string>
-
-    <!-- Example settings for Notifications -->
-    <string name="pref_header_notifications">Notifications</string>
-
-    <string name="pref_title_new_message_notifications">New message notifications</string>
-
-    <string name="pref_title_ringtone">Ringtone</string>
-    <string name="pref_ringtone_silent">Silent</string>
-
-    <string name="pref_title_vibrate">Vibrate</string>
-    <string name="stop_tts">Stop TTS</string>
-    <string name="title_activity_levels">LevelsActivity</string>
-    <string name="title_activity_your">YourActivity</string>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
     <string name="level">Level</string>
     <string name="level_header">Level Header</string>
     <string name="feature_header">Feature Header</string>
