@@ -30,6 +30,10 @@
     <color name="colorPrimaryIntensityDark8">#6d8197</color>
     <color name="colorPrimaryIntensityDark9">#717f8e</color>
 
+    <color name="colorAppreciateDevelopers">#e6ad20</color>
+    <color name="colorRateAppDark">#e7ae21</color>
+    <color name="colorRateApp">#fbc02d</color>
+
     <color name="colorAccentIntensity2">#e25417</color>
     <color name="colorAccentIntensity3">#e1df6531</color>
     <color name="colorAccentIntensity4">#bddf6531</color>
