@@ -518,4 +518,5 @@
     <string name="previous_twister">PREV</string>
     <string name="auto_play_on">AUTO ON</string>
     <string name="auto_play_off">AUTO OFF</string>
+    <string name="settings">Settings</string>
 </resources>

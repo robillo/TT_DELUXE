@@ -21,6 +21,15 @@
     <color name="colorPrimaryIntensity8">#a4c8ef</color>
     <color name="colorPrimaryIntensity9">#b4d0ef</color>
 
+    <color name="colorPrimaryIntensityDark2">#4a8dd9</color>
+    <color name="colorPrimaryIntensityDark3">#4d87c7</color>
+    <color name="colorPrimaryIntensityDark4">#5384ba</color>
+    <color name="colorPrimaryIntensityDark5">#5b83af</color>
+    <color name="colorPrimaryIntensityDark6">#6081a6</color>
+    <color name="colorPrimaryIntensityDark7">#647e9b</color>
+    <color name="colorPrimaryIntensityDark8">#6d8197</color>
+    <color name="colorPrimaryIntensityDark9">#717f8e</color>
+
     <color name="colorAccentIntensity2">#e25417</color>
     <color name="colorAccentIntensity3">#e1df6531</color>
     <color name="colorAccentIntensity4">#bddf6531</color>

@@ -1,6 +1,7 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.dashboard_screen
 
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ import android.view.WindowManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.dashboard_screen.adapters.DashboardAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.LevelFigures
+import com.firstapp.robinpc.tongue_twisters_deluxe.settings_screen.SettingsActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.RetrieveLevelFigures
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 import kotlinx.android.synthetic.main.activity_dashboard.*
@@ -27,6 +29,7 @@ class DashboardActivity : AppCompatActivity() {
     private fun setup() {
         setStatusBarColor()
         setRecyclerView()
+        setClickListeners()
     }
 
     private fun setStatusBarColor() {
@@ -38,17 +41,25 @@ class DashboardActivity : AppCompatActivity() {
         setWindowFlags(flags)
     }
 
+    private fun setRecyclerView() {
+        inflateLevelFiguresList()
+        recycler_view.adapter = DashboardAdapter(this, levelFiguresList)
+    }
+
+
+    private fun setClickListeners() {
+        settings_button.setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
+            overridePendingTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+        }
+    }
+
     private fun setWindowFlags(flags: Int) {
         window.decorView.systemUiVisibility = flags
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-    }
-
-    private fun setRecyclerView() {
-        inflateLevelFiguresList()
-        recycler_view.adapter = DashboardAdapter(this, levelFiguresList)
     }
 
     private fun inflateLevelFiguresList() {

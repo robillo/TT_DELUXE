@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".settings_screen.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimaryIntensity3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:src="@drawable/round_chevron_left_black_48"
+            android:tint="@color/colorWhiteShade"
+            tools:ignore="ContentDescription"
+            android:padding="10sp"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/actionBarSize"
+            android:textColor="@color/colorWhiteShade"
+            android:id="@+id/app_name_text_view"
+            android:text="@string/settings"
+            android:textSize="25sp"
+            android:gravity="center"
+            fontPath="fonts/Comfortaa-Bold.ttf"
+            tools:ignore="MissingPrefix"/>
+
+        <ImageView
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10sp"
+                android:background="@color/colorPrimaryIntensity3"
+                tools:ignore="ContentDescription,SmallSp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
