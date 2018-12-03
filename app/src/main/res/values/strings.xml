@@ -520,10 +520,14 @@
     <string name="auto_play_off">AUTO OFF</string>
     <string name="settings">Settings</string>
     <string name="rate_app_5_stars">RATE APP 5 STARS</string>
-    <string name="appreciate_developers_efforts">APPRECIATE DEVELOPER\'S EFFORTS …</string>
+    <string name="appreciate_developers_efforts">appreciate developer\'s efforts …</string>
     <string name="content_creators">CONTENT CREATORS</string>
     <string name="anubhav_nirwal">Anubhav Nirwal</string>
     <string name="amit_singh">Amit Kr. Singh</string>
     <string name="developer">DEVELOPER</string>
     <string name="robin_kamboj">Robin Kamboj</string>
+    <string name="about">About</string>
+    <string name="about_the_app_and_developers">click here to read about the developers</string>
+    <string name="select_app_theme_color">select app theme color</string>
+    <string name="click_to_enable_daily_notifications">click to enable daily notifications</string>
 </resources>
