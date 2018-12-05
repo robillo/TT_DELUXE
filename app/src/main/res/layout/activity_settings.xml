@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:background="@color/colorPrimaryIntensity3"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/color_linear_layout">
 
         <ImageView
             android:layout_width="?android:attr/actionBarSize"
@@ -44,7 +45,8 @@
     <ImageView android:layout_width="match_parent"
         android:background="@color/colorPrimaryIntensityDark3"
         android:layout_height="2sp"
-        tools:ignore="ContentDescription,SmallSp" />
+        tools:ignore="ContentDescription,SmallSp"
+        android:id="@+id/color_line"/>
 
     <TextView
         android:layout_width="match_parent"

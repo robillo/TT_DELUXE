@@ -69,7 +69,6 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         play_hint.setTextColor(themeColors.lightIntensity1)
         play_image.setColorFilter(themeColors.lightIntensity1)
         line_bottom.setBackgroundColor(ContextCompat.getColor(this, R.color.colorIntensity8))
-
     }
 
     private fun getAutoPlayFromPreferences() {
