@@ -55,13 +55,15 @@
         android:gravity="center"
         android:background="@color/colorWhiteShade"
         android:text="@string/about_the_app_and_developers"
-        tools:ignore="RtlHardcoded,RtlSymmetry" />
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:visibility="gone"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="2sp"
         android:background="@color/colorIntensity8"
-        tools:ignore="ContentDescription,SmallSp" />
+        tools:ignore="ContentDescription,SmallSp"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -74,10 +76,17 @@
         android:text="@string/select_app_theme_color"
         tools:ignore="RtlHardcoded,RtlSymmetry" />
 
-    <View
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="70sp"
-        android:background="@color/colorWhiteShade"/>
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:listitem="@layout/row_theme_color"
+        android:background="@color/colorWhiteShade"
+        android:paddingBottom="10sp"
+        android:id="@+id/recycler_theme_colors">
+
+    </android.support.v7.widget.RecyclerView>
 
     <ImageView
         android:layout_width="match_parent"
@@ -94,13 +103,15 @@
         android:gravity="center"
         android:background="@color/colorWhiteShade"
         android:text="@string/click_to_enable_daily_notifications"
-        tools:ignore="RtlHardcoded,RtlSymmetry" />
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:visibility="gone"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="2sp"
         android:background="@color/colorIntensity8"
-        tools:ignore="ContentDescription,SmallSp" />
+        tools:ignore="ContentDescription,SmallSp"
+        android:visibility="gone"/>
 
     <View
         android:layout_width="match_parent"

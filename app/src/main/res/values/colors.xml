@@ -5,6 +5,40 @@
         <item>@color/gplus_color_2</item>
     </integer-array>
 
+
+
+    <color name="colorPrimaryFierceRed">#318cf4</color>
+
+    <color name="fierceRedLight1">#4895ec</color>
+    <color name="fierceRedLight2">#6aa3e2</color>
+    <color name="fierceRedLight3">#81b2e7</color>
+    <color name="fierceRedLight4">#a4c8ef</color>
+    <color name="fierceRedLight5">#b4d0ef</color>
+
+    <color name="fierceRedDark1">#4a8dd9</color>
+    <color name="fierceRedDark2">#4d87c7</color>
+    <color name="fierceRedDark3">#5384ba</color>
+    <color name="fierceRedDark4">#5b83af</color>
+    <color name="fierceRedDark5">#6081a6</color>
+
+
+
+    <color name="colorPrimaryCheerfulBlue">#318cf4</color>
+
+    <color name="cheerfulBlueLight1">#4895ec</color>
+    <color name="cheerfulBlueLight2">#6aa3e2</color>
+    <color name="cheerfulBlueLight3">#81b2e7</color>
+    <color name="cheerfulBlueLight4">#a4c8ef</color>
+    <color name="cheerfulBlueLight5">#b4d0ef</color>
+
+    <color name="cheerfulBlueDark1">#4a8dd9</color>
+    <color name="cheerfulBlueDark2">#4d87c7</color>
+    <color name="cheerfulBlueDark3">#5384ba</color>
+    <color name="cheerfulBlueDark4">#5b83af</color>
+    <color name="cheerfulBlueDark5">#6081a6</color>
+
+
+
     <color name="colorPrimary">#318cf4</color>
     <color name="colorPrimaryDark">#2b81e2</color>
     <color name="colorAccent">#de4c0e</color>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="cheerful_blue">
+        <item>@color/colorPrimaryCheerfulBlue</item>
+
+        <item>@color/cheerfulBlueLight1</item>
+        <item>@color/cheerfulBlueLight2</item>
+        <item>@color/cheerfulBlueLight3</item>
+        <item>@color/cheerfulBlueLight4</item>
+        <item>@color/cheerfulBlueLight5</item>
+
+        <item>@color/cheerfulBlueDark1</item>
+        <item>@color/cheerfulBlueDark2</item>
+        <item>@color/cheerfulBlueDark3</item>
+        <item>@color/cheerfulBlueDark4</item>
+        <item>@color/cheerfulBlueDark5</item>
+    </integer-array>
+
+    <integer-array name="fierce_red">
+        <item>@color/colorPrimaryCheerfulBlue</item>
+
+        <item>@color/cheerfulBlueLight1</item>
+        <item>@color/cheerfulBlueLight2</item>
+        <item>@color/cheerfulBlueLight3</item>
+        <item>@color/cheerfulBlueLight4</item>
+        <item>@color/cheerfulBlueLight5</item>
+
+        <item>@color/cheerfulBlueDark1</item>
+        <item>@color/cheerfulBlueDark2</item>
+        <item>@color/cheerfulBlueDark3</item>
+        <item>@color/cheerfulBlueDark4</item>
+        <item>@color/cheerfulBlueDark5</item>
+    </integer-array>
+
+    <integer-array name="happy_yellow">
+        <item>@color/colorPrimaryCheerfulBlue</item>
+
+        <item>@color/cheerfulBlueLight1</item>
+        <item>@color/cheerfulBlueLight2</item>
+        <item>@color/cheerfulBlueLight3</item>
+        <item>@color/cheerfulBlueLight4</item>
+        <item>@color/cheerfulBlueLight5</item>
+
+        <item>@color/cheerfulBlueDark1</item>
+        <item>@color/cheerfulBlueDark2</item>
+        <item>@color/cheerfulBlueDark3</item>
+        <item>@color/cheerfulBlueDark4</item>
+        <item>@color/cheerfulBlueDark5</item>
+    </integer-array>
+
+    <integer-array name="fresh_green">
+        <item>@color/colorPrimaryCheerfulBlue</item>
+
+        <item>@color/cheerfulBlueLight1</item>
+        <item>@color/cheerfulBlueLight2</item>
+        <item>@color/cheerfulBlueLight3</item>
+        <item>@color/cheerfulBlueLight4</item>
+        <item>@color/cheerfulBlueLight5</item>
+
+        <item>@color/cheerfulBlueDark1</item>
+        <item>@color/cheerfulBlueDark2</item>
+        <item>@color/cheerfulBlueDark3</item>
+        <item>@color/cheerfulBlueDark4</item>
+        <item>@color/cheerfulBlueDark5</item>
+    </integer-array>
+
+    <integer-array name="girl_pink">
+        <item>@color/colorPrimaryCheerfulBlue</item>
+
+        <item>@color/cheerfulBlueLight1</item>
+        <item>@color/cheerfulBlueLight2</item>
+        <item>@color/cheerfulBlueLight3</item>
+        <item>@color/cheerfulBlueLight4</item>
+        <item>@color/cheerfulBlueLight5</item>
+
+        <item>@color/cheerfulBlueDark1</item>
+        <item>@color/cheerfulBlueDark2</item>
+        <item>@color/cheerfulBlueDark3</item>
+        <item>@color/cheerfulBlueDark4</item>
+        <item>@color/cheerfulBlueDark5</item>
+    </integer-array>
+
+    <integer-array name="pitch_black">
+        <item>@color/colorPrimaryCheerfulBlue</item>
+
+        <item>@color/cheerfulBlueLight1</item>
+        <item>@color/cheerfulBlueLight2</item>
+        <item>@color/cheerfulBlueLight3</item>
+        <item>@color/cheerfulBlueLight4</item>
+        <item>@color/cheerfulBlueLight5</item>
+
+        <item>@color/cheerfulBlueDark1</item>
+        <item>@color/cheerfulBlueDark2</item>
+        <item>@color/cheerfulBlueDark3</item>
+        <item>@color/cheerfulBlueDark4</item>
+        <item>@color/cheerfulBlueDark5</item>
+    </integer-array>
+
+</resources>
