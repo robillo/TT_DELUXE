@@ -59,7 +59,10 @@ class SettingsActivity : AppCompatActivity() {
     }
 
     private fun setRecyclerAdapter() {
-        recycler_theme_colors.adapter = ThemeColorAdapter(this, themeColorItems)
+        recycler_theme_colors.adapter = ThemeColorAdapter(this, themeColorItems, ThemeChangeListener {
+            AppPreferencesHelper(this).themeName = it
+            setColorsForCurrentTheme()
+        })
     }
 
     override fun onBackPressed() {

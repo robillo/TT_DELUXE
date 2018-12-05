@@ -32,7 +32,6 @@ class DashboardActivity : AppCompatActivity() {
 
     private fun setup() {
         setColorsForCurrentTheme()
-        setStatusBarColor()
         setRecyclerView()
         setClickListeners()
     }
@@ -54,22 +53,18 @@ class DashboardActivity : AppCompatActivity() {
         levelFiguresList = RetrieveLevelFigures(this).getLevelFiguresList()
     }
 
-    private fun setStatusBarColor() {
-        val statusBarColor = themeColors.lightIntensity1
-        var flags = window.decorView.systemUiVisibility
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
-            flags = flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-            window.statusBarColor = statusBarColor
-        setWindowFlags(flags)
-    }
-
     private fun setWindowFlags(flags: Int) {
         window.decorView.systemUiVisibility = flags
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setColorsForCurrentTheme()
+        setRecyclerView()
     }
 
     private fun setColorsForCurrentTheme() {
@@ -80,6 +75,18 @@ class DashboardActivity : AppCompatActivity() {
         color_linear_layout.setBackgroundColor(backgroundColor)
         color_line.setBackgroundColor(backgroundColor)
         color_difficulty_level.setBackgroundColor(backgroundColor)
+
+        setStatusBarColor()
+    }
+
+    private fun setStatusBarColor() {
+        val statusBarColor = themeColors.lightIntensity1
+        var flags = window.decorView.systemUiVisibility
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+            flags = flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+            window.statusBarColor = statusBarColor
+        setWindowFlags(flags)
     }
 
     override fun attachBaseContext(newBase: Context) {

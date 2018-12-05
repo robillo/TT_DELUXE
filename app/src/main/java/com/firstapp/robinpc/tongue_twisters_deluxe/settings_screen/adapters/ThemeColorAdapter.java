@@ -11,17 +11,20 @@ import android.view.ViewGroup;
 
 import com.firstapp.robinpc.tongue_twisters_deluxe.R;
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.ThemeColorItem;
+import com.firstapp.robinpc.tongue_twisters_deluxe.settings_screen.ThemeChangeListener;
 
 import java.util.List;
 
 public class ThemeColorAdapter extends RecyclerView.Adapter<ThemeColorAdapter.ThemeColorHolder> {
 
     private Context context;
+    private ThemeChangeListener themeChangeListener;
     private List<ThemeColorItem> themeColorItems;
 
-    public ThemeColorAdapter(Context context, List<ThemeColorItem> themeColorItems) {
+    public ThemeColorAdapter(Context context, List<ThemeColorItem> themeColorItems, ThemeChangeListener themeChangeListener) {
         this.context = context;
         this.themeColorItems = themeColorItems;
+        this.themeChangeListener = themeChangeListener;
     }
 
     @NonNull
@@ -34,13 +37,22 @@ public class ThemeColorAdapter extends RecyclerView.Adapter<ThemeColorAdapter.Th
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ThemeColorHolder themeColorHolder, int position) {
+    public void onBindViewHolder(@NonNull ThemeColorHolder themeColorHolder, final int position) {
+
+        @SuppressWarnings("UnnecessaryLocalVariable") final int finalPosition = position;
+
         themeColorHolder.themeColorCard.setCardBackgroundColor(
                 ContextCompat.getColor(
                         context,
                         themeColorItems.get(position).getColorToDisplay()
                 )
         );
+        themeColorHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                themeChangeListener.handleThemeChange(themeColorItems.get(finalPosition).getColorName());
+            }
+        });
     }
 
     @Override
