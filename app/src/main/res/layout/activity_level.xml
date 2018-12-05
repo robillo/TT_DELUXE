@@ -38,7 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="2sp"
         android:background="@color/colorPrimaryIntensity9"
-        tools:ignore="ContentDescription,SmallSp" />
+        tools:ignore="ContentDescription,SmallSp"
+        android:id="@+id/line_light"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -50,7 +51,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/colorPrimaryIntensity4">
+            android:background="@color/colorPrimaryIntensity4"
+            android:id="@+id/color_linear_layout">
 
             <TextView
                 android:layout_width="match_parent"
@@ -139,6 +141,13 @@
         android:background="@color/colorWhiteShade"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:id="@+id/line_bottom"
+            tools:ignore="ContentDescription,SmallSp"
+            tools:background="@color/colorPrimaryCheerfulBlue"/>
+
         <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -148,7 +157,7 @@
             app:spb_sections_count="4"
             app:spb_colors="@array/gplus_colors"
             app:spb_speed="2.0"
-            app:spb_stroke_width="10sp"
+            app:spb_stroke_width="4sp"
             app:spb_stroke_separator_length="10sp"
             app:spb_reversed="true"
             app:spb_mirror_mode="true"

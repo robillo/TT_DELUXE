@@ -21,11 +21,14 @@ import java.util.*
 import android.content.Intent
 import android.speech.tts.UtteranceProgressListener
 import android.util.Log
+import com.firstapp.robinpc.tongue_twisters_deluxe.data.ThemeColorsList
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppConstants.CONSTANT_UTTERANCE_ID
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.ThemeColorsUtils
 
 
 class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
+    private lateinit var themeColors: ThemeColorsList
     var utteranceMap = HashMap<String, String>()
     var utteranceBundle: Bundle = Bundle()
     private var LEVEL_NUMBER: Int = -1
@@ -43,6 +46,7 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun setup() {
+        setColorsForCurrentTheme()
         setStatusBarColor()
         setLevelNumberAndNameFromIntent()
         setLevelTwistersFromIntent()
@@ -51,6 +55,21 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         instantiateVariables()
         setClickListeners()
         showTwisterForCurrentTwisterIndex()
+    }
+
+    private fun setColorsForCurrentTheme() {
+        themeColors = ThemeColorsUtils(this).getThemeColorsForThemeName(
+                AppPreferencesHelper(this).themeName
+        )
+
+        level_number_header_text_view.setTextColor(themeColors.lightIntensity1)
+        level_name_text_view.setTextColor(themeColors.lightIntensity1)
+        line_light.setBackgroundColor(themeColors.lightIntensity4)
+        color_linear_layout.setBackgroundColor(themeColors.lightIntensity1)
+        play_hint.setTextColor(themeColors.lightIntensity1)
+        play_image.setColorFilter(themeColors.lightIntensity1)
+        line_bottom.setBackgroundColor(ContextCompat.getColor(this, R.color.colorIntensity8))
+
     }
 
     private fun getAutoPlayFromPreferences() {
@@ -83,8 +102,8 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun renderAutoPlayViews() {
         IS_AUTO_PLAY_ON = AppPreferencesHelper(this).isAutoPlayOn
         if(IS_AUTO_PLAY_ON) {
-            auto_play_image_view.setColorFilter(ContextCompat.getColor(this, colorPrimaryIntensity7))
-            auto_play_text_view.setTextColor(ContextCompat.getColor(this, colorPrimaryIntensity7))
+            auto_play_image_view.setColorFilter(themeColors.lightIntensity2)
+            auto_play_text_view.setTextColor(themeColors.lightIntensity2)
             auto_play_text_view.text = getString(R.string.auto_play_on)
         }
         else {
@@ -297,11 +316,12 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun setStatusBarColor() {
+        val statusBarColor = ContextCompat.getColor(this, R.color.colorWhiteShade)
         var flags = window.decorView.systemUiVisibility
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             flags = flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-            window.statusBarColor = ContextCompat.getColor(this, R.color.colorWhiteShade)
+            window.statusBarColor = statusBarColor
         setWindowFlags(flags)
     }
 

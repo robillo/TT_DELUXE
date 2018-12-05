@@ -23,7 +23,7 @@ public class AppPreferencesHelper {
         prefs.edit().putBoolean(PREFERENCE_IS_AUTO_PLAY_ON, isAutoPlayOn).apply();
     }
 
-    public String getThemeName() { return prefs.getString(PREFERENCE_THEME_NAME, ThemeColorsUtils.CHEERFUL_BLUE); }
+    public String getThemeName() { return prefs.getString(PREFERENCE_THEME_NAME, ThemeColorsUtils.FRESH_GREEN); }
 
     public void setThemeName(String themeName) {
         prefs.edit().putString(PREFERENCE_THEME_NAME, themeName).apply();
