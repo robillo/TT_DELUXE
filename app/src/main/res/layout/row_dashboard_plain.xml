@@ -14,7 +14,9 @@
             android:layout_width="match_parent"
             android:layout_height="1sp"
             android:background="@color/colorPrimaryIntensity8"
-            tools:ignore="ContentDescription,SmallSp" />
+            tools:ignore="ContentDescription,SmallSp"
+            android:id="@+id/level_line"
+            android:alpha="0.5"/>
 
         <LinearLayout
             android:layout_width="match_parent"

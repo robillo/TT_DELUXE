@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 import static com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppConstants.PREFERENCE_FILE_NAME;
 import static com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppConstants.PREFERENCE_IS_AUTO_PLAY_ON;
+import static com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppConstants.PREFERENCE_THEME_NAME;
 
 public class AppPreferencesHelper {
 
@@ -20,6 +21,12 @@ public class AppPreferencesHelper {
 
     public void setIsAutoPlayOn(boolean isAutoPlayOn) {
         prefs.edit().putBoolean(PREFERENCE_IS_AUTO_PLAY_ON, isAutoPlayOn).apply();
+    }
+
+    public String getThemeName() { return prefs.getString(PREFERENCE_THEME_NAME, ThemeColorsUtils.CHEERFUL_BLUE); }
+
+    public void setThemeName(String themeName) {
+        prefs.edit().putString(PREFERENCE_THEME_NAME, themeName).apply();
     }
 
 }

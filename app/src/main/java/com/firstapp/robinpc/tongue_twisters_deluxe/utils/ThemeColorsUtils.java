@@ -29,11 +29,11 @@ public class ThemeColorsUtils {
 
     public List<ThemeColorItem> getThemeColorItems() {
         themeColorItems.add(new ThemeColorItem(R.color.cheerfulBlueLight1, CHEERFUL_BLUE));
+        themeColorItems.add(new ThemeColorItem(R.color.freshGreenLight1, FRESH_GREEN));
+        themeColorItems.add(new ThemeColorItem(R.color.happyYellowLight1, HAPPY_YELLOW));
         themeColorItems.add(new ThemeColorItem(R.color.fierceRedLight1, FIERCE_RED));
-        themeColorItems.add(new ThemeColorItem(R.color.fierceRedDark1, HAPPY_YELLOW));
-        themeColorItems.add(new ThemeColorItem(R.color.fierceRedLight1, FRESH_GREEN));
-        themeColorItems.add(new ThemeColorItem(R.color.fierceRedDark1, PITCH_BLACK));
-        themeColorItems.add(new ThemeColorItem(R.color.fierceRedLight1, GIRL_PINK));
+        themeColorItems.add(new ThemeColorItem(R.color.girlPinkLight1, GIRL_PINK));
+        themeColorItems.add(new ThemeColorItem(R.color.pitchBlackLight1, PITCH_BLACK));
         return themeColorItems;
     }
 

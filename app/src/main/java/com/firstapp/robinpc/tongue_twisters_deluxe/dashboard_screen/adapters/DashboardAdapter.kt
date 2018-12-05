@@ -13,11 +13,16 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.LevelFigures
+import com.firstapp.robinpc.tongue_twisters_deluxe.data.ThemeColorsList
 import com.firstapp.robinpc.tongue_twisters_deluxe.level_screen.LevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.IntentExtras
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.RetrieveLevelFigures
 
-internal class DashboardAdapter(private val context: Context, private val list: List<LevelFigures>?) : RecyclerView.Adapter<DashboardAdapter.DashboardHolder>() {
+internal class DashboardAdapter(
+        private val context: Context,
+        private val list: List<LevelFigures>?,
+        private val themeColors: ThemeColorsList
+        ) : RecyclerView.Adapter<DashboardAdapter.DashboardHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DashboardHolder {
         return DashboardHolder(
@@ -38,6 +43,9 @@ internal class DashboardAdapter(private val context: Context, private val list: 
                     .into(holder.levelImageView)
         }
 
+        holder.levelLine.setBackgroundColor(themeColors.lightIntensity5)
+        holder.levelHeaderTextView.setTextColor(themeColors.lightIntensity1)
+
         holder.itemView.setOnClickListener {
             val intent = Intent(context, LevelActivity::class.java)
             intent.putExtra(IntentExtras.EXTRA_LEVEL_NUMBER, list.get(position).levelNumberHeader)
@@ -53,14 +61,10 @@ internal class DashboardAdapter(private val context: Context, private val list: 
 
     internal inner class DashboardHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var levelImageView: ImageView
-        var levelHeaderTextView: TextView
-        var levelNameTextView: TextView
+        var levelImageView: ImageView = itemView.findViewById(R.id.level_image)
+        var levelHeaderTextView: TextView = itemView.findViewById(R.id.level_number)
+        var levelNameTextView: TextView = itemView.findViewById(R.id.level_name)
+        var levelLine: ImageView = itemView.findViewById(R.id.level_line)
 
-        init {
-            levelImageView = itemView.findViewById(R.id.level_image)
-            levelHeaderTextView = itemView.findViewById(R.id.level_number)
-            levelNameTextView = itemView.findViewById(R.id.level_name)
-        }
     }
 }

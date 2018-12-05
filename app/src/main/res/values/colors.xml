@@ -7,19 +7,83 @@
 
 
 
-    <color name="colorPrimaryFierceRed">#318cf4</color>
+    <color name="colorPrimaryFierceRed">#B71C1C</color>
 
-    <color name="fierceRedLight1">#4895ec</color>
-    <color name="fierceRedLight2">#6aa3e2</color>
-    <color name="fierceRedLight3">#81b2e7</color>
-    <color name="fierceRedLight4">#a4c8ef</color>
-    <color name="fierceRedLight5">#b4d0ef</color>
+    <color name="fierceRedLight1">#D32F2F</color>
+    <color name="fierceRedLight2">#F44336</color>
+    <color name="fierceRedLight3">#EF5350</color>
+    <color name="fierceRedLight4">#E57373</color>
+    <color name="fierceRedLight5">#EF9A9A</color>
 
-    <color name="fierceRedDark1">#4a8dd9</color>
-    <color name="fierceRedDark2">#4d87c7</color>
-    <color name="fierceRedDark3">#5384ba</color>
-    <color name="fierceRedDark4">#5b83af</color>
-    <color name="fierceRedDark5">#6081a6</color>
+    <color name="fierceRedDark1">#b11717</color>
+    <color name="fierceRedDark2">#9c1919</color>
+    <color name="fierceRedDark3">#871717</color>
+    <color name="fierceRedDark4">#711414</color>
+    <color name="fierceRedDark5">#601111</color>
+
+
+
+    <color name="colorPrimaryHappyYellow">#F57C00</color>
+
+    <color name="happyYellowLight1">#FB8C00</color>
+    <color name="happyYellowLight2">#FF9800</color>
+    <color name="happyYellowLight3">#FFA726</color>
+    <color name="happyYellowLight4">#FFB74D</color>
+    <color name="happyYellowLight5">#FFCC80</color>
+
+    <color name="happyYellowDark1">#EF6C00</color>
+    <color name="happyYellowDark2">#E65100</color>
+    <color name="happyYellowDark3">#871717</color>
+    <color name="happyYellowDark4">#711414</color>
+    <color name="happyYellowDark5">#601111</color>
+
+
+
+    <color name="colorPrimaryFreshGreen">#388E3C</color>
+
+    <color name="freshGreenLight1">#43A047</color>
+    <color name="freshGreenLight2">#4CAF50</color>
+    <color name="freshGreenLight3">#66BB6A</color>
+    <color name="freshGreenLight4">#81C784</color>
+    <color name="freshGreenLight5">#A5D6A7</color>
+
+    <color name="freshGreenDark1">#2E7D32</color>
+    <color name="freshGreenDark2">#1B5E20</color>
+    <color name="freshGreenDark3">#871717</color>
+    <color name="freshGreenDark4">#711414</color>
+    <color name="freshGreenDark5">#601111</color>
+
+
+
+    <color name="colorPrimaryPitchBlack">#212121</color>
+
+    <color name="pitchBlackLight1">#212121</color>
+    <color name="pitchBlackLight2">#424242</color>
+    <color name="pitchBlackLight3">#616161</color>
+    <color name="pitchBlackLight4">#757575</color>
+    <color name="pitchBlackLight5">#9E9E9E</color>
+
+    <color name="pitchBlackDark1">#202020</color>
+    <color name="pitchBlackDark2">#1a1a1a</color>
+    <color name="pitchBlackDark3">#151515</color>
+    <color name="pitchBlackDark4">#121212</color>
+    <color name="pitchBlackDark5">#000000</color>
+
+
+
+    <color name="colorPrimaryGirlPink">#C2185B</color>
+
+    <color name="girlPinkLight1">#D81B60</color>
+    <color name="girlPinkLight2">#E91E63</color>
+    <color name="girlPinkLight3">#EC407A</color>
+    <color name="girlPinkLight4">#F06292</color>
+    <color name="girlPinkLight5">#F48FB1</color>
+
+    <color name="girlPinkDark1">#AD1457</color>
+    <color name="girlPinkDark2">#880E4F</color>
+    <color name="girlPinkDark3">#760c45</color>
+    <color name="girlPinkDark4">#680b3d</color>
+    <color name="girlPinkDark5">#510930</color>
 
 
 
@@ -39,8 +103,8 @@
 
 
 
-    <color name="colorPrimary">#318cf4</color>
-    <color name="colorPrimaryDark">#2b81e2</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#de4c0e</color>
 
     <color name="colorWhiteShade">#FFFFFF</color>

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".dashboard_screen.DashboardActivity"
-    android:background="@color/colorPrimaryIntensity3">
+    tools:background="@color/colorPrimaryIntensity3"
+    android:id="@+id/color_linear_layout">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,13 +45,15 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="2sp"
-        android:background="@color/colorPrimaryIntensity3"
-        tools:ignore="ContentDescription,SmallSp" />
+        tools:background="@color/colorPrimaryIntensity3"
+        tools:ignore="ContentDescription,SmallSp"
+        android:id="@+id/color_line"/>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimaryIntensity3">
+        tools:background="@color/colorPrimaryIntensity3"
+        android:id="@+id/color_difficulty_level">
 
         <TextView
             android:layout_width="match_parent"
