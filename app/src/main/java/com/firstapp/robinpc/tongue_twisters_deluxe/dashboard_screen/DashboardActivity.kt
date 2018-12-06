@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
 import android.view.View
 import android.view.WindowManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
@@ -74,18 +73,18 @@ class DashboardActivity : AppCompatActivity() {
         val backgroundColor = themeColors.lightIntensity1
         color_linear_layout.setBackgroundColor(backgroundColor)
         color_line.setBackgroundColor(backgroundColor)
+        line_dark_color.setBackgroundColor(themeColors.darkIntensity2)
         color_difficulty_level.setBackgroundColor(backgroundColor)
 
         setStatusBarColor()
     }
 
     private fun setStatusBarColor() {
-        val statusBarColor = themeColors.lightIntensity1
         var flags = window.decorView.systemUiVisibility
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             flags = flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-            window.statusBarColor = statusBarColor
+            window.statusBarColor = themeColors.darkIntensity1
         setWindowFlags(flags)
     }
 

@@ -530,4 +530,5 @@
     <string name="about_the_app_and_developers">click here to read about the developers</string>
     <string name="select_app_theme_color">SELECT APP THEME COLOR</string>
     <string name="click_to_enable_daily_notifications">click to enable daily notifications</string>
+    <string name="theme_set">theme set to</string>
 </resources>

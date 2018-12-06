@@ -8,8 +8,8 @@ android {
         applicationId "com.firstapp.robinpc.tongue_twisters_deluxe"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 26
-        versionName "10.6"
+        versionCode 30
+        versionName "11.0"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
@@ -32,7 +32,7 @@ dependencies {
 
     implementation "com.github.bumptech.glide:glide:4.7.1"
 
-    implementation "com.google.firebase:firebase-core:16.0.5"
+    implementation "com.google.firebase:firebase-core:16.0.6"
 
     implementation 'io.github.inflationx:calligraphy3:3.0.0'
     implementation 'io.github.inflationx:viewpump:1.0.0'

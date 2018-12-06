@@ -6,7 +6,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="35sp"
     android:layout_margin="8sp"
-    android:id="@+id/theme_color_card"
-    tools:cardBackgroundColor="@color/colorPrimary">
+    app:cardElevation="2sp"
+    android:id="@+id/selected_theme_card">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:cardCornerRadius="30sp"
+        app:cardElevation="0sp"
+        android:layout_gravity="center"
+        android:id="@+id/theme_color_card"
+        tools:cardBackgroundColor="@color/colorBlackShade">
+
+    </android.support.v7.widget.CardView>
 
 </android.support.v7.widget.CardView>

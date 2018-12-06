@@ -4,6 +4,9 @@ import android.content.Context
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.Snackbar
+import android.view.View
+import android.widget.TextView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.ThemeColorItem
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.ThemeColorsList
@@ -12,6 +15,9 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppPreferencesHelper
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.ThemeColorsUtils
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 import kotlinx.android.synthetic.main.activity_settings.*
+import android.content.Intent
+import android.net.Uri
+
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -36,6 +42,23 @@ class SettingsActivity : AppCompatActivity() {
         go_back.setOnClickListener {
             onBackPressed()
         }
+        rate_app_five_stars.setOnClickListener {
+            try {
+                startActivity(
+                        Intent(
+                                Intent.ACTION_VIEW,
+                                Uri.parse("market://details?id=".plus(packageName))
+                        )
+                )
+            } catch (anfe: android.content.ActivityNotFoundException) {
+                startActivity(
+                        Intent(
+                                Intent.ACTION_VIEW,
+                                Uri.parse("http://play.google.com/store/apps/details?id=".plus(packageName))
+                        )
+                )
+            }
+        }
     }
 
     private fun setColorsForCurrentTheme() {
@@ -45,13 +68,14 @@ class SettingsActivity : AppCompatActivity() {
 
         color_linear_layout.setBackgroundColor(themeColors.lightIntensity1)
         color_line.setBackgroundColor(themeColors.lightIntensity1)
+        line_dark_color.setBackgroundColor(themeColors.darkIntensity2)
 
         setStatusBarColor()
     }
 
     private fun setStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-            window.statusBarColor = themeColors.lightIntensity1
+            window.statusBarColor = themeColors.darkIntensity1
     }
 
     private fun instantiateThemeColors() {
@@ -62,7 +86,19 @@ class SettingsActivity : AppCompatActivity() {
         recycler_theme_colors.adapter = ThemeColorAdapter(this, themeColorItems, ThemeChangeListener {
             AppPreferencesHelper(this).themeName = it
             setColorsForCurrentTheme()
+            showSnackBar(getString(R.string.theme_set).plus(" ").plus(it.toLowerCase()))
         })
+    }
+
+    private fun showSnackBar(text: String) {
+        val snackbar = Snackbar.make(coordinator, text, 2000)
+        val view = snackbar.view
+        view.setBackgroundColor(themeColors.lightIntensity1)
+        val textView = view.findViewById<TextView>(android.support.design.R.id.snackbar_text)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            textView.textAlignment = View.TEXT_ALIGNMENT_CENTER
+        }
+        snackbar.show()
     }
 
     override fun onBackPressed() {

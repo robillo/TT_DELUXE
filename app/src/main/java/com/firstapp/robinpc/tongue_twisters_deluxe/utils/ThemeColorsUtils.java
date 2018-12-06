@@ -20,12 +20,12 @@ public class ThemeColorsUtils {
         this.context = context;
     }
 
-    public static final String CHEERFUL_BLUE = "BLUE";
-    public static final String FIERCE_RED = "RED";
-    public static final String HAPPY_YELLOW = "YELLOW";
-    public static final String FRESH_GREEN = "GREEN";
-    public static final String PITCH_BLACK = "BLACK";
-    public static final String GIRL_PINK = "PINK";
+    public static final String CHEERFUL_BLUE = "CHEERFUL BLUE";
+    public static final String FIERCE_RED = "FIERCE RED";
+    public static final String HAPPY_YELLOW = "HAPPY YELLOW";
+    public static final String FRESH_GREEN = "FRESH GREEN";
+    public static final String PITCH_BLACK = "PITCH BLACK";
+    public static final String GIRL_PINK = "GIRL PINK";
 
     public List<ThemeColorItem> getThemeColorItems() {
         themeColorItems.add(new ThemeColorItem(R.color.cheerfulBlueLight1, CHEERFUL_BLUE));
