@@ -24,10 +24,16 @@ import android.util.Log
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.ThemeColorsList
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppConstants.CONSTANT_UTTERANCE_ID
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.ThemeColorsUtils
-
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
+import com.google.firebase.analytics.FirebaseAnalytics
 
 class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
+    private lateinit var bundle: Bundle
+    private var adLoadStatusEventName = "ad_load_status"
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
     private lateinit var themeColors: ThemeColorsList
     var utteranceMap = HashMap<String, String>()
     var utteranceBundle: Bundle = Bundle()
@@ -38,6 +44,7 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var LEVEL_NAME: String
     private lateinit var levelTwistersHeadersArray: Array<String>
     private lateinit var levelTwistersArray: Array<String>
+    private lateinit var adRequest: AdRequest
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +55,7 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun setup() {
         setColorsForCurrentTheme()
         setStatusBarColor()
+        initObjects()
         setLevelNumberAndNameFromIntent()
         setLevelTwistersFromIntent()
         getAutoPlayFromPreferences()
@@ -55,6 +63,65 @@ class LevelActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         instantiateVariables()
         setClickListeners()
         showTwisterForCurrentTwisterIndex()
+        setAdView()
+    }
+
+    private fun initObjects() {
+        firebaseAnalytics = FirebaseAnalytics.getInstance(this)
+    }
+
+    private fun setAdView() {
+
+        adRequest = AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice(getString(R.string.hmd_global_test_id))
+                .build()
+
+        adView.adListener = object: AdListener() {
+            override fun onAdImpression() {
+                bundle = Bundle()
+                bundle.putString(adLoadStatusEventName, "pressed")
+                firebaseAnalytics.logEvent(adLoadStatusEventName, bundle)
+            }
+
+            override fun onAdLeftApplication() {
+                bundle = Bundle()
+                bundle.putString(adLoadStatusEventName, "user left app")
+                firebaseAnalytics.logEvent(adLoadStatusEventName, bundle)
+            }
+
+            override fun onAdClicked() {
+                bundle = Bundle()
+                bundle.putString(adLoadStatusEventName, "ad clicked")
+                firebaseAnalytics.logEvent(adLoadStatusEventName, bundle)
+            }
+
+            override fun onAdFailedToLoad(p0: Int) {
+                bundle = Bundle()
+                bundle.putString(adLoadStatusEventName, "ad load fail $p0")
+                firebaseAnalytics.logEvent(adLoadStatusEventName, bundle)
+            }
+
+            override fun onAdClosed() {
+                bundle = Bundle()
+                bundle.putString(adLoadStatusEventName, "ad closed")
+                firebaseAnalytics.logEvent(adLoadStatusEventName, bundle)
+            }
+
+            override fun onAdOpened() {
+                bundle = Bundle()
+                bundle.putString(adLoadStatusEventName, "ad opened")
+                firebaseAnalytics.logEvent(adLoadStatusEventName, bundle)
+            }
+
+            override fun onAdLoaded() {
+                bundle = Bundle()
+                bundle.putString(adLoadStatusEventName, "ad load success")
+                firebaseAnalytics.logEvent(adLoadStatusEventName, bundle)
+            }
+        }
+
+        adView.loadAd(adRequest)
     }
 
     private fun setColorsForCurrentTheme() {

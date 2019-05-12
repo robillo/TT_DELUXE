@@ -531,4 +531,11 @@
     <string name="select_app_theme_color">SELECT APP THEME COLOR</string>
     <string name="click_to_enable_daily_notifications">click to enable daily notifications</string>
     <string name="theme_set">theme set to</string>
+
+    <string name="ad_test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_app_id">ca-app-pub-8103354595257586~5155276805</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8103354595257586/8711378438</string>
+    <string name="hmd_global_test_id">14A8111EAF056776E18C7EE8317F5AD2</string>
+
+    <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

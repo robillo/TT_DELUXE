@@ -15,6 +15,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.settings_screen.SettingsActiv
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.AppPreferencesHelper
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.RetrieveLevelFigures
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.ThemeColorsUtils
+import com.google.android.gms.ads.MobileAds
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
@@ -33,6 +34,11 @@ class DashboardActivity : AppCompatActivity() {
         setColorsForCurrentTheme()
         setRecyclerView()
         setClickListeners()
+        initAdsSdk()
+    }
+
+    private fun initAdsSdk() {
+        MobileAds.initialize(this, getString(R.string.ad_app_id))
     }
 
     private fun setRecyclerView() {
