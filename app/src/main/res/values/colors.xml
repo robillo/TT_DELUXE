@@ -5,4 +5,14 @@
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#de4c0e</color>
 
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="skeleton_one">#F1F1F1</color>
+    <color name="skeleton_two">#D5D5D5</color>
+    <color name="skeleton_three">#AAAAAA</color>
+    <color name="skeleton_four">#808080</color>
+    <color name="skeleton_five">#4E4E4E</color>
+    <color name="skeleton_six">#2C2C2C</color>
+
 </resources>
