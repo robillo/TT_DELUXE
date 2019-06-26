@@ -7,6 +7,10 @@
     <string name="hmd_global_test_id">14A8111EAF056776E18C7EE8317F5AD2</string>
     <string name="loading_your_twisters">LOADING YOUR TWISTERS</string>
     <string name="app_name_caps">TONGUE TWISTERS</string>
+    <string name="you_are_a">YOU ARE A</string>
+    <string name="free_user">FREE USER</string>
+    <string name="upgrade_to">UPGRADE TO</string>
+    <string name="premium">PREMIUM</string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

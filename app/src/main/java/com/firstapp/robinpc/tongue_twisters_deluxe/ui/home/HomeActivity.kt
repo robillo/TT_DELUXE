@@ -18,7 +18,7 @@ class HomeActivity : BaseActivity() {
     }
 
     override fun setup() {
-
+        setStatusBarColor(R.color.white)
     }
 
     override fun onBackPressed() {

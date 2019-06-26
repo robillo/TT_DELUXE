@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.firstapp.robinpc.tongue_twisters_deluxe"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 28
         versionCode 32
         versionName "11.2"

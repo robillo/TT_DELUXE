@@ -6,7 +6,7 @@ import io.github.inflationx.calligraphy3.CalligraphyConfig;
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
 import io.github.inflationx.viewpump.ViewPump;
 
-public class ApplicationClass extends Application {
+public class TongueTwistersApp extends Application {
 
     @Override
     public void onCreate() {
@@ -15,7 +15,7 @@ public class ApplicationClass extends Application {
         ViewPump.init(ViewPump.builder()
                 .addInterceptor(new CalligraphyInterceptor(
                         new CalligraphyConfig.Builder()
-                                .setDefaultFontPath("fonts/Comfortaa-Bold.ttf")
+                                .setDefaultFontPath("fonts/WS-Regular.ttf")
                                 .setFontAttrId(R.attr.fontPath)
                                 .build()))
                 .build());

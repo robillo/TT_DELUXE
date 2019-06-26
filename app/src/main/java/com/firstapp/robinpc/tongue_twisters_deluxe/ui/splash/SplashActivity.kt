@@ -1,16 +1,16 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash
 
-import android.os.Bundle
 import android.os.CountDownTimer
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.HomeActivity
+import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : BaseActivity() {
 
     companion object {
-        private const val STEP_VALUE = 500L
-        private const val TIMER_VALUE = 3000L
+        private const val STEP_VALUE = 200L
+        private const val TIMER_VALUE = 1000L
     }
 
     override fun getLayoutResId(): Int {
@@ -18,6 +18,7 @@ class SplashActivity : BaseActivity() {
     }
 
     override fun setup() {
+        setStatusBarColor(R.color.white)
         startTimer()
     }
 
@@ -28,7 +29,7 @@ class SplashActivity : BaseActivity() {
             }
 
             override fun onTick(millisUntilFinished: Long) {
-                //TODO
+                loadingProgressBar.progress = getCompletionPercentage(millisUntilFinished)
             }
         }
         timer.start()

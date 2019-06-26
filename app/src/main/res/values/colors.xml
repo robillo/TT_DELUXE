@@ -8,6 +8,9 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 
+    <color name="separator_color">#C3F1F1F1</color>
+    <color name="premium_tv_bg">#FFD23E</color>
+
     <color name="skeleton_one">#F1F1F1</color>
     <color name="skeleton_two">#D5D5D5</color>
     <color name="skeleton_three">#AAAAAA</color>
