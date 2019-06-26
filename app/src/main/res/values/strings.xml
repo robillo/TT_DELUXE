@@ -11,6 +11,9 @@
     <string name="free_user">FREE USER</string>
     <string name="upgrade_to">UPGRADE TO</string>
     <string name="premium">PREMIUM</string>
+    <string name="twister_of_the_day">Twister of the <b>Day:</b></string>
+    <string name="twisters_by_length">Twisters by <b>Length:</b></string>
+    <string name="twisters_by_difficulty">Twisters by <b>Difficulty:</b></string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>
