@@ -14,6 +14,11 @@
     <string name="twister_of_the_day">Twister of the <b>Day:</b></string>
     <string name="twisters_by_length">Twisters by <b>Length:</b></string>
     <string name="twisters_by_difficulty">Twisters by <b>Difficulty:</b></string>
+    <string name="dummy_twister_detail">Level 2 - Twister 7</string>
+    <string name="dummy_twister_day_name">27 June, 2019</string>
+    <string name="dummy_tongue_twister">Peter Piper picked a peck of pickled peppers. Did Peter Piper pick a peck of pickled peppers?\nIf Peter Piper picked a peck of pickled peppers, Where’s the peck of pickled peppers Peter Piper picked?</string>
+    <string name="play">PLAY</string>
+    <string name="dummy_twister_by_length_header">Small</string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

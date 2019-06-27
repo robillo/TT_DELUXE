@@ -27,7 +27,6 @@
     <dimen name="loading_progress_bar_width">250dp</dimen>
     <dimen name="height_free_premium">150dp</dimen>
     <dimen name="height_home_header">60dp</dimen>
-    <dimen name="height_twister_of_the_day">240dp</dimen>
     <dimen name="width_twister_of_the_day_bg_stroke">3dp</dimen>
     <dimen name="twister_of_the_day_progress_dimens">30dp</dimen>
 

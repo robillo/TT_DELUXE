@@ -6,5 +6,5 @@
         android:width="@dimen/width_twister_of_the_day_bg_stroke"
         android:color="@color/black" />
     <corners
-        android:radius="@dimen/padding_micro"/>
+        android:radius="@dimen/padding_small"/>
 </shape>
