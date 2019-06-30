@@ -25,5 +25,6 @@
 
     <color name="color_bg_twister_by_difficulty">#2E77ED</color>
     <color name="color_progress_cell_twister_difficulty">#1D67E0</color>
+    <color name="nomber_bg_stroke_color">#707070</color>
 
 </resources>

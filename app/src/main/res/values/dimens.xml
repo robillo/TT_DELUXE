@@ -20,6 +20,7 @@
     <dimen name="padding_normal_large">18dp</dimen>
     <dimen name="padding_normal">16dp</dimen>
     <dimen name="padding_normal_small">14dp</dimen>
+    <dimen name="padding_normal_smaller">12dp</dimen>
     <dimen name="padding_medium">10dp</dimen>
     <dimen name="padding_small">8dp</dimen>
     <dimen name="padding_smaller">6dp</dimen>
