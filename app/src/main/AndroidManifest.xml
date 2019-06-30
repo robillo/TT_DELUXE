@@ -13,7 +13,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.reading.ReadingActivity"
+        <activity android:name=".ui.length_level.LengthLevelActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.difficulty_level.DifficultyLevelActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.reading.ReadingActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.home.HomeActivity"

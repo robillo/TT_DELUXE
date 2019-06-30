@@ -12,13 +12,17 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.DifficultyLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.LengthLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.difficulty_level.DifficultyLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.DifficultyAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.LengthAdapter
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.length_level.LengthLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlin.collections.ArrayList
 
-class HomeActivity : BaseActivity() {
+class HomeActivity : BaseActivity(),
+        LengthAdapter.LengthLevelClickListener,
+        DifficultyAdapter.DifficultyLevelClickListener {
 
     private lateinit var lengthList: MutableList<LengthLevel>
     private lateinit var difficultyList: MutableList<DifficultyLevel>
@@ -94,12 +98,16 @@ class HomeActivity : BaseActivity() {
 
     private fun setLengthAdapter() {
         lengthRecycler.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
-        lengthRecycler.adapter = LengthAdapter(lengthList)
+        val adapter = LengthAdapter(lengthList)
+        adapter.setLengthLevelClickListener(this)
+        lengthRecycler.adapter = adapter
     }
 
     private fun setDifficultyAdapter() {
         difficultyRecycler.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
-        difficultyRecycler.adapter = DifficultyAdapter(difficultyList)
+        val adapter = DifficultyAdapter(difficultyList)
+        adapter.setDifficultyClickListener(this)
+        difficultyRecycler.adapter = adapter
     }
 
     private fun loadAnimations() {
@@ -176,6 +184,24 @@ class HomeActivity : BaseActivity() {
         if(isAnimatingPremium || goPremiumLayout.visibility == View.VISIBLE) return
 
         goPremiumLayout.startAnimation(fadeInPremium)
+    }
+
+    override fun lengthLevelClicked(lengthLevel: LengthLevel) {
+        startLengthLevelActivity()
+    }
+
+    override fun difficultyClicked(difficultyLevel: DifficultyLevel) {
+        startDifficultyLevelActivity()
+    }
+
+    private fun startLengthLevelActivity() {
+        startActivity(LengthLevelActivity.newIntent(this))
+        animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+    }
+
+    private fun startDifficultyLevelActivity() {
+        startActivity(DifficultyLevelActivity.newIntent(this))
+        animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 
     private fun startReadingActivity() {
