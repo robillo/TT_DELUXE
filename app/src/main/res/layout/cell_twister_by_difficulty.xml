@@ -21,7 +21,7 @@
         android:layout_marginTop="@dimen/padding_normal_large"
         android:textSize="@dimen/font_extra_large"
         android:textColor="@color/white"
-        fontPath="fonts/Lato-Bold.ttf"
+        fontPath="fonts/WS-Bold.ttf"
         tools:textStyle="bold"
         tools:ignore="MissingPrefix"
         android:id="@+id/levelHeaderTv"/>
@@ -34,10 +34,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/padding_smaller"
         android:textSize="@dimen/font_normal"
+        fontPath="fonts/WS-Medium.ttf"
         android:textColor="@color/white"
         android:alpha="0.5"
         android:text="@string/dummy_difficulty_level_name"
-        android:id="@+id/levelNameTv"/>
+        android:id="@+id/levelNameTv"
+        tools:ignore="MissingPrefix" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="@dimen/size_progress_cell_twister_difficulty"
@@ -86,8 +88,10 @@
         android:text="@string/dummy_twister_count_difficulty"
         android:textColor="@color/white"
         android:alpha="0.4"
+        fontpath="fonts/WS-Regular.ttf"
         android:layout_marginTop="@dimen/padding_normal"
         android:layout_marginBottom="@dimen/padding_normal_large"
-        android:id="@+id/levelTwistersCountTv"/>
+        android:id="@+id/levelTwistersCountTv"
+        tools:ignore="MissingPrefix" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

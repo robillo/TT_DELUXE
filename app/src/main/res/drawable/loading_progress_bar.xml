@@ -24,7 +24,7 @@
                 <corners
                     android:radius="20dp" />
                 <solid
-                    android:color="@color/black"/>
+                    android:color="@color/splash_loading_progress_color"/>
             </shape>
         </clip>
     </item>

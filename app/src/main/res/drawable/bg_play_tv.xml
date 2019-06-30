@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid
-        android:color="@color/white" />
-    <corners
-        android:radius="@dimen/padding_large"/>
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:state_enabled="true"
+        android:drawable="@drawable/bg_play_tv_active" />
+    <item
+        android:state_focused="true"
+        android:state_enabled="true"
+        android:drawable="@drawable/bg_play_tv_active" />
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/bg_play_tv_inactive" />
+</selector>

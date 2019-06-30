@@ -14,8 +14,8 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.LengthLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.DifficultyAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.LengthAdapter
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import kotlinx.android.synthetic.main.activity_home.*
-import java.util.*
 import kotlin.collections.ArrayList
 
 class HomeActivity : BaseActivity() {
@@ -23,16 +23,12 @@ class HomeActivity : BaseActivity() {
     private lateinit var lengthList: MutableList<LengthLevel>
     private lateinit var difficultyList: MutableList<DifficultyLevel>
 
-    private lateinit var fadeInHeader: Animation
-    private lateinit var fadeOutHeader: Animation
     private lateinit var fadeInPremium: Animation
     private lateinit var fadeOutPremium: Animation
 
-    private var isAnimatingHeader: Boolean = false
     private var isAnimatingPremium: Boolean = false
 
     companion object {
-        const val DELAY_TWISTER_OF_THE_DAY_LOADING = 1000L
         fun newIntent(context: Context): Intent {
             return Intent(context, HomeActivity::class.java)
         }
@@ -44,12 +40,32 @@ class HomeActivity : BaseActivity() {
 
     override fun setup() {
         setStatusBarColor(R.color.white)
+        initLayout()
+        setListeners()
+    }
+
+    private fun initLayout() {
         loadTwisterOfTheDay()
-        setScrollListener()
         loadAnimations()
         applyAnimations()
         loadData()
         setAdapters()
+    }
+
+    private fun setListeners() {
+        setClickListeners()
+        setScrollListener()
+    }
+
+    private fun setClickListeners() {
+
+        twisterOfTheDayLayout.setOnClickListener {
+            playTv.performClick()
+        }
+
+        playTv.setOnClickListener {
+            startReadingActivity()
+        }
     }
 
     private fun loadData() {
@@ -87,39 +103,11 @@ class HomeActivity : BaseActivity() {
     }
 
     private fun loadAnimations() {
-        fadeInHeader = AnimationUtils.loadAnimation(this, R.anim.fade_in_header_home)
-        fadeOutHeader = AnimationUtils.loadAnimation(this, R.anim.fade_out_header_home)
         fadeInPremium = AnimationUtils.loadAnimation(this, R.anim.fade_in_premium_home)
         fadeOutPremium = AnimationUtils.loadAnimation(this, R.anim.fade_out_premium_home)
     }
 
     private fun applyAnimations() {
-        fadeInHeader.setAnimationListener(object: Animation.AnimationListener {
-            override fun onAnimationStart(animation: Animation?) {
-                isAnimatingHeader = true
-            }
-
-            override fun onAnimationEnd(animation: Animation?) {
-                isAnimatingHeader = false
-                homeHeaderTv.visibility = View.VISIBLE
-            }
-
-            override fun onAnimationRepeat(animation: Animation?) {}
-        })
-
-        fadeOutHeader.setAnimationListener(object: Animation.AnimationListener {
-            override fun onAnimationStart(animation: Animation?) {
-                isAnimatingHeader = true
-            }
-
-            override fun onAnimationEnd(animation: Animation?) {
-                isAnimatingHeader = false
-                homeHeaderTv.visibility = View.GONE
-            }
-
-            override fun onAnimationRepeat(animation: Animation?) {}
-        })
-
         fadeInPremium.setAnimationListener(object: Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation?) {
                 isAnimatingPremium = true
@@ -151,18 +139,9 @@ class HomeActivity : BaseActivity() {
         scrollView?.let {
             it.viewTreeObserver.addOnScrollChangedListener {
                 when {
-                    isScrollViewAtBottom(it) -> {
-                        hideHeader()
-                        hidePremium()
-                    }
-                    isScrollViewAtTop(it) -> {
-                        showPremium()
-                        showHeader()
-                    }
-                    else -> {
-                        hidePremium()
-                        hideHeader()
-                    }
+                    isScrollViewAtBottom(it) -> hidePremium()
+                    isScrollViewAtTop(it) -> showPremium()
+                    else -> hidePremium()
                 }
             }
         }
@@ -177,19 +156,7 @@ class HomeActivity : BaseActivity() {
     }
 
     private fun loadTwisterOfTheDay() {
-        //TODO: do in actual later
-        Timer().schedule(object: TimerTask() {
-            override fun run() {
-                runOnUiThread {
-                    showTwisterOfTheDay()
-                }
-            }
-        }, DELAY_TWISTER_OF_THE_DAY_LOADING)
-    }
-
-    private fun showTwisterOfTheDay() {
-        loadingTwisterOfDayProgress.visibility = View.GONE
-        twisterOfTheDayLayoutMain.visibility = View.VISIBLE
+        //TODO: load from ROOM DB in real
     }
 
     override fun onBackPressed() {
@@ -197,18 +164,6 @@ class HomeActivity : BaseActivity() {
         goHome.addCategory(Intent.CATEGORY_HOME)
         goHome.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(goHome)
-    }
-
-    private fun hideHeader() {
-        if(isAnimatingHeader || homeHeaderTv.visibility == View.GONE) return
-
-        homeHeaderTv.startAnimation(fadeOutHeader)
-    }
-
-    private fun showHeader() {
-        if(isAnimatingHeader || homeHeaderTv.visibility == View.VISIBLE) return
-
-        homeHeaderTv.startAnimation(fadeInHeader)
     }
 
     private fun hidePremium() {
@@ -221,5 +176,10 @@ class HomeActivity : BaseActivity() {
         if(isAnimatingPremium || goPremiumLayout.visibility == View.VISIBLE) return
 
         goPremiumLayout.startAnimation(fadeInPremium)
+    }
+
+    private fun startReadingActivity() {
+        startActivity(ReadingActivity.newIntent(this))
+        animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 }

@@ -17,10 +17,9 @@
         app:layout_constraintBottom_toTopOf="@id/loadingProgressBar"
         android:id="@+id/loadingProgressTv"
         app:layout_constraintVertical_chainStyle="packed"
-        android:textColor="@color/black"
+        android:textColor="@color/skeleton_two"
         android:text="@string/loading_your_twisters"
-        fontPath="fonts/WS-Bold.ttf"
-        tools:textStyle="bold"
+        fontPath="fonts/WS-Medium.ttf"
         android:textSize="@dimen/font_medium_large"
         tools:ignore="MissingPrefix" />
 
