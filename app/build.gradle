@@ -12,6 +12,7 @@ android {
         targetSdkVersion 28
         versionCode 32
         versionName "11.2"
+        multiDexEnabled true
     }
     buildTypes {
         release {

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_cell_twister_by_difficulty"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/padding_medium"
+    android:background="@drawable/bg_cell_twister_by_difficulty">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/levelNameTv"
+        android:text="@string/dummy_level_by_difficulty"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="@dimen/padding_normal_large"
+        android:textSize="@dimen/font_extra_large"
+        android:textColor="@color/white"
+        fontPath="fonts/Lato-Bold.ttf"
+        tools:textStyle="bold"
+        tools:ignore="MissingPrefix"
+        android:id="@+id/levelHeaderTv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/levelHeaderTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/padding_smaller"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/white"
+        android:alpha="0.5"
+        android:text="@string/dummy_difficulty_level_name"
+        android:id="@+id/levelNameTv"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/size_progress_cell_twister_difficulty"
+        android:layout_height="@dimen/size_progress_cell_twister_difficulty"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/levelNameTv"
+        android:id="@+id/progressLayout">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:progress="50"
+            android:background="@drawable/bg_progress_cell_twister_by_difficulty"
+            style="?android:progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/progress_cell_twister_by_difficulty"
+            android:id="@+id/levelProgressBar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small"
+            fontpath="fonts/WS-Regular.ttf"
+            android:alpha="0.4"
+            android:text="@string/dummy_read_to_total_ratio"
+            tools:ignore="MissingPrefix"
+            android:id="@+id/ratioReadToTotalTv"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressLayout"
+        android:textSize="@dimen/font_small"
+        android:text="@string/dummy_twister_count_difficulty"
+        android:textColor="@color/white"
+        android:alpha="0.4"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_normal_large"
+        android:id="@+id/levelTwistersCountTv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

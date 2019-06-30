@@ -10,6 +10,7 @@
     <dimen name="font_normal">16sp</dimen>
     <dimen name="font_medium_small">14sp</dimen>
     <dimen name="font_small">12sp</dimen>
+    <dimen name="font_smaller">12sp</dimen>
 
     <!-- padding -->
     <dimen name="padding_huger">40dp</dimen>
@@ -21,13 +22,16 @@
     <dimen name="padding_normal_small">14dp</dimen>
     <dimen name="padding_medium">10dp</dimen>
     <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_smaller">6dp</dimen>
     <dimen name="padding_micro">4dp</dimen>
     <dimen name="padding_nano">2dp</dimen>
     <dimen name="loading_progress_bar_height">12dp</dimen>
     <dimen name="loading_progress_bar_width">250dp</dimen>
     <dimen name="height_free_premium">150dp</dimen>
     <dimen name="height_home_header">60dp</dimen>
-    <dimen name="width_twister_of_the_day_bg_stroke">3dp</dimen>
+    <dimen name="width_twister_of_the_day_bg_stroke">1dp</dimen>
     <dimen name="twister_of_the_day_progress_dimens">30dp</dimen>
+    <dimen name="width_cell_twister_by_difficulty">150dp</dimen>
+    <dimen name="size_progress_cell_twister_difficulty">70dp</dimen>
 
 </resources>

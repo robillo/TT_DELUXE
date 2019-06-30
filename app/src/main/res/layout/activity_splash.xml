@@ -19,7 +19,7 @@
         app:layout_constraintVertical_chainStyle="packed"
         android:textColor="@color/black"
         android:text="@string/loading_your_twisters"
-        fontPath="fonts/WS-Medium.ttf"
+        fontPath="fonts/WS-Bold.ttf"
         tools:textStyle="bold"
         android:textSize="@dimen/font_medium_large"
         tools:ignore="MissingPrefix" />

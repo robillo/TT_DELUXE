@@ -18,4 +18,10 @@
     <color name="skeleton_five">#4E4E4E</color>
     <color name="skeleton_six">#2C2C2C</color>
 
+    <color name="twister_of_the_day_bg_start">#80285E</color>
+    <color name="twister_of_the_day_bg_end">#3B1C49</color>
+
+    <color name="color_bg_twister_by_difficulty">#2E77ED</color>
+    <color name="color_progress_cell_twister_difficulty">#1D67E0</color>
+
 </resources>
