@@ -21,7 +21,7 @@ class ReadingActivity : BaseActivity() {
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.white)
+        setStatusBarColor(R.color.white, true)
     }
 
     override fun onBackPressed() {

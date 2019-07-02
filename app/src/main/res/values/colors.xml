@@ -17,14 +17,29 @@
     <color name="skeleton_four">#808080</color>
     <color name="skeleton_five">#4E4E4E</color>
     <color name="skeleton_six">#2C2C2C</color>
+    <color name="skeleton_seven">#202020</color>
+
+    <color name="translucent_white_light">#9AFFFFFF</color>
+    <color name="translucent_white">#65FFFFFF</color>
+    <color name="translucent_white_dark">#34FFFFFF</color>
+    <color name="translucent_white_darker">#19FFFFFF</color>
+
+    <color name="translucent_black_light">#CD000000</color>
+    <color name="translucent_black">#99000000</color>
+    <color name="translucent_black_dark">#66000000</color>
+    <color name="translucent_black_darker">#34000000</color>
 
     <color name="splash_loading_progress_color">#FFD23E</color>
 
     <color name="twister_of_the_day_bg_start">#80285E</color>
     <color name="twister_of_the_day_bg_end">#3B1C49</color>
 
+    <color name="status_bar_separator_difficulty">#2168DA</color>
+    <color name="status_bar_separator_length">#272727</color>
+
     <color name="color_bg_twister_by_difficulty">#2E77ED</color>
     <color name="color_progress_cell_twister_difficulty">#1D67E0</color>
     <color name="nomber_bg_stroke_color">#707070</color>
+    <color name="color_unlocked_icon_tint">#33D88C</color>
 
 </resources>

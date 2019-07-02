@@ -27,6 +27,7 @@
     <string name="dummy_twister_count_difficulty">65 Twisters</string>
     <string name="dummy_read_to_total_ratio">23/65</string>
     <string name="twisters">Twisters</string>
+    <string name="open">OPEN</string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--suppress AndroidUnknownAttribute -->
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -11,12 +12,18 @@
         android:layout_height="70dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/separatorIv"
+        app:layout_constraintEnd_toStartOf="@id/twisterNameTv"
         android:id="@+id/numberHolderLayout">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/number_bg_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:padding="@dimen/padding_normal_smaller"
             tools:ignore="ContentDescription" />
 
@@ -24,10 +31,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/black"
-            android:textSize="@dimen/font_normal"
+            android:textSize="@dimen/font_medium_small"
             android:gravity="center"
-            fontPath="fonts/WS-SemiBold.ttf"
-            tools:textStyle="bold"
+            fontPath="fonts/WS-Medium.ttf"
             tools:text="65"
             tools:ignore="MissingPrefix"
             android:id="@+id/twisterNumberTv"/>
@@ -37,8 +43,8 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/numberHolderLayout"
-        app:layout_constraintBottom_toBottomOf="@id/numberHolderLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/separatorIv"
         app:layout_constraintStart_toEndOf="@id/numberHolderLayout"
         app:layout_constraintEnd_toStartOf="@id/lockHolderLayout"
         android:textSize="@dimen/font_large"
@@ -47,16 +53,89 @@
         android:paddingStart="@dimen/padding_normal"
         tools:text="Inside Out"
         tools:textStyle="bold"
-        tools:ignore="MissingPrefix,RtlSymmetry" />
+        tools:ignore="MissingPrefix,RtlSymmetry"
+        android:id="@+id/twisterNameTv"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_normal"
+        app:layout_constraintStart_toEndOf="@id/twisterNameTv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/numberHolderLayout"
-        app:layout_constraintBottom_toBottomOf="@id/numberHolderLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/separatorIv"
         android:id="@+id/lockHolderLayout">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_unlocked"
+            android:tint="@color/color_unlocked_icon_tint"
+            android:padding="@dimen/padding_medium"
+            tools:ignore="ContentDescription"
+            android:id="@+id/unlockedIconIv"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingTop="@dimen/padding_micro"
+            android:paddingBottom="@dimen/padding_micro"
+            android:paddingStart="@dimen/padding_normal_small"
+            android:paddingEnd="@dimen/padding_normal_small"
+            android:background="@drawable/bg_open_tv"
+            android:id="@+id/openTwisterLayout">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="@dimen/padding_micro"
+                android:layout_marginEnd="@dimen/padding_micro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_unlock"
+                android:tint="@color/white"
+                android:id="@+id/openIv"
+                app:layout_constraintEnd_toStartOf="@id/openTv"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/openIv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="@dimen/padding_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_medium_small"
+                fontPath="fonts/WS-Medium.ttf"
+                android:text="@string/open"
+                android:drawableTint="@color/white"
+                tools:ignore="MissingPrefix,UnusedAttribute"
+                android:id="@+id/openTv"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginEnd="@dimen/padding_large"
+        android:layout_marginStart="@dimen/padding_large"
+        android:background="@color/skeleton_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/separatorIv"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

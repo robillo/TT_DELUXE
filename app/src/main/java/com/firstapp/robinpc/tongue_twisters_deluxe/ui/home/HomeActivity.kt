@@ -12,10 +12,10 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.DifficultyLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.LengthLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
-import com.firstapp.robinpc.tongue_twisters_deluxe.ui.difficulty_level.DifficultyLevelActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.difficulty_level.DifficultyLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.DifficultyAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.LengthAdapter
-import com.firstapp.robinpc.tongue_twisters_deluxe.ui.length_level.LengthLevelActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.length_level.LengthLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlin.collections.ArrayList
@@ -43,7 +43,7 @@ class HomeActivity : BaseActivity(),
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.white)
+        setStatusBarColor(R.color.white, true)
         initLayout()
         setListeners()
     }

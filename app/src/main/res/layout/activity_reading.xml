@@ -6,39 +6,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.reading.ReadingActivity">
-    
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textSize="@dimen/font_xx_large"
-            tools:textStyle="bold"
-            tools:text="LEVEL 1"
-            android:background="@color/black"
-            android:id="@+id/levelHeaderTv"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/twisterRecycler"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:nestedScrollingEnabled="true"
-            app:layout_constraintTop_toBottomOf="@id/levelHeaderTv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="UnusedAttribute"
-            android:id="@+id/twisterRecycler">
-
-        </androidx.recyclerview.widget.RecyclerView>
-        
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>

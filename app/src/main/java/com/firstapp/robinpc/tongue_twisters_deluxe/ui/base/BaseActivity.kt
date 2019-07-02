@@ -25,7 +25,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
     abstract fun setup()
 
-    protected fun setStatusBarColor(color: Int) {
+    protected fun setStatusBarColor(color: Int, shouldShowLightStatusBar: Boolean) {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
 
@@ -34,7 +34,7 @@ abstract class BaseActivity : AppCompatActivity() {
             window.statusBarColor = ContextCompat.getColor(this, color)
         }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && shouldShowLightStatusBar)
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
     }
 

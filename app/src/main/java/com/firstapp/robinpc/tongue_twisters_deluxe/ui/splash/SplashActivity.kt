@@ -18,7 +18,7 @@ class SplashActivity : BaseActivity() {
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.white)
+        setStatusBarColor(R.color.white, true)
         startTimer()
     }
 
