@@ -3,7 +3,6 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.length_level
 import android.content.Context
 import android.content.Intent
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
@@ -39,8 +38,8 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
         twisterList = ArrayList()
         twisterList.add(Twister(
                 0,
-                "Peter Piper",
-                "Peter Piper picked a peck of pickled pepper.",
+                "Denise and Fleas",
+                "Denise sees the fleece, Denise sees the fleas.\nAt least Denise could sneeze and feed and freeze the fleas.",
                 0,
                 1,
                 "",
@@ -49,8 +48,8 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
         ))
         twisterList.add(Twister(
                 0,
-                "Peter Piper",
-                "Peter Piper picked a peck of pickled pepper.",
+                "Santa's Suit",
+                "Santa's short suit shrunk.",
                 0,
                 1,
                 "",
@@ -59,8 +58,48 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
         ))
         twisterList.add(Twister(
                 0,
-                "Peter Piper",
-                "Peter Piper picked a peck of pickled pepper.",
+                "Ice Cream",
+                "I scream, you scream, we all scream for ice-cream.",
+                0,
+                1,
+                "",
+                "",
+                false
+        ))
+        twisterList.add(Twister(
+                0,
+                "Slimy Snails",
+                "Six slimy snails sailed silently.",
+                0,
+                1,
+                "",
+                "",
+                false
+        ))
+        twisterList.add(Twister(
+                0,
+                "Sammy",
+                "Singing Sammy sung songs on sinking sands.",
+                0,
+                1,
+                "",
+                "",
+                false
+        ))
+        twisterList.add(Twister(
+                0,
+                "Bad Bug",
+                "A big black bug bit a big black dog on his big black nose.",
+                0,
+                1,
+                "",
+                "",
+                true
+        ))
+        twisterList.add(Twister(
+                0,
+                "Tom and Tim",
+                "Tom threw Tim three thumbtacks.",
                 0,
                 1,
                 "",
@@ -79,8 +118,8 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
         ))
         twisterList.add(Twister(
                 0,
-                "Peter Piper",
-                "Peter Piper picked a peck of pickled pepper.",
+                "Yeti",
+                "Yelling yellow yelping Yeti.",
                 0,
                 1,
                 "",
@@ -89,28 +128,8 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
         ))
         twisterList.add(Twister(
                 0,
-                "Peter Piper",
-                "Peter Piper picked a peck of pickled pepper.",
-                0,
-                1,
-                "",
-                "",
-                true
-        ))
-        twisterList.add(Twister(
-                0,
-                "Peter Piper",
-                "Peter Piper picked a peck of pickled pepper.",
-                0,
-                1,
-                "",
-                "",
-                true
-        ))
-        twisterList.add(Twister(
-                0,
-                "Peter Piper",
-                "Peter Piper picked a peck of pickled pepper.",
+                "Hippo",
+                "A happy hippo hopped and hicupped.",
                 0,
                 1,
                 "",
@@ -131,8 +150,12 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
         animateActivityTransition(R.anim.slide_in_left_activity, R.anim.slide_out_right_activity)
     }
 
-    override fun onTwisterClicked(twister: Twister) {
+    override fun onUnlockedTwisterClicked(twister: Twister) {
         startReadingActivity()
+    }
+
+    override fun onLockedTwisterClicked(twister: Twister) {
+        //TODO: show dialog to unlock
     }
 
     private fun startReadingActivity() {

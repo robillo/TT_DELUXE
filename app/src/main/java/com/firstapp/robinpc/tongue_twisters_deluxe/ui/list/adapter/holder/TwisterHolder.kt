@@ -11,6 +11,7 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     fun setTwister(twister: Twister) {
         inflateViews(twister)
+        setClickListeners(twister)
     }
 
     private fun inflateViews(twister: Twister) {
@@ -25,9 +26,16 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         }
 
         itemView.twisterNameTv.text = twister.name
+    }
 
+    private fun setClickListeners(twister: Twister) {
         itemView.setOnClickListener {
-            twisterClickListener.onTwisterClicked(twister)
+            if(!::twisterClickListener.isInitialized) return@setOnClickListener
+
+            if(twister.isLocked)
+                twisterClickListener.onLockedTwisterClicked(twister)
+            else
+                twisterClickListener.onUnlockedTwisterClicked(twister)
         }
     }
 
@@ -36,6 +44,7 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     }
 
     interface TwisterClickListener {
-        fun onTwisterClicked(twister: Twister)
+        fun onLockedTwisterClicked(twister: Twister)
+        fun onUnlockedTwisterClicked(twister: Twister)
     }
 }

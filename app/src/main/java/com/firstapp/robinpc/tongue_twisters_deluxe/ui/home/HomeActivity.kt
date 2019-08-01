@@ -43,7 +43,7 @@ class HomeActivity : BaseActivity(),
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.white, true)
+        setStatusBar()
         initLayout()
         setListeners()
     }
@@ -79,16 +79,16 @@ class HomeActivity : BaseActivity(),
 
     private fun loadLengthList() {
         lengthList = ArrayList()
-        lengthList.add(LengthLevel("SMALL", "", "", 1, 140))
-        lengthList.add(LengthLevel("MEDIUM", "", "", 141, 300))
-        lengthList.add(LengthLevel("LONG", "", "", 301, 450))
+        lengthList.add(LengthLevel("SMALL", "", "", 1, 140, 100))
+        lengthList.add(LengthLevel("MEDIUM", "", "", 141, 300, 100))
+        lengthList.add(LengthLevel("LONG", "", "", 301, 450, 100))
     }
 
     private fun loadDifficultyList() {
         difficultyList = ArrayList()
-        difficultyList.add(DifficultyLevel("LEVEL 1", "Beginner's Luck", "", 1, 140))
-        difficultyList.add(DifficultyLevel("LEVEL 2", "Lit Up", "", 141, 300))
-        difficultyList.add(DifficultyLevel("LEVEL 3", "Speeding Up", "", 301, 450))
+        difficultyList.add(DifficultyLevel("LEVEL 1", "Beginner's Luck", "", 1, 140, 100))
+        difficultyList.add(DifficultyLevel("LEVEL 2", "Lit Up", "", 141, 300, 100))
+        difficultyList.add(DifficultyLevel("LEVEL 3", "Speeding Up", "", 301, 450, 100))
     }
 
     private fun setAdapters() {
@@ -172,6 +172,10 @@ class HomeActivity : BaseActivity(),
         goHome.addCategory(Intent.CATEGORY_HOME)
         goHome.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(goHome)
+    }
+
+    private fun setStatusBar() {
+        setStatusBarColor(R.color.white, true)
     }
 
     private fun hidePremium() {

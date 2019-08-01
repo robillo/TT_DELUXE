@@ -1,9 +1,15 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.data.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
+
+@Entity
 data class LengthLevel(
-        val title: String,
-        val expandedTitle: String,
-        val levelTip: String,
-        val startIndex: Int,
-        val endIndex: Int
+        @PrimaryKey @SerializedName("title") val title: String,
+        @SerializedName("expanded_title") val expandedTitle: String,
+        @SerializedName("level_tip") val levelTip: String,
+        @SerializedName("start_index") val startIndex: Int,
+        @SerializedName("end_index") val endIndex: Int,
+        @SerializedName("count") val count: Int
 )

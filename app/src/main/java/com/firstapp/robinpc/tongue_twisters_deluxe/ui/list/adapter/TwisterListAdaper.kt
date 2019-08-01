@@ -29,8 +29,12 @@ class TwisterListAdaper(private val twisterList: List<Twister>):
         holder.setTwisterClickListener(this)
     }
 
-    override fun onTwisterClicked(twister: Twister) {
-        twisterClickListener.onTwisterClicked(twister)
+    override fun onUnlockedTwisterClicked(twister: Twister) {
+        twisterClickListener.onUnlockedTwisterClicked(twister)
+    }
+
+    override fun onLockedTwisterClicked(twister: Twister) {
+        twisterClickListener.onLockedTwisterClicked(twister)
     }
 
     fun setTwisterClickListener(twisterClickListener: TwisterClickListener) {
@@ -38,6 +42,7 @@ class TwisterListAdaper(private val twisterList: List<Twister>):
     }
 
     interface TwisterClickListener {
-        fun onTwisterClicked(twister: Twister)
+        fun onLockedTwisterClicked(twister: Twister)
+        fun onUnlockedTwisterClicked(twister: Twister)
     }
 }

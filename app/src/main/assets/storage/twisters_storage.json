@@ -1,0 +1,4822 @@
+{
+  "twister": [
+    {
+      "index": 1,
+      "title": "",
+      "twister": "Truly rural.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 2,
+      "title": "",
+      "twister": "She sees cheese.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 3,
+      "title": "",
+      "twister": "Eddie edited it.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 4,
+      "title": "",
+      "twister": "She sees cheese.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 5,
+      "title": "",
+      "twister": "Chip shop chips.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 6,
+      "title": "",
+      "twister": "Rolling red wagons.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 7,
+      "title": "",
+      "twister": "Click, clap, pluck.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 8,
+      "title": "",
+      "twister": "Stupid superstition!\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 9,
+      "title": "",
+      "twister": "Stupid superstition.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 10,
+      "title": "",
+      "twister": "Crash Quiche Course.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 11,
+      "title": "",
+      "twister": "He threw three balls.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 12,
+      "title": "",
+      "twister": "Willy’s really weary.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 13,
+      "title": "",
+      "twister": "Which witch is which?\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 14,
+      "title": "",
+      "twister": "Free Ritz wristwatch.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 15,
+      "title": "",
+      "twister": "Octopus ocular optics.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 16,
+      "title": "",
+      "twister": "Red buick, blue buick.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 17,
+      "title": "",
+      "twister": "Rudder valve reversals.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 18,
+      "title": "",
+      "twister": "Two to two to Toulouse?\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 19,
+      "title": "",
+      "twister": "Broken back brake block.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 20,
+      "title": "",
+      "twister": "Red lorry, yellow lorry.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 21,
+      "title": "",
+      "twister": "Pirates Private Property.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 22,
+      "title": "",
+      "twister": "Busy buzzing bumble bees.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 23,
+      "title": "",
+      "twister": "Three short sword sheaths.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 24,
+      "title": "",
+      "twister": "A proper copper coffee pot.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 25,
+      "title": "",
+      "twister": "He threw three free throws.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 26,
+      "title": "",
+      "twister": "Sheena leads, Sheila needs.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 27,
+      "title": "",
+      "twister": "Clowns grow glowing crowns.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 28,
+      "title": "",
+      "twister": "Thin grippy thick slippery.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 29,
+      "title": "",
+      "twister": "He threw three free throws.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 30,
+      "title": "",
+      "twister": "Really leery, rarely Larry.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 31,
+      "title": "",
+      "twister": "Silly sheep weep and sleep.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 32,
+      "title": "",
+      "twister": "He threw three free throws.\n ",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 33,
+      "title": "",
+      "twister": "Coy knows pseudonoise codes.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 34,
+      "title": "",
+      "twister": "Two tried and true tridents.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 35,
+      "title": "",
+      "twister": "Santa\\'s Short Suit Shrunk.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 36,
+      "title": "",
+      "twister": "Eleven benevolent elephants.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 37,
+      "title": "",
+      "twister": "The queen in green screamed.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 38,
+      "title": "",
+      "twister": "I eat eel while you peel eel.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 39,
+      "title": "",
+      "twister": "Four fine fresh fish for you.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 40,
+      "title": "",
+      "twister": "A cat snaps a rat\\'s paxwax.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 41,
+      "title": "",
+      "twister": "Gig whip, gig whip, gig whip.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 42,
+      "title": "",
+      "twister": "A quick witted cricket critic.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 43,
+      "title": "",
+      "twister": "Blue glue gun, green glue gun.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 44,
+      "title": "",
+      "twister": "Very well, very well, very well…",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 45,
+      "title": "",
+      "twister": "Quizzical quiz, kiss me quick.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 46,
+      "title": "",
+      "twister": "Tie twine to three tree twigs.\n",
+      "length": 1,
+      "difficulty": 1,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 47,
+      "title": "",
+      "twister": "Tom threw Tim three thumbtacks.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 48,
+      "title": "",
+      "twister": "Dust is a disk\\'s worst enemy.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 49,
+      "title": "",
+      "twister": "Dust is a disk\\'s worst enemy.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 50,
+      "title": "",
+      "twister": "A snake sneaks to seek a snack.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 51,
+      "title": "",
+      "twister": "Fresh French fried fly fritters.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 52,
+      "title": "",
+      "twister": "Pad kid poured curd pulled cold.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 53,
+      "title": "",
+      "twister": "Green glass globes glow greenly.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 54,
+      "title": "",
+      "twister": "Fresh French fried fly fritters.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 55,
+      "title": "",
+      "twister": "Six slimy snails sailed silently.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 56,
+      "title": "",
+      "twister": "Six slimy snails sailed silently.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 57,
+      "title": "",
+      "twister": "Scissors sizzle, thistles sizzle.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 58,
+      "title": "",
+      "twister": "Five fat friars frying flat fish.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 59,
+      "title": "",
+      "twister": "Clean clams crammed in clean cans.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 60,
+      "title": "",
+      "twister": "Double bubble gum, bubbles double.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 61,
+      "title": "",
+      "twister": "People pledging plenty of pennies.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 62,
+      "title": "",
+      "twister": "I wish you were a fish in my dish.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 63,
+      "title": "",
+      "twister": "Nat the bat swat at Matt the gnat.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 64,
+      "title": "",
+      "twister": "Drew Dodd\\'s dad\\'s dog\\'s dead.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 65,
+      "title": "",
+      "twister": "Nine nimble noblemen nibbling nuts.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 66,
+      "title": "",
+      "twister": "Black background, brown background.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 67,
+      "title": "",
+      "twister": "Seventy-seven benevolent elephants.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 68,
+      "title": "",
+      "twister": "A happy hippo hopped and hiccupped.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 69,
+      "title": "",
+      "twister": "I wish to wash my Irish wristwatch.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 70,
+      "title": "",
+      "twister": "A pessimistic pest exists amidst us.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 71,
+      "title": "",
+      "twister": "She sells seashells by the seashore.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 72,
+      "title": "",
+      "twister": "Darla\\'s dollars Darn dawn dog gone!\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 73,
+      "title": "",
+      "twister": "A nurse anesthetist unearthed a nest.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 74,
+      "title": "",
+      "twister": "Freddy is ready to roast red roaches.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 75,
+      "title": "",
+      "twister": "Wayne went to Wales to watch walruses.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 76,
+      "title": "",
+      "twister": "An inchworm inches on ivy that itches.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 77,
+      "title": "",
+      "twister": "Wayne went to Wales to watch walruses.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 78,
+      "title": "",
+      "twister": "We surely shall see the sunshine soon.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 79,
+      "title": "",
+      "twister": "Nine nice night nurses nursing nicely.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 80,
+      "title": "",
+      "twister": "Plain bun, plum bun, bun without plum.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 81,
+      "title": "",
+      "twister": "Ah shucks, six stick shifts stuck shut!\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 82,
+      "title": "",
+      "twister": "Eve eating eagerly elegant Easter eggs.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 83,
+      "title": "",
+      "twister": "Bake big batches of bitter brown bread.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 84,
+      "title": "",
+      "twister": "Four poor fools filled four pools full.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 85,
+      "title": "",
+      "twister": "Which wristwatch is a Swiss wristwatch?\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 86,
+      "title": "",
+      "twister": "Roofs of mushrooms rarely mush too much.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 87,
+      "title": "",
+      "twister": "Seth at Sainsbury\\'s sells thick socks.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 88,
+      "title": "",
+      "twister": "Six sleek swans swam swiftly southwards.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 89,
+      "title": "",
+      "twister": "A big black bear sat on a big black rug.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 90,
+      "title": "",
+      "twister": "Roofs of mushrooms rarely mush too much.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 91,
+      "title": "",
+      "twister": "Silly Sally saw sixty slithering snakes.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 92,
+      "title": "",
+      "twister": "Seth at Sainsbury\\'s sells thick socks.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 93,
+      "title": "",
+      "twister": "A bloke\\'s bike back brake block broke.\n",
+      "length": 1,
+      "difficulty": 2,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 94,
+      "title": "",
+      "twister": "Blended baby blue bug\\'s blood blotches.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 95,
+      "title": "",
+      "twister": "Crush grapes, grapes crush, crush grapes.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 96,
+      "title": "",
+      "twister": "Roberta ran rings around the Roman ruins.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 97,
+      "title": "",
+      "twister": "A black bloke\\'s back brake-block broke.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 98,
+      "title": "",
+      "twister": "Bug\\'s black blood, Black bug\\'s blood.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 99,
+      "title": "",
+      "twister": "Shoe section, shoe section, shoe section.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 100,
+      "title": "",
+      "twister": "Singing Sammy sung songs on sinking sand.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 101,
+      "title": "",
+      "twister": "Roberta ran rings around the Roman ruins.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 102,
+      "title": "",
+      "twister": "Ready for Freddy\\'s roasted red roaches?\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 103,
+      "title": "",
+      "twister": "Shut up the shutters and sit in the shop.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 104,
+      "title": "",
+      "twister": "Singing Sammy sung songs on sinking sand.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 105,
+      "title": "",
+      "twister": "Normal word order or inverted word order?\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 106,
+      "title": "",
+      "twister": "Ann and Andy\\'s anniversary is in April.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 107,
+      "title": "",
+      "twister": "Six sick sea-serpents swam the seven seas.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 108,
+      "title": "",
+      "twister": "Hitchcock Hawk Watch Spots Record Raptors.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 109,
+      "title": "",
+      "twister": "No nose knows like a gnome\\'s nose knows.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 110,
+      "title": "",
+      "twister": "Fred fed Ted bread and Ted fed Fred bread.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 111,
+      "title": "",
+      "twister": "Pail of ale aiding ailing Al\\'s travails.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 112,
+      "title": "",
+      "twister": "Which wristwatches are Swiss wristwatches?\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 113,
+      "title": "",
+      "twister": "Four furious friends fought for the phone.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 114,
+      "title": "",
+      "twister": "Each Easter Eddie eats eighty Easter eggs.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 115,
+      "title": "",
+      "twister": "Sally is a sheet slitter, she slits sheets.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 116,
+      "title": "",
+      "twister": "Bob\\'s pop-up blocker blocks Bob\\'s pop-ups",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 117,
+      "title": "",
+      "twister": "Shannon shant ship ships through Shilshole.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 118,
+      "title": "",
+      "twister": "The chief of the Leith police dismissed us.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 119,
+      "title": "",
+      "twister": "It\\'s a nice night for a white rice fight.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 120,
+      "title": "",
+      "twister": "IF IF = THEN THEN THEN = ELSE ELSE ELSE = IF;",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 121,
+      "title": "",
+      "twister": "Midget minute, midget minute, midget minute.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 122,
+      "title": "",
+      "twister": "Brent Spence Bridge Clay Wade Bailey Bridge.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 123,
+      "title": "",
+      "twister": "Can you can a can as a canner can can a can?\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 124,
+      "title": "",
+      "twister": "This is the sixth zebra snoozing thoroughly.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 125,
+      "title": "",
+      "twister": "Does this shop sport short socks with spots?\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 126,
+      "title": "",
+      "twister": "Gobbling gorgoyles gobbled gobbling goblins.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 127,
+      "title": "",
+      "twister": "Peggy Babcock, Peggy Babcock, Peggy Babcock, …",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 128,
+      "title": "",
+      "twister": "Which witch switched the Swiss wristwatches?\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 129,
+      "title": "",
+      "twister": "A synonym for cinnamon is a cinnamon synonym.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 130,
+      "title": "",
+      "twister": "I saw a kitten eating chicken in the kitchen.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 131,
+      "title": "",
+      "twister": "Craig Quinn\\'s quick trip to Crabtree Creek.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 132,
+      "title": "",
+      "twister": "Plymouth sleuths thwart Luther\\'s slithering.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 133,
+      "title": "",
+      "twister": "Near an ear, a nearer ear, a nearly eerie ear.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 134,
+      "title": "",
+      "twister": "The sixth sick sheik\\'s sixth sheep\\'s sick.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 135,
+      "title": "",
+      "twister": "On a lazy laser raiser lies a laser ray eraser.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 136,
+      "title": "",
+      "twister": "A slimey snake slithered down the sandy sahara.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 137,
+      "title": "",
+      "twister": "I miss my Swiss miss.\nMy Swiss miss misses me.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 138,
+      "title": "",
+      "twister": "On a lazy laser raiser lies a laser ray eraser.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 139,
+      "title": "",
+      "twister": " Cracker rapper, cracker rapper, cracker rapper.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 140,
+      "title": "",
+      "twister": "Tommy Tucker tried to tie Tammy\\'s Turtles tie.\n",
+      "length": 1,
+      "difficulty": 3,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 141,
+      "title": "",
+      "twister": "To put a pipe in byte mode, type PIPE_TYPE_BYTE.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 142,
+      "title": "",
+      "twister": "Whoever slit the sheets is a good sheet slitter.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 143,
+      "title": "",
+      "twister": "Five frantic frogs fled from fifty fierce fishes.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 144,
+      "title": "",
+      "twister": "I thought, I thought of thinking of thanking you.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 145,
+      "title": "",
+      "twister": "Nope, an antelope can\\'t elope with a cantelope.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 146,
+      "title": "",
+      "twister": "Two tiny timid toads trying to trot to Tarrytown.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 147,
+      "title": "",
+      "twister": "If a dog chews shoes, whose shoes does he choose?\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 148,
+      "title": "",
+      "twister": "Birdie birdie in the sky laid a turdie in my eye.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 149,
+      "title": "",
+      "twister": "Wow, race winners really want red wine right away!\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 150,
+      "title": "",
+      "twister": "I scream, you scream, we all scream for ice-cream!\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 151,
+      "title": "",
+      "twister": "An illusory vision is a visionary illusion.\nIs it?\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 152,
+      "title": "",
+      "twister": "Seven slick slimey snakes slowly sliding southward.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 153,
+      "title": "",
+      "twister": "Frozen Floyd flicks fat fleas for a fixed flat fee.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 154,
+      "title": "",
+      "twister": "The cat crept into the crypt, crapped and crept out.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 155,
+      "title": "",
+      "twister": "There was a minimum of cinnamon in the aluminium pan.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 156,
+      "title": "",
+      "twister": "Ripe white wheat reapers reap ripe white wheat right.\n",
+      "length": 1,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 157,
+      "title": "",
+      "twister": "Lesser leather never weathered wetter weather better.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 158,
+      "title": "",
+      "twister": "Round and round the rugged rock the ragged rascal ran.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 159,
+      "title": "",
+      "twister": "Round and round the rugged rock the ragged rascal ran.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 160,
+      "title": "",
+      "twister": "Miss Smith\\'s fish-sauce shop seldom sells shellfish.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 161,
+      "title": "",
+      "twister": "The great Greek grape growers grow great Greek grapes.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 162,
+      "title": "",
+      "twister": "Silly shoe-fly pie fans sell chilly shoe-fly pie pans.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 163,
+      "title": "",
+      "twister": "Chester Cheetah chews a chunk of cheep cheddar cheese.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 164,
+      "title": "",
+      "twister": "Round and round the rugged rock the ragged rascal ran.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 165,
+      "title": "",
+      "twister": "I saw Esau sitting on a seesaw.\nI saw Esau; he saw me.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 166,
+      "title": "",
+      "twister": "She snapped a selfie with Sophie\\'s silver cell phone.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 167,
+      "title": "",
+      "twister": " Chester Cheetah chews a chunk of cheep cheddar cheese.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 168,
+      "title": "",
+      "twister": "Send toast to ten tense stout saints\\' ten tall tents.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 169,
+      "title": "",
+      "twister": " Cook \"Cookie\" Turk took Kookie Kirk a turkey cookie.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 170,
+      "title": "",
+      "twister": " Dear mother, give your other udder to my other brother.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 171,
+      "title": "",
+      "twister": "I wish I were what I was when I wished I were what I am.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 172,
+      "title": "",
+      "twister": "Give papa a cup of proper coffee in a copper coffee cup.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 173,
+      "title": "",
+      "twister": "Caution: Wide Right Turns seen on semi-tractor trailers.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 174,
+      "title": "",
+      "twister": "Blake\\'s black bike\\'s back brake bracket block broke.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 175,
+      "title": "",
+      "twister": "If Stu chews shoes, should Stu choose the shoes he chews?\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 176,
+      "title": "",
+      "twister": "Extinct insects\\' instincts, extant insects\\' instincts.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 177,
+      "title": "",
+      "twister": "A big black bug bit a big black dog on his big black nose!\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 178,
+      "title": "",
+      "twister": "Will I always be so Merry when Mary\\'s taking care of me?\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 179,
+      "title": "",
+      "twister": "I slit a sheet, a sheet I slit, upon a slitted sheet I sit.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 180,
+      "title": "",
+      "twister": "Cheap Sheep Sheets, Cheap Sheep Sheets, Cheap Sheep Sheets.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 181,
+      "title": "",
+      "twister": "Six shining cities, six shining cities, six shining cities.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 182,
+      "title": "",
+      "twister": "Six sick hicks nick six slick bricks with picks and sticks.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 183,
+      "title": "",
+      "twister": "Six sick hicks nick six slick bricks with picks and sticks.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 184,
+      "title": "",
+      "twister": "But she as far surpasseth Sycorax, as great\\'st does least.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 185,
+      "title": "",
+      "twister": "In shoulder surgery some surgeons sew soldiers\\' shoulders.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 186,
+      "title": "",
+      "twister": "You\\'re behaving like a babbling, bumbling band of baboons.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 187,
+      "title": "",
+      "twister": "No need to light a night-light on a light night like tonight.\n",
+      "length": 2,
+      "difficulty": 4,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 188,
+      "title": "",
+      "twister": "Did Doug dig Dick\\'s garden or did Dick dig Doug\\'s garden?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 189,
+      "title": "",
+      "twister": "Certified certificates from certified certificate certifiers.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 190,
+      "title": "",
+      "twister": "Quick queens quack quick quacks quicker than quacking quails.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 191,
+      "title": "",
+      "twister": "Purple paper people, purple paper people, purple paper people.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 192,
+      "title": "",
+      "twister": "How many saws could a see-saw saw if a see-saw could saw saws?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 193,
+      "title": "",
+      "twister": "How many saws could a see-saw saw if a see-saw could saw saws?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 194,
+      "title": "",
+      "twister": "Excited executioner exercising his excising powers excessively.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 195,
+      "title": "",
+      "twister": "Five fuzzy French frogs Frolicked through the fields in France.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 196,
+      "title": "",
+      "twister": "Five fuzzy French frogs Frolicked through the fields in France.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 197,
+      "title": "",
+      "twister": "Sinful Caesar sipped his snifter, seized his knees and sneezed.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 198,
+      "title": "",
+      "twister": "Five fuzzy French frogs Frolicked through the fields in France.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 199,
+      "title": "",
+      "twister": "Excited executioner exercising his excising powers excessively.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 200,
+      "title": "",
+      "twister": "How many cats would a caddie catch if a caddie could catch cats?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 201,
+      "title": "",
+      "twister": "Buckets of bug blood, buckets of bug blood, buckets of bug blood.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 202,
+      "title": "",
+      "twister": "How much oil boil can a gum boil boil if a gum boil can boil oil?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 203,
+      "title": "",
+      "twister": "How many yaks could a yak pack pack if a yak pack could pack yaks?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 204,
+      "title": "",
+      "twister": "Tell Tom the ticket taker to take the ticket to the ticket wicket.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 205,
+      "title": "",
+      "twister": "Seven slick and sexy sealskin ski suits slid slowly down the slope.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 206,
+      "title": "",
+      "twister": "Carolina Herrera resides in the rural area with her running horses.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 207,
+      "title": "",
+      "twister": "Any noise annoys an oyster, but a noisy noise annoys an oyster most.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 208,
+      "title": "",
+      "twister": "Rhys watched Ross switch his Irish wristwatch for a Swiss wristwatch.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 209,
+      "title": "",
+      "twister": "How much cash could a sasquatch stash if a sasquatch could stash cash?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 210,
+      "title": "",
+      "twister": "Old Mr.\nHunt had a cuddy punt not a cuddy punt but a hunt punt cuddy.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 211,
+      "title": "",
+      "twister": "Old lady Hunt had a cuzzy Funt not a cuzzy Funt but a Hunt Funt cuzzy.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 212,
+      "title": "",
+      "twister": "Old Mr.\nHunt had a cuddy punt Not a cuddy punt but a hunt punt cuddy.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 213,
+      "title": "",
+      "twister": "How much pot, could a pot roast roast, if a pot roast could roast pot.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 214,
+      "title": "",
+      "twister": "Real weird rear wheels, real weird rear wheels, real weird rear wheels.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 215,
+      "title": "",
+      "twister": "How many boards could the Mongols hoard if the Mongol hordes got bored?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 216,
+      "title": "",
+      "twister": "When you write copy you have the right to copyright the copy you write.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 217,
+      "title": "",
+      "twister": "Real weird rear wheels, real weird rear wheels, real weird rear wheels.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 218,
+      "title": "",
+      "twister": "How many ducks could a duck duct-tape, if a duck could duct-tape ducks?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 219,
+      "title": "",
+      "twister": " Furnish Freddie\\'s nursery with forty-four furry Furby Beanie Babies.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 220,
+      "title": "",
+      "twister": "A gazillion gigantic grapes gushed  gradually giving gophers gooey guts.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 221,
+      "title": "",
+      "twister": "I saw Esau kissing Kate.\nI saw Esau, he saw me, and she saw I saw Esau.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 222,
+      "title": "",
+      "twister": "How many bears could Bear Grills grill if Bear grills could grill bears?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 223,
+      "title": "",
+      "twister": "A turbot\\'s not a burbot, for a turbot\\'s a butt, but a burbot\\'s not.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 224,
+      "title": "",
+      "twister": "One black beetle bled only black blood, the other black beetle bled blue.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 225,
+      "title": "",
+      "twister": "Fresh fried fish,  Fish fresh fried,  Fried fish fresh,  Fish fried fresh.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 226,
+      "title": "",
+      "twister": "Six sleek swans swam swiftly southwards Six slick, slim, slender saplings.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 227,
+      "title": "",
+      "twister": "Mrs Hunt had a country cut front in the front of her country cut pettycoat.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 228,
+      "title": "",
+      "twister": "Big black bugs bleed blue black blood but baby black bugs bleed blue blood.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 229,
+      "title": "",
+      "twister": "A smart fella, a fella smart.\nIt takes a smart fella to say a fella smart.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 230,
+      "title": "",
+      "twister": "Big black bugs bleed blue black blood but baby black bugs bleed blue blood.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 231,
+      "title": "",
+      "twister": "If two witches would watch two watches, which witch would watch which watch?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 232,
+      "title": "",
+      "twister": "How many pounds in a groundhog\\'s mound when a groundhog pounds hog mounds?\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 233,
+      "title": "",
+      "twister": "Of all the felt I ever felt I never felt felt that felt like that felt felt.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 234,
+      "title": "",
+      "twister": "The two Tibble twins tied tiny twine to twelve teachers’ tipping trek tents.\n",
+      "length": 2,
+      "difficulty": 5,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 235,
+      "title": "",
+      "twister": "Supposed to be pistachio, supposed to be pistachio, supposed to be pistachio.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 236,
+      "title": "",
+      "twister": "Thirty-three thousand people think that Thursday is their thirtieth birthday.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 237,
+      "title": "",
+      "twister": "He thrusts his fists against the posts, and still insists he sees the ghosts.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 238,
+      "title": "",
+      "twister": "Frank\\'s fisher fishes on Friday for Frank\\'s Friday fresh fried fish-fest.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 239,
+      "title": "",
+      "twister": "Dick had a dog, the dog dug, the dog dug deep, how deep did Dick\\'s dog dig?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 240,
+      "title": "",
+      "twister": "How many tow trucks could a tow truck tow if a tow truck could tow tow trucks.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 241,
+      "title": "",
+      "twister": "Rory the warrior and Roger the worrier were reared wrongly in a rural brewery.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 242,
+      "title": "",
+      "twister": "It\\'s not right to write Wright \\'Rite\\', please try to write Wright right!\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 243,
+      "title": "",
+      "twister": "Rory the warrior and Roger the worrier were reared wrongly in a rural brewery.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 244,
+      "title": "",
+      "twister": "Washing the washing machine while watching the washing machine washing washing.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 245,
+      "title": "",
+      "twister": "The ruddy widow really wants ripe watermelon and red roses when winter arrives.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 246,
+      "title": "",
+      "twister": "Thirty-three thirsty, thundering thoroughbreds thumped Mr.\nThurber on Thursday.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 247,
+      "title": "",
+      "twister": "We will learn why her lowly lone, worn yarn loom will rarely earn immoral money.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 248,
+      "title": "",
+      "twister": "How much myrtle would a wood turtle hurdle if a wood turtle could hurdle myrtle?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 249,
+      "title": "",
+      "twister": "Thirty-three thirsty, thundering thoroughbreds thumped Mr.\nThurber on Thursday.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 250,
+      "title": "",
+      "twister": "Thirty-three thirsty, thundering thoroughbreds thumped Mr.\nThurber on Thursday.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 251,
+      "title": "",
+      "twister": "Wunwun was a racehorse, Tutu was one too.\nWunwun won one race, Tutu won one too.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 252,
+      "title": "",
+      "twister": "Swan swam over the sea.\nSwim, swan, swim!\nSwan swam back again.\nWell swum swan!\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 253,
+      "title": "",
+      "twister": "Seven sleazy shysters in sharkskin suits sold sheared sealskins to seasick sailors.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 254,
+      "title": "",
+      "twister": "If you notice this notice,  you will notice that this notice is not worth noticing.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 255,
+      "title": "",
+      "twister": "I see a sea down by the seashore.\n  But which sea do you see down by the seashore?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 256,
+      "title": "",
+      "twister": "It\\'s not the cough that carries you off,  it\\'s the coffin they carry you off in!\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 257,
+      "title": "",
+      "twister": "I have got a date at a quarter to eight; I’ll see you at the gate, so don’t be late.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 258,
+      "title": "",
+      "twister": "Come, come, Stay calm, stay calm, No need for alarm, It only hums, It doesn\\'t harm.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 259,
+      "title": "",
+      "twister": "Larry Hurley, a burly squirrel hurler, hurled a furry squirrel through a curly grill.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 260,
+      "title": "",
+      "twister": "Come, come, stay calm, stay calm, no need for alarm, it only hums, it doesn\\'t harm.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 261,
+      "title": "",
+      "twister": "Picky people pick Peter Pan Peanut-Butter, \\'tis the peanut-butter picky people pick.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 262,
+      "title": "",
+      "twister": "Suzie Seaword\\'s fish-sauce shop sells unsifted thistles for thistle-sifters to sift.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 263,
+      "title": "",
+      "twister": "Picky people pick Peter Pan Peanut-Butter, \\'tis the peanut-butter picky people pick.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 264,
+      "title": "",
+      "twister": "A skunk sat on a stump and thunk the stump stunk, but the stump thunk, the skunk stunk.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 265,
+      "title": "",
+      "twister": "How many snacks could a snack stacker stack, if a snack stacker snacked stacked snacks?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 266,
+      "title": "",
+      "twister": "How many snacks could a snack stacker stack, if a snack stacker snacked stacked snacks?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 267,
+      "title": "",
+      "twister": "There those thousand thinkers were thinking how did the other three thieves go through.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 268,
+      "title": "",
+      "twister": "Don\\'t spring on the inner-spring this spring or there will be an offspring next spring.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 269,
+      "title": "",
+      "twister": "If you\\'re keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 270,
+      "title": "",
+      "twister": "Can you imagine an imaginary menagerie manager imagining managing an imaginary menagerie?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 271,
+      "title": "",
+      "twister": "Three grey geese In a green field grazing, Grey were the geese And green was the grazing.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 272,
+      "title": "",
+      "twister": "They hatch fish at the state fish hatchery and sell hatched fish to the fish stick factory.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 273,
+      "title": "",
+      "twister": "Susie works in a shoeshine shop.\nWhere she shines she sits, and where she sits she shines.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 274,
+      "title": "",
+      "twister": "Tie a knot, tie a knot.\n  Tie a tight, tight knot.\n  Tie a knot in the shape of a nought.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 275,
+      "title": "",
+      "twister": "If a fella met a fella in a field of fitches Can a fella tell a fella where a fella itches?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 276,
+      "title": "",
+      "twister": "Who washed Washington\\'s white woolen underwear when Washington\\'s washer-woman went west?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 277,
+      "title": "",
+      "twister": "Why do you cry, Willy?\n  Why do you cry?\n  Why, Willy?\n  Why, Willy?\n  Why, Willy?\nWhy?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 278,
+      "title": "",
+      "twister": "There are two minutes difference from four to two to two to two, from two to two to two, too.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 279,
+      "title": "",
+      "twister": "My friend got a frisbee with the \"Friskies\"-logo on it My mommy makes me muffins on Mondays.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 280,
+      "title": "",
+      "twister": "Hassock hassock, black spotted hassock.\nBlack spot on a black back of a black spotted hassock.\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 281,
+      "title": "",
+      "twister": "She saw Sherif\\'s shoes on the sofa.\nBut was she so sure she saw Sherif\\'s shoes on the sofa?\n",
+      "length": 2,
+      "difficulty": 6,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 282,
+      "title": "",
+      "twister": "She saw Sherif\\'s shoes on the sofa.\nBut was she so sure she saw Sherif\\'s shoes on the sofa?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 283,
+      "title": "",
+      "twister": "If Kantie can tie a tie and untie a tie,  why can\\'t I tie a tie and untie a tie like Kantie can.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 284,
+      "title": "",
+      "twister": "One-one was a race horse.\n  Two-two was one too.\n  One-one won one race.\n  Two-two won one too.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 285,
+      "title": "",
+      "twister": "Kantai can tie a tie.\nIf Kantai can tie a tie, why can\\'t I tie a tie like Kantai can tie a tie.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 286,
+      "title": "",
+      "twister": "I would if I could, and if I couldn\\'t, how could I?\nYou couldn\\'t, unless you could, could you?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 287,
+      "title": "",
+      "twister": "John, where Molly had had \"had\", had had \"had had\".\n\"Had had \" had had the teachers approval.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 288,
+      "title": "",
+      "twister": "Mares eat oats and does eat oats, and little lambs eat ivy.\n A Kid will eat ivy too, wouldn\\'t ewe?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 289,
+      "title": "",
+      "twister": "Birdie birdie in the sky laid a turdie in my eye.\n  If cows could fly I\\'d have a cow pie in my eye.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 290,
+      "title": "",
+      "twister": "If you can\\'t can any candy can, how many candy cans can a candy canner can if he can can candy cans?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 291,
+      "title": "",
+      "twister": "I thought the haughty Professor Tortoise taught ontology, but the naughty Tortoise taught us tautology.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 292,
+      "title": "",
+      "twister": "If you can\\'t can any candy can, how many candy cans can a candy canner can if he can can candy cans ?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 293,
+      "title": "",
+      "twister": "How much caramel can a canny canonball cram in a camel if a canny canonball can cram caramel in a camel?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 294,
+      "title": "",
+      "twister": "How much caramel can a canny canonball cram in a camel if a canny canonball can cram caramel in a camel?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 295,
+      "title": "",
+      "twister": "The Professor Peter Peckinpah all purpose anti-personnel Peckinpah pocket pistol under the toupee trick.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 296,
+      "title": "",
+      "twister": "Tell a tall tale of a tall tailed dog, that told Tim it tap a tall ale and thump the top of Tim\\'s tomb.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 297,
+      "title": "",
+      "twister": "Love\\'s a feeling you feel when you feel  you\\'re going to feel the feeling you\\'ve never felt before.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 298,
+      "title": "",
+      "twister": "Don\\'t trouble trouble, until trouble troubles you!\nIf you trouble trouble, triple trouble troubles you!\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 299,
+      "title": "",
+      "twister": "While we were walking, we were watching window washers wash Washington\\'s windows with warm washing water.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 300,
+      "title": "",
+      "twister": "Mr.\nSee owned a saw and Mr Soar owned a seesaw.\nNow See\\'s saw sawed Soar\\'s seesaw before Soar saw See.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 301,
+      "title": "",
+      "twister": "I\\'m not the fig plucker,  nor the fig plucker\\'s son,  but I\\'ll pluck figs  till the fig plucker comes.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 302,
+      "title": "",
+      "twister": "Mr.\nTongue Twister tried to train his tongue to twist and turn, and twit an twat, to learn the letter “T\".\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 303,
+      "title": "",
+      "twister": "Mr.\nTongue Twister tried to train his tongue to twist and turn, and twit an twat, to learn the letter \"T\".\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 304,
+      "title": "",
+      "twister": "A wood turtle would hurdle as much myrtle as a wood turtle could hurdle if a wood turtle could hurdle myrtle.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 305,
+      "title": "",
+      "twister": "Will you, William?\nWill you, William?\nWill you, William?\n  Can\\'t you, don\\'t you, won\\'t you, William?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 306,
+      "title": "",
+      "twister": "Sweet sagacious Sally Sanders said she sure saw seven segregated seaplanes sailing swiftly southward Saturday.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 307,
+      "title": "",
+      "twister": "The crow flew over the river with a lump of raw liver.\nThe great Greek grape growers grow great Greek grapes.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 308,
+      "title": "",
+      "twister": "Pete\\'s pa pete poked to the pea patch to pick a peck of peas for the poor pink pig in the pine hole pig-pen.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 309,
+      "title": "",
+      "twister": "Pete\\'s pa pete poked to the pea patch to pick a peck of peas for the poor pink pig in the pine hole pig-pen.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 310,
+      "title": "",
+      "twister": "The pellet with the poison\\'s In the flagon with the dragon The vessel with the pestle Has the brew that is true",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 311,
+      "title": "",
+      "twister": "Denise sees the fleece,  Denise sees the fleas.\n  At least Denise could sneeze  and feed and freeze the fleas.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 312,
+      "title": "",
+      "twister": "Ray Rag ran across a rough road.\nAcross a rough road Ray Rag ran.\nWhere is the rough road Ray Rag ran across?\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 313,
+      "title": "",
+      "twister": "Fred Threlfall\\'s thirty-five fine threads are finer threads than Fred Threlfall\\'s thirty-five thick threads.\n",
+      "length": 2,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 314,
+      "title": "",
+      "twister": "\"Fooey!\nMy father\\'s flunkies fare far fancier,\" the frazzled fugitive fumed feverishly, frankly facing fact.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 315,
+      "title": "",
+      "twister": "Ray Rag ran across a rough road.\n Across a rough road Ray Rag ran.\n Where is the rough road Ray Rag ran across?\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 316,
+      "title": "",
+      "twister": "On mules we find two legs behind and two we find before.\nWe stand behind before we find what those behind be for.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 317,
+      "title": "",
+      "twister": "There\\'s a cross on the muzzle Of the pistol with the bullet But a nick on the handle Of the pistol with the blank.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 318,
+      "title": "",
+      "twister": "Farrell\\'s features fabulous food \\'n\\' fantastic fountain fantasies for frolicking, fun-filled festive families.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 319,
+      "title": "",
+      "twister": "I shot a hippopotamus with bullets made of platinum because if I used leaden ones his hide would surely flatten them.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 320,
+      "title": "",
+      "twister": "If coloured caterpillars could change their colours constantly could they keep their coloured coat coloured properly?\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 321,
+      "title": "",
+      "twister": "A maid named Lady Marmalade made mainly lard and lemonade.\nM\\'lady lamely never made a well-named, labelled marmalade.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 322,
+      "title": "",
+      "twister": "The Smothers brothers\\' father\\'s mother\\'s brothers are the Smothers brothers\\' mother\\'s father\\'s other brothers.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 323,
+      "title": "",
+      "twister": "I stood sadly on the silver steps of Burgess\\'s fish sauce shop, mimicking him hiccuping, and wildly welcoming him within.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 324,
+      "title": "",
+      "twister": "Did Dick Pickens prick his pinkie pickling cheap cling peaches in an inch of Pinch or framing his famed French finch photos?\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 325,
+      "title": "",
+      "twister": "How much dew does a dewdrop drop if dewdrops do drop dew?\nThey do drop, they do as do dewdrops drop if dewdrops do drop dew.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 326,
+      "title": "",
+      "twister": "I wish to wish the wish you wish to wish, but if you wish the wish the witch wishes, I won\\'t wish the wish you wish to wish.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 327,
+      "title": "",
+      "twister": "Deer, deer, oh dear, oh dear, your career as a deer is over here no, no, oh no, although your career as a skellytun\\'s begun.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 328,
+      "title": "",
+      "twister": "I wish to wish the wish you wish to wish, but if you wish the wish the witch wishes, I won\\'t wish the wish you wish to wish.\n",
+      "length": 3,
+      "difficulty": 7,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 329,
+      "title": "",
+      "twister": "I wish to wish the wish you wish to wish, but if you wish the wish the witch wishes, I won\\'t wish the wish you wish to wish.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 330,
+      "title": "",
+      "twister": "I wish to wish, I dream to dream, I try to try, and I live to live, and I\\'d die to die, and I cry to cry but I dont know why.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 331,
+      "title": "",
+      "twister": "Bill had a billboard, Bill also had a board bill.\nThe billboard bored Bill so Bill sold the billboard to pay for the board bill.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 332,
+      "title": "",
+      "twister": "How much dew does a dewdrop drop  If dewdrops do drop dew?\n  They do drop, they do  As do dewdrops drop  If dewdrops do drop dew.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 333,
+      "title": "",
+      "twister": "Silly Sally Shouldnort shaved sheep she should show soon so selling sheep shaved showed she shouldn\\'t show shaved sheep so soon.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 334,
+      "title": "",
+      "twister": "Sally sells sea shells by the sea shore.\nBut if Sally sells sea shells by the sea shore then where are the sea shells Sally sells?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 335,
+      "title": "",
+      "twister": "Hercules, a hardy hunter, hunted a hare in the Hampshire Hills.\nHit him on the head with a hard, hard hammer and he howled horribly!\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 336,
+      "title": "",
+      "twister": "How many cans can a cannibal nibble if a cannibal can nibble cans?\nAs many cans as a cannibal can nibble if a cannibal can nibble cans.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 337,
+      "title": "",
+      "twister": "Dick had a duck, the duck dived, the duck dived deep, how deep did Dick\\'s duck dive?\nDick\\'s duck dived as deep as Dick\\'s dog dug!\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 338,
+      "title": "",
+      "twister": "Of all the felt I ever felt, I never felt a piece of felt which felt as fine as that felt felt, when first I felt that felt hat\\'s felt.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 339,
+      "title": "",
+      "twister": "How many cans can a cannibal nibble  if a cannibal can nibble cans?\n  As many cans as a cannibal can nibble  if a cannibal can nibble cans.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 340,
+      "title": "",
+      "twister": "A wooden worm wouldn\\'t be worthy of worship but would he if he wondered and worried about what he would be worthy of if he wasn\\'t wooden?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 341,
+      "title": "",
+      "twister": "If Pickford\\'s packers packed a packet of crisps would the packet of crisps that Pickford\\'s packers packed survive for two and a half years?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 342,
+      "title": "",
+      "twister": "If Pickford\\'s packers packed a packet of crisps would the packet of crisps that Pickford\\'s packers packed survive for two and a half years?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 343,
+      "title": "",
+      "twister": "Moses supposes his toeses are roses.\nBut Moses supposes erroneously.\nMoses, he knows his toeses aren\\'t roses as Moses supposes his toeses to be.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 344,
+      "title": "",
+      "twister": "Slinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake\\'s leglessness.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 345,
+      "title": "",
+      "twister": "Slinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake\\'s leglessness.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 346,
+      "title": "",
+      "twister": "Hello?\n Who\\'s calling?\n Watt.\n What\\'s your name?\n Watt\\'s my name.\n  Yes, what is your name?\n  My name is John Watt.\n John what?\n  Yes.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 347,
+      "title": "",
+      "twister": "A Tudor who tooted the flute tried to tutor two tooters to toot.\n Said the two to the tutor, \"Is it harder to toot or to tutor two tooters to toot?\n”",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 348,
+      "title": "",
+      "twister": "Terry Teeter, a teeter-totter teacher, taught her daughter Tara to teeter-totter, but Tara Teeter didn\\'t teeter-totter as Terry Teeter taught her to.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 349,
+      "title": "",
+      "twister": "To begin to toboggan, first buy a toboggan.\nBut don\\'t buy too big a toboggan.\nToo big a toboggan is too big a toboggan to buy to begin to toboggan.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 350,
+      "title": "",
+      "twister": "That\\'s tongue twisters  And it seems so easy till the word gets sprung  If you insist you want to try a lisp  Then step up mister and twist your tongue ",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 351,
+      "title": "",
+      "twister": "A Tudor who tooted the flute tried to tutor two tooters to toot.\nSaid the two to the tutor, \"Is it harder to toot or to tutor two tooters to toot?\n”.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 352,
+      "title": "",
+      "twister": "That\\'s tongue twisters  And it seems so easy till the word gets sprung  If you insist you want to try a lisp  Then step up mister and twist your tongue ",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 353,
+      "title": "",
+      "twister": "Heda is hoping to hop to Tahiti  To hack a hibiscus to hang on her hat  Now Heda has hundreds of hats on her hatrack  So how can a hop to Tahiti help that ",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 354,
+      "title": "",
+      "twister": "How many cookies could a good cook cook If a good cook could cook cookies?\nA good cook could cook as much cookies as a good cook who could cook cookies.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 355,
+      "title": "",
+      "twister": "How much dough would Bob Dole dole if Bob Dole could dole dough?\nBob Dole would dole as much dough as Bob Dole could dole, if Bob Dole could dole dough.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 356,
+      "title": "",
+      "twister": "How much dough would Bob Dole dole if Bob Dole could dole dough?\n Bob Dole would dole as much dough as Bob Dole could dole, if Bob Dole could dole dough.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 357,
+      "title": "",
+      "twister": "Amidst the mists and coldest frosts, With stoutest wrists and loudest boasts, He thrusts his fists against the posts, And still insists he sees the ghosts.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 358,
+      "title": "",
+      "twister": "Admidst the mists and coldest frosts, with stoutest wrists and loudest boasts, he thrusts his fists against the posts, and still insists he sees the ghosts.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 359,
+      "title": "",
+      "twister": "How much ground would a groundhog hog, if a groundhog could hog ground?\nA groundhog would hog all the ground he could hog, if a groundhog could hog ground.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 360,
+      "title": "",
+      "twister": "I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to see a saw that can out saw the saw I saw saw I\\'d like to see the saw you saw saw.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 361,
+      "title": "",
+      "twister": "Mo mi mo send me a toe, Me me mo get me a mole, Mo mi mo send me a toe, Fe me mo get me a mole.\nMister kister feet so sweet, Mister kister where will I eat ?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 362,
+      "title": "",
+      "twister": "If a Hottentot taught a Hottentot tot to talk ere the tot could totter, ought the Hottentot tot be taught to say ought or naught or what ought to be taught her?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 363,
+      "title": "",
+      "twister": "You name it, we claim it.\nIf we can\\'t get it, we\\'ll send you to get it.\nIf we can\\'t send you to get it, forget it.\nWho\\'s got it, if we don\\'t got it?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 364,
+      "title": "",
+      "twister": "The only verdict is vengeance; a vendetta, held as a votive, not in vain, for the value and veracity of such shall one day vindicate the vigilant and the virtuous.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 365,
+      "title": "",
+      "twister": "I know a boy named Tate who dined with his girl at eight eight.\nI\\'m unable to state what Tate ate at eight eight or what Tate\\'s tête à tête ate at eight eight.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 366,
+      "title": "",
+      "twister": "Tito and Tato were tattooed in total  But Toto was only tattooed on his toe  So Tato told Tito where Toto was tattooed  But Tito said Toto\\'s tattoo wouldn\\'t show ",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 367,
+      "title": "",
+      "twister": "Luke\\'s duck likes lakes.\nLuke Luck licks lakes.\nLuck\\'s duck licks lakes.\nDuck takes licks in lakes Luke Luck likes.\nLuke Luck takes licks in lakes duck likes.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 368,
+      "title": "",
+      "twister": "Which Witch snitched the Snitch Witch?\nOr did the Snitch Witch snitch the Witch?\nIf the Snitch Witch snitched the Witch then which Witch did the Snitch Witch snitch?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 369,
+      "title": "",
+      "twister": "Three tree turtles took turns talking tongue twisters.\n If three tree turtles took turns talking tongue twisters, where\\'s the twisters the three tree turtles talked?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 370,
+      "title": "",
+      "twister": "As he gobbled the cakes on his plate, the greedy ape said as he ate, the greener green grapes are, the keener keen apes are to gobble green grape cakes.\n They’re great!\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 371,
+      "title": "",
+      "twister": "There was a fisherman named Fisher who fished for some fish in a fissure.\nTill a fish with a grin, pulled the fisherman in.\nNow they\\'re fishing the fissure for Fisher.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 372,
+      "title": "",
+      "twister": "Whether the weather be fine or whether the weather be not.\nWhether the weather be cold or whether the weather be hot.\nWe\\'ll weather the weather whether we like it or not.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 373,
+      "title": "",
+      "twister": "Mrs Puggy Wuggy has a square cut punt.\nNot a punt cut square, just a square cut punt.\nIt’s round in the stern and blunt in the front.\nMrs Puggy Wuggy has a square cut punt.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 374,
+      "title": "",
+      "twister": "There was a fisherman named Fisher  who fished for some fish in a fissure.\n  Till a fish with a grin,  pulled the fisherman in.\n  Now they\\'re fishing the fissure for Fisher.\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 375,
+      "title": "",
+      "twister": "Grandma Gabby Grammer grabbed a gram of gummy goulash.\nIf Grandma Gabby Grammer grabbed a gram of gummy goulash, How many grams of gummy goulash did Grandma Gabby Grammer grab?\n",
+      "length": 3,
+      "difficulty": 8,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 376,
+      "title": "",
+      "twister": "The bottle of perfume that Willy sent was highly displeasing to Millicent.\nHer thanks were so cold that they quarreled, I\\'m told o\\'er that silly scent Willy sent Millicent.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 377,
+      "title": "",
+      "twister": "Mo mi mo me send me a toe,  Me me mo mi get me a mole,  Mo mi mo me send me a toe,  Fe me mo mi get me a mole,  Mister kister feet so sweet,  Mister kister where will I eat !\n?\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 378,
+      "title": "",
+      "twister": "When I went to Warsaw, I saw a saw that could outsaw any saw that I ever saw.\nNow, if you go to Warsaw and see a saw that could outsaw the saw I saw, I\\'d like to see your saw saw.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 379,
+      "title": "",
+      "twister": "A rough-coated, dough-faced, thoughtful ploughman strode through the streets of Scarborough; after falling into a slough, he coughed and hiccoughed.\nA singly circularly linked list.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 380,
+      "title": "",
+      "twister": "How many berries could a bare berry carry, if a bare berry could carry berries?\nWell they can\\'t carry berries (which could make you very wary) but a bare berry carried is more scary!\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 381,
+      "title": "",
+      "twister": "How many berries could a bare berry carry, if a bare berry could carry berries?\n Well they can\\'t carry berries (which could make you very wary) but a bare berry carried is more scary!\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 382,
+      "title": "",
+      "twister": "She sells sea shells on the sea shore; The shells that she sells are sea shells I\\'m sure.\nSo if she sells sea shells on the sea shore, I\\'m sure that the shells are sea shore shells.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 383,
+      "title": "",
+      "twister": "Snobby Miss.\nNora is sniffing her snuffer  The snuffer\\'s no sniffing it makes Nora sneeze  When Snyda lets Nort know his Nora is sneezing  She snappily snorts Nora\\'s sneezing a breeze ",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 384,
+      "title": "",
+      "twister": "A fly and flea flew into a flue, said the fly to the flea \\'what shall we do?\n\\' \\'Let us fly\\' said the flea said the fly \\'shall we flee\\' so they flew through a flaw in the flue.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 385,
+      "title": "",
+      "twister": "Theda thought Thora was thumping her thimble  But Thomas thought Thora was thumping her drum  Said Theda if Thora\\'s not thumping her thimble  I think that she surely is thumping her thumb ",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 386,
+      "title": "",
+      "twister": "Silly Sally swiftly shooed seven silly sheep.\n  The seven silly sheep Silly Sally shooed  Shilly-shallied south.\n  These sheep shouldn\\'t sleep in a shack;  Sheep should sleep in a shed.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 387,
+      "title": "",
+      "twister": "Now Kissle will whistle at busty Miss.\nRussell  Who\\'ll rustle and bustle till Kissle will roar  So Russell asked Axle for Kissle\\'s dismissal  And this\\'ll teach Kissle to whistle no more",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 388,
+      "title": "",
+      "twister": "How many berries could a bare berry carry,  if a bare berry could carry berries?\n  Well they can\\'t carry berries  (which could make you very wary)  but a bare berry carried is more scary!\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 389,
+      "title": "",
+      "twister": "How much myrtle would a wood turtle hurdle if a wood turtle could hurdle myrtle?\nA wood turtle would hurdle as much myrtle as a wood turtle could hurdle if a wood turtle could hurdle myrtle.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 390,
+      "title": "",
+      "twister": "A fly and flea flew into a flue,  said the fly to the flea \\'what shall we do?\n\\'  \\'let us fly\\' said the flea  said the fly \\'shall we flee\\'  so they flew through a flaw in the flue.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 391,
+      "title": "",
+      "twister": "How much myrtle would a wood turtle hurdle if a wood turtle could hurdle myrtle?\n A wood turtle would hurdle as much myrtle as a wood turtle could hurdle if a wood turtle could hurdle myrtle.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 392,
+      "title": "",
+      "twister": "Sheila is selling her shop at the seashore for shops at the seashore are so sure to lose and she’s not so sure of what she should be selling should Sheila sell seashells or should she sell shoes",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 393,
+      "title": "",
+      "twister": "When a doctor doctors a doctor, does the doctor doing the doctoring doctor as the doctor being doctored wants to be doctored or does the doctor doing the doctoring doctor as he wants to doctor?\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 394,
+      "title": "",
+      "twister": "I thought a thought.\nBut the thought I thought wasn’t the thought I thought I thought.\nIf the thought I thought I thought, had been the thought I thought, I wouldn\\'t have thought I thought.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 395,
+      "title": "",
+      "twister": "Dr.\nJohnson and Mr.\nJohnson, after great consideration, came to the conclusion that the Indian nation beyond the Indian Ocean is back in education because the chief occupation is cultivation.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 396,
+      "title": "",
+      "twister": "I thought a thought.\n But the thought I thought wasn\\'t the thought I thought I thought.\n If the thought I thought I thought had been the thought I thought, I wouldn\\'t have thought so much.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 397,
+      "title": "",
+      "twister": "Now Charley is chary when choosing his cheeses  And cheese is a challenge when Charley arrives  When Charley is charming and chooses a cheddar  Then chews it and chips it and chops in some chives ",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 398,
+      "title": "",
+      "twister": "As I was in Arkansas I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to be in Arkansas and see a saw that can out saw the saw I saw saw I\\'d like to see the saw you saw saw.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 399,
+      "title": "",
+      "twister": "As I was in Arkansas I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to be in Arkansas and see a saw that can out saw the saw I saw saw I\\'d like to see the saw you saw saw.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 400,
+      "title": "",
+      "twister": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?\nHe would chuck, he would , as much as he could, and chuck as much wood as a woodchuck would if a woodchuck could chuck wood.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 401,
+      "title": "",
+      "twister": "To sit in solemn silence in a dull, dark dock in a pestilential prison with a life-long lock, awaiting the sensation of a short, sharp shock from a cheap and chippy chopper with a big, black block.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 402,
+      "title": "",
+      "twister": "Peter Piper picked a peck of pickled peppers.\nA peck of pickled peppers Peter Piper picked.\nIf Peter Piper picked a peck of pickled peppers, where’s the peck of pickled peppers Peter Piper picked.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 403,
+      "title": "",
+      "twister": "Tricky Tristan tracked a trail of tiny turtles.\nHow many tiny turtles did Tricky Tristan track?\nTricky Tristan tracked twenty two tiny turtles; that\\'s how many tiny turtles tricky Tristan tracked.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 404,
+      "title": "",
+      "twister": "If you stick a stock of liquor in your locker it is slick to stick a lock upon your stock or some joker who is slicker is going to trick you of your liquor if you fail to lock your liquor with a lock.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 405,
+      "title": "",
+      "twister": "If you stick a stock of liquor in your locker it is slick to stick a lock upon your stock or some joker who is slicker is going to trick you of your liquor if you fail to lock your liquor with a lock.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 406,
+      "title": "",
+      "twister": "Luke Luck likes lakes.\n  Luke\\'s duck likes lakes.\n  Luke Luck licks lakes.\n  Luck\\'s duck licks lakes.\n  Duck takes licks in lakes Luke Luck likes.\n  Luke Luck takes licks in lakes duck likes.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 407,
+      "title": "",
+      "twister": "Chester chooses chestnuts, cheddar cheese with chewy chives.\nHe chews them and he chooses them.\nHe chooses them and he chews them Those chestnuts, cheddar cheese and chives in cheery, charming chunks.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 408,
+      "title": "",
+      "twister": "She is a thistle-sifter.\nShe has a sieve of unsifted thistles and a sieve of sifted thistles and the sieve of unsifted thistles she sifts into the sieve of sifted thistles because she is a thistlesifter.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 409,
+      "title": "",
+      "twister": "A twister of twists once twisted a twist.\nand the twist that he twisted was a three-twisted twist.\nnow in twisting this twist, if a twist should untwist, would the twist that untwisted untwist the twists?\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 410,
+      "title": "",
+      "twister": "How many wenches could a witch\\'s wench wrench wrench if a witch\\'s wench wrench could wrench wenches.\nAs many wenches as a witch\\'s wench wrench could, if a witch\\'s wench wrench could wrench wenches.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 411,
+      "title": "",
+      "twister": "Mary Mac\\'s mother\\'s making Mary Mac marry me.\n  My mother\\'s making me marry Mary Mac.\n  Will I always be so Merry when Mary\\'s taking care of me?\n  Will I always be so merry when I marry Mary Mac?\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 412,
+      "title": "",
+      "twister": "A twister of twists once twisted a twist.\n and the twist that he twisted was a three-twisted twist.\n now in twisting this twist,  if a twist should untwist, would the twist that untwisted untwist the twists?\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 413,
+      "title": "",
+      "twister": "Frustrated from failure and filled with forebodings, he fled for his family.\nFalling at his father\\'s feet, he floundered forlornly.\n\"Father, I have flunked and fruitlessly forfeited further family favors.\n\"",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 414,
+      "title": "",
+      "twister": "Sister Susie\\'s sewing shirts for soldiers, such saucy soft short shirts for soldiers sister Susie sews, Some soldiers send epistles say they\\'d sooner sleep on thistles, than those saucy soft short shirts for.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 415,
+      "title": "",
+      "twister": "If a packet hits a pocket on a socket on a port, And the bus is interrupted as a very last resort, And the address of the memory makes your floppy disk abort,  Then the socket packet pocket has an error to report!\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 416,
+      "title": "",
+      "twister": "If you understand, say \"understand\".\n  If you don\\'t understand, say \"don\\'t understand\".\n  But if you understand and say \"don\\'t understand\".\n  how do I understand that you understand.\nUnderstand!\n?\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 417,
+      "title": "",
+      "twister": "Oh, the sadness of her sadness when she\\'s sad.\nOh, the gladness of her gladness when she\\'s glad.\nBut the sadness of her sadness, and the gladness of her gladness, Are nothing like her madness when she\\'s mad!\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 418,
+      "title": "",
+      "twister": "A bitter biting bittern bit a better biting bittern and the better biting bittern bit the bitter biting bittern back.\nSaid the bitter biting bittern to the better biting bittern “I’m a bitter biting bittern bitten back”",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 419,
+      "title": "",
+      "twister": "Now the trees are all groaning in growling, rough gales that with thuds and hoarse roaring roll raging around!\nSuch leaf-rousing, branch-ruining, ripping, raw wails, such a terrible, thrashing and tree-wrecking sound!\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 420,
+      "title": "",
+      "twister": "Yellow butter, purple jelly, red jam, black bread.\nSpread it thick, say it quick!\nYellow butter, purple jelly, red jam, black bread.\nSpread it thicker, say it quicker!\nYellow butter, purple jelly, red jam, black bread.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 421,
+      "title": "",
+      "twister": "How much juice does a fruit juice producer produce when a fruit juice producer produces fruit juice?\nWe can deduce a fruit juice produces as much juice as a fruit juice produce can seduce from the fruit that produces juice.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 422,
+      "title": "",
+      "twister": "Jean Claude Jaquettie, with his jacket on.\n Jean Claude Jaquettie, with his jacket off.\n Jean Claude Jaquettie, with his jacket on.\n Jean Claude Jaquettie, with his jacket off.\n Jacket on, Jacket off, Jacket on, Jacket off.\n",
+      "length": 3,
+      "difficulty": 9,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 423,
+      "title": "",
+      "twister": "That\\'s tongue twisters  And it seems so easy till the word gets sprung  If you insist you want to try a lisp  Then step up mister and twist your tongue  Twista felt Twister was trying to whistle  But Twister had twisted his tongue",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 424,
+      "title": "",
+      "twister": "Tommy, Tommy, toiling in a tailor\\'s shop.\nAll day long he fits and tucks, all day long he tucks and fits, and fits and tucks, and tucks and fits, and fits and tucks, and tucks and fits.\nTommy, Tommy, toiling in a tailor\\'s shop.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 425,
+      "title": "",
+      "twister": "Tommy, Tommy, toiling in a tailor\\'s shop.\n All day long he fits and tucks, all day long he tucks and fits, and fits and tucks, and tucks and fits, and fits and tucks, and tucks and fits.\n Tommy, Tommy, toiling in a tailor\\'s shop.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 426,
+      "title": "",
+      "twister": "Through three cheese trees three free fleas flew.\nWhile these fleas flew, freezy breeze blew.\nFreezy breeze made these three trees freeze.\nFreezy trees made these trees\\' cheese freeze.\nThat\\'s what made these three free fleas sneeze.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 427,
+      "title": "",
+      "twister": "Suzie, Suzie, working in a shoeshine shop.\n All day long she sits and shines, all day long she shines and sits, and sits and shines, and shines and sits, and sits and shines, and shines and sits.\n Suzie, Suzie, working in a shoeshine shop.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 428,
+      "title": "",
+      "twister": "If your cursor finds a menu item followed by a dash, And the double-clicking icon puts your window in the trash, And your data is corrupted \\'cause the index doesn\\'t hash, then your situation\\'s hopeless, and your system\\'s gonna crash!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 429,
+      "title": "",
+      "twister": "Yally Bally had a jolly golliwog.\nFeeling folly, Yally Bally Bought his jolly golli\\' a dollie made of holly!\nThe golli\\', feeling jolly, named the holly dollie, Polly.\nSo Yally Bally\\'s jolly golli\\'s holly dollie Polly\\'s also jolly!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 430,
+      "title": "",
+      "twister": "Yally Bally had a jolly golliwog.\nFeeling folly, Yally Bally Bought his jolly golli\\' a dollie made of holly!\nThe golli\\', feeling jolly, named the holly dollie, Polly.\nSo Yally Bally\\'s jolly golli\\'s holly dollie Polly\\'s also jolly!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 431,
+      "title": "",
+      "twister": "Through three cheese trees three free fleas flew.\n While these fleas flew, freezy breeze blew.\n Freezy breeze made these three trees freeze.\n Freezy trees made these trees\\' cheese freeze.\n That\\'s what made these three free fleas sneeze.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 432,
+      "title": "",
+      "twister": "Betty Botter bought some butter.\nBut, she said the butter’s bitter.\nIf I put it in my batter, it will make my batter bitter.\nBut a bit of better butter will make my batter better.\nSo, it was better Betty Botter bought a bit of better butter.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 433,
+      "title": "",
+      "twister": "When the copy of your floppy\\'s getting sloppy on the disk, And the microcode instructions cause unnecessary risk, Then you have to flash your memory and you\\'ll want to ram your rom.\n Quickly turn off the computer and be sure to tell your mom!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 434,
+      "title": "",
+      "twister": "Through three cheese trees three free fleas flew.\n  While these fleas flew, freezy breeze blew.\n  Freezy breeze made these three trees freeze.\n  Freezy trees made these trees\\' cheese freeze.\n  That\\'s what made these three free fleas sneeze.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 435,
+      "title": "",
+      "twister": "His foresighted father figured, \"Such filial fidelity is fine, but what forbids fervent festivities?\nThe fugitive is found!\nUnfurl the flags!\nWith fanfare flaring, let fun, frolic and frivolity flow freely, former failures forgotten and folly forsaken.\n\"",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 436,
+      "title": "",
+      "twister": "What did you have for breakfast?\n  - rubber balls and liquor!\n  What did you have for lunch?\n  - rubber balls and liquor!\n  What did you have for dinner?\n  - rubber balls and liquor!\n  What do you do when your sister comes home?\n  - rubber balls and liquor!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 437,
+      "title": "",
+      "twister": "What a to do to die today at a quarter or two to two.\nA terrible difficult thing to say but a harder thing still to do.\nThe dragon will come at the beat of the drum with a rat-a-tat-tat atat-tat a-tat-to at a quarter or two to two today, at a quarter or two to two.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 438,
+      "title": "",
+      "twister": "Yellow butter, purple jelly, red jam, black bread.\n  Spread it thick, say it quick!\n  Yellow butter, purple jelly, red jam, black bread.\n  Spread it thicker, say it quicker!\n  Yellow butter, purple jelly, red jam, black bread.\n  Don\\'t eat with your mouth full!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 439,
+      "title": "",
+      "twister": "The Leith police dismisseth us They thought we sought to stay;  The Leith police dismisseth us They thought we\\'d stay all day.\n The Leith police dismisseth us, We both sighed sighs apiece;  And the sighs that we sighed as we said goodbye Were the size of the Leith police.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 440,
+      "title": "",
+      "twister": "Colliding, colt riding cowboys, combining colliding while gliding at night coinciding in their fight.\nIt wasn\\'t quite trite even with slight sight, who was right?\nThe fight like light, flashed bright, fast as bears bite flies flying near the bears eyes the fleeing flies die.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 441,
+      "title": "",
+      "twister": "Colliding, colt riding cowboys, combining colliding while gliding at night coinciding in their fight.\nIt wasn\\'t quite trite even with slight sight, who was right?\nThe fight like light, flashed bright, fast as bears bite flies flying near the bears eyes the fleeing flies die.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 442,
+      "title": "",
+      "twister": "All I want is a proper cup of coffee, Made in a proper copper coffee pot I may be off my dot But I want a cup of coffee From a proper coffee pot.\n  Tin coffee pots and iron coffee pots They\\'re no use to me - If I can\\'t have a proper cup of coffee In a proper copper coffee pot I\\'ll have a cup of tea.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 443,
+      "title": "",
+      "twister": "What a to do to die today At a minute or two to two.\n A thing distinctly hard to say And harder still to do.\n  For they\\'ll beat a tattoo at twenty to two A rat-tat-tat-Tat-tat-tat-Tat-tat-tat-too And the dragon will come when he hears the drum, At a minute or two to two today,  At a minute or two to two.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 444,
+      "title": "",
+      "twister": "Bobby Bippy bought a bat.\nBobby Bippy bought a ball.\nWith his bat Bob banged the ball Banged it bump against the wall but so boldly Bobby banged it that he burst his rubber ball \"Boo!\n\" cried Bobby Bad luck ball Bad luck Bobby, bad luck ball Now to drown his many troubles Bobby Bippy\\'s blowing bubbles.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 445,
+      "title": "",
+      "twister": "Something in a thirty-acre thermal thicket of thorns and thistles thumped and thundered threatening the three-D thoughts of Matthew the thug - although, theatrically, it was only the thirteen-thousand thistles and thorns through the underneath of his thigh that the thirty year old thug thought of that morning.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 446,
+      "title": "",
+      "twister": "I\\'m a mother pheasant plucker, I pluck mother pheasants.\n I\\'m the most pleasant mother pheasant plucker, to ever pluck a mother pheasant.\nActually, .\n.\n.\n I\\'m Not the pheasant plucker, I\\'m the pheasant plucker\\'s son.\n But I\\'ll stay and pluck the pheasants Till the pheasant plucking \\'s done!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 447,
+      "title": "",
+      "twister": "Something in a thirty-acre thermal thicket of thorns and thistles thumped and thundered threatening the three-D thoughts of Matthew the thug - although, theatrically, it was only the thirteen-thousand thistles and thorns through the underneath of his thigh that the thirty year old thug thought of that morning.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 448,
+      "title": "",
+      "twister": "The third time the three three-toed tree toads tried tying their toes together, the third three-toed tree toad tied the two three-toed tree toads toes to the third toads toes.\nThen the two tied three-toed tree toads told the third three-toed tree toad that tying their toes together thrilled them to their toe tips.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 449,
+      "title": "",
+      "twister": "Bobby Bippy bought a bat.\n  Bobby Bippy bought a ball.\n  With his bat Bob banged the ball  Banged it bump against the wall  But so boldly Bobby banged it  That he burst his rubber ball  \"Boo!\n\" cried Bobby  Bad luck ball  Bad luck Bobby, bad luck ball  Now to drown his many troubles  Bobby Bippy\\'s blowing bubbles.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 450,
+      "title": "",
+      "twister": "Corythosaurus bit the gory oesophagus of the dilapidated Dilophosaurus who lived in the sorest of forests with the whacky pachy-rhinoceros and the ceratosaurus, but the most poorest and mourish panoplosaurus called Wang sang and rang chorus with the lurdusaurus and the brachiosaurus who was dying of staphylococus-aureas.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 451,
+      "title": "",
+      "twister": "There once was a man who had a sister, his name was Mr.\nFister.\nMr.\nFister\\'s sister sold sea shells by the sea shore.\nMr.\nFister didn\\'t sell sea shells, he sold silk sheets.\nMr.\nFister told his sister that he sold six silk sheets to six shieks.\nThe sister of Mr.\nFister said I sold six shells to six shieks too!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 452,
+      "title": "",
+      "twister": "Federal Express is now called FedEx.\nWhen I retire I\\'ll be a FedEx ex.\nBut if I\\'m an officer when I retire, I\\'ll be an ex Fedex Exec.\nThen after a divorce, my ex-wife will be an ex FedEx exec\\'s ex.\nIf I rejoin FedEx in time, I\\'d be an ex ex FedEx exec.\nWhen we remarry, my wife will be an ex ex FedEx exec\\'s ex.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 453,
+      "title": "",
+      "twister": "But the faithful father, forestalling further flinching, frantically flagged his flunkies to fetch forth the finest fatling and fix a feast.\nBut the fugitive\\'s fault finding frater, faithfully farming his father\\'s fields for free, frowned at this fickle forgiveness of former falderal.\nHis fury flashed, but fussing was futile.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 454,
+      "title": "",
+      "twister": "Everybody\\'s heard of Peter Piper  And the peck of pickled peppers that he picked  That\\'s such a silly simple children\\'s game  It hasn\\'t even got a name  But I\\'d like to bet that it\\'ll trip you  And I bet you\\'re gonna have to say you\\'re licked  If Peter Piper you pronounce with ease  Then twist your tongue around these ",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 455,
+      "title": "",
+      "twister": "Ken can ken that Ken\\'s kin can ken Ken\\'s kin\\'s ken.\nKing Thistle stuck a thousand thistles in the thistle of his thumb.\nA thousand thistles King Thistle stuck in the thistle of his thumb.\nIf King Thistle stuck a thousand thistles in the thistle of his thumb, How many thistles did King Thistle stick in the thistle of his thumb?\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 456,
+      "title": "",
+      "twister": "If a Hottentot tot taught a Hottentot tot to talk before the tot would totter, ought the Hottentot tot be taught to say ought, or naught, or what ought to be taught the Hottentot tot?\nIf to hoot and to toot a Hottentot tot be taught by a Hottentot tutor, should the tutor get hot if the Hottentot tot hoots and toots at the Hottentot tutor?\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 457,
+      "title": "",
+      "twister": "How much wood could Chuck Woods\\' woodchuck chuck, if Chuck Woods\\' woodchuck could and would chuck wood?\nIf Chuck Woods\\' woodchuck could and would chuck wood, how much wood could and would Chuck Woods\\' woodchuck chuck?\nChuck Woods\\' woodchuck would chuck, he would, as much as he could, and chuck as much wood as any woodchuck would, if a woodchuck could and would chuck wood.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 458,
+      "title": "",
+      "twister": "Ed Nott was shot and Sam Shott was not.\nSo it is better to be Shott than Nott.\nSome say Nott was not shot.\nBut Shott says he shot Nott.\nEither the shot Shott shot at Nott was not shot, or Nott was shot.\nIf the shot Shott shot shot Nott, Nott was shot.\nBut if the shot Shott shot shot Shott, the shot was Shott, not Nott.\nHowever, the shot Shott shot shot not Shott - but Nott.\nSo, Ed Nott was shot and that\\'s hot!\nIs it not?\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 459,
+      "title": "",
+      "twister": "Theophilus Thadeus Thistledown, the succesful thistle-sifter, while sifting a sieve-full of unsifted thistles, thrust three thousand thistles through the thick of his thumb.\nNow, if Theophilus Thadeus Thistledown, the succesful thistle-sifter, thrust three thousand thistles through the thick of his thumb, see that thou, while sifting a sieve-full of unsifted thistles, thrust not three thousand thistles through the thick of thy thumb.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 460,
+      "title": "",
+      "twister": "Voilà!\nIn view, a humble vaudevillian veteran, cast vicariously as both victim and villain by the vicissitudes of Fate.\nThis visage, no mere veneer of vanity, is a vestige of the vox populi, now vacant, vanished.\nHowever, this valorous visitation of a by-gone vexation, stands vivified and has vowed to vanquish these venal and virulent vermin van-guarding vice and vouchsafing the violently vicious and voracious violation of volition.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 461,
+      "title": "",
+      "twister": "Esau Wood sawed wood.\nAll the wood Esau Wood saw, Esau Wood would saw.\nAll the wood Wood saw, Esau sought to saw.\nOne day Esau Wood\\'s wood-saw would saw no wood.\nSo Esau Wood sought a new wood-saw.\nThe new wood-saw would saw wood.\nOh, the wood Esau Wood would saw.\nEsau sought a saw that would saw wood as no other wood-saw would saw.\nAnd Esau found a saw that would saw as no other wood-saw would saw.\nAnd Esau Wood sawed wood.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 462,
+      "title": "",
+      "twister": "Feeling footloose, fancy-free and frisky, this feather-brained fellow finagled his fond father into forking over his fortune.\nForthwith, he fled for foreign fields and frittered his farthings feasting fabulously with fair-weather friends.\nFinally, fleeced by those folly filled fellows and facing famine, he found him-self a feed flinger in a filthy farm-lot.\nHe fain would have filled his frame with foraged food from fodder fragments.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 463,
+      "title": "",
+      "twister": "A tree toad loved a she-toad,  Who lived up in a tree.\n  He was a three-toed tree toad,  But a two-toed toad was she.\n  The three-toed tree toad tried to win,  The two-toed she-toad\\'s heart,  For the three-toed tree toad loved the ground,  That the two-toed tree toad trod.\n  But the three-toed tree toad tried in vain.\n  He couldn\\'t please her whim.\n  From her tree toad bower,  With her two-toed power,  The she-toad vetoed him.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 464,
+      "title": "",
+      "twister": "If the label on the cable on the table at your house, Says the network is connected to the button on your mouse, But your packets want to tunnel on another protocol, That\\'s repeatedly rejected by the printer down the hall, And your screen is all distorted by the side effects of gauss, So your icons in the window are as wavy as a souse, Then you may as well reboot and go out with a bang, \\'Cause as sure as I\\'m a poet, the sucker\\'s gonna hang!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 465,
+      "title": "",
+      "twister": "This is a story about four people named Everybody, Somebody, Anybody and Nobody.\nThere was an important job to be done and Everybody was sure that Somebody would do it.\nAnybody could have done it, but Nobody did it.\nSomebody got angry about that, because it was Everybody\\'s job.\nEverybody thought Anybody could do it, but Nobody realised that Everybody wouldn\\'t do it.\nIt ended up that Everybody blamed Somebody, when Nobody did, what Anybody could have done.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 466,
+      "title": "",
+      "twister": "Out in the pasture the nature watcher watches the catcher.\nWhile the catcher watches the pitcher who pitches the balls.\nWhether the temperature\\'s up or whether the temperature\\'s down, the nature watcher, the catcher and the pitcher are always around.\nThe pitcher pitches, the catcher catches and the watcher watches.\nSo whether the temperature\\'s rises or whether the temperature falls the nature watcher just watches the catcher who\\'s watching the pitcher who\\'s watching the balls.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 467,
+      "title": "",
+      "twister": "I bought a bit of baking powder and baked a batch of biscuits.\nI brought a big basket of biscuits back to the bakery and baked a basket of big biscuits.\nThen I took the big basket of biscuits and the basket of big biscuits and mixed the big biscuits with the basket of biscuits that was next to the big basket and put a bunch of biscuits from the basket into a biscuit mixer and brought the basket of biscuits and the box of mixed biscuits and the biscuit mixer to the bakery and opened a tin of sardines.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 468,
+      "title": "",
+      "twister": "The Doge did what a Doge does, when a Doge does his duty to a Duke, that is.\nWhen the Doge did his duty and the Duke didn\\'t, that\\'s when the Duchess did the dirt to the Duke with the Doge.\nThere they were in the dark: The Duke with his dagger, the Doge with his dart and the Duchess with her dirk.\nThe Duchess dug at the Duke just when the Duke dove at the Doge.\nNow the Duke ducked, the Doge dodged, and the Duchess didn\\'t.\nSo the Duke got the Duchess, the Duchess got the Doge, and the Doge got the Duke.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 469,
+      "title": "",
+      "twister": "Give me the gift of a grip-top sock, A clip drape shipshape tip top sock.\nNot your spinslick slapstick slipshod stock, But a plastic, elastic grip-top sock.\nNone of your fantastic slack swap slop from a slap dash flash cash haberdash shop.\nNot a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock.\nNot a supersheet seersucker rucksack sock, not a spot-speckled frog-freckled cheap sheik\\'s sock off a hodgepodge moss-blotched scotch-botched block.\nNothing slipshod drip drop flip flop or glip glop Tip me to a tip top grip top sock.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": true
+    },
+    {
+      "index": 470,
+      "title": "",
+      "twister": "Give me the gift of a grip-top sock, A clip drape shipshape tip top sock.\n  Not your spinslick slapstick slipshod stock,  But a plastic, elastic grip-top sock.\n  None of your fantastic slack swap slop From a slap dash flash cash haberdash shop.\n  Not a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock.\n  Not a supersheet seersucker rucksack sock,  Not a spot-speckled frog-freckled cheap sheik\\'s sock Off a hodge-podge moss-blotched scotch-botched block.\n  Nothing slipshod drip drop flip flop or glip glop Tip me to a tip top grip top sock.\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    },
+    {
+      "index": 471,
+      "title": "",
+      "twister": "To sit in solemn silence in a dull, dark dock,  In a pestilential prison, with a life-long lock,  Awaiting the sensation of a short, sharp shock,  From a cheap and chippy chopper on a big black block!\n  To sit in solemn silence in a dull, dark dock,  In a pestilential prison, with a life-long lock,  Awaiting the sensation of a short, sharp shock,  From a cheap and chippy chopper on a big black block!\n  A dull, dark dock, a life-long lock,  A short, sharp shock, a big black block!\n  To sit in solemn silence in a pestilential prison,  And awaiting the sensation  From a cheap and chippy chopper on a big black block!\n",
+      "length": 3,
+      "difficulty": 10,
+      "icon_url": "",
+      "hint": "",
+      "is_locked": false
+    }
+  ],
+  "difficulty": [
+    {
+      "title": "Beginner's Luck",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 1,
+      "end_index": 47,
+      "count": 47
+    },
+    {
+      "title": "Lit Up",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 48,
+      "end_index": 94,
+      "count": 47
+    },
+    {
+      "title": "Speeding Up",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 95,
+      "end_index": 141,
+      "count": 47
+    },
+    {
+      "title": "No Seat Belt",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 142,
+      "end_index": 188,
+      "count": 47
+    },
+    {
+      "title": "No Helmet",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 189,
+      "end_index": 235,
+      "count": 47
+    },
+    {
+      "title": "Drunken Drive",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 236,
+      "end_index": 282,
+      "count": 47
+    },
+    {
+      "title": "Brake Fail",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 283,
+      "end_index": 329,
+      "count": 47
+    },
+    {
+      "title": "Steering Wheel",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 330,
+      "end_index": 376,
+      "count": 47
+    },
+    {
+      "title": "Accident Certain",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 377,
+      "end_index": 423,
+      "count": 47
+    },
+    {
+      "title": "Death Certain",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 424,
+      "end_index": 470,
+      "count": 47
+    }
+  ],
+  "length": [
+    {
+      "title": "SMALL",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 1,
+      "end_index": 157,
+      "count": 157
+    },
+    {
+      "title": "MEDIUM",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 158,
+      "end_index": 314,
+      "count": 157
+    },
+    {
+      "title": "LONG",
+      "expanded_title": "",
+      "level_tip": "",
+      "start_index": 315,
+      "end_index": 471,
+      "count": 157
+    }
+  ]
+}
