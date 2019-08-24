@@ -9,8 +9,19 @@ class Constants {
         const val DEFAULT_VALUE_FLOAT = 0f
         const val DEFAULT_VALUE_LONG = 0L
         const val DEFAULT_VALUE_STRING = ""
+
+        //PREFERENCES CONSTANTS
+        const val EXTRA_PREFERENCES_TWISTER = "PREFERENCES_TWISTER"
+
+        //JSON DB CONSTANTS
+        const val ALL_TWISTERS_PATH = "twister"
+        const val TWISTER_LEVELS_BY_LENGTH = "length"
+        const val TWISTER_LEVELS_BY_DIFFICULTY = "difficulty"
         const val MAIN_DB_PATH = "twisters_storage.json"
 
-        const val EXTRA_PREFERENCES_TWISTER = "PREFERENCES_TWISTER"
+        //OTHER DB CONSTANTS
+        const val TWISTER_COUNT = 471
+        const val LENGTH_LEVEL_COUNT = 3
+        const val DIFFICULTY_LEVEL_COUNT = 10
     }
 }
