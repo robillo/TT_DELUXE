@@ -15,6 +15,6 @@ interface LengthLevelDao {
     @Query("SELECT count(title) FROM lengthlevel")
     fun getLengthLevelCount(): LiveData<Int>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertLengthLevels(vararg params: LengthLevel)
 }

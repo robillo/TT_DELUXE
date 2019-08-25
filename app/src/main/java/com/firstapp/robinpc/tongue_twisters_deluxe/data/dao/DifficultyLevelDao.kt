@@ -16,6 +16,6 @@ interface DifficultyLevelDao {
     @Query("SELECT count(title) FROM difficultylevel")
     fun getDifficultyLevelCount(): LiveData<Int>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertDifficultyLevels(vararg difficultyLevel: DifficultyLevel)
 }

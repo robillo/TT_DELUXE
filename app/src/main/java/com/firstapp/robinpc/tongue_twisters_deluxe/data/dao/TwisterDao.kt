@@ -16,6 +16,6 @@ interface TwisterDao {
     @Query("SELECT count(id) FROM twister")
     fun getTwisterCount(): LiveData<Int>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertTwisters(vararg params: Twister)
 }

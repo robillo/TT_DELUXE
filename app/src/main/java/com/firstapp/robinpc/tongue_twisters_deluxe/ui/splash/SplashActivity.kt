@@ -1,6 +1,8 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash
 
 import android.os.CountDownTimer
+import android.util.Log
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
@@ -29,9 +31,40 @@ class SplashActivity : BaseActivity() {
     override fun setup() {
         setStatusBarColor(R.color.white, LIGHT_STATUS_BAR)
         setComponent()
-        startTimer()
+        setObservers()
+        fetchJsonFromAssets()
     }
 
+    private fun setObservers() {
+        viewModel.loadProgressLiveData.observe(this, Observer { progress ->
+            Log.e("myTag", "progress is $progress")
+
+            when(progress) {
+                SplashViewModel.Companion.Progress.JSON_LOADED.name -> {
+                    viewModel.convertArrays()
+                }
+                SplashViewModel.Companion.Progress.ARRAYS_CONVERTED.name -> {
+                    viewModel.insertListsIntoRoom()
+                }
+                SplashViewModel.Companion.Progress.DATA_STORED.name -> {
+                    //TODO - go to next activity
+                    fetchTwisters()
+                }
+            }
+        })
+    }
+
+    private fun fetchTwisters() {
+        viewModel.getAllTwisters().observe(this, Observer { list ->
+            Log.e("myTag", "${list.size}")
+        })
+    }
+
+    private fun fetchJsonFromAssets() {
+        viewModel.fetchJsonFromAssets()
+    }
+
+    @Suppress("unused")
     private fun startTimer() {
         val timer = object: CountDownTimer(TIMER_VALUE, STEP_VALUE) {
             override fun onFinish() {

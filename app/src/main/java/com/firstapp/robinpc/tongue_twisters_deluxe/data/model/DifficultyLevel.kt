@@ -12,4 +12,18 @@ data class DifficultyLevel(
         @SerializedName("start_index") val startIndex: Int,
         @SerializedName("end_index") val endIndex: Int,
         @SerializedName("count") val count: Int
-)
+) {
+
+    companion object {
+        const val DEFAULT_INT = 0
+        const val DEFAULT_STRING = "DEFAULT"
+    }
+    constructor(): this(
+            DEFAULT_STRING,
+            DEFAULT_STRING,
+            DEFAULT_STRING,
+            DEFAULT_INT,
+            DEFAULT_INT,
+            DEFAULT_INT
+    )
+}
