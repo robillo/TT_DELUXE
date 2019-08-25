@@ -2,13 +2,19 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerReadingActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
-import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.HomeActivity
+import javax.inject.Inject
 
 class ReadingActivity : BaseActivity() {
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    private lateinit var viewModel: ReadingActivityViewModel
 
     companion object {
         fun newIntent(context: Context): Intent {
@@ -21,11 +27,21 @@ class ReadingActivity : BaseActivity() {
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.white, true)
+        setStatusBarColor(R.color.white, LIGHT_STATUS_BAR)
+        setComponent()
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
         animateActivityTransition(R.anim.slide_in_left_activity, R.anim.slide_out_right_activity)
+    }
+
+    private fun setComponent() {
+        DaggerReadingActivityComponent.builder()
+                .appComponent(getAppComponent())
+                .build().injectReadingActivity(this)
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
+                .get(ReadingActivityViewModel::class.java)
     }
 }

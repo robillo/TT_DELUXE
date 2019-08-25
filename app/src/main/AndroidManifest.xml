@@ -13,9 +13,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
-        <activity android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.length_level.LengthLevelActivity"
+        <activity android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.length_level.LengthLevelActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.difficulty_level.DifficultyLevelActivity"
+        <activity android:name="com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.difficulty_level.DifficultyLevelActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.reading.ReadingActivity"

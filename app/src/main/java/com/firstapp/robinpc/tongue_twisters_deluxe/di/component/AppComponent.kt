@@ -14,7 +14,7 @@ import java.io.InputStream
 
 @TwisterAppScope
 @Component(modules = [ SharedPreferenceModule::class, UtilsModule::class , DatabaseModule::class, JsonModule::class ])
-interface TwisterAppComponent {
+interface AppComponent {
 
     fun getGson(): Gson
     fun getInputStream(): InputStream

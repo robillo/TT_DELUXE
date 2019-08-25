@@ -1,17 +1,25 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.length_level
+package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.length_level
 
 import android.content.Context
 import android.content.Intent
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerLengthLevelActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
-import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.adapter.TwisterListAdaper
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.TwisterListAdaper
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import kotlinx.android.synthetic.main.activity_length_level.twisterRecycler
+import javax.inject.Inject
 
 class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListener {
 
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    private lateinit var viewModel: LengthLevelActivityViewModel
     private lateinit var twisterList: MutableList<Twister>
 
     companion object {
@@ -25,7 +33,8 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.black, false)
+        setStatusBarColor(R.color.black, LIGHT_STATUS_BAR)
+        setComponent()
         loadData()
         setTwisterAdapter()
     }
@@ -161,5 +170,14 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
     private fun startReadingActivity() {
         startActivity(ReadingActivity.newIntent(this))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+    }
+
+    private fun setComponent() {
+        DaggerLengthLevelActivityComponent.builder()
+                .appComponent(getAppComponent())
+                .build().injectLengthLevelActivity(this)
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
+                .get(LengthLevelActivityViewModel::class.java)
     }
 }

@@ -1,12 +1,21 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash
 
 import android.os.CountDownTimer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerSplashActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_splash.*
+import javax.inject.Inject
 
 class SplashActivity : BaseActivity() {
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    private lateinit var viewModel: SplashViewModel
 
     companion object {
         private const val STEP_VALUE = 200L
@@ -18,7 +27,8 @@ class SplashActivity : BaseActivity() {
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.white, true)
+        setStatusBarColor(R.color.white, LIGHT_STATUS_BAR)
+        setComponent()
         startTimer()
     }
 
@@ -43,5 +53,14 @@ class SplashActivity : BaseActivity() {
     private fun startHomeActivity() {
         startActivity(HomeActivity.newIntent(this))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+    }
+
+    private fun setComponent() {
+        DaggerSplashActivityComponent.builder()
+                .appComponent(getAppComponent())
+                .build().injectSplashActivity(this)
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
+                .get(SplashViewModel::class.java)
     }
 }

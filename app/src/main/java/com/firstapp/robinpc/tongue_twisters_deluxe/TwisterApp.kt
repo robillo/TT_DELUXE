@@ -2,8 +2,8 @@ package com.firstapp.robinpc.tongue_twisters_deluxe
 
 import android.app.Activity
 import android.app.Application
-import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.DaggerTwisterAppComponent
-import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.TwisterAppComponent
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.DaggerAppComponent
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.AppComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.module.others.ContextModule
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig
@@ -12,7 +12,7 @@ import io.github.inflationx.viewpump.ViewPump
 
 class TwisterApp : Application() {
 
-    private lateinit var component: TwisterAppComponent
+    private lateinit var component: AppComponent
 
     override fun onCreate() {
         super.onCreate()
@@ -25,12 +25,12 @@ class TwisterApp : Application() {
                                 .build()))
                 .build())
 
-        component = DaggerTwisterAppComponent.builder()
+        component = DaggerAppComponent.builder()
                 .contextModule(ContextModule(this))
                 .build()
     }
 
-    fun constitutionAppComponent(): TwisterAppComponent {
+    fun appComponent(): AppComponent {
         return component
     }
 

@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.ui.home
+package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.difficulty_level
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
@@ -14,7 +14,7 @@ import java.io.InputStream
 import javax.inject.Inject
 
 @Suppress("unused")
-class HomeActivityViewModel @Inject constructor(
+class DifficultyLevelActivityViewModel @Inject constructor(
         database: TwisterDatabase,
         private val gson: Gson,
         private val inputStream: InputStream

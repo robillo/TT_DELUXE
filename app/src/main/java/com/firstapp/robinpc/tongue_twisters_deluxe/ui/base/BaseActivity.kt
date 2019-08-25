@@ -8,9 +8,15 @@ import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.firstapp.robinpc.tongue_twisters_deluxe.TwisterApp
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.AppComponent
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 
 abstract class BaseActivity : AppCompatActivity() {
+
+    companion object {
+        const val LIGHT_STATUS_BAR = true
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,5 +50,9 @@ abstract class BaseActivity : AppCompatActivity() {
 
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase))
+    }
+
+    protected fun getAppComponent(): AppComponent {
+        return TwisterApp.get(this).appComponent()
     }
 }

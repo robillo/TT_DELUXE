@@ -1,4 +1,4 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.adapter.holder
+package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.holder
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

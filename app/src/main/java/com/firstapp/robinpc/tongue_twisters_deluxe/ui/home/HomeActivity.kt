@@ -6,24 +6,33 @@ import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ScrollView
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.DifficultyLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.LengthLevel
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerHomeActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
-import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.difficulty_level.DifficultyLevelActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.difficulty_level.DifficultyLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.DifficultyAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.LengthAdapter
-import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.length_level.LengthLevelActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.length_level.LengthLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import kotlinx.android.synthetic.main.activity_home.*
+import javax.inject.Inject
 import kotlin.collections.ArrayList
 
 class HomeActivity : BaseActivity(),
         LengthAdapter.LengthLevelClickListener,
         DifficultyAdapter.DifficultyLevelClickListener {
 
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    private lateinit var viewModel: HomeActivityViewModel
     private lateinit var lengthList: MutableList<LengthLevel>
     private lateinit var difficultyList: MutableList<DifficultyLevel>
 
@@ -44,6 +53,7 @@ class HomeActivity : BaseActivity(),
 
     override fun setup() {
         setStatusBar()
+        setComponent()
         initLayout()
         setListeners()
     }
@@ -175,7 +185,7 @@ class HomeActivity : BaseActivity(),
     }
 
     private fun setStatusBar() {
-        setStatusBarColor(R.color.white, true)
+        setStatusBarColor(R.color.white, LIGHT_STATUS_BAR)
     }
 
     private fun hidePremium() {
@@ -211,5 +221,14 @@ class HomeActivity : BaseActivity(),
     private fun startReadingActivity() {
         startActivity(ReadingActivity.newIntent(this))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+    }
+
+    private fun setComponent() {
+        DaggerHomeActivityComponent.builder()
+                .appComponent(getAppComponent())
+                .build().injectHomeActivity(this)
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
+                .get(HomeActivityViewModel::class.java)
     }
 }

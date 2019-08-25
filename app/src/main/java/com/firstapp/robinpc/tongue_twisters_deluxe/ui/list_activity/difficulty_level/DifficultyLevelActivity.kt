@@ -1,17 +1,26 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.difficulty_level
+package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.difficulty_level
 
 import android.content.Context
 import android.content.Intent
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerDifficultyLevelActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
-import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.adapter.TwisterListAdaper
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.TwisterListAdaper
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import kotlinx.android.synthetic.main.activity_difficulty_level.*
+import javax.inject.Inject
 
 class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListener {
 
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    private lateinit var viewModel: DifficultyLevelActivityViewModel
     private lateinit var twisterList: MutableList<Twister>
 
     companion object {
@@ -25,7 +34,8 @@ class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickLi
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.color_bg_twister_by_difficulty, false)
+        setStatusBarColor(R.color.color_bg_twister_by_difficulty, LIGHT_STATUS_BAR)
+        setComponent()
         loadData()
         setTwisterAdapter()
     }
@@ -161,5 +171,14 @@ class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickLi
     private fun startReadingActivity() {
         startActivity(ReadingActivity.newIntent(this))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+    }
+
+    private fun setComponent() {
+        DaggerDifficultyLevelActivityComponent.builder()
+                .appComponent(getAppComponent())
+                .build().injectDifficultyLevelActivity(this)
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
+                .get(DifficultyLevelActivityViewModel::class.java)
     }
 }

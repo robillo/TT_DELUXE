@@ -1,11 +1,11 @@
-package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.adapter
+package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
-import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list.adapter.holder.TwisterHolder
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.holder.TwisterHolder
 
 class TwisterListAdaper(private val twisterList: List<Twister>):
         RecyclerView.Adapter<TwisterHolder>(),
