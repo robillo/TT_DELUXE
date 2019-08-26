@@ -3,5 +3,5 @@
     <solid
         android:color="@color/skeleton_seven" />
     <corners
-        android:radius="@dimen/padding_large"/>
+        android:radius="@dimen/padding_30_dp"/>
 </shape>

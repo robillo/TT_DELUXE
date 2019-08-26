@@ -5,6 +5,9 @@
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#de4c0e</color>
 
+    <!-- splash -->
+    <color name="progress_bar_default_splash">#E0E0E0</color>
+
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 

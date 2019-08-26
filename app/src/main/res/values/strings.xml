@@ -5,7 +5,7 @@
     <string name="ad_app_id">ca-app-pub-8103354595257586~5155276805</string>
     <string name="banner_ad_unit_id">ca-app-pub-8103354595257586/8711378438</string>
     <string name="hmd_global_test_id">14A8111EAF056776E18C7EE8317F5AD2</string>
-    <string name="loading_your_twisters">LOADING YOUR TWISTERS</string>
+    <string name="loading">LOADING…</string>
     <string name="app_name_caps">TONGUE TWISTERS</string>
     <string name="you_are_a">YOU ARE A</string>
     <string name="free_user">FREE USER</string>

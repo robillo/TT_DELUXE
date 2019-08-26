@@ -129,8 +129,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginEnd="@dimen/padding_large"
-        android:layout_marginStart="@dimen/padding_large"
+        android:layout_marginEnd="@dimen/padding_30_dp"
+        android:layout_marginStart="@dimen/padding_30_dp"
         android:background="@color/skeleton_one"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

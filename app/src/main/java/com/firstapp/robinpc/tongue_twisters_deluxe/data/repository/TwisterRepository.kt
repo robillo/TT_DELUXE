@@ -21,6 +21,10 @@ class TwisterRepository(private val twisterDao: TwisterDao) {
         InsertTwistersTask(twisterDao).execute(*twister)
     }
 
+    fun getDatabaseElementsCount(): LiveData<Int> {
+        return twisterDao.getDatabaseElementsCount()
+    }
+
     private class InsertTwistersTask internal constructor(private val dao: TwisterDao) : AsyncTask<Twister, Void, Void>() {
 
         override fun doInBackground(vararg params: Twister): Void? {

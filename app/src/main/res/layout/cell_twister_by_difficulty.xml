@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toTopOf="@id/levelNameTv"
         android:text="@string/dummy_level_by_difficulty"
         app:layout_constraintVertical_chainStyle="packed"
-        android:layout_marginTop="@dimen/padding_normal_large"
+        android:layout_marginTop="@dimen/padding_18_dp"
         android:textSize="@dimen/font_extra_large"
         android:textColor="@color/white"
         fontPath="fonts/WS-Bold.ttf"
@@ -90,7 +90,7 @@
         android:alpha="0.4"
         fontpath="fonts/WS-Regular.ttf"
         android:layout_marginTop="@dimen/padding_normal"
-        android:layout_marginBottom="@dimen/padding_normal_large"
+        android:layout_marginBottom="@dimen/padding_18_dp"
         android:id="@+id/levelTwistersCountTv"
         tools:ignore="MissingPrefix" />
 

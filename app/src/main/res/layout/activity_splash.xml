@@ -8,32 +8,44 @@
     android:background="@color/white"
     tools:context=".ui.splash.SplashActivity">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/splash_loading_lottie"
+        android:layout_height="@dimen/splash_loading_lottie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/loadingProgressTv"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        tools:background="@color/black"
+        app:lottie_fileName="lottie/tongue_emoji.json"
+        android:id="@+id/loadingLottie"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/loadingProgressBar"
+        android:layout_marginBottom="@dimen/padding_18_dp"
         android:id="@+id/loadingProgressTv"
-        app:layout_constraintVertical_chainStyle="packed"
-        android:textColor="@color/skeleton_two"
-        android:text="@string/loading_your_twisters"
+        android:textColor="@color/black"
+        android:text="@string/loading"
         fontPath="fonts/WS-Medium.ttf"
-        android:textSize="@dimen/font_medium_large"
+        android:textSize="@dimen/font_18_sp"
         tools:ignore="MissingPrefix" />
 
     <ProgressBar
         android:layout_width="@dimen/loading_progress_bar_width"
         android:layout_height="@dimen/loading_progress_bar_height"
-        android:layout_marginTop="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_18_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/padding_80_dp"
         tools:progress="60"
         style="?android:attr/progressBarStyleHorizontal"
         android:progressDrawable="@drawable/loading_progress_bar"
-        app:layout_constraintTop_toBottomOf="@id/loadingProgressTv"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/loadingProgressBar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

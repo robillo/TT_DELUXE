@@ -35,6 +35,8 @@ dependencies {
     
     implementation 'com.google.code.gson:gson:2.8.5'
 
+    implementation 'com.airbnb.android:lottie:3.0.7'
+
     kapt 'androidx.lifecycle:lifecycle-compiler:2.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.1'

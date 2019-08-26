@@ -4,7 +4,7 @@
         <shape>
             <corners android:radius="20dp" />
             <solid
-                android:color="@color/skeleton_one"/>
+                android:color="@color/progress_bar_default_splash"/>
         </shape>
     </item>
 
@@ -13,7 +13,7 @@
             <shape>
                 <corners android:radius="20dp" />
                 <solid
-                    android:color="@color/skeleton_three"/>
+                    android:color="@color/progress_bar_default_splash"/>
             </shape>
         </clip>
     </item>
@@ -24,7 +24,7 @@
                 <corners
                     android:radius="20dp" />
                 <solid
-                    android:color="@color/splash_loading_progress_color"/>
+                    android:color="@color/black"/>
             </shape>
         </clip>
     </item>

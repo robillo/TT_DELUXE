@@ -62,7 +62,7 @@ class SplashViewModel @Inject constructor(
 
     companion object {
         enum class Progress {
-            JSON_LOADED, ARRAYS_CONVERTED, DATA_STORED
+            APP_STARTED, JSON_LOADED, ARRAYS_CONVERTED, DATA_STORED
         }
     }
 
@@ -78,7 +78,8 @@ class SplashViewModel @Inject constructor(
 
     private fun inflateParentJson() {
         val buffer: ByteArray = getBuffer()
-        completeJsonObject = JSONObject(String(buffer, Charset.forName(CHARSET_UTF_8)))
+        val completeJsonString = String(buffer, Charset.forName(CHARSET_UTF_8))
+        completeJsonObject = JSONObject(completeJsonString)
     }
 
     private fun getBuffer(): ByteArray {
@@ -127,17 +128,6 @@ class SplashViewModel @Inject constructor(
                 insertDifficultyList()
             }
             _loadProgressLiveData.postValue(Progress.DATA_STORED.name)
-        }
-    }
-
-    fun checkIfRoomFilled() {
-        scope.launch {
-            withContext(context) {
-                getTwisterCount()
-                getLengthLevelCount()
-                getDifficultyLevelCount()
-            }
-            //TODO - post true or false for room data presence
         }
     }
 
@@ -191,5 +181,9 @@ class SplashViewModel @Inject constructor(
 
     private fun insertDifficultyLevels(vararg difficultyLevel: DifficultyLevel) {
         difficultyLevelRepo.insertDifficultyLevels(*difficultyLevel)
+    }
+
+    fun getDatabaseElementsCount(): LiveData<Int> {
+        return twisterRepo.getDatabaseElementsCount()
     }
 }
