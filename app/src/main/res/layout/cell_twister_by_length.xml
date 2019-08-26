@@ -16,12 +16,12 @@
         app:layout_constraintBottom_toTopOf="@id/levelTwistersCountTv"
         android:text="@string/dummy_twister_by_length_header"
         tools:textStyle="bold"
-        android:layout_marginBottom="@dimen/padding_normal"
+        android:layout_marginBottom="@dimen/padding_16_dp"
         android:layout_marginTop="@dimen/padding_18_dp"
-        android:layout_marginStart="@dimen/padding_normal"
+        android:layout_marginStart="@dimen/padding_16_dp"
         fontPath="fonts/WS-SemiBold.ttf"
         android:textColor="@color/black"
-        android:textSize="@dimen/font_larger"
+        android:textSize="@dimen/font_22_sp"
         app:layout_constraintVertical_chainStyle="packed"
         android:id="@+id/levelHeaderTv"
         tools:ignore="MissingPrefix" />
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="@string/dummy_twisters_count_length"
-        android:layout_marginStart="@dimen/padding_normal"
+        android:layout_marginStart="@dimen/padding_16_dp"
         android:layout_marginBottom="@dimen/padding_18_dp"
         android:id="@+id/levelTwistersCountTv"/>
 
@@ -50,7 +50,7 @@
         android:text="@string/show_all"
         android:textSize="@dimen/font_small"
         android:layout_marginTop="@dimen/padding_18_dp"
-        android:layout_marginEnd="@dimen/padding_normal"
+        android:layout_marginEnd="@dimen/padding_16_dp"
         android:id="@+id/showAllTv"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

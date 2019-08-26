@@ -1,26 +1,40 @@
 <resources>
 
+    <!-- splash -->
+    <dimen name="splash_loading_lottie">100dp</dimen>
+
+    <!-- home -->
+    <dimen name="home_day_twister_lottie">100dp</dimen>
+    <dimen name="day_twister_card_height">150dp</dimen>
+
     <!-- font -->
     <dimen name="font_rewards">48sp</dimen>
     <dimen name="font_xx_large">28sp</dimen>
     <dimen name="font_extra_large">24sp</dimen>
-    <dimen name="font_larger">22sp</dimen>
+    <dimen name="font_30_sp">30sp</dimen>
+    <dimen name="font_22_sp">22sp</dimen>
     <dimen name="font_large">20sp</dimen>
     <dimen name="font_18_sp">18sp</dimen>
     <dimen name="font_normal">16sp</dimen>
     <dimen name="font_medium_small">14sp</dimen>
     <dimen name="font_small">12sp</dimen>
     <dimen name="font_smaller">12sp</dimen>
+    <dimen name="font_8_sp">8sp</dimen>
+
+    <!-- radius -->
+    <dimen name="radius_day_twister">15dp</dimen>
 
     <!-- padding -->
     <dimen name="padding_80_dp">80dp</dimen>
     <dimen name="padding_60_dp">60dp</dimen>
+    <dimen name="padding_50_dp">50dp</dimen>
     <dimen name="padding_40_dp">40dp</dimen>
-    <dimen name="padding_huge">36dp</dimen>
+    <dimen name="padding_36_sp">36dp</dimen>
     <dimen name="padding_30_dp">30dp</dimen>
-    <dimen name="padding_big">24dp</dimen>
+    <dimen name="padding_24_dp">24dp</dimen>
+    <dimen name="padding_20_dp">20dp</dimen>
     <dimen name="padding_18_dp">18dp</dimen>
-    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_16_dp">16dp</dimen>
     <dimen name="padding_normal_small">14dp</dimen>
     <dimen name="padding_normal_smaller">12dp</dimen>
     <dimen name="padding_medium">10dp</dimen>
@@ -30,9 +44,6 @@
     <dimen name="padding_nano">2dp</dimen>
     <dimen name="loading_progress_bar_height">12dp</dimen>
     <dimen name="loading_progress_bar_width">250dp</dimen>
-
-    <!-- splash -->
-    <dimen name="splash_loading_lottie">100dp</dimen>
 
     <dimen name="width_twister_of_the_day_bg_stroke">1dp</dimen>
     <dimen name="twister_of_the_day_progress_dimens">30dp</dimen>

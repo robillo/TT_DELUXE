@@ -5,319 +5,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/bg_home"
     tools:context=".ui.home.HomeActivity">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/height_free_premium"
-            android:id="@+id/scrollContainer">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/twisterOfTheDayTv"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="@dimen/padding_18_dp"
-                android:textColor="@color/black"
-                tools:textStyle="bold"
-                fontPath="fonts/WS-Bold.ttf"
-                android:textSize="@dimen/font_extra_large"
-                android:text="@string/app_name_caps"
-                tools:ignore="MissingPrefix"
-                android:id="@+id/homeHeaderTv"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/padding_huge"
-                android:paddingStart="@dimen/padding_18_dp"
-                android:textColor="@color/black"
-                android:text="@string/twister_of_the_day"
-                fontPath="fonts/WS-Medium.ttf"
-                app:layout_constraintTop_toBottomOf="@id/homeHeaderTv"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/twisterOfTheDayLayout"
-                android:textSize="@dimen/font_18_sp"
-                android:id="@+id/twisterOfTheDayTv"
-                tools:ignore="MissingPrefix,RtlSymmetry" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/twisterOfTheDayTv"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:background="@drawable/bg_twister_of_the_day"
-                android:layout_marginTop="@dimen/padding_normal"
-                android:layout_marginStart="@dimen/padding_18_dp"
-                android:layout_marginEnd="@dimen/padding_18_dp"
-                android:id="@+id/twisterOfTheDayLayout">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginBottom="@dimen/padding_normal"
-                    android:textSize="@dimen/font_normal"
-                    android:alpha="0.5"
-                    android:textColor="@color/white"
-                    fontPath="fontsWS-Medium.ttf"
-                    android:layout_marginStart="@dimen/padding_normal"
-                    android:text="@string/dummy_twister_detail"
-                    android:id="@+id/twisterHeaderTv"
-                    tools:ignore="MissingPrefix,RtlSymmetry" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="@dimen/padding_normal"
-                    android:layout_marginEnd="@dimen/padding_normal"
-                    android:textSize="@dimen/font_normal"
-                    fontPath="fonts/WS-SemiBold.ttf"
-                    android:textColor="@color/white"
-                    tools:textStyle="bold"
-                    android:alpha="0.7"
-                    android:text="@string/dummy_twister_day_name"
-                    android:id="@+id/dayNameTv"
-                    tools:ignore="MissingPrefix,RtlSymmetry" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="@dimen/padding_normal"
-                    android:paddingBottom="@dimen/padding_18_dp"
-                    android:paddingStart="@dimen/padding_normal"
-                    android:paddingEnd="@dimen/padding_normal"
-                    android:textSize="@dimen/font_large"
-                    app:layout_constraintBottom_toTopOf="@id/playTv"
-                    fontPath="fonts/WS-Bold.ttf"
-                    tools:textStyle="bold"
-                    android:lines="1"
-                    android:id="@+id/twisterNameTv"
-                    android:textColor="@color/white"
-                    android:text="@string/dummy_twister_name"
-                    tools:ignore="MissingPrefix" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/twisterNameTv"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:paddingTop="@dimen/padding_micro"
-                    android:paddingBottom="@dimen/padding_micro"
-                    android:paddingStart="@dimen/padding_18_dp"
-                    android:paddingEnd="@dimen/padding_18_dp"
-                    android:layout_marginBottom="@dimen/padding_18_dp"
-                    android:layout_marginEnd="@dimen/padding_normal"
-                    android:textSize="@dimen/font_medium_small"
-                    android:textColor="@color/twister_of_the_day_bg_end"
-                    fontPath="fonts/WS-Medium.ttf"
-                    android:background="@drawable/bg_play_tv"
-                    android:text="@string/play"
-                    android:id="@+id/playTv"
-                    tools:ignore="MissingPrefix" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/padding_huge"
-                android:paddingStart="@dimen/padding_18_dp"
-                android:textColor="@color/black"
-                android:text="@string/twisters_by_length"
-                fontPath="fonts/WS-Medium.ttf"
-                app:layout_constraintTop_toBottomOf="@id/twisterOfTheDayLayout"
-                app:layout_constraintStart_toStartOf="parent"
-                android:textSize="@dimen/font_18_sp"
-                android:id="@+id/twistersByLengthTv"
-                tools:ignore="MissingPrefix,RtlSymmetry" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/padding_smaller"
-                android:paddingStart="@dimen/padding_smaller"
-                android:paddingEnd="@dimen/padding_smaller"
-                android:clipToPadding="false"
-                app:layout_constraintTop_toBottomOf="@id/twistersByLengthTv"
-                android:id="@+id/lengthRecycler"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:orientation="horizontal"
-                tools:listitem="@layout/cell_twister_by_length">
-
-            </androidx.recyclerview.widget.RecyclerView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/padding_huge"
-                android:paddingStart="@dimen/padding_18_dp"
-                android:textColor="@color/black"
-                android:text="@string/twisters_by_difficulty"
-                fontPath="fonts/WS-Medium.ttf"
-                app:layout_constraintTop_toBottomOf="@id/lengthRecycler"
-                app:layout_constraintStart_toStartOf="parent"
-                android:textSize="@dimen/font_18_sp"
-                android:id="@+id/twistersByDifficultyTv"
-                tools:ignore="MissingPrefix,RtlSymmetry"/>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/padding_smaller"
-                android:paddingStart="@dimen/padding_smaller"
-                android:paddingEnd="@dimen/padding_smaller"
-                android:clipToPadding="false"
-                app:layout_constraintTop_toBottomOf="@id/twistersByDifficultyTv"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:id="@+id/difficultyRecycler"
-                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:orientation="horizontal"
-                tools:listitem="@layout/cell_twister_by_difficulty">
-
-            </androidx.recyclerview.widget.RecyclerView>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/white"
-        android:translationZ="2dp"
-        android:elevation="2dp"
-        android:paddingBottom="@dimen/padding_normal_small"
-        android:id="@+id/goPremiumLayout"
-        tools:ignore="UnusedAttribute">
+        android:paddingStart="@dimen/padding_16_dp"
+        android:paddingEnd="@dimen/padding_16_dp"
+        android:paddingTop="@dimen/padding_50_dp"
+        android:paddingBottom="@dimen/padding_30_dp">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/skeleton_two"
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/home_day_twister_lottie"
+            android:layout_height="@dimen/home_day_twister_lottie"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/topSeparatorLineIv"/>
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="lottie/pumped.json"
+            android:id="@+id/dayTwisterLottie"
+            tools:background="@color/black"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding_normal_small"
-            app:layout_constraintTop_toBottomOf="@id/topSeparatorLineIv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/premiumUserLayout"
-            android:id="@+id/freeUserLayout">
+            android:textColor="@color/hi_there"
+            android:textSize="@dimen/font_22_sp"
+            android:paddingStart="@dimen/padding_18_dp"
+            android:paddingEnd="@dimen/padding_18_dp"
+            fontPath="fonts/Montserrat-Bold.ttf"
+            android:text="@string/hi_there"
+            app:layout_constraintTop_toTopOf="@id/dayTwisterLottie"
+            app:layout_constraintStart_toEndOf="@id/dayTwisterLottie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/freeTwisterOfDayTv"
+            android:id="@+id/hiThereTv"
+            tools:ignore="MissingPrefix" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/freeUserTv"
-                android:id="@+id/youAreTv"
-                android:textSize="@dimen/font_medium_small"
-                android:text="@string/you_are_a"
-                fontPath="fonts/WS-Light.ttf"
-                android:layout_marginBottom="@dimen/padding_micro"
-                android:textColor="@color/black"
-                android:layout_marginStart="@dimen/padding_18_dp"
-                android:gravity="start"
-                tools:ignore="MissingPrefix"
-                app:layout_constraintVertical_chainStyle="packed"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/youAreTv"
-                android:id="@+id/freeUserTv"
-                android:textSize="@dimen/font_large"
-                android:text="@string/free_user"
-                tools:textStyle="bold"
-                fontPath="fonts/WS-Bold.ttf"
-                android:textColor="@color/black"
-                android:layout_marginStart="@dimen/padding_18_dp"
-                android:gravity="start"
-                tools:ignore="MissingPrefix" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding_normal_small"
-            app:layout_constraintTop_toBottomOf="@id/topSeparatorLineIv"
-            app:layout_constraintStart_toEndOf="@id/freeUserLayout"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/free_twister_of_day_tv"
+            android:textSize="@dimen/font_18_sp"
+            android:paddingStart="@dimen/padding_18_dp"
+            android:paddingEnd="@dimen/padding_18_dp"
+            android:text="@string/free_twister_of_the_day"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            app:layout_constraintStart_toEndOf="@id/dayTwisterLottie"
             app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/premiumUserLayout">
+            app:layout_constraintBottom_toBottomOf="@id/dayTwisterLottie"
+            android:id="@+id/freeTwisterOfDayTv"
+            tools:ignore="MissingPrefix" />
 
-            <TextView
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/day_twister_card_height"
+            app:cardCornerRadius="@dimen/radius_day_twister"
+            android:layout_marginTop="@dimen/padding_40_dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dayTwisterLottie">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/premiumUserTv"
-                android:id="@+id/upgradeToTv"
-                android:textSize="@dimen/font_medium_small"
-                android:text="@string/upgrade_to"
-                fontPath="fonts/WS-Regular.ttf"
-                android:layout_marginBottom="@dimen/padding_small"
-                android:textColor="@color/black"
-                android:gravity="center_horizontal"
-                tools:ignore="MissingPrefix"
-                app:layout_constraintVertical_chainStyle="packed"/>
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/padding_24_dp"
+                android:paddingBottom="@dimen/padding_24_dp"
+                android:background="@drawable/bg_day_twister">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/upgradeToTv"
-                android:id="@+id/premiumUserTv"
-                android:textSize="@dimen/font_larger"
-                android:text="@string/premium"
-                android:paddingTop="@dimen/padding_micro"
-                android:paddingBottom="@dimen/padding_micro"
-                android:paddingStart="@dimen/padding_18_dp"
-                android:paddingEnd="@dimen/padding_18_dp"
-                android:background="@color/premium_tv_bg"
-                tools:textStyle="bold"
-                fontPath="fonts/WS-Bold.ttf"
-                android:textColor="@color/black"
-                android:gravity="center_horizontal"
-                tools:ignore="MissingPrefix" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_30_sp"
+                    fontPath="fonts/Montserrat-Medium.ttf"
+                    android:text="Peter Piper"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/dayTwisterNameTv"
+                    tools:ignore="MissingPrefix" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bg_day_twister_start"
+                    android:textSize="@dimen/font_18_sp"
+                    fontPath="fonts/Montserrat-Bold.ttf"
+                    tools:textStyle="bold"
+                    android:text="@string/play_now_caps"
+                    android:background="@drawable/bg_play_tv"
+                    android:paddingStart="@dimen/font_30_sp"
+                    android:paddingEnd="@dimen/font_30_sp"
+                    android:paddingTop="@dimen/font_8_sp"
+                    android:paddingBottom="@dimen/font_8_sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/openDayTwisterButton"
+                    tools:ignore="MissingPrefix" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

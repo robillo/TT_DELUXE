@@ -2,14 +2,8 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.home
 
 import android.content.Context
 import android.content.Intent
-import android.view.View
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
-import android.widget.ScrollView
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.DifficultyLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.LengthLevel
@@ -28,18 +22,12 @@ class HomeActivity : BaseActivity(),
         LengthAdapter.LengthLevelClickListener,
         DifficultyAdapter.DifficultyLevelClickListener {
 
-
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
     private lateinit var viewModel: HomeActivityViewModel
     private lateinit var lengthList: MutableList<LengthLevel>
     private lateinit var difficultyList: MutableList<DifficultyLevel>
-
-    private lateinit var fadeInPremium: Animation
-    private lateinit var fadeOutPremium: Animation
-
-    private var isAnimatingPremium: Boolean = false
 
     companion object {
         fun newIntent(context: Context): Intent {
@@ -60,24 +48,16 @@ class HomeActivity : BaseActivity(),
 
     private fun initLayout() {
         loadTwisterOfTheDay()
-        loadAnimations()
-        applyAnimations()
         loadData()
         setAdapters()
     }
 
     private fun setListeners() {
         setClickListeners()
-        setScrollListener()
     }
 
     private fun setClickListeners() {
-
-        twisterOfTheDayLayout.setOnClickListener {
-            playTv.performClick()
-        }
-
-        playTv.setOnClickListener {
+        openDayTwisterButton.setOnClickListener {
             startReadingActivity()
         }
     }
@@ -107,70 +87,17 @@ class HomeActivity : BaseActivity(),
     }
 
     private fun setLengthAdapter() {
-        lengthRecycler.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
-        val adapter = LengthAdapter(lengthList)
-        adapter.setLengthLevelClickListener(this)
-        lengthRecycler.adapter = adapter
+//        lengthRecycler.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
+//        val adapter = LengthAdapter(lengthList)
+//        adapter.setLengthLevelClickListener(this)
+//        lengthRecycler.adapter = adapter
     }
 
     private fun setDifficultyAdapter() {
-        difficultyRecycler.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
-        val adapter = DifficultyAdapter(difficultyList)
-        adapter.setDifficultyClickListener(this)
-        difficultyRecycler.adapter = adapter
-    }
-
-    private fun loadAnimations() {
-        fadeInPremium = AnimationUtils.loadAnimation(this, R.anim.fade_in_premium_home)
-        fadeOutPremium = AnimationUtils.loadAnimation(this, R.anim.fade_out_premium_home)
-    }
-
-    private fun applyAnimations() {
-        fadeInPremium.setAnimationListener(object: Animation.AnimationListener {
-            override fun onAnimationStart(animation: Animation?) {
-                isAnimatingPremium = true
-            }
-
-            override fun onAnimationEnd(animation: Animation?) {
-                isAnimatingPremium = false
-                goPremiumLayout.visibility = View.VISIBLE
-            }
-
-            override fun onAnimationRepeat(animation: Animation?) {}
-        })
-
-        fadeOutPremium.setAnimationListener(object: Animation.AnimationListener {
-            override fun onAnimationStart(animation: Animation?) {
-                isAnimatingPremium = true
-            }
-
-            override fun onAnimationEnd(animation: Animation?) {
-                isAnimatingPremium = false
-                goPremiumLayout.visibility = View.GONE
-            }
-
-            override fun onAnimationRepeat(animation: Animation?) {}
-        })
-    }
-
-    private fun setScrollListener() {
-        scrollView?.let {
-            it.viewTreeObserver.addOnScrollChangedListener {
-                when {
-                    isScrollViewAtBottom(it) -> hidePremium()
-                    isScrollViewAtTop(it) -> showPremium()
-                    else -> hidePremium()
-                }
-            }
-        }
-    }
-
-    private fun isScrollViewAtBottom(scrollView: ScrollView): Boolean {
-        return !scrollView.canScrollVertically(1)
-    }
-
-    private fun isScrollViewAtTop(scrollView: ScrollView): Boolean {
-        return !scrollView.canScrollVertically(-1)
+//        difficultyRecycler.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
+//        val adapter = DifficultyAdapter(difficultyList)
+//        adapter.setDifficultyClickListener(this)
+//        difficultyRecycler.adapter = adapter
     }
 
     private fun loadTwisterOfTheDay() {
@@ -186,18 +113,6 @@ class HomeActivity : BaseActivity(),
 
     private fun setStatusBar() {
         setStatusBarColor(R.color.white, LIGHT_STATUS_BAR)
-    }
-
-    private fun hidePremium() {
-        if(isAnimatingPremium || goPremiumLayout.visibility == View.GONE) return
-
-        goPremiumLayout.startAnimation(fadeOutPremium)
-    }
-
-    private fun showPremium() {
-        if(isAnimatingPremium || goPremiumLayout.visibility == View.VISIBLE) return
-
-        goPremiumLayout.startAnimation(fadeInPremium)
     }
 
     override fun lengthLevelClicked(lengthLevel: LengthLevel) {
@@ -218,6 +133,7 @@ class HomeActivity : BaseActivity(),
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 
+    @Suppress("unused")
     private fun startReadingActivity() {
         startActivity(ReadingActivity.newIntent(this))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)

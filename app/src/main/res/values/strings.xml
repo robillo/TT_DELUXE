@@ -28,6 +28,9 @@
     <string name="dummy_read_to_total_ratio">23/65</string>
     <string name="twisters">Twisters</string>
     <string name="open">OPEN</string>
+    <string name="free_twister_of_the_day">Here is your free twister of the Day.</string>
+    <string name="hi_there">Hi There!</string>
+    <string name="play_now_caps">PLAY NOW</string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

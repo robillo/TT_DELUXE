@@ -5,6 +5,13 @@
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#de4c0e</color>
 
+    <!-- home -->
+    <color name="bg_home">#F9F9F9</color>
+    <color name="free_twister_of_day_tv">#6A6A6A</color>
+    <color name="hi_there">#3556D3</color>
+    <color name="bg_day_twister_start">#EB273B</color>
+    <color name="bg_day_twister_end">#EA6130</color>
+    
     <!-- splash -->
     <color name="progress_bar_default_splash">#E0E0E0</color>
 
