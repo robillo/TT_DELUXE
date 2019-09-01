@@ -3,5 +3,5 @@
     <solid
         android:color="@color/color_bg_twister_by_difficulty" />
     <corners
-        android:radius="@dimen/padding_medium"/>
+        android:radius="@dimen/padding_10_dp"/>
 </shape>

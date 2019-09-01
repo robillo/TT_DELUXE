@@ -24,7 +24,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:padding="@dimen/padding_normal_smaller"
+            android:padding="@dimen/padding_12_dp"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -75,7 +75,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:src="@drawable/ic_unlocked"
             android:tint="@color/color_unlocked_icon_tint"
-            android:padding="@dimen/padding_medium"
+            android:padding="@dimen/padding_10_dp"
             tools:ignore="ContentDescription"
             android:id="@+id/unlockedIconIv"/>
 
@@ -85,18 +85,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:paddingTop="@dimen/padding_micro"
-            android:paddingBottom="@dimen/padding_micro"
-            android:paddingStart="@dimen/padding_normal_small"
-            android:paddingEnd="@dimen/padding_normal_small"
+            android:paddingTop="@dimen/padding_4_dp"
+            android:paddingBottom="@dimen/padding_4_dp"
+            android:paddingStart="@dimen/padding_14_dp"
+            android:paddingEnd="@dimen/padding_14_dp"
             android:background="@drawable/bg_open_tv"
             android:id="@+id/openTwisterLayout">
 
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:padding="@dimen/padding_micro"
-                android:layout_marginEnd="@dimen/padding_micro"
+                android:padding="@dimen/padding_4_dp"
+                android:layout_marginEnd="@dimen/padding_4_dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -113,7 +113,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginEnd="@dimen/padding_small"
+                android:layout_marginEnd="@dimen/padding_8_dp"
                 android:textColor="@color/white"
                 android:textSize="@dimen/font_medium_small"
                 fontPath="fonts/WS-Medium.ttf"

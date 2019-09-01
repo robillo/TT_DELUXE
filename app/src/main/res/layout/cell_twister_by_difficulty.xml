@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_margin="@dimen/padding_medium"
+    android:layout_margin="@dimen/padding_10_dp"
     android:background="@drawable/bg_cell_twister_by_difficulty">
 
     <TextView
@@ -32,8 +32,8 @@
         app:layout_constraintTop_toBottomOf="@id/levelHeaderTv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/padding_smaller"
-        android:textSize="@dimen/font_normal"
+        android:layout_marginTop="@dimen/padding_6_dp"
+        android:textSize="@dimen/font_16_sp"
         fontPath="fonts/WS-Medium.ttf"
         android:textColor="@color/white"
         android:alpha="0.5"

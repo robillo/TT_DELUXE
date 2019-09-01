@@ -31,6 +31,13 @@
     <string name="free_twister_of_the_day">Here is your free twister of the Day.</string>
     <string name="hi_there">Hi There!</string>
     <string name="play_now_caps">PLAY NOW</string>
+    <string name="twisters_by_home_header">Twisters by</string>
+    <string name="length_header_home">Length</string>
+    <string name="dummy_twister_header">Peter Piper</string>
+    <string name="small_length_caps">SMALL</string>
+    <string name="medium_length_caps">MEDIUM</string>
+    <string name="long_length_caps">LONG</string>
+    <string name="difficulty_header_home">Difficulty</string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

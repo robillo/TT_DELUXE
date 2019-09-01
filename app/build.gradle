@@ -10,8 +10,8 @@ android {
         applicationId "com.firstapp.robinpc.tongue_twisters_deluxe"
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 32
-        versionName "11.2"
+        versionCode 36
+        versionName "11.5"
         multiDexEnabled true
     }
     buildTypes {
@@ -51,7 +51,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-core:17.1.0'
 
-    implementation 'com.airbnb.android:lottie:3.0.3'
+    implementation 'com.airbnb.android:lottie:3.0.7'
 
     implementation 'android.arch.work:work-runtime:1.0.1'
 

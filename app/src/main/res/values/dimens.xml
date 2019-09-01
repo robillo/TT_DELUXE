@@ -6,6 +6,10 @@
     <!-- home -->
     <dimen name="home_day_twister_lottie">100dp</dimen>
     <dimen name="day_twister_card_height">150dp</dimen>
+    <dimen name="home_segment_separator_height">15dp</dimen>
+    <dimen name="radius_cell_length_level">12dp</dimen>
+    <dimen name="height_lengths_holder_view">200dp</dimen>
+    <dimen name="height_cell_difficulty_level">100dp</dimen>
 
     <!-- font -->
     <dimen name="font_rewards">48sp</dimen>
@@ -13,9 +17,10 @@
     <dimen name="font_extra_large">24sp</dimen>
     <dimen name="font_30_sp">30sp</dimen>
     <dimen name="font_22_sp">22sp</dimen>
+    <dimen name="font_20_sp">20sp</dimen>
     <dimen name="font_large">20sp</dimen>
     <dimen name="font_18_sp">18sp</dimen>
-    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_16_sp">16sp</dimen>
     <dimen name="font_medium_small">14sp</dimen>
     <dimen name="font_small">12sp</dimen>
     <dimen name="font_smaller">12sp</dimen>
@@ -31,16 +36,18 @@
     <dimen name="padding_40_dp">40dp</dimen>
     <dimen name="padding_36_sp">36dp</dimen>
     <dimen name="padding_30_dp">30dp</dimen>
+    <dimen name="padding_28_dp">28dp</dimen>
+    <dimen name="padding_26_dp">26dp</dimen>
     <dimen name="padding_24_dp">24dp</dimen>
     <dimen name="padding_20_dp">20dp</dimen>
     <dimen name="padding_18_dp">18dp</dimen>
     <dimen name="padding_16_dp">16dp</dimen>
-    <dimen name="padding_normal_small">14dp</dimen>
-    <dimen name="padding_normal_smaller">12dp</dimen>
-    <dimen name="padding_medium">10dp</dimen>
-    <dimen name="padding_small">8dp</dimen>
-    <dimen name="padding_smaller">6dp</dimen>
-    <dimen name="padding_micro">4dp</dimen>
+    <dimen name="padding_14_dp">14dp</dimen>
+    <dimen name="padding_12_dp">12dp</dimen>
+    <dimen name="padding_10_dp">10dp</dimen>
+    <dimen name="padding_8_dp">8dp</dimen>
+    <dimen name="padding_6_dp">6dp</dimen>
+    <dimen name="padding_4_dp">4dp</dimen>
     <dimen name="padding_nano">2dp</dimen>
     <dimen name="loading_progress_bar_height">12dp</dimen>
     <dimen name="loading_progress_bar_width">250dp</dimen>

@@ -11,6 +11,17 @@
     <color name="hi_there">#3556D3</color>
     <color name="bg_day_twister_start">#EB273B</color>
     <color name="bg_day_twister_end">#EA6130</color>
+    <color name="bg_day_twister_start_selected">#C91729</color>
+    <color name="bg_day_twister_end_selected">#CE4B1D</color>
+    <color name="length_header_static_text_home">#404040</color>
+    <color name="cell_length_level_start_color">#ED7933</color>
+    <color name="cell_length_level_end_color">#F3AA35</color>
+    <color name="cell_length_level_start_color_selected">#E66A22</color>
+    <color name="cell_length_level_end_color_selected">#F09F27</color>
+    <color name="cell_difficulty_level_start_color">#161968</color>
+    <color name="cell_difficulty_level_end_color">#48297B</color>
+    <color name="cell_difficulty_level_start_color_selected">#1E218F</color>
+    <color name="cell_difficulty_level_end_color_selected">#6332B3</color>
     
     <!-- splash -->
     <color name="progress_bar_default_splash">#E0E0E0</color>

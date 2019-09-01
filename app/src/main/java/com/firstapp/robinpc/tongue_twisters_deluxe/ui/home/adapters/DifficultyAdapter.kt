@@ -16,7 +16,7 @@ class DifficultyAdapter(private val difficultyLevelList: List<DifficultyLevel>):
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DifficultyHolder {
         return DifficultyHolder(
                 LayoutInflater.from(parent.context)
-                        .inflate(R.layout.cell_twister_by_difficulty, parent, false)
+                        .inflate(R.layout.cell_stateful_difficulty_level, parent, false)
         )
     }
 
