@@ -6,6 +6,13 @@ class Constants {
     companion object {
         const val APP_DATABASE = "twister_database"
 
+        const val DEFAULT_STRING = "DEFAULT"
+        const val DEFAULT_BOOLEAN = false
+
+        //GENERIC CONSTANTS
+        const val LEVEL_TYPE_LENGTH = 0
+        const val LEVEL_TYPE_DIFFICULTY = 1
+
         const val CHARSET_UTF_8 = "UTF-8"
         const val DEFAULT_VALUE_INT = 0
         const val DEFAULT_VALUE_FLOAT = 0f

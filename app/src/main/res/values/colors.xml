@@ -22,6 +22,14 @@
     <color name="cell_difficulty_level_end_color">#48297B</color>
     <color name="cell_difficulty_level_start_color_selected">#1E218F</color>
     <color name="cell_difficulty_level_end_color_selected">#6332B3</color>
+
+    <!-- difficulty & level activity -->
+    <color name="length_level_header_bg">#663913</color>
+    <color name="difficulty_level_header_bg">#46406F</color>
+    <color name="bg_one_cell_length_level">#FDFDFD</color>
+    <color name="bg_two_cell_length_level">#F7F7F7</color>
+    <color name="free_twister_type">#24C431</color>
+    <color name="paid_twister_type">#FF2424</color>
     
     <!-- splash -->
     <color name="progress_bar_default_splash">#E0E0E0</color>

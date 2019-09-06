@@ -38,6 +38,8 @@
     <string name="medium_length_caps">MEDIUM</string>
     <string name="long_length_caps">LONG</string>
     <string name="difficulty_header_home">Difficulty</string>
+    <string name="twister_type_free">FREE</string>
+    <string name="twister_type_paid">OPEN</string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

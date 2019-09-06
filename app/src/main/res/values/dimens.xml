@@ -10,19 +10,27 @@
     <dimen name="radius_cell_length_level">12dp</dimen>
     <dimen name="height_lengths_holder_view">200dp</dimen>
     <dimen name="height_cell_difficulty_level">100dp</dimen>
+    <dimen name="loading_progress_bar_height">12dp</dimen>
+    <dimen name="loading_progress_bar_width">250dp</dimen>
+
+    <!-- length level activity -->
+    <dimen name="x_padding_level_recycler">20dp</dimen>
+    <dimen name="y_padding_level_recycler_top">24dp</dimen>
+    <dimen name="y_padding_level_recycler_bottom">30dp</dimen>
 
     <!-- font -->
     <dimen name="font_rewards">48sp</dimen>
     <dimen name="font_xx_large">28sp</dimen>
     <dimen name="font_extra_large">24sp</dimen>
     <dimen name="font_30_sp">30sp</dimen>
+    <dimen name="font_26_sp">26sp</dimen>
     <dimen name="font_22_sp">22sp</dimen>
     <dimen name="font_20_sp">20sp</dimen>
     <dimen name="font_large">20sp</dimen>
     <dimen name="font_18_sp">18sp</dimen>
     <dimen name="font_16_sp">16sp</dimen>
-    <dimen name="font_medium_small">14sp</dimen>
-    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_14_sp">14sp</dimen>
+    <dimen name="font_12_sp">12sp</dimen>
     <dimen name="font_smaller">12sp</dimen>
     <dimen name="font_8_sp">8sp</dimen>
 
@@ -49,13 +57,12 @@
     <dimen name="padding_6_dp">6dp</dimen>
     <dimen name="padding_4_dp">4dp</dimen>
     <dimen name="padding_nano">2dp</dimen>
-    <dimen name="loading_progress_bar_height">12dp</dimen>
-    <dimen name="loading_progress_bar_width">250dp</dimen>
 
     <dimen name="width_twister_of_the_day_bg_stroke">1dp</dimen>
     <dimen name="twister_of_the_day_progress_dimens">30dp</dimen>
     <dimen name="width_cell_twister_by_difficulty">150dp</dimen>
     <dimen name="size_progress_cell_twister_difficulty">70dp</dimen>
     <dimen name="height_free_premium">150dp</dimen>
+    <dimen name="height_lottie_activity_length_level">200dp</dimen>
 
 </resources>

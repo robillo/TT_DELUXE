@@ -5,30 +5,39 @@ import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.DifficultyLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.LengthLevel
+import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerHomeActivityComponent
+import com.firstapp.robinpc.tongue_twisters_deluxe.di.module.activity.HomeActivityModule
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.difficulty_level.DifficultyLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.DifficultyAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.length_level.LengthLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
 import kotlinx.android.synthetic.main.activity_home.*
+import java.util.*
 import javax.inject.Inject
-import kotlin.collections.ArrayList
 
 class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListener {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
+    @Inject
+    lateinit var gridLayoutManager: GridLayoutManager
+
+    private lateinit var dayTwister: Twister
+    private lateinit var lengthList: List<LengthLevel>
     private lateinit var viewModel: HomeActivityViewModel
-    private lateinit var lengthList: MutableList<LengthLevel>
-    private lateinit var difficultyList: MutableList<DifficultyLevel>
+    private lateinit var difficultyList: List<DifficultyLevel>
 
     companion object {
+        const val SMALL_LENGTH_LEVEL_INDEX = 0
+        const val MEDIUM_LENGTH_LEVEL_INDEX = 1
+        const val LONG_LENGTH_LEVEL_INDEX = 2
         fun newIntent(context: Context): Intent {
             return Intent(context, HomeActivity::class.java)
         }
@@ -46,9 +55,7 @@ class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListe
     }
 
     private fun initLayout() {
-        loadTwisterOfTheDay()
         loadData()
-        setDifficultyAdapter()
     }
 
     private fun setListeners() {
@@ -63,51 +70,58 @@ class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListe
             startReadingActivity()
         }
         smallTwistersHolderView.setOnClickListener {
-            startLengthLevelActivity()
+            startLengthLevelActivity(lengthList[SMALL_LENGTH_LEVEL_INDEX])
         }
         mediumTwistersHolderView.setOnClickListener {
-            startLengthLevelActivity()
+            startLengthLevelActivity(lengthList[MEDIUM_LENGTH_LEVEL_INDEX])
         }
         longTwistersHolderView.setOnClickListener {
-            startLengthLevelActivity()
+            startLengthLevelActivity(lengthList[LONG_LENGTH_LEVEL_INDEX])
         }
     }
 
     private fun loadData() {
         loadLengthList()
         loadDifficultyList()
+        loadTwisterOfTheDay()
     }
 
     private fun loadLengthList() {
-        lengthList = ArrayList()
-        lengthList.add(LengthLevel("SMALL", "", "", 1, 140, 100))
-        lengthList.add(LengthLevel("MEDIUM", "", "", 141, 300, 100))
-        lengthList.add(LengthLevel("LONG", "", "", 301, 450, 100))
+        viewModel.getAllLengthLevels().observe(this, androidx.lifecycle.Observer {
+            it?.let {
+                this.lengthList = it
+            }
+        })
     }
 
     private fun loadDifficultyList() {
-        difficultyList = ArrayList()
-        difficultyList.add(DifficultyLevel("LEVEL 1", "Beginner's Luck", "", 1, 140, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 2", "Lit Up", "", 141, 300, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 3", "Speeding Up", "", 301, 450, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 4", "Beginner's Luck", "", 1, 140, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 5", "Lit Up", "", 141, 300, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 6", "Speeding Up", "", 301, 450, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 7", "Beginner's Luck", "", 1, 140, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 8", "Lit Up", "", 141, 300, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 9", "Speeding Up", "", 301, 450, 100))
-        difficultyList.add(DifficultyLevel("LEVEL 10", "Speeding Up", "", 301, 450, 100))
+        viewModel.getAllDifficultyLevels().observe(this, androidx.lifecycle.Observer {
+            it?.let {
+                this.difficultyList = it
+                setDifficultyAdapter()
+            }
+        })
     }
 
     private fun setDifficultyAdapter() {
-        difficultyRecycler.layoutManager = GridLayoutManager(this, 2, RecyclerView.VERTICAL, false)
+        difficultyRecycler.layoutManager = gridLayoutManager
         val adapter = DifficultyAdapter(difficultyList)
         adapter.setDifficultyClickListener(this)
         difficultyRecycler.adapter = adapter
     }
 
     private fun loadTwisterOfTheDay() {
-        //TODO: load from ROOM DB in real
+        val dayTwisterId = Random().nextInt(TWISTER_COUNT)
+        viewModel.getTwisterForIndex(dayTwisterId).observe(this, androidx.lifecycle.Observer {
+            it?.let {
+                dayTwister = it
+                renderForDayTwister()
+            }
+        })
+    }
+
+    private fun renderForDayTwister() {
+        dayTwisterNameTv.text = dayTwister.name
     }
 
     override fun onBackPressed() {
@@ -122,28 +136,28 @@ class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListe
     }
 
     override fun difficultyClicked(difficultyLevel: DifficultyLevel) {
-        startDifficultyLevelActivity()
+        startDifficultyLevelActivity(difficultyLevel)
     }
 
-    private fun startLengthLevelActivity() {
-        startActivity(LengthLevelActivity.newIntent(this))
+    private fun startLengthLevelActivity(lengthLevel: LengthLevel) {
+        startActivity(LengthLevelActivity.newIntent(this, lengthLevel))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 
-    private fun startDifficultyLevelActivity() {
-        startActivity(DifficultyLevelActivity.newIntent(this))
+    private fun startDifficultyLevelActivity(difficultyLevel: DifficultyLevel) {
+        startActivity(DifficultyLevelActivity.newIntent(this, difficultyLevel))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 
-    @Suppress("unused")
     private fun startReadingActivity() {
-        startActivity(ReadingActivity.newIntent(this))
+        startActivity(ReadingActivity.newIntent(this, dayTwister))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 
     private fun setComponent() {
         DaggerHomeActivityComponent.builder()
                 .appComponent(getAppComponent())
+                .homeActivityModule(HomeActivityModule(this))
                 .build().injectHomeActivity(this)
 
         viewModel = ViewModelProviders.of(this, viewModelFactory)

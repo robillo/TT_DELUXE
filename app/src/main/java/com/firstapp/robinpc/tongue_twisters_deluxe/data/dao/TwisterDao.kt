@@ -13,6 +13,9 @@ interface TwisterDao {
     @Query("SELECT * FROM twister")
     fun getAllTwisters(): LiveData<List<Twister>>
 
+    @Query("SELECT * FROM twister WHERE id = :index")
+    fun getTwisterForIndex(index: Int): LiveData<Twister>
+
     @Query("SELECT count(id) FROM twister")
     fun getTwisterCount(): LiveData<Int>
     

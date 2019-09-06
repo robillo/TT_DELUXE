@@ -12,45 +12,76 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <com.airbnb.lottie.LottieAnimationView
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/height_lottie_activity_length_level"
+            app:lottie_fileName="lottie/guru_meditating.json"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:background="@color/status_bar_separator_difficulty"
-            android:id="@+id/statusBarSeparatorIv"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintBottom_toTopOf="@id/lengthRecyclerHolder"
+            android:layout_marginBottom="@dimen/padding_4_dp"
+            android:layout_marginTop="@dimen/padding_24_dp"
+            tools:background="@color/skeleton_two"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:id="@+id/lengthLevelLottie"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textSize="@dimen/font_xx_large"
-            tools:textStyle="bold"
-            android:text="LEVEL 1"
-            fontPath="fonts/WS-Medium.ttf"
-            android:background="@color/color_bg_twister_by_difficulty"
-            android:id="@+id/levelHeaderTv"
-            app:layout_constraintTop_toBottomOf="@id/statusBarSeparatorIv"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/twisterRecycler"
-            tools:ignore="MissingPrefix" />
-
-        <androidx.recyclerview.widget.RecyclerView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:nestedScrollingEnabled="true"
-            app:layout_constraintTop_toBottomOf="@id/levelHeaderTv"
+            android:id="@+id/lengthRecyclerHolder"
+            android:layout_marginTop="@dimen/y_padding_level_recycler_top"
+            android:layout_marginBottom="@dimen/y_padding_level_recycler_bottom"
+            android:layout_marginStart="@dimen/x_padding_level_recycler"
+            android:layout_marginEnd="@dimen/x_padding_level_recycler"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="UnusedAttribute"
-            android:id="@+id/twisterRecycler">
+            app:layout_constraintTop_toBottomOf="@id/lengthLevelLottie">
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/twisterRecycler"
+                android:paddingTop="@dimen/padding_12_dp"
+                android:paddingBottom="@dimen/padding_12_dp"
+                android:textColor="@color/white"
+                tools:text="LEVEL 2"
+                android:gravity="center"
+                tools:textStyle="bold"
+                fontPath="fonts/Montserrat-Bold.ttf"
+                android:textSize="@dimen/font_26_sp"
+                android:id="@+id/levelHeaderTv"
+                android:background="@drawable/bg_difficulty_level_header"
+                tools:ignore="MissingPrefix" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bottomOutlineIv"
+                app:layout_constraintTop_toBottomOf="@id/levelHeaderTv"
+                tools:listitem="@layout/cell_twister_level"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/twisterRecycler"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/length_level_header_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/bottomOutlineIv"
+                app:layout_constraintTop_toBottomOf="@id/twisterRecycler"
+                tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

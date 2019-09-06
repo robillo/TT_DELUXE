@@ -7,7 +7,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.holder.TwisterHolder
 
-class TwisterListAdaper(private val twisterList: List<Twister>):
+class TwisterListAdaper(private val twisterList: List<Twister>, private val levelType: Int):
         RecyclerView.Adapter<TwisterHolder>(),
         TwisterHolder.TwisterClickListener {
 
@@ -16,7 +16,7 @@ class TwisterListAdaper(private val twisterList: List<Twister>):
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TwisterHolder {
         return TwisterHolder(
                 LayoutInflater.from(parent.context)
-                        .inflate(R.layout.cell_twister, parent, false)
+                        .inflate(R.layout.cell_twister_level, parent, false)
         )
     }
 
@@ -25,7 +25,7 @@ class TwisterListAdaper(private val twisterList: List<Twister>):
     }
 
     override fun onBindViewHolder(holder: TwisterHolder, position: Int) {
-        holder.setTwister(twisterList[position])
+        holder.setTwister(twisterList[position], levelType)
         holder.setTwisterClickListener(this)
     }
 

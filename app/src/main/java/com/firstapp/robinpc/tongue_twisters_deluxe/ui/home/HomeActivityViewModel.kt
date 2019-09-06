@@ -24,6 +24,10 @@ class HomeActivityViewModel @Inject constructor(
     private val lengthLevelRepo = LengthRepository(database.lengthLevelDao())
     private val difficultyLevelRepo = DifficultyRepository(database.difficultyLevelDao())
 
+    fun getTwisterForIndex(index: Int): LiveData<Twister> {
+        return twisterRepo.getTwisterForIndex(index)
+    }
+
     private fun getAllTwisters(): LiveData<List<Twister>> {
         return twisterRepo.getAllTwisters()
     }
@@ -36,7 +40,7 @@ class HomeActivityViewModel @Inject constructor(
         twisterRepo.insertTwisters(*twister)
     }
 
-    private fun getAllLengthLevels(): LiveData<List<LengthLevel>> {
+    fun getAllLengthLevels(): LiveData<List<LengthLevel>> {
         return lengthLevelRepo.getAllLengthLevels()
     }
 
@@ -48,7 +52,7 @@ class HomeActivityViewModel @Inject constructor(
         lengthLevelRepo.insertLengthLevels(*lengthLevel)
     }
 
-    private fun getAllDifficultyLevels(): LiveData<List<DifficultyLevel>> {
+    fun getAllDifficultyLevels(): LiveData<List<DifficultyLevel>> {
         return difficultyLevelRepo.getAllDifficultyLevels()
     }
 

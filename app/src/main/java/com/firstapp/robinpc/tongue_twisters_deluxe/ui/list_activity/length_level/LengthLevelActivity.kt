@@ -2,16 +2,19 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.length_leve
 
 import android.content.Context
 import android.content.Intent
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
+import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.LengthLevel
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerLengthLevelActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.TwisterListAdaper
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
-import kotlinx.android.synthetic.main.activity_length_level.twisterRecycler
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LEVEL_TYPE_LENGTH
+import kotlinx.android.synthetic.main.activity_length_level.*
 import javax.inject.Inject
 
 class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListener {
@@ -19,12 +22,16 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private lateinit var viewModel: LengthLevelActivityViewModel
+    private lateinit var levelHeader: String
     private lateinit var twisterList: MutableList<Twister>
+    private lateinit var viewModel: LengthLevelActivityViewModel
 
     companion object {
-        fun newIntent(context: Context): Intent {
-            return Intent(context, LengthLevelActivity::class.java)
+        private const val EXTRA_LENGTH_LEVEL = "LENGTH LEVEL"
+        fun newIntent(context: Context, lengthLevel: LengthLevel): Intent {
+            val intent = Intent(context, LengthLevelActivity::class.java)
+            intent.putExtra(EXTRA_LENGTH_LEVEL, lengthLevel.title)
+            return intent
         }
     }
 
@@ -33,14 +40,73 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.black, LIGHT_STATUS_BAR)
+        setStatusBarColor(R.color.white, LIGHT_STATUS_BAR)
+        getArguments()
         setComponent()
         loadData()
+        setViews()
         setTwisterAdapter()
+    }
+
+    private fun setViews() {
+        setHeader()
+        setBottomOutline()
+    }
+
+    private fun setHeader() {
+        levelHeaderTv.text = levelHeader
+    }
+
+    private fun setBottomOutline() {
+        bottomOutlineIv.setBackgroundColor(
+                getColorFromId(R.color.length_level_header_bg)
+        )
+    }
+
+    private fun getColorFromId(@Suppress("SameParameterValue") id: Int): Int {
+        return ContextCompat.getColor(this, id)
+    }
+
+    private fun getArguments() {
+        levelHeader = intent.getStringExtra(EXTRA_LENGTH_LEVEL)
     }
 
     private fun loadData() {
         loadTwisterList()
+    }
+
+    private fun setTwisterAdapter() {
+        twisterRecycler.layoutManager = LinearLayoutManager(this)
+        val adapter = TwisterListAdaper(twisterList, LEVEL_TYPE_LENGTH)
+        adapter.setTwisterClickListener(this)
+        twisterRecycler.adapter = adapter
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        animateActivityTransition(R.anim.slide_in_left_activity, R.anim.slide_out_right_activity)
+    }
+
+    override fun onUnlockedTwisterClicked(twister: Twister) {
+        startReadingActivity(twister)
+    }
+
+    override fun onLockedTwisterClicked(twister: Twister) {
+        //TODO: show dialog to unlock
+    }
+
+    private fun startReadingActivity(twister: Twister) {
+        startActivity(ReadingActivity.newIntent(this, twister))
+        animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+    }
+
+    private fun setComponent() {
+        DaggerLengthLevelActivityComponent.builder()
+                .appComponent(getAppComponent())
+                .build().injectLengthLevelActivity(this)
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
+                .get(LengthLevelActivityViewModel::class.java)
     }
 
     private fun loadTwisterList() {
@@ -145,39 +211,5 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
                 "",
                 true
         ))
-    }
-
-    private fun setTwisterAdapter() {
-        twisterRecycler.layoutManager = LinearLayoutManager(this)
-        val adapter = TwisterListAdaper(twisterList)
-        adapter.setTwisterClickListener(this)
-        twisterRecycler.adapter = adapter
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        animateActivityTransition(R.anim.slide_in_left_activity, R.anim.slide_out_right_activity)
-    }
-
-    override fun onUnlockedTwisterClicked(twister: Twister) {
-        startReadingActivity()
-    }
-
-    override fun onLockedTwisterClicked(twister: Twister) {
-        //TODO: show dialog to unlock
-    }
-
-    private fun startReadingActivity() {
-        startActivity(ReadingActivity.newIntent(this))
-        animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
-    }
-
-    private fun setComponent() {
-        DaggerLengthLevelActivityComponent.builder()
-                .appComponent(getAppComponent())
-                .build().injectLengthLevelActivity(this)
-
-        viewModel = ViewModelProviders.of(this, viewModelFactory)
-                .get(LengthLevelActivityViewModel::class.java)
     }
 }

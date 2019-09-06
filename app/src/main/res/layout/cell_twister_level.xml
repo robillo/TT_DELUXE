@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:background="@color/black"
+        android:id="@+id/startOutlineIv"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        android:textSize="@dimen/font_20_sp"
+        tools:textColor="@color/black"
+        tools:background="@color/bg_two_cell_length_level"
+        fontPath="fonts/Montserrat-SemiBold.ttf"
+        android:paddingStart="@dimen/padding_30_dp"
+        android:paddingTop="@dimen/padding_24_dp"
+        android:paddingBottom="@dimen/padding_24_dp"
+        tools:text="@string/dummy_twister_header"
+        tools:textStyle="bold"
+        android:id="@+id/twisterNameTv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/startOutlineIv"
+        app:layout_constraintEnd_toStartOf="@id/twisterTypeTv"
+        tools:ignore="MissingPrefix,RtlSymmetry"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/twisterNameTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingStart="@dimen/padding_12_dp"
+        android:paddingEnd="@dimen/padding_12_dp"
+        android:paddingBottom="@dimen/padding_4_dp"
+        android:paddingTop="@dimen/padding_4_dp"
+        android:layout_marginEnd="@dimen/padding_30_dp"
+        android:textSize="@dimen/font_12_sp"
+        tools:background="@drawable/bg_free_twister_type"
+        android:textColor="@color/white"
+        tools:textStyle="bold"
+        tools:text="@string/twister_type_free"
+        android:id="@+id/twisterTypeTv"/>
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:background="@color/black"
+        android:id="@+id/endOutlineIv"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

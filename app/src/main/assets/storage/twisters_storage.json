@@ -2,7 +2,7 @@
   "twister": [
     {
       "index": 1,
-      "title": "",
+      "title": "Being Rural",
       "twister": "Truly rural.\n",
       "length": 1,
       "difficulty": 1,
@@ -16,7 +16,7 @@
       "twister": "She sees cheese.\n",
       "length": 1,
       "difficulty": 1,
-      "icon_url": "",
+      "icon_url": "Cheese",
       "hint": "",
       "is_locked": false
     },
@@ -26,14 +26,14 @@
       "twister": "Eddie edited it.\n",
       "length": 1,
       "difficulty": 1,
-      "icon_url": "",
+      "icon_url": "Editing Stuff",
       "hint": "",
       "is_locked": false
     },
     {
       "index": 4,
-      "title": "",
-      "twister": "She sees cheese.\n",
+      "title": "More Cheese",
+      "twister": "She sees some cheese.\n",
       "length": 1,
       "difficulty": 1,
       "icon_url": "",
@@ -42,7 +42,7 @@
     },
     {
       "index": 5,
-      "title": "",
+      "title": "Chips",
       "twister": "Chip shop chips.\n",
       "length": 1,
       "difficulty": 1,
@@ -52,7 +52,7 @@
     },
     {
       "index": 6,
-      "title": "",
+      "title": "Red Wagons",
       "twister": "Rolling red wagons.\n",
       "length": 1,
       "difficulty": 1,
@@ -62,7 +62,7 @@
     },
     {
       "index": 7,
-      "title": "",
+      "title": "Some Sounds",
       "twister": "Click, clap, pluck.\n",
       "length": 1,
       "difficulty": 1,
@@ -72,7 +72,7 @@
     },
     {
       "index": 8,
-      "title": "",
+      "title": "Superstition",
       "twister": "Stupid superstition!\n",
       "length": 1,
       "difficulty": 1,
@@ -82,8 +82,8 @@
     },
     {
       "index": 9,
-      "title": "",
-      "twister": "Stupid superstition.\n",
+      "title": "The Sheet",
+      "twister": "Stupid silly sheet.\n",
       "length": 1,
       "difficulty": 1,
       "icon_url": "",
@@ -92,7 +92,7 @@
     },
     {
       "index": 10,
-      "title": "",
+      "title": "Crash Course",
       "twister": "Crash Quiche Course.\n",
       "length": 1,
       "difficulty": 1,
@@ -102,7 +102,7 @@
     },
     {
       "index": 11,
-      "title": "",
+      "title": "The Balls",
       "twister": "He threw three balls.\n",
       "length": 1,
       "difficulty": 1,
@@ -112,7 +112,7 @@
     },
     {
       "index": 12,
-      "title": "",
+      "title": "Willy's Mood",
       "twister": "Willy’s really weary.\n",
       "length": 1,
       "difficulty": 1,
@@ -122,7 +122,7 @@
     },
     {
       "index": 13,
-      "title": "",
+      "title": "The Witches",
       "twister": "Which witch is which?\n",
       "length": 1,
       "difficulty": 1,
@@ -132,7 +132,7 @@
     },
     {
       "index": 14,
-      "title": "",
+      "title": "Ritz",
       "twister": "Free Ritz wristwatch.\n",
       "length": 1,
       "difficulty": 1,
@@ -142,7 +142,7 @@
     },
     {
       "index": 15,
-      "title": "",
+      "title": "Optics",
       "twister": "Octopus ocular optics.\n",
       "length": 1,
       "difficulty": 1,
@@ -152,7 +152,7 @@
     },
     {
       "index": 16,
-      "title": "",
+      "title": "Bricks",
       "twister": "Red buick, blue buick.\n",
       "length": 1,
       "difficulty": 1,
@@ -162,7 +162,7 @@
     },
     {
       "index": 17,
-      "title": "",
+      "title": "The Reversals",
       "twister": "Rudder valve reversals.\n",
       "length": 1,
       "difficulty": 1,
@@ -172,7 +172,7 @@
     },
     {
       "index": 18,
-      "title": "",
+      "title": "Toulouse?",
       "twister": "Two to two to Toulouse?\n",
       "length": 1,
       "difficulty": 1,
@@ -182,7 +182,7 @@
     },
     {
       "index": 19,
-      "title": "",
+      "title": "Brake!",
       "twister": "Broken back brake block.\n",
       "length": 1,
       "difficulty": 1,
@@ -192,7 +192,7 @@
     },
     {
       "index": 20,
-      "title": "",
+      "title": "Lorry...",
       "twister": "Red lorry, yellow lorry.\n",
       "length": 1,
       "difficulty": 1,
@@ -202,7 +202,7 @@
     },
     {
       "index": 21,
-      "title": "",
+      "title": "Propertie..",
       "twister": "Pirates Private Property.\n",
       "length": 1,
       "difficulty": 1,
@@ -212,7 +212,7 @@
     },
     {
       "index": 22,
-      "title": "",
+      "title": "Beez Buzz",
       "twister": "Busy buzzing bumble bees.\n",
       "length": 1,
       "difficulty": 1,
@@ -222,7 +222,7 @@
     },
     {
       "index": 23,
-      "title": "",
+      "title": "These Swords",
       "twister": "Three short sword sheaths.\n",
       "length": 1,
       "difficulty": 1,
@@ -232,7 +232,7 @@
     },
     {
       "index": 24,
-      "title": "",
+      "title": "Coffee Pot",
       "twister": "A proper copper coffee pot.\n",
       "length": 1,
       "difficulty": 1,
@@ -242,7 +242,7 @@
     },
     {
       "index": 25,
-      "title": "",
+      "title": "Those Throws!",
       "twister": "He threw three free throws.\n",
       "length": 1,
       "difficulty": 1,
@@ -252,7 +252,7 @@
     },
     {
       "index": 26,
-      "title": "",
+      "title": "Sheila",
       "twister": "Sheena leads, Sheila needs.\n",
       "length": 1,
       "difficulty": 1,
@@ -262,7 +262,7 @@
     },
     {
       "index": 27,
-      "title": "",
+      "title": "Crowns on Clowns",
       "twister": "Clowns grow glowing crowns.\n",
       "length": 1,
       "difficulty": 1,
@@ -272,7 +272,7 @@
     },
     {
       "index": 28,
-      "title": "",
+      "title": "Slippery Slip",
       "twister": "Thin grippy thick slippery.\n",
       "length": 1,
       "difficulty": 1,
@@ -282,8 +282,8 @@
     },
     {
       "index": 29,
-      "title": "",
-      "twister": "He threw three free throws.\n",
+      "title": "Tom and Throws",
+      "twister": "Tom was thrown three free throws.\n",
       "length": 1,
       "difficulty": 1,
       "icon_url": "",
@@ -292,7 +292,7 @@
     },
     {
       "index": 30,
-      "title": "",
+      "title": "That Larry",
       "twister": "Really leery, rarely Larry.\n",
       "length": 1,
       "difficulty": 1,
@@ -302,7 +302,7 @@
     },
     {
       "index": 31,
-      "title": "",
+      "title": "Silly Sheep",
       "twister": "Silly sheep weep and sleep.\n",
       "length": 1,
       "difficulty": 1,
@@ -312,8 +312,8 @@
     },
     {
       "index": 32,
-      "title": "",
-      "twister": "He threw three free throws.\n ",
+      "title": "Candy Shop",
+      "twister": "Lengthy difficulty on candy shop.\n ",
       "length": 1,
       "difficulty": 1,
       "icon_url": "",
@@ -322,7 +322,7 @@
     },
     {
       "index": 33,
-      "title": "",
+      "title": "Those Codes!",
       "twister": "Coy knows pseudonoise codes.\n",
       "length": 1,
       "difficulty": 1,
@@ -332,7 +332,7 @@
     },
     {
       "index": 34,
-      "title": "",
+      "title": "Trident",
       "twister": "Two tried and true tridents.\n",
       "length": 1,
       "difficulty": 1,
@@ -342,7 +342,7 @@
     },
     {
       "index": 35,
-      "title": "",
+      "title": "Santa's Suit",
       "twister": "Santa\\'s Short Suit Shrunk.\n",
       "length": 1,
       "difficulty": 1,
@@ -352,7 +352,7 @@
     },
     {
       "index": 36,
-      "title": "",
+      "title": "Elephants",
       "twister": "Eleven benevolent elephants.\n",
       "length": 1,
       "difficulty": 1,
@@ -362,7 +362,7 @@
     },
     {
       "index": 37,
-      "title": "",
+      "title": "Screaming Queen",
       "twister": "The queen in green screamed.\n",
       "length": 1,
       "difficulty": 1,
@@ -372,7 +372,7 @@
     },
     {
       "index": 38,
-      "title": "",
+      "title": "Eating Eel",
       "twister": "I eat eel while you peel eel.\n",
       "length": 1,
       "difficulty": 1,
@@ -382,7 +382,7 @@
     },
     {
       "index": 39,
-      "title": "",
+      "title": "Fresh Fish",
       "twister": "Four fine fresh fish for you.\n",
       "length": 1,
       "difficulty": 1,
@@ -392,7 +392,7 @@
     },
     {
       "index": 40,
-      "title": "",
+      "title": "Paxwax",
       "twister": "A cat snaps a rat\\'s paxwax.\n",
       "length": 1,
       "difficulty": 1,
@@ -402,7 +402,7 @@
     },
     {
       "index": 41,
-      "title": "",
+      "title": "Whip Whip Whip",
       "twister": "Gig whip, gig whip, gig whip.\n",
       "length": 1,
       "difficulty": 1,
@@ -412,7 +412,7 @@
     },
     {
       "index": 42,
-      "title": "",
+      "title": "Critical Crickets",
       "twister": "A quick witted cricket critic.\n",
       "length": 1,
       "difficulty": 1,
@@ -422,7 +422,7 @@
     },
     {
       "index": 43,
-      "title": "",
+      "title": "Glue Gun",
       "twister": "Blue glue gun, green glue gun.\n",
       "length": 1,
       "difficulty": 1,
@@ -432,7 +432,7 @@
     },
     {
       "index": 44,
-      "title": "",
+      "title": "Very Well",
       "twister": "Very well, very well, very well…",
       "length": 1,
       "difficulty": 1,
@@ -442,7 +442,7 @@
     },
     {
       "index": 45,
-      "title": "",
+      "title": "Quizzing",
       "twister": "Quizzical quiz, kiss me quick.\n",
       "length": 1,
       "difficulty": 1,
@@ -452,7 +452,7 @@
     },
     {
       "index": 46,
-      "title": "",
+      "title": "Twiggy Twigs",
       "twister": "Tie twine to three tree twigs.\n",
       "length": 1,
       "difficulty": 1,
@@ -462,7 +462,7 @@
     },
     {
       "index": 47,
-      "title": "",
+      "title": "Tim Tom",
       "twister": "Tom threw Tim three thumbtacks.\n",
       "length": 1,
       "difficulty": 2,
@@ -472,8 +472,8 @@
     },
     {
       "index": 48,
-      "title": "",
-      "twister": "Dust is a disk\\'s worst enemy.\n",
+      "title": "Enemies",
+      "twister": "Dust is a Disk\\'s worst enemy.\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -482,8 +482,8 @@
     },
     {
       "index": 49,
-      "title": "",
-      "twister": "Dust is a disk\\'s worst enemy.\n",
+      "title": "Sheep Sheets",
+      "twister": "She is Short of sheets for sheep.\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -492,7 +492,7 @@
     },
     {
       "index": 50,
-      "title": "",
+      "title": "Sneaky Snake",
       "twister": "A snake sneaks to seek a snack.\n",
       "length": 1,
       "difficulty": 2,
@@ -502,7 +502,7 @@
     },
     {
       "index": 51,
-      "title": "",
+      "title": "Fresh Frenchie",
       "twister": "Fresh French fried fly fritters.\n",
       "length": 1,
       "difficulty": 2,
@@ -512,7 +512,7 @@
     },
     {
       "index": 52,
-      "title": "",
+      "title": "Cold Cold",
       "twister": "Pad kid poured curd pulled cold.\n",
       "length": 1,
       "difficulty": 2,
@@ -522,7 +522,7 @@
     },
     {
       "index": 53,
-      "title": "",
+      "title": "Glowing Glass",
       "twister": "Green glass globes glow greenly.\n",
       "length": 1,
       "difficulty": 2,
@@ -532,8 +532,8 @@
     },
     {
       "index": 54,
-      "title": "",
-      "twister": "Fresh French fried fly fritters.\n",
+      "title": "Fled Away",
+      "twister": "Freshly Fried fritters flew and fell.\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -542,7 +542,7 @@
     },
     {
       "index": 55,
-      "title": "",
+      "title": "Slimy Snails",
       "twister": "Six slimy snails sailed silently.\n",
       "length": 1,
       "difficulty": 2,
@@ -553,7 +553,7 @@
     {
       "index": 56,
       "title": "",
-      "twister": "Six slimy snails sailed silently.\n",
+      "twister": "She sneezed and then seized some salad.\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -4713,80 +4713,80 @@
   ],
   "difficulty": [
     {
-      "title": "Beginner's Luck",
-      "expanded_title": "",
+      "title": "LEVEL 1",
+      "expanded_title": "Beginner's Luck",
       "level_tip": "",
       "start_index": 1,
       "end_index": 47,
       "count": 47
     },
     {
-      "title": "Lit Up",
-      "expanded_title": "",
+      "title": "LEVEL 2",
+      "expanded_title": "Lit Up",
       "level_tip": "",
       "start_index": 48,
       "end_index": 94,
       "count": 47
     },
     {
-      "title": "Speeding Up",
-      "expanded_title": "",
+      "title": "LEVEL 3",
+      "expanded_title": "Speeding Up",
       "level_tip": "",
       "start_index": 95,
       "end_index": 141,
       "count": 47
     },
     {
-      "title": "No Seat Belt",
-      "expanded_title": "",
+      "title": "LEVEL 4",
+      "expanded_title": "No Seat Belt",
       "level_tip": "",
       "start_index": 142,
       "end_index": 188,
       "count": 47
     },
     {
-      "title": "No Helmet",
-      "expanded_title": "",
+      "title": "LEVEL 5",
+      "expanded_title": "No Helmet",
       "level_tip": "",
       "start_index": 189,
       "end_index": 235,
       "count": 47
     },
     {
-      "title": "Drunken Drive",
-      "expanded_title": "",
+      "title": "LEVEL 6",
+      "expanded_title": "Drunken Drive",
       "level_tip": "",
       "start_index": 236,
       "end_index": 282,
       "count": 47
     },
     {
-      "title": "Brake Fail",
-      "expanded_title": "",
+      "title": "LEVEL 7",
+      "expanded_title": "Brake Fail",
       "level_tip": "",
       "start_index": 283,
       "end_index": 329,
       "count": 47
     },
     {
-      "title": "Steering Wheel",
-      "expanded_title": "",
+      "title": "LEVEL 8",
+      "expanded_title": "Steering Wheel",
       "level_tip": "",
       "start_index": 330,
       "end_index": 376,
       "count": 47
     },
     {
-      "title": "Accident Certain",
-      "expanded_title": "",
+      "title": "LEVEL 9",
+      "expanded_title": "Accident Certain",
       "level_tip": "",
       "start_index": 377,
       "end_index": 423,
       "count": 47
     },
     {
-      "title": "Death Certain",
-      "expanded_title": "",
+      "title": "LEVEL 10",
+      "expanded_title": "Death Certain",
       "level_tip": "",
       "start_index": 424,
       "end_index": 470,
