@@ -10,8 +10,9 @@ class Constants {
         const val DEFAULT_BOOLEAN = false
 
         //GENERIC CONSTANTS
-        const val LEVEL_TYPE_LENGTH = 0
-        const val LEVEL_TYPE_DIFFICULTY = 1
+        const val TYPE_LENGTH = 0
+        const val TYPE_DIFFICULTY = 1
+        const val TYPE_DAY_TWISTER = 2
 
         const val CHARSET_UTF_8 = "UTF-8"
         const val DEFAULT_VALUE_INT = 0

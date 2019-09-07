@@ -1,10 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView 
+<!--suppress AndroidUnknownAttribute -->
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.reading.ReadingActivity">
 
-</androidx.core.widget.NestedScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/reading_activity_top_outline"
+        android:id="@+id/topOutlineIv"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/topOutlineIv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/dummy_twister_header"
+        tools:textStyle="bold"
+        fontPath="fonts/Montserrat-Bold.ttf"
+        tools:textColor="@color/length_reading_activity_twister_color"
+        android:textSize="@dimen/font_30_sp"
+        android:layout_marginTop="@dimen/padding_30_dp"
+        tools:ignore="MissingPrefix"
+        android:id="@+id/twisterHeaderTv" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_weight="1"
+        android:layout_marginTop="@dimen/padding_40_dp"
+        android:layout_marginStart="@dimen/padding_30_dp"
+        android:layout_marginEnd="@dimen/padding_30_dp"
+        android:scrollbars="none"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/twisterHeaderTv"
+        app:layout_constraintBottom_toTopOf="@id/playerControlsHolder"
+        android:id="@+id/twisterContentScrollView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_22_sp"
+            android:gravity="center"
+            tools:text="@string/dummy_tongue_twister_short"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:id="@+id/twisterContentTv"
+            tools:ignore="MissingPrefix" />
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_50_dp"
+        android:layout_marginStart="@dimen/padding_24_dp"
+        android:layout_marginEnd="@dimen/padding_24_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/playerControlsHolder">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/size_prev_next_controls_outer"
+            android:layout_height="@dimen/size_prev_next_controls_outer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/playPauseHolder"
+            android:background="@drawable/reading_activity_controls_button"
+            android:id="@+id/previousHolder">
+
+            <ImageView
+                android:layout_width="@dimen/size_prev_next_control_buttons"
+                android:layout_height="@dimen/size_prev_next_control_buttons"
+                tools:tint="@color/length_reading_activity_twister_color"
+                android:src="@drawable/ic_previous_filled"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ContentDescription"
+                android:id="@+id/previousButtonIv"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/size_play_pause_control_outer"
+            android:layout_height="@dimen/size_play_pause_control_outer"
+            app:layout_constraintHorizontal_weight="1.2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/previousHolder"
+            app:layout_constraintEnd_toStartOf="@id/nextHolder"
+            android:background="@drawable/reading_activity_controls_button"
+            android:id="@+id/playPauseHolder">
+
+            <ImageView
+                android:layout_width="@dimen/size_play_pause_control_button"
+                android:layout_height="@dimen/size_play_pause_control_button"
+                tools:tint="@color/length_reading_activity_twister_color"
+                android:src="@drawable/ic_play_filled"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ContentDescription"
+                android:id="@+id/playPauseButtonIv"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/size_prev_next_controls_outer"
+            android:layout_height="@dimen/size_prev_next_controls_outer"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/playPauseHolder"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/reading_activity_controls_button"
+            android:id="@+id/nextHolder">
+
+            <ImageView
+                android:layout_width="@dimen/size_prev_next_control_buttons"
+                android:layout_height="@dimen/size_prev_next_control_buttons"
+                tools:tint="@color/length_reading_activity_twister_color"
+                android:src="@drawable/ic_next_filled"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="ContentDescription"
+                android:id="@+id/nextButtonIv"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

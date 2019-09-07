@@ -94,12 +94,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/font_30_sp"
+                            android:textSize="@dimen/font_22_sp"
                             fontPath="fonts/Montserrat-Medium.ttf"
                             tools:text="@string/dummy_twister_header"
+                            android:layout_marginBottom="@dimen/padding_24_dp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/openDayTwisterButton"
                             android:id="@+id/dayTwisterNameTv"
                             tools:ignore="MissingPrefix" />
 
@@ -116,6 +118,7 @@
                             android:paddingEnd="@dimen/font_30_sp"
                             android:paddingTop="@dimen/font_8_sp"
                             android:paddingBottom="@dimen/font_8_sp"
+                            app:layout_constraintTop_toBottomOf="@id/dayTwisterNameTv"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"

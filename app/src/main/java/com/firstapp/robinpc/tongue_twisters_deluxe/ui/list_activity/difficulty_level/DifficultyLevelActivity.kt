@@ -13,7 +13,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerD
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.TwisterListAdaper
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
-import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LEVEL_TYPE_DIFFICULTY
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DIFFICULTY
 import kotlinx.android.synthetic.main.activity_difficulty_level.bottomOutlineIv
 import kotlinx.android.synthetic.main.activity_difficulty_level.levelHeaderTv
 import kotlinx.android.synthetic.main.activity_difficulty_level.twisterRecycler
@@ -79,7 +79,7 @@ class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickLi
 
     private fun setTwisterAdapter() {
         twisterRecycler.layoutManager = LinearLayoutManager(this)
-        val adapter = TwisterListAdaper(twisterList, LEVEL_TYPE_DIFFICULTY)
+        val adapter = TwisterListAdaper(twisterList, TYPE_DIFFICULTY)
         adapter.setTwisterClickListener(this)
         twisterRecycler.adapter = adapter
     }
@@ -98,7 +98,7 @@ class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickLi
     }
 
     private fun startReadingActivity(twister: Twister) {
-        startActivity(ReadingActivity.newIntent(this, twister))
+        startActivity(ReadingActivity.newIntent(this, twister, TYPE_DIFFICULTY))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 

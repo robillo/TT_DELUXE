@@ -13,7 +13,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerL
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.TwisterListAdaper
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
-import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LEVEL_TYPE_LENGTH
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_LENGTH
 import kotlinx.android.synthetic.main.activity_length_level.*
 import javax.inject.Inject
 
@@ -77,7 +77,7 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
 
     private fun setTwisterAdapter() {
         twisterRecycler.layoutManager = LinearLayoutManager(this)
-        val adapter = TwisterListAdaper(twisterList, LEVEL_TYPE_LENGTH)
+        val adapter = TwisterListAdaper(twisterList, TYPE_LENGTH)
         adapter.setTwisterClickListener(this)
         twisterRecycler.adapter = adapter
     }
@@ -96,7 +96,7 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
     }
 
     private fun startReadingActivity(twister: Twister) {
-        startActivity(ReadingActivity.newIntent(this, twister))
+        startActivity(ReadingActivity.newIntent(this, twister, TYPE_LENGTH))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 

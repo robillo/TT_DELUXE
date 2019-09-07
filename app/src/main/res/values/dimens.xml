@@ -18,6 +18,12 @@
     <dimen name="y_padding_level_recycler_top">24dp</dimen>
     <dimen name="y_padding_level_recycler_bottom">30dp</dimen>
 
+    <!-- reading activity -->
+    <dimen name="size_prev_next_controls_outer">85dp</dimen>
+    <dimen name="size_play_pause_control_outer">110dp</dimen>
+    <dimen name="size_prev_next_control_buttons">50dp</dimen>
+    <dimen name="size_play_pause_control_button">60dp</dimen>
+
     <!-- font -->
     <dimen name="font_rewards">48sp</dimen>
     <dimen name="font_xx_large">28sp</dimen>
@@ -42,7 +48,7 @@
     <dimen name="padding_60_dp">60dp</dimen>
     <dimen name="padding_50_dp">50dp</dimen>
     <dimen name="padding_40_dp">40dp</dimen>
-    <dimen name="padding_36_sp">36dp</dimen>
+    <dimen name="padding_36_dp">36dp</dimen>
     <dimen name="padding_30_dp">30dp</dimen>
     <dimen name="padding_28_dp">28dp</dimen>
     <dimen name="padding_26_dp">26dp</dimen>

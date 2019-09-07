@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid
-        android:color="@color/paid_twister_type" />
+    <stroke
+        android:color="@color/free_twister_type"
+        android:width="1.5dp"/>
     <corners
         android:radius="5dp"/>
 </shape>

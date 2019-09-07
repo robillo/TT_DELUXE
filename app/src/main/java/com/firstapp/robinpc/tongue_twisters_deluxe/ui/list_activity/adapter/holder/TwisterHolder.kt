@@ -1,13 +1,12 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.holder
 
-import android.graphics.drawable.Drawable
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
-import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LEVEL_TYPE_DIFFICULTY
-import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LEVEL_TYPE_LENGTH
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DIFFICULTY
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_LENGTH
 import kotlinx.android.synthetic.main.cell_twister_level.view.*
 
 class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
@@ -27,8 +26,8 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     private fun setOutlineDecoration(levelType: Int) {
         when(levelType) {
-            LEVEL_TYPE_LENGTH -> setOutlinesBgColor(R.color.length_level_header_bg)
-            LEVEL_TYPE_DIFFICULTY -> setOutlinesBgColor(R.color.difficulty_level_header_bg)
+            TYPE_LENGTH -> setOutlinesBgColor(R.color.length_level_header_bg)
+            TYPE_DIFFICULTY -> setOutlinesBgColor(R.color.difficulty_level_header_bg)
         }
     }
 
@@ -39,13 +38,22 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     private fun setTwisterType(istwisterLocked: Boolean) {
         if(istwisterLocked)
-            setTwisterType(R.string.twister_type_paid, R.drawable.bg_paid_twister_type)
+            setTwisterType(
+                    R.string.twister_type_paid,
+                    R.drawable.bg_paid_twister_type,
+                    R.color.free_twister_type
+            )
         else
-            setTwisterType(R.string.twister_type_free, R.drawable.bg_free_twister_type)
+            setTwisterType(
+                    R.string.twister_type_free,
+                    R.drawable.bg_free_twister_type,
+                    R.color.white
+            )
     }
 
-    private fun setTwisterType(stringId: Int, drawableId: Int) {
+    private fun setTwisterType(stringId: Int, drawableId: Int, textColor: Int) {
         itemView.twisterTypeTv.text = getStringForId(stringId)
+        itemView.twisterTypeTv.setTextColor(getColorForId(textColor))
         itemView.twisterTypeTv.setBackgroundResource(drawableId)
     }
 
@@ -61,10 +69,10 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         itemView.twisterNameTv.text = twisterName
 
         when(levelType) {
-            LEVEL_TYPE_LENGTH -> itemView.twisterNameTv.setTextColor(
+            TYPE_LENGTH -> itemView.twisterNameTv.setTextColor(
                     getColorForId(R.color.length_level_header_bg)
             )
-            LEVEL_TYPE_DIFFICULTY -> itemView.twisterNameTv.setTextColor(
+            TYPE_DIFFICULTY -> itemView.twisterNameTv.setTextColor(
                     getColorForId(R.color.difficulty_level_header_bg)
             )
         }

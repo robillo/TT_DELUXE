@@ -17,6 +17,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.DifficultyAd
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.length_level.LengthLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DAY_TWISTER
 import kotlinx.android.synthetic.main.activity_home.*
 import java.util.*
 import javax.inject.Inject
@@ -150,7 +151,7 @@ class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListe
     }
 
     private fun startReadingActivity() {
-        startActivity(ReadingActivity.newIntent(this, dayTwister))
+        startActivity(ReadingActivity.newIntent(this, dayTwister, TYPE_DAY_TWISTER))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 

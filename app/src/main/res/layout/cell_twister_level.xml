@@ -5,6 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/cellParent"
+    android:background="@color/bg_one_cell_length_level"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
@@ -23,7 +25,6 @@
         app:layout_constraintHorizontal_weight="1"
         android:textSize="@dimen/font_20_sp"
         tools:textColor="@color/black"
-        tools:background="@color/bg_two_cell_length_level"
         fontPath="fonts/Montserrat-SemiBold.ttf"
         android:paddingStart="@dimen/padding_30_dp"
         android:paddingTop="@dimen/padding_24_dp"
