@@ -343,7 +343,7 @@
     {
       "index": 35,
       "title": "Santa's Suit",
-      "twister": "Santa\\'s Short Suit Shrunk.\n",
+      "twister": "Santa's Short Suit Shrunk.\n",
       "length": 1,
       "difficulty": 1,
       "icon_url": "",
@@ -393,7 +393,7 @@
     {
       "index": 40,
       "title": "Paxwax",
-      "twister": "A cat snaps a rat\\'s paxwax.\n",
+      "twister": "A cat snaps a rat's paxwax.\n",
       "length": 1,
       "difficulty": 1,
       "icon_url": "",
@@ -468,12 +468,12 @@
       "difficulty": 2,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 48,
       "title": "Enemies",
-      "twister": "Dust is a Disk\\'s worst enemy.\n",
+      "twister": "Dust is a Disk's worst enemy.\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -633,7 +633,7 @@
     {
       "index": 64,
       "title": "Dead Dog",
-      "twister": "Drew Dodd\\'s dad\\'s dog\\'s dead.\n",
+      "twister": "Drew Dodd's dad's dog's dead.\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -713,7 +713,7 @@
     {
       "index": 72,
       "title": "Gone Dog",
-      "twister": "Darla\\'s dollars Darn dawn dog gone!\n",
+      "twister": "Darla's dollars Darn dawn dog gone!\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -862,8 +862,8 @@
     },
     {
       "index": 87,
-      "title": "Seth\\'s Socks",
-      "twister": "Seth at Sainsbury\\'s sells thick socks.\n",
+      "title": "Seth's Socks",
+      "twister": "Seth at Sainsbury's sells thick socks.\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -923,7 +923,7 @@
     {
       "index": 93,
       "title": "Broke Bloke",
-      "twister": "A bloke\\'s bike back brake block broke.\n",
+      "twister": "A bloke's bike back brake block broke.\n",
       "length": 1,
       "difficulty": 2,
       "icon_url": "",
@@ -933,12 +933,12 @@
     {
       "index": 94,
       "title": "Baby Bug",
-      "twister": "Blended baby blue bug\\'s blood blotches.\n",
+      "twister": "Blended baby blue bug's blood blotches.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 95,
@@ -1012,8 +1012,8 @@
     },
     {
       "index": 102,
-      "title": "",
-      "twister": "\n",
+      "title": "Watching Watches",
+      "twister": "Two watches were watching a few watches.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1032,8 +1032,8 @@
     },
     {
       "index": 104,
-      "title": "",
-      "twister": ".\n",
+      "title": "Wishing Self",
+      "twister": "I wish I were what I was when I wished I were what I am.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1042,7 +1042,7 @@
     },
     {
       "index": 105,
-      "title": "",
+      "title": "Word Order",
       "twister": "Normal word order or inverted word order?\n",
       "length": 1,
       "difficulty": 3,
@@ -1052,8 +1052,8 @@
     },
     {
       "index": 106,
-      "title": "",
-      "twister": "Ann and Andy\\'s anniversary is in April.\n",
+      "title": "Anniversary",
+      "twister": "Ann and Andy's anniversary is in April.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1062,7 +1062,7 @@
     },
     {
       "index": 107,
-      "title": "",
+      "title": "Sea Serpents",
       "twister": "Six sick sea-serpents swam the seven seas.\n",
       "length": 1,
       "difficulty": 3,
@@ -1072,8 +1072,8 @@
     },
     {
       "index": 108,
-      "title": "",
-      "twister": "Hitchcock Hawk Watch Spots Record Raptors.\n",
+      "title": "Raptors",
+      "twister": "Hitchcock hawks watch spots record raptors.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1082,8 +1082,8 @@
     },
     {
       "index": 109,
-      "title": "",
-      "twister": "No nose knows like a gnome\\'s nose knows.\n",
+      "title": "Knowing Noses",
+      "twister": "No nose knows like a gnome's nose knows.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1092,7 +1092,7 @@
     },
     {
       "index": 110,
-      "title": "",
+      "title": "Feeding Bread",
       "twister": "Fred fed Ted bread and Ted fed Fred bread.\n",
       "length": 1,
       "difficulty": 3,
@@ -1102,8 +1102,8 @@
     },
     {
       "index": 111,
-      "title": "",
-      "twister": "Pail of ale aiding ailing Al\\'s travails.\n",
+      "title": "Aiding Ale",
+      "twister": "Pail of ale aiding ailing Al's travails.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1112,8 +1112,8 @@
     },
     {
       "index": 112,
-      "title": "",
-      "twister": "Which wristwatches are Swiss wristwatches?\n",
+      "title": "Race Horses",
+      "twister": "One one was a racehorse. Two two was one too.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1122,7 +1122,7 @@
     },
     {
       "index": 113,
-      "title": "",
+      "title": "Phone Fight",
       "twister": "Four furious friends fought for the phone.\n",
       "length": 1,
       "difficulty": 3,
@@ -1132,7 +1132,7 @@
     },
     {
       "index": 114,
-      "title": "",
+      "title": "Easter Eggs",
       "twister": "Each Easter Eddie eats eighty Easter eggs.\n",
       "length": 1,
       "difficulty": 3,
@@ -1142,7 +1142,7 @@
     },
     {
       "index": 115,
-      "title": "",
+      "title": "Sally Slitter",
       "twister": "Sally is a sheet slitter, she slits sheets.\n",
       "length": 1,
       "difficulty": 3,
@@ -1152,8 +1152,8 @@
     },
     {
       "index": 116,
-      "title": "",
-      "twister": "Bob\\'s pop-up blocker blocks Bob\\'s pop-ups",
+      "title": "Popup Blocker",
+      "twister": "Bob's pop-up blocker blocks Bob's pop-ups",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1162,7 +1162,7 @@
     },
     {
       "index": 117,
-      "title": "",
+      "title": "The Shilhole",
       "twister": "Shannon shant ship ships through Shilshole.\n",
       "length": 1,
       "difficulty": 3,
@@ -1172,7 +1172,7 @@
     },
     {
       "index": 118,
-      "title": "",
+      "title": "You're Dismissed",
       "twister": "The chief of the Leith police dismissed us.\n",
       "length": 1,
       "difficulty": 3,
@@ -1182,8 +1182,8 @@
     },
     {
       "index": 119,
-      "title": "",
-      "twister": "It\\'s a nice night for a white rice fight.\n",
+      "title": "Rice Fight",
+      "twister": "It's a nice night for a white rice fight.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1192,7 +1192,7 @@
     },
     {
       "index": 120,
-      "title": "",
+      "title": "If Then Else",
       "twister": "IF IF = THEN THEN THEN = ELSE ELSE ELSE = IF;",
       "length": 1,
       "difficulty": 3,
@@ -1202,7 +1202,7 @@
     },
     {
       "index": 121,
-      "title": "",
+      "title": "Migdet Minute",
       "twister": "Midget minute, midget minute, midget minute.\n",
       "length": 1,
       "difficulty": 3,
@@ -1212,7 +1212,7 @@
     },
     {
       "index": 122,
-      "title": "",
+      "title": "Many Names",
       "twister": "Brent Spence Bridge Clay Wade Bailey Bridge.\n",
       "length": 1,
       "difficulty": 3,
@@ -1222,7 +1222,7 @@
     },
     {
       "index": 123,
-      "title": "",
+      "title": "Cans Canner",
       "twister": "Can you can a can as a canner can can a can?\n",
       "length": 1,
       "difficulty": 3,
@@ -1232,7 +1232,7 @@
     },
     {
       "index": 124,
-      "title": "",
+      "title": "Snoozing Zebra",
       "twister": "This is the sixth zebra snoozing thoroughly.\n",
       "length": 1,
       "difficulty": 3,
@@ -1242,7 +1242,7 @@
     },
     {
       "index": 125,
-      "title": "",
+      "title": "Sports Shop",
       "twister": "Does this shop sport short socks with spots?\n",
       "length": 1,
       "difficulty": 3,
@@ -1252,7 +1252,7 @@
     },
     {
       "index": 126,
-      "title": "",
+      "title": "Gobbler",
       "twister": "Gobbling gorgoyles gobbled gobbling goblins.\n",
       "length": 1,
       "difficulty": 3,
@@ -1262,8 +1262,8 @@
     },
     {
       "index": 127,
-      "title": "",
-      "twister": "Peggy Babcock, Peggy Babcock, Peggy Babcock, …",
+      "title": "Peggy Babcock",
+      "twister": "Peggy Babcock, Peggy Babcock, Peggy Babcock.",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1272,8 +1272,8 @@
     },
     {
       "index": 128,
-      "title": "",
-      "twister": "\n",
+      "title": "Cron Job",
+      "twister": "Crow wrote a cron for cred's computer's command.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1282,7 +1282,7 @@
     },
     {
       "index": 129,
-      "title": "",
+      "title": "Cinnamon Synonym",
       "twister": "A synonym for cinnamon is a cinnamon synonym.\n",
       "length": 1,
       "difficulty": 3,
@@ -1292,7 +1292,7 @@
     },
     {
       "index": 130,
-      "title": "",
+      "title": "Hungry Kittens",
       "twister": "I saw a kitten eating chicken in the kitchen.\n",
       "length": 1,
       "difficulty": 3,
@@ -1302,8 +1302,8 @@
     },
     {
       "index": 131,
-      "title": "",
-      "twister": "Craig Quinn\\'s quick trip to Crabtree Creek.\n",
+      "title": "Quick Trip",
+      "twister": "Craig Quinn's quick trip to Crabtree Creek.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1312,8 +1312,8 @@
     },
     {
       "index": 132,
-      "title": "",
-      "twister": "Plymouth sleuths thwart Luther\\'s slithering.\n",
+      "title": "Thwarted Luther",
+      "twister": "Plymouth sleuths thwart Luther's slithering.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1322,7 +1322,7 @@
     },
     {
       "index": 133,
-      "title": "",
+      "title": "Eerie Ear",
       "twister": "Near an ear, a nearer ear, a nearly eerie ear.\n",
       "length": 1,
       "difficulty": 3,
@@ -1332,8 +1332,8 @@
     },
     {
       "index": 134,
-      "title": "",
-      "twister": "The sixth sick sheik\\'s sixth sheep\\'s sick.\n",
+      "title": "Sick Sheep",
+      "twister": "The sixth sick sheik's sixth sheep's sick.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1342,7 +1342,7 @@
     },
     {
       "index": 135,
-      "title": "",
+      "title": "Lazy Eraser",
       "twister": "On a lazy laser raiser lies a laser ray eraser.\n",
       "length": 1,
       "difficulty": 3,
@@ -1352,7 +1352,7 @@
     },
     {
       "index": 136,
-      "title": "",
+      "title": "Sandy Sahara",
       "twister": "A slimey snake slithered down the sandy sahara.\n",
       "length": 1,
       "difficulty": 3,
@@ -1362,8 +1362,8 @@
     },
     {
       "index": 137,
-      "title": "",
-      "twister": "I miss my Swiss miss.\nMy Swiss miss misses me.\n",
+      "title": "Missing Miss",
+      "twister": "I miss my Swiss miss.\n\nMy Swiss miss misses me.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1372,8 +1372,8 @@
     },
     {
       "index": 138,
-      "title": "",
-      "twister": "\n",
+      "title": "Chicken Chops",
+      "twister": "The cheap chicken shop sells chicken sheep chops.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1382,7 +1382,7 @@
     },
     {
       "index": 139,
-      "title": "",
+      "title": "Cracky Rapper",
       "twister": " Cracker rapper, cracker rapper, cracker rapper.\n",
       "length": 1,
       "difficulty": 3,
@@ -1392,8 +1392,8 @@
     },
     {
       "index": 140,
-      "title": "",
-      "twister": "Tommy Tucker tried to tie Tammy\\'s Turtles tie.\n",
+      "title": "Tommmy Tammy",
+      "twister": "Tommy Tucker tried to tie Tammy's Turtles tie.\n",
       "length": 1,
       "difficulty": 3,
       "icon_url": "",
@@ -1402,17 +1402,17 @@
     },
     {
       "index": 141,
-      "title": "",
+      "title": "Byted Pipe",
       "twister": "To put a pipe in byte mode, type PIPE_TYPE_BYTE.\n",
       "length": 1,
       "difficulty": 4,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 142,
-      "title": "",
+      "title": "Good Slitter",
       "twister": "Whoever slit the sheets is a good sheet slitter.\n",
       "length": 1,
       "difficulty": 4,
@@ -1422,7 +1422,7 @@
     },
     {
       "index": 143,
-      "title": "",
+      "title": "Fledding Frogs",
       "twister": "Five frantic frogs fled from fifty fierce fishes.\n",
       "length": 1,
       "difficulty": 4,
@@ -1432,7 +1432,7 @@
     },
     {
       "index": 144,
-      "title": "",
+      "title": "Thinking Thinking",
       "twister": "I thought, I thought of thinking of thanking you.\n",
       "length": 1,
       "difficulty": 4,
@@ -1442,8 +1442,8 @@
     },
     {
       "index": 145,
-      "title": "",
-      "twister": "Nope, an antelope can\\'t elope with a cantelope.\n",
+      "title": "Nope Nope",
+      "twister": "Nope, an antelope can't elope with a cantelope.\n",
       "length": 1,
       "difficulty": 4,
       "icon_url": "",
@@ -1452,7 +1452,7 @@
     },
     {
       "index": 146,
-      "title": "",
+      "title": "Timid Toads",
       "twister": "Two tiny timid toads trying to trot to Tarrytown.\n",
       "length": 1,
       "difficulty": 4,
@@ -1462,7 +1462,7 @@
     },
     {
       "index": 147,
-      "title": "",
+      "title": "Choosing Shoes",
       "twister": "If a dog chews shoes, whose shoes does he choose?\n",
       "length": 1,
       "difficulty": 4,
@@ -1472,7 +1472,7 @@
     },
     {
       "index": 148,
-      "title": "",
+      "title": "Birdie Birdie",
       "twister": "Birdie birdie in the sky laid a turdie in my eye.\n",
       "length": 1,
       "difficulty": 4,
@@ -1482,7 +1482,7 @@
     },
     {
       "index": 149,
-      "title": "",
+      "title": "Red Wine",
       "twister": "Wow, race winners really want red wine right away!\n",
       "length": 1,
       "difficulty": 4,
@@ -1492,7 +1492,7 @@
     },
     {
       "index": 150,
-      "title": "",
+      "title": "Ice Cream",
       "twister": "I scream, you scream, we all scream for ice-cream!\n",
       "length": 1,
       "difficulty": 4,
@@ -1502,7 +1502,7 @@
     },
     {
       "index": 151,
-      "title": "",
+      "title": "Visionary Illusion",
       "twister": "An illusory vision is a visionary illusion.\nIs it?\n",
       "length": 1,
       "difficulty": 4,
@@ -1512,7 +1512,7 @@
     },
     {
       "index": 152,
-      "title": "",
+      "title": "Sliding South",
       "twister": "Seven slick slimey snakes slowly sliding southward.\n",
       "length": 1,
       "difficulty": 4,
@@ -1522,7 +1522,7 @@
     },
     {
       "index": 153,
-      "title": "",
+      "title": "Flicking Fleas",
       "twister": "Frozen Floyd flicks fat fleas for a fixed flat fee.\n",
       "length": 1,
       "difficulty": 4,
@@ -1532,7 +1532,7 @@
     },
     {
       "index": 154,
-      "title": "",
+      "title": "Crapping Cat",
       "twister": "The cat crept into the crypt, crapped and crept out.\n",
       "length": 1,
       "difficulty": 4,
@@ -1542,7 +1542,7 @@
     },
     {
       "index": 155,
-      "title": "",
+      "title": "Aluminium Pan",
       "twister": "There was a minimum of cinnamon in the aluminium pan.\n",
       "length": 1,
       "difficulty": 4,
@@ -1552,7 +1552,7 @@
     },
     {
       "index": 156,
-      "title": "",
+      "title": "Wheat Reapers",
       "twister": "Ripe white wheat reapers reap ripe white wheat right.\n",
       "length": 1,
       "difficulty": 4,
@@ -1562,7 +1562,7 @@
     },
     {
       "index": 157,
-      "title": "",
+      "title": "Leather Weather",
       "twister": "Lesser leather never weathered wetter weather better.\n",
       "length": 2,
       "difficulty": 4,
@@ -1572,7 +1572,7 @@
     },
     {
       "index": 158,
-      "title": "",
+      "title": "Rascal",
       "twister": "Round and round the rugged rock the ragged rascal ran.\n",
       "length": 2,
       "difficulty": 4,
@@ -1582,8 +1582,8 @@
     },
     {
       "index": 159,
-      "title": "",
-      "twister": "Round and round the rugged rock the ragged rascal ran.\n",
+      "title": "Brussels",
+      "twister": "Travelling travellers chew truffels to Brussels.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1592,8 +1592,8 @@
     },
     {
       "index": 160,
-      "title": "",
-      "twister": "Miss Smith\\'s fish-sauce shop seldom sells shellfish.\n",
+      "title": "Fish Sauce",
+      "twister": "Miss Smith's fish-sauce shop seldom sells shellfish.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1602,7 +1602,7 @@
     },
     {
       "index": 161,
-      "title": "",
+      "title": "Grape Growers",
       "twister": "The great Greek grape growers grow great Greek grapes.\n",
       "length": 2,
       "difficulty": 4,
@@ -1612,7 +1612,7 @@
     },
     {
       "index": 162,
-      "title": "",
+      "title": "Pie Pans",
       "twister": "Silly shoe-fly pie fans sell chilly shoe-fly pie pans.\n",
       "length": 2,
       "difficulty": 4,
@@ -1622,7 +1622,7 @@
     },
     {
       "index": 163,
-      "title": "",
+      "title": "Chewy Chester",
       "twister": "Chester Cheetah chews a chunk of cheep cheddar cheese.\n",
       "length": 2,
       "difficulty": 4,
@@ -1633,7 +1633,7 @@
     {
       "index": 164,
       "title": "",
-      "twister": "Round and round the rugged rock the ragged rascal ran.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1642,7 +1642,7 @@
     },
     {
       "index": 165,
-      "title": "",
+      "title": "Esau on Seesaw",
       "twister": "I saw Esau sitting on a seesaw.\nI saw Esau; he saw me.\n",
       "length": 2,
       "difficulty": 4,
@@ -1652,8 +1652,8 @@
     },
     {
       "index": 166,
-      "title": "",
-      "twister": "She snapped a selfie with Sophie\\'s silver cell phone.\n",
+      "title": "Lemme Take a Selfie",
+      "twister": "She snapped a selfie with Sophie's silver cell phone.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1663,7 +1663,7 @@
     {
       "index": 167,
       "title": "",
-      "twister": " Chester Cheetah chews a chunk of cheep cheddar cheese.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1672,8 +1672,8 @@
     },
     {
       "index": 168,
-      "title": "",
-      "twister": "Send toast to ten tense stout saints\\' ten tall tents.\n",
+      "title": "Saints' Toasts",
+      "twister": "Send toast to ten tense stout saints' ten tall tents.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1682,8 +1682,8 @@
     },
     {
       "index": 169,
-      "title": "",
-      "twister": " Cook \"Cookie\" Turk took Kookie Kirk a turkey cookie.\n",
+      "title": "Cookie Cook",
+      "twister": "Cook 'Cookie', Turk took Kookie Kirk a turkey cookie.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1692,8 +1692,8 @@
     },
     {
       "index": 170,
-      "title": "",
-      "twister": " Dear mother, give your other udder to my other brother.\n",
+      "title": "Dear Mother",
+      "twister": "Dear mother, give your other udder to my other brother.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1702,8 +1702,8 @@
     },
     {
       "index": 171,
-      "title": "",
-      "twister": "I wish I were what I was when I wished I were what I am.\n",
+      "title": "Freezy Trees",
+      "twister": "Freezy Breeze made these frozen trees freeze like cheese.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1712,7 +1712,7 @@
     },
     {
       "index": 172,
-      "title": "",
+      "title": "Papa's Copper Cup",
       "twister": "Give papa a cup of proper coffee in a copper coffee cup.\n",
       "length": 2,
       "difficulty": 4,
@@ -1722,7 +1722,7 @@
     },
     {
       "index": 173,
-      "title": "",
+      "title": "Caution",
       "twister": "Caution: Wide Right Turns seen on semi-tractor trailers.\n",
       "length": 2,
       "difficulty": 4,
@@ -1732,8 +1732,8 @@
     },
     {
       "index": 174,
-      "title": "",
-      "twister": "Blake\\'s black bike\\'s back brake bracket block broke.\n",
+      "title": "Blake's Bike",
+      "twister": "Blake's black bike's back brake bracket block broke.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1742,7 +1742,7 @@
     },
     {
       "index": 175,
-      "title": "",
+      "title": "Shoe Chewer",
       "twister": "If Stu chews shoes, should Stu choose the shoes he chews?\n",
       "length": 2,
       "difficulty": 4,
@@ -1752,8 +1752,8 @@
     },
     {
       "index": 176,
-      "title": "",
-      "twister": "Extinct insects\\' instincts, extant insects\\' instincts.\n",
+      "title": "Damn Insects",
+      "twister": "Extinct insects' instincts, extant insects' instincts.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1762,7 +1762,7 @@
     },
     {
       "index": 177,
-      "title": "",
+      "title": "Black Bug",
       "twister": "A big black bug bit a big black dog on his big black nose!\n",
       "length": 2,
       "difficulty": 4,
@@ -1772,8 +1772,8 @@
     },
     {
       "index": 178,
-      "title": "",
-      "twister": "Will I always be so Merry when Mary\\'s taking care of me?\n",
+      "title": "Merry for Marry",
+      "twister": "Will I always be so Merry when Mary's taking care of me?\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1782,7 +1782,7 @@
     },
     {
       "index": 179,
-      "title": "",
+      "title": "I Sit",
       "twister": "I slit a sheet, a sheet I slit, upon a slitted sheet I sit.\n",
       "length": 2,
       "difficulty": 4,
@@ -1792,7 +1792,7 @@
     },
     {
       "index": 180,
-      "title": "",
+      "title": "Sheep Sheets",
       "twister": "Cheap Sheep Sheets, Cheap Sheep Sheets, Cheap Sheep Sheets.\n",
       "length": 2,
       "difficulty": 4,
@@ -1802,7 +1802,7 @@
     },
     {
       "index": 181,
-      "title": "",
+      "title": "Shining Cities",
       "twister": "Six shining cities, six shining cities, six shining cities.\n",
       "length": 2,
       "difficulty": 4,
@@ -1812,7 +1812,7 @@
     },
     {
       "index": 182,
-      "title": "",
+      "title": "Picks n Sticks",
       "twister": "Six sick hicks nick six slick bricks with picks and sticks.\n",
       "length": 2,
       "difficulty": 4,
@@ -1823,7 +1823,7 @@
     {
       "index": 183,
       "title": "",
-      "twister": "Six sick hicks nick six slick bricks with picks and sticks.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1832,8 +1832,8 @@
     },
     {
       "index": 184,
-      "title": "",
-      "twister": "But she as far surpasseth Sycorax, as great\\'st does least.\n",
+      "title": "Sycorax",
+      "twister": "But she as far surpasseth Sycorax, as great'st does least.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1842,8 +1842,8 @@
     },
     {
       "index": 185,
-      "title": "",
-      "twister": "In shoulder surgery some surgeons sew soldiers\\' shoulders.\n",
+      "title": "Surgery",
+      "twister": "In shoulder surgery some surgeons sew soldiers' shoulders.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1852,8 +1852,8 @@
     },
     {
       "index": 186,
-      "title": "",
-      "twister": "You\\'re behaving like a babbling, bumbling band of baboons.\n",
+      "title": "Baboons",
+      "twister": "You're behaving like a babbling, bumbling band of baboons.\n",
       "length": 2,
       "difficulty": 4,
       "icon_url": "",
@@ -1862,7 +1862,7 @@
     },
     {
       "index": 187,
-      "title": "",
+      "title": "Light Night",
       "twister": "No need to light a night-light on a light night like tonight.\n",
       "length": 2,
       "difficulty": 4,
@@ -1872,17 +1872,17 @@
     },
     {
       "index": 188,
-      "title": "",
-      "twister": "Did Doug dig Dick\\'s garden or did Dick dig Doug\\'s garden?\n",
+      "title": "Dick's Garden",
+      "twister": "Did Doug dig Dick's garden or did Dick dig Doug's garden?\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 189,
-      "title": "",
+      "title": "Certified Coons",
       "twister": "Certified certificates from certified certificate certifiers.\n",
       "length": 2,
       "difficulty": 5,
@@ -1892,7 +1892,7 @@
     },
     {
       "index": 190,
-      "title": "",
+      "title": "Quack Quack",
       "twister": "Quick queens quack quick quacks quicker than quacking quails.\n",
       "length": 2,
       "difficulty": 5,
@@ -1902,7 +1902,7 @@
     },
     {
       "index": 191,
-      "title": "",
+      "title": "Paper People",
       "twister": "Purple paper people, purple paper people, purple paper people.\n",
       "length": 2,
       "difficulty": 5,
@@ -1912,7 +1912,7 @@
     },
     {
       "index": 192,
-      "title": "",
+      "title": "Sawing Saws",
       "twister": "How many saws could a see-saw saw if a see-saw could saw saws?\n",
       "length": 2,
       "difficulty": 5,
@@ -1923,7 +1923,7 @@
     {
       "index": 193,
       "title": "",
-      "twister": "How many saws could a see-saw saw if a see-saw could saw saws?\n",
+      "twister": "\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -1932,7 +1932,7 @@
     },
     {
       "index": 194,
-      "title": "",
+      "title": "The Executioner",
       "twister": "Excited executioner exercising his excising powers excessively.\n",
       "length": 2,
       "difficulty": 5,
@@ -1942,7 +1942,7 @@
     },
     {
       "index": 195,
-      "title": "",
+      "title": "French Frogs",
       "twister": "Five fuzzy French frogs Frolicked through the fields in France.\n",
       "length": 2,
       "difficulty": 5,
@@ -1953,7 +1953,7 @@
     {
       "index": 196,
       "title": "",
-      "twister": "Five fuzzy French frogs Frolicked through the fields in France.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -1962,7 +1962,7 @@
     },
     {
       "index": 197,
-      "title": "",
+      "title": "Sinful Caesar",
       "twister": "Sinful Caesar sipped his snifter, seized his knees and sneezed.\n",
       "length": 2,
       "difficulty": 5,
@@ -1973,7 +1973,7 @@
     {
       "index": 198,
       "title": "",
-      "twister": "Five fuzzy French frogs Frolicked through the fields in France.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -1983,7 +1983,7 @@
     {
       "index": 199,
       "title": "",
-      "twister": "Excited executioner exercising his excising powers excessively.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -1992,7 +1992,7 @@
     },
     {
       "index": 200,
-      "title": "",
+      "title": "Catching Cats",
       "twister": "How many cats would a caddie catch if a caddie could catch cats?\n",
       "length": 2,
       "difficulty": 5,
@@ -2002,7 +2002,7 @@
     },
     {
       "index": 201,
-      "title": "",
+      "title": "Bug Blood",
       "twister": "Buckets of bug blood, buckets of bug blood, buckets of bug blood.\n",
       "length": 2,
       "difficulty": 5,
@@ -2012,7 +2012,7 @@
     },
     {
       "index": 202,
-      "title": "",
+      "title": "Gum Boil",
       "twister": "How much oil boil can a gum boil boil if a gum boil can boil oil?\n",
       "length": 2,
       "difficulty": 5,
@@ -2022,7 +2022,7 @@
     },
     {
       "index": 203,
-      "title": "",
+      "title": "Packer Yaks",
       "twister": "How many yaks could a yak pack pack if a yak pack could pack yaks?\n",
       "length": 2,
       "difficulty": 5,
@@ -2032,7 +2032,7 @@
     },
     {
       "index": 204,
-      "title": "",
+      "title": "Ticket Taker",
       "twister": "Tell Tom the ticket taker to take the ticket to the ticket wicket.\n",
       "length": 2,
       "difficulty": 5,
@@ -2042,7 +2042,7 @@
     },
     {
       "index": 205,
-      "title": "",
+      "title": "Sexy Sealskin",
       "twister": "Seven slick and sexy sealskin ski suits slid slowly down the slope.\n",
       "length": 2,
       "difficulty": 5,
@@ -2052,7 +2052,7 @@
     },
     {
       "index": 206,
-      "title": "",
+      "title": "Carolina Herrera",
       "twister": "Carolina Herrera resides in the rural area with her running horses.\n",
       "length": 2,
       "difficulty": 5,
@@ -2062,7 +2062,7 @@
     },
     {
       "index": 207,
-      "title": "",
+      "title": "Annoyed Oyster",
       "twister": "Any noise annoys an oyster, but a noisy noise annoys an oyster most.\n",
       "length": 2,
       "difficulty": 5,
@@ -2072,7 +2072,7 @@
     },
     {
       "index": 208,
-      "title": "",
+      "title": "Skeptical Rhys",
       "twister": "Rhys watched Ross switch his Irish wristwatch for a Swiss wristwatch.\n",
       "length": 2,
       "difficulty": 5,
@@ -2082,7 +2082,7 @@
     },
     {
       "index": 209,
-      "title": "",
+      "title": "Stasher Sasquatch",
       "twister": "How much cash could a sasquatch stash if a sasquatch could stash cash?\n",
       "length": 2,
       "difficulty": 5,
@@ -2092,8 +2092,8 @@
     },
     {
       "index": 210,
-      "title": "",
-      "twister": "Old Mr.\nHunt had a cuddy punt not a cuddy punt but a hunt punt cuddy.\n",
+      "title": "Mr. Hunt",
+      "twister": "Old Mr. Hunt had a cuddy punt not a cuddy punt but a hunt punt cuddy.\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -2102,7 +2102,7 @@
     },
     {
       "index": 211,
-      "title": "",
+      "title": "Mrs. Hunt",
       "twister": "Old lady Hunt had a cuzzy Funt not a cuzzy Funt but a Hunt Funt cuzzy.\n",
       "length": 2,
       "difficulty": 5,
@@ -2113,7 +2113,7 @@
     {
       "index": 212,
       "title": "",
-      "twister": "Old Mr.\nHunt had a cuddy punt Not a cuddy punt but a hunt punt cuddy.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -2183,7 +2183,7 @@
     {
       "index": 219,
       "title": "",
-      "twister": " Furnish Freddie\\'s nursery with forty-four furry Furby Beanie Babies.\n",
+      "twister": " Furnish Freddie's nursery with forty-four furry Furby Beanie Babies.\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -2203,7 +2203,7 @@
     {
       "index": 221,
       "title": "",
-      "twister": "I saw Esau kissing Kate.\nI saw Esau, he saw me, and she saw I saw Esau.\n",
+      "twister": "I saw Esau kissing Kate.\n\nI saw Esau, he saw me, and she saw I saw Esau.\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -2212,7 +2212,7 @@
     },
     {
       "index": 222,
-      "title": "",
+      "title": "Bear Grills",
       "twister": "How many bears could Bear Grills grill if Bear grills could grill bears?\n",
       "length": 2,
       "difficulty": 5,
@@ -2223,7 +2223,7 @@
     {
       "index": 223,
       "title": "",
-      "twister": "A turbot\\'s not a burbot, for a turbot\\'s a butt, but a burbot\\'s not.\n",
+      "twister": "A turbot's not a burbot, for a turbot's a butt, but a burbot's not.\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -2242,7 +2242,7 @@
     },
     {
       "index": 225,
-      "title": "",
+      "title": "Fresh Fish",
       "twister": "Fresh fried fish,  Fish fresh fried,  Fried fish fresh,  Fish fried fresh.\n",
       "length": 2,
       "difficulty": 5,
@@ -2283,7 +2283,7 @@
     {
       "index": 229,
       "title": "",
-      "twister": "A smart fella, a fella smart.\nIt takes a smart fella to say a fella smart.\n",
+      "twister": "A smart fella, a fella smart.\n\nIt takes a smart fella to say a fella smart.\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -2293,7 +2293,7 @@
     {
       "index": 230,
       "title": "",
-      "twister": "Big black bugs bleed blue black blood but baby black bugs bleed blue blood.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -2313,7 +2313,7 @@
     {
       "index": 232,
       "title": "",
-      "twister": "How many pounds in a groundhog\\'s mound when a groundhog pounds hog mounds?\n",
+      "twister": "How many pounds in a groundhog's mound when a groundhog pounds hog mounds?\n",
       "length": 2,
       "difficulty": 5,
       "icon_url": "",
@@ -2322,7 +2322,7 @@
     },
     {
       "index": 233,
-      "title": "",
+      "title": "Never Felt",
       "twister": "Of all the felt I ever felt I never felt felt that felt like that felt felt.\n",
       "length": 2,
       "difficulty": 5,
@@ -2343,12 +2343,12 @@
     {
       "index": 235,
       "title": "",
-      "twister": "Supposed to be pistachio, supposed to be pistachio, supposed to be pistachio.\n",
+      "twister": "Supposed to be pistachio,  supposed to be pistachio,  supposed to be pistachio.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 236,
@@ -2373,7 +2373,7 @@
     {
       "index": 238,
       "title": "",
-      "twister": "Frank\\'s fisher fishes on Friday for Frank\\'s Friday fresh fried fish-fest.\n",
+      "twister": "Frank's fisher fishes on Friday for Frank's Friday fresh fried fish-fest.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2383,7 +2383,7 @@
     {
       "index": 239,
       "title": "",
-      "twister": "Dick had a dog, the dog dug, the dog dug deep, how deep did Dick\\'s dog dig?\n",
+      "twister": "Dick had a dog,  the dog dug,  the dog dug deep,  how deep did Dick's dog dig?\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2413,7 +2413,7 @@
     {
       "index": 242,
       "title": "",
-      "twister": "It\\'s not right to write Wright \\'Rite\\', please try to write Wright right!\n",
+      "twister": "It's not right to write Wright 'Rite', please try to write Wright right!\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2483,7 +2483,7 @@
     {
       "index": 249,
       "title": "",
-      "twister": "Thirty-three thirsty, thundering thoroughbreds thumped Mr.\nThurber on Thursday.\n",
+      "twister": "Thirty-three thirsty, thundering thoroughbreds thumped Mr.\n\nThurber on Thursday.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2493,7 +2493,7 @@
     {
       "index": 250,
       "title": "",
-      "twister": "Thirty-three thirsty, thundering thoroughbreds thumped Mr.\nThurber on Thursday.\n",
+      "twister": ".\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2503,7 +2503,7 @@
     {
       "index": 251,
       "title": "",
-      "twister": "Wunwun was a racehorse, Tutu was one too.\nWunwun won one race, Tutu won one too.\n",
+      "twister": "Wunwun was a racehorse, Tutu was one too.\n\nWunwun won one race, Tutu won one too.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2513,7 +2513,7 @@
     {
       "index": 252,
       "title": "",
-      "twister": "Swan swam over the sea.\nSwim, swan, swim!\nSwan swam back again.\nWell swum swan!\n",
+      "twister": "Swan swam over the sea.\n\nSwim, swan, swim!\n\nSwan swam back again.\n\nWell swum swan!\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2543,7 +2543,7 @@
     {
       "index": 255,
       "title": "",
-      "twister": "I see a sea down by the seashore.\n  But which sea do you see down by the seashore?\n",
+      "twister": "I see a sea down by the seashore.\n\n  But which sea do you see down by the seashore?\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2553,7 +2553,7 @@
     {
       "index": 256,
       "title": "",
-      "twister": "It\\'s not the cough that carries you off,  it\\'s the coffin they carry you off in!\n",
+      "twister": "It's not the cough that carries you off,  it's the coffin they carry you off in!\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2573,7 +2573,7 @@
     {
       "index": 258,
       "title": "",
-      "twister": "Come, come, Stay calm, stay calm, No need for alarm, It only hums, It doesn\\'t harm.\n",
+      "twister": "Come, come,  Stay calm, stay calm,  No need for alarm,  It only hums,  It doesn't harm.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2593,7 +2593,7 @@
     {
       "index": 260,
       "title": "",
-      "twister": "Come, come, stay calm, stay calm, no need for alarm, it only hums, it doesn\\'t harm.\n",
+      "twister": "Come, come, stay calm, stay calm, no need for alarm, it only hums, it doesn't harm.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2603,7 +2603,7 @@
     {
       "index": 261,
       "title": "",
-      "twister": "Picky people pick Peter Pan Peanut-Butter, \\'tis the peanut-butter picky people pick.\n",
+      "twister": "Picky people pick Peter Pan Peanut-Butter, 'tis the peanut-butter picky people pick.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2613,7 +2613,7 @@
     {
       "index": 262,
       "title": "",
-      "twister": "Suzie Seaword\\'s fish-sauce shop sells unsifted thistles for thistle-sifters to sift.\n",
+      "twister": "Suzie Seaword's fish-sauce shop sells unsifted thistles for thistle-sifters to sift.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2623,7 +2623,7 @@
     {
       "index": 263,
       "title": "",
-      "twister": "Picky people pick Peter Pan Peanut-Butter, \\'tis the peanut-butter picky people pick.\n",
+      "twister": "Picky people pick Peter Pan Peanut-Butter, 'tis the peanut-butter picky people pick.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2653,7 +2653,7 @@
     {
       "index": 266,
       "title": "",
-      "twister": "How many snacks could a snack stacker stack, if a snack stacker snacked stacked snacks?\n",
+      "twister": "\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2673,7 +2673,7 @@
     {
       "index": 268,
       "title": "",
-      "twister": "Don\\'t spring on the inner-spring this spring or there will be an offspring next spring.\n",
+      "twister": "Don't spring on the inner-spring this spring or there will be an offspring next spring.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2683,7 +2683,7 @@
     {
       "index": 269,
       "title": "",
-      "twister": "If you\\'re keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.\n",
+      "twister": "If you're keen on stunning kites and cunning stunts, buy a cunning stunning stunt kite.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2723,7 +2723,7 @@
     {
       "index": 273,
       "title": "",
-      "twister": "Susie works in a shoeshine shop.\nWhere she shines she sits, and where she sits she shines.\n",
+      "twister": "Susie works in a shoeshine shop.\n\nWhere she shines she sits, and where she sits she shines.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2733,7 +2733,7 @@
     {
       "index": 274,
       "title": "",
-      "twister": "Tie a knot, tie a knot.\n  Tie a tight, tight knot.\n  Tie a knot in the shape of a nought.\n",
+      "twister": "Tie a knot, tie a knot.\n\n Tie a tight, tight knot.\n\n Tie a knot in the shape of a nought.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2753,7 +2753,7 @@
     {
       "index": 276,
       "title": "",
-      "twister": "Who washed Washington\\'s white woolen underwear when Washington\\'s washer-woman went west?\n",
+      "twister": "Who washed Washington's white woolen underwear when Washington's washer-woman went west?\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2763,7 +2763,7 @@
     {
       "index": 277,
       "title": "",
-      "twister": "Why do you cry, Willy?\n  Why do you cry?\n  Why, Willy?\n  Why, Willy?\n  Why, Willy?\nWhy?\n",
+      "twister": "Why do you cry, Willy?\n\n Why do you cry?\n\n Why, Willy?\n\n Why, Willy?\n\n Why, Willy?\n\nWhy?\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2783,7 +2783,7 @@
     {
       "index": 279,
       "title": "",
-      "twister": "My friend got a frisbee with the \"Friskies\"-logo on it My mommy makes me muffins on Mondays.\n",
+      "twister": "My friend got a frisbee with the 'Friskies',-logo on it My mommy makes me muffins on Mondays.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2793,7 +2793,7 @@
     {
       "index": 280,
       "title": "",
-      "twister": "Hassock hassock, black spotted hassock.\nBlack spot on a black back of a black spotted hassock.\n",
+      "twister": "Hassock hassock, black spotted hassock.\n\nBlack spot on a black back of a black spotted hassock.\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2803,7 +2803,7 @@
     {
       "index": 281,
       "title": "",
-      "twister": "She saw Sherif\\'s shoes on the sofa.\nBut was she so sure she saw Sherif\\'s shoes on the sofa?\n",
+      "twister": "She saw Sherif's shoes on the sofa.\n\nBut was she so sure she saw Sherif's shoes on the sofa?\n",
       "length": 2,
       "difficulty": 6,
       "icon_url": "",
@@ -2813,17 +2813,17 @@
     {
       "index": 282,
       "title": "",
-      "twister": "She saw Sherif\\'s shoes on the sofa.\nBut was she so sure she saw Sherif\\'s shoes on the sofa?\n",
+      "twister": "\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 283,
       "title": "",
-      "twister": "If Kantie can tie a tie and untie a tie,  why can\\'t I tie a tie and untie a tie like Kantie can.\n",
+      "twister": "If Kantie can tie a tie and untie a tie,  why can't I tie a tie and untie a tie like Kantie can.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2833,7 +2833,7 @@
     {
       "index": 284,
       "title": "",
-      "twister": "One-one was a race horse.\n  Two-two was one too.\n  One-one won one race.\n  Two-two won one too.\n",
+      "twister": "\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2843,7 +2843,7 @@
     {
       "index": 285,
       "title": "",
-      "twister": "Kantai can tie a tie.\nIf Kantai can tie a tie, why can\\'t I tie a tie like Kantai can tie a tie.\n",
+      "twister": "Kantai can tie a tie.\n\nIf Kantai can tie a tie, why can't I tie a tie like Kantai can tie a tie.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2853,7 +2853,7 @@
     {
       "index": 286,
       "title": "",
-      "twister": "I would if I could, and if I couldn\\'t, how could I?\nYou couldn\\'t, unless you could, could you?\n",
+      "twister": "I would if I could, and if I couldn't, how could I?\n\nYou couldn't, unless you could, could you?\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2873,7 +2873,7 @@
     {
       "index": 288,
       "title": "",
-      "twister": "Mares eat oats and does eat oats, and little lambs eat ivy.\n A Kid will eat ivy too, wouldn\\'t ewe?\n",
+      "twister": "Mares eat oats and does eat oats, and little lambs eat ivy.\n A Kid will eat ivy too, wouldn't ewe?\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2883,7 +2883,7 @@
     {
       "index": 289,
       "title": "",
-      "twister": "Birdie birdie in the sky laid a turdie in my eye.\n  If cows could fly I\\'d have a cow pie in my eye.\n",
+      "twister": "Birdie birdie in the sky laid a turdie in my eye.\n  If cows could fly I'd have a cow pie in my eye.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2893,7 +2893,7 @@
     {
       "index": 290,
       "title": "",
-      "twister": "If you can\\'t can any candy can, how many candy cans can a candy canner can if he can can candy cans?\n",
+      "twister": "If you can't can any candy can, how many candy cans can a candy canner can if he can can candy cans?\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2913,7 +2913,7 @@
     {
       "index": 292,
       "title": "",
-      "twister": "If you can\\'t can any candy can, how many candy cans can a candy canner can if he can can candy cans ?\n",
+      "twister": "If you can't can any candy can, how many candy cans can a candy canner can if he can can candy cans ?\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2953,7 +2953,7 @@
     {
       "index": 296,
       "title": "",
-      "twister": "Tell a tall tale of a tall tailed dog, that told Tim it tap a tall ale and thump the top of Tim\\'s tomb.\n",
+      "twister": "Tell a tall tale of a tall tailed dog, that told Tim it tap a tall ale and thump the top of Tim's tomb.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2963,7 +2963,7 @@
     {
       "index": 297,
       "title": "",
-      "twister": "Love\\'s a feeling you feel when you feel  you\\'re going to feel the feeling you\\'ve never felt before.\n",
+      "twister": "Love's a feeling you feel when you feel  you're going to feel the feeling you've never felt before.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2973,7 +2973,7 @@
     {
       "index": 298,
       "title": "",
-      "twister": "Don\\'t trouble trouble, until trouble troubles you!\nIf you trouble trouble, triple trouble troubles you!\n",
+      "twister": "Don't trouble trouble, until trouble troubles you!\nIf you trouble trouble, triple trouble troubles you!\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2983,7 +2983,7 @@
     {
       "index": 299,
       "title": "",
-      "twister": "While we were walking, we were watching window washers wash Washington\\'s windows with warm washing water.\n",
+      "twister": "While we were walking, we were watching window washers wash Washington's windows with warm washing water.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -2993,7 +2993,7 @@
     {
       "index": 300,
       "title": "",
-      "twister": "Mr.\nSee owned a saw and Mr Soar owned a seesaw.\nNow See\\'s saw sawed Soar\\'s seesaw before Soar saw See.\n",
+      "twister": "Mr.\nSee owned a saw and Mr Soar owned a seesaw.\nNow See's saw sawed Soar's seesaw before Soar saw See.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -3003,7 +3003,7 @@
     {
       "index": 301,
       "title": "",
-      "twister": "I\\'m not the fig plucker,  nor the fig plucker\\'s son,  but I\\'ll pluck figs  till the fig plucker comes.\n",
+      "twister": "I'm not the fig plucker,  nor the fig plucker's son,  but I'll pluck figs  till the fig plucker comes.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -3043,7 +3043,7 @@
     {
       "index": 305,
       "title": "",
-      "twister": "Will you, William?\nWill you, William?\nWill you, William?\n  Can\\'t you, don\\'t you, won\\'t you, William?\n",
+      "twister": "Will you, William?\nWill you, William?\nWill you, William?\n  Can't you, don't you, won't you, William?\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -3073,7 +3073,7 @@
     {
       "index": 308,
       "title": "",
-      "twister": "Pete\\'s pa pete poked to the pea patch to pick a peck of peas for the poor pink pig in the pine hole pig-pen.\n",
+      "twister": "Pete's pa pete poked to the pea patch to pick a peck of peas for the poor pink pig in the pine hole pig-pen.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -3083,7 +3083,7 @@
     {
       "index": 309,
       "title": "",
-      "twister": "Pete\\'s pa pete poked to the pea patch to pick a peck of peas for the poor pink pig in the pine hole pig-pen.\n",
+      "twister": "Pete's pa pete poked to the pea patch to pick a peck of peas for the poor pink pig in the pine hole pig-pen.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -3093,7 +3093,7 @@
     {
       "index": 310,
       "title": "",
-      "twister": "The pellet with the poison\\'s In the flagon with the dragon The vessel with the pestle Has the brew that is true",
+      "twister": "The pellet with the poison's  In the flagon with the dragon The vessel with the pestle Has the brew that is true",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -3123,7 +3123,7 @@
     {
       "index": 313,
       "title": "",
-      "twister": "Fred Threlfall\\'s thirty-five fine threads are finer threads than Fred Threlfall\\'s thirty-five thick threads.\n",
+      "twister": "Fred Threlfall's thirty-five fine threads are finer threads than Fred Threlfall's thirty-five thick threads.\n",
       "length": 2,
       "difficulty": 7,
       "icon_url": "",
@@ -3133,7 +3133,7 @@
     {
       "index": 314,
       "title": "",
-      "twister": "\"Fooey!\nMy father\\'s flunkies fare far fancier,\" the frazzled fugitive fumed feverishly, frankly facing fact.\n",
+      "twister": "\"Fooey!\nMy father's flunkies fare far fancier,\" the frazzled fugitive fumed feverishly, frankly facing fact.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3163,7 +3163,7 @@
     {
       "index": 317,
       "title": "",
-      "twister": "There\\'s a cross on the muzzle Of the pistol with the bullet But a nick on the handle Of the pistol with the blank.\n",
+      "twister": "There's a cross on the muzzle Of the pistol with the bullet But a nick on the handle Of the pistol with the blank.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3173,7 +3173,7 @@
     {
       "index": 318,
       "title": "",
-      "twister": "Farrell\\'s features fabulous food \\'n\\' fantastic fountain fantasies for frolicking, fun-filled festive families.\n",
+      "twister": "Farrell's features fabulous food 'n' fantastic fountain fantasies for frolicking, fun-filled festive families.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3203,7 +3203,7 @@
     {
       "index": 321,
       "title": "",
-      "twister": "A maid named Lady Marmalade made mainly lard and lemonade.\nM\\'lady lamely never made a well-named, labelled marmalade.\n",
+      "twister": "A maid named Lady Marmalade made mainly lard and lemonade.\nM'lady lamely never made a well-named, labelled marmalade.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3213,7 +3213,7 @@
     {
       "index": 322,
       "title": "",
-      "twister": "The Smothers brothers\\' father\\'s mother\\'s brothers are the Smothers brothers\\' mother\\'s father\\'s other brothers.\n",
+      "twister": "The Smothers brothers' father's mother's brothers are the Smothers brothers' mother's father's other brothers.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3223,7 +3223,7 @@
     {
       "index": 323,
       "title": "",
-      "twister": "I stood sadly on the silver steps of Burgess\\'s fish sauce shop, mimicking him hiccuping, and wildly welcoming him within.\n",
+      "twister": "I stood sadly on the silver steps of Burgess's fish sauce shop, mimicking him hiccuping, and wildly welcoming him within.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3253,7 +3253,7 @@
     {
       "index": 326,
       "title": "",
-      "twister": "I wish to wish the wish you wish to wish, but if you wish the wish the witch wishes, I won\\'t wish the wish you wish to wish.\n",
+      "twister": "I wish to wish the wish you wish to wish, but if you wish the wish the witch wishes, I won't wish the wish you wish to wish.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3263,7 +3263,7 @@
     {
       "index": 327,
       "title": "",
-      "twister": "Deer, deer, oh dear, oh dear, your career as a deer is over here no, no, oh no, although your career as a skellytun\\'s begun.\n",
+      "twister": "Deer, deer, oh dear, oh dear, your career as a deer is over here no, no, oh no, although your career as a skellytun's begun.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3273,7 +3273,7 @@
     {
       "index": 328,
       "title": "",
-      "twister": "I wish to wish the wish you wish to wish, but if you wish the wish the witch wishes, I won\\'t wish the wish you wish to wish.\n",
+      "twister": "I wish to wish the wish you wish to wish, but if you wish the wish the witch wishes, I won't wish the wish you wish to wish.\n",
       "length": 3,
       "difficulty": 7,
       "icon_url": "",
@@ -3283,17 +3283,17 @@
     {
       "index": 329,
       "title": "",
-      "twister": "I wish to wish the wish you wish to wish, but if you wish the wish the witch wishes, I won\\'t wish the wish you wish to wish.\n",
+      "twister": ".\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 330,
       "title": "",
-      "twister": "I wish to wish, I dream to dream, I try to try, and I live to live, and I\\'d die to die, and I cry to cry but I dont know why.\n",
+      "twister": "I wish to wish, I dream to dream, I try to try, and I live to live, and I'd die to die, and I cry to cry but I dont know why.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3323,7 +3323,7 @@
     {
       "index": 333,
       "title": "",
-      "twister": "Silly Sally Shouldnort shaved sheep she should show soon so selling sheep shaved showed she shouldn\\'t show shaved sheep so soon.\n",
+      "twister": "Silly Sally Shouldnort shaved sheep she should show soon so selling sheep shaved showed she shouldn't show shaved sheep so soon.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3363,7 +3363,7 @@
     {
       "index": 337,
       "title": "",
-      "twister": "Dick had a duck, the duck dived, the duck dived deep, how deep did Dick\\'s duck dive?\nDick\\'s duck dived as deep as Dick\\'s dog dug!\n",
+      "twister": "Dick had a duck, the duck dived, the duck dived deep, how deep did Dick's duck dive?\nDick's duck dived as deep as Dick's dog dug!\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3373,7 +3373,7 @@
     {
       "index": 338,
       "title": "",
-      "twister": "Of all the felt I ever felt, I never felt a piece of felt which felt as fine as that felt felt, when first I felt that felt hat\\'s felt.\n",
+      "twister": "Of all the felt I ever felt, I never felt a piece of felt which felt as fine as that felt felt, when first I felt that felt hat's felt.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3383,7 +3383,7 @@
     {
       "index": 339,
       "title": "",
-      "twister": "How many cans can a cannibal nibble  if a cannibal can nibble cans?\n  As many cans as a cannibal can nibble  if a cannibal can nibble cans.\n",
+      "twister": ".\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3393,7 +3393,7 @@
     {
       "index": 340,
       "title": "",
-      "twister": "A wooden worm wouldn\\'t be worthy of worship but would he if he wondered and worried about what he would be worthy of if he wasn\\'t wooden?\n",
+      "twister": "A wooden worm wouldn't be worthy of worship but would he if he wondered and worried about what he would be worthy of if he wasn't wooden?\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3403,7 +3403,7 @@
     {
       "index": 341,
       "title": "",
-      "twister": "If Pickford\\'s packers packed a packet of crisps would the packet of crisps that Pickford\\'s packers packed survive for two and a half years?\n",
+      "twister": "If Pickford's packers packed a packet of crisps would the packet of crisps that Pickford's packers packed survive for two and a half years?\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3413,7 +3413,7 @@
     {
       "index": 342,
       "title": "",
-      "twister": "If Pickford\\'s packers packed a packet of crisps would the packet of crisps that Pickford\\'s packers packed survive for two and a half years?\n",
+      "twister": "\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3423,7 +3423,7 @@
     {
       "index": 343,
       "title": "",
-      "twister": "Moses supposes his toeses are roses.\nBut Moses supposes erroneously.\nMoses, he knows his toeses aren\\'t roses as Moses supposes his toeses to be.\n",
+      "twister": "Moses supposes his toeses are roses.\nBut Moses supposes erroneously.\nMoses, he knows his toeses aren't roses as Moses supposes his toeses to be.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3433,7 +3433,7 @@
     {
       "index": 344,
       "title": "",
-      "twister": "Slinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake\\'s leglessness.\n",
+      "twister": "Slinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake's leglessness.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3443,7 +3443,7 @@
     {
       "index": 345,
       "title": "",
-      "twister": "Slinking, sliding, slithering slyly, Swiftly slipping through the grasses shyly, Silent but for swish and hiss Is the sinuous snake\\'s leglessness.\n",
+      "twister": ".\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3453,7 +3453,7 @@
     {
       "index": 346,
       "title": "",
-      "twister": "Hello?\n Who\\'s calling?\n Watt.\n What\\'s your name?\n Watt\\'s my name.\n  Yes, what is your name?\n  My name is John Watt.\n John what?\n  Yes.\n",
+      "twister": "Hello?\n Who's calling?\n Watt.\n What's your name?\n Watt's my name.\n  Yes, what is your name?\n  My name is John Watt.\n John what?\n  Yes.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3473,7 +3473,7 @@
     {
       "index": 348,
       "title": "",
-      "twister": "Terry Teeter, a teeter-totter teacher, taught her daughter Tara to teeter-totter, but Tara Teeter didn\\'t teeter-totter as Terry Teeter taught her to.\n",
+      "twister": "Terry Teeter, a teeter-totter teacher, taught her daughter Tara to teeter-totter, but Tara Teeter didn't teeter-totter as Terry Teeter taught her to.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3483,7 +3483,7 @@
     {
       "index": 349,
       "title": "",
-      "twister": "To begin to toboggan, first buy a toboggan.\nBut don\\'t buy too big a toboggan.\nToo big a toboggan is too big a toboggan to buy to begin to toboggan.\n",
+      "twister": "To begin to toboggan, first buy a toboggan.\nBut don't buy too big a toboggan.\nToo big a toboggan is too big a toboggan to buy to begin to toboggan.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3493,7 +3493,7 @@
     {
       "index": 350,
       "title": "",
-      "twister": "That\\'s tongue twisters  And it seems so easy till the word gets sprung  If you insist you want to try a lisp  Then step up mister and twist your tongue ",
+      "twister": "That's tongue twisters  And it seems so easy till the word gets sprung  If you insist you want to try a lisp  Then step up mister and twist your tongue ",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3503,7 +3503,7 @@
     {
       "index": 351,
       "title": "",
-      "twister": "A Tudor who tooted the flute tried to tutor two tooters to toot.\nSaid the two to the tutor, \"Is it harder to toot or to tutor two tooters to toot?\n”.\n",
+      "twister": ".\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3513,7 +3513,7 @@
     {
       "index": 352,
       "title": "",
-      "twister": "That\\'s tongue twisters  And it seems so easy till the word gets sprung  If you insist you want to try a lisp  Then step up mister and twist your tongue ",
+      "twister": "",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3553,7 +3553,7 @@
     {
       "index": 356,
       "title": "",
-      "twister": "How much dough would Bob Dole dole if Bob Dole could dole dough?\n Bob Dole would dole as much dough as Bob Dole could dole, if Bob Dole could dole dough.\n",
+      "twister": ".\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3593,7 +3593,7 @@
     {
       "index": 360,
       "title": "",
-      "twister": "I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to see a saw that can out saw the saw I saw saw I\\'d like to see the saw you saw saw.\n",
+      "twister": "I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to see a saw that can out saw the saw I saw saw I'd like to see the saw you saw saw.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3623,7 +3623,7 @@
     {
       "index": 363,
       "title": "",
-      "twister": "You name it, we claim it.\nIf we can\\'t get it, we\\'ll send you to get it.\nIf we can\\'t send you to get it, forget it.\nWho\\'s got it, if we don\\'t got it?\n",
+      "twister": "You name it, we claim it.\nIf we can't get it, we'll send you to get it.\nIf we can't send you to get it, forget it.\nWho's got it, if we don't got it?\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3643,7 +3643,7 @@
     {
       "index": 365,
       "title": "",
-      "twister": "I know a boy named Tate who dined with his girl at eight eight.\nI\\'m unable to state what Tate ate at eight eight or what Tate\\'s tête à tête ate at eight eight.\n",
+      "twister": "I know a boy named Tate who dined with his girl at eight eight.\nI'm unable to state what Tate ate at eight eight or what Tate's tête à tête ate at eight eight.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3653,7 +3653,7 @@
     {
       "index": 366,
       "title": "",
-      "twister": "Tito and Tato were tattooed in total  But Toto was only tattooed on his toe  So Tato told Tito where Toto was tattooed  But Tito said Toto\\'s tattoo wouldn\\'t show ",
+      "twister": "Tito and Tato were tattooed in total  But Toto was only tattooed on his toe  So Tato told Tito where Toto was tattooed  But Tito said Toto's tattoo wouldn't show ",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3663,7 +3663,7 @@
     {
       "index": 367,
       "title": "",
-      "twister": "Luke\\'s duck likes lakes.\nLuke Luck licks lakes.\nLuck\\'s duck licks lakes.\nDuck takes licks in lakes Luke Luck likes.\nLuke Luck takes licks in lakes duck likes.\n",
+      "twister": "Luke's duck likes lakes.\nLuke Luck licks lakes.\nLuck's duck licks lakes.\nDuck takes licks in lakes Luke Luck likes.\nLuke Luck takes licks in lakes duck likes.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3683,7 +3683,7 @@
     {
       "index": 369,
       "title": "",
-      "twister": "Three tree turtles took turns talking tongue twisters.\n If three tree turtles took turns talking tongue twisters, where\\'s the twisters the three tree turtles talked?\n",
+      "twister": "Three tree turtles took turns talking tongue twisters.\n If three tree turtles took turns talking tongue twisters, where's the twisters the three tree turtles talked?\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3703,7 +3703,7 @@
     {
       "index": 371,
       "title": "",
-      "twister": "There was a fisherman named Fisher who fished for some fish in a fissure.\nTill a fish with a grin, pulled the fisherman in.\nNow they\\'re fishing the fissure for Fisher.\n",
+      "twister": "There was a fisherman named Fisher who fished for some fish in a fissure.\nTill a fish with a grin, pulled the fisherman in.\nNow they're fishing the fissure for Fisher.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3713,7 +3713,7 @@
     {
       "index": 372,
       "title": "",
-      "twister": "Whether the weather be fine or whether the weather be not.\nWhether the weather be cold or whether the weather be hot.\nWe\\'ll weather the weather whether we like it or not.\n",
+      "twister": "Whether the weather be fine or whether the weather be not.\nWhether the weather be cold or whether the weather be hot.\nWe'll weather the weather whether we like it or not.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3733,7 +3733,7 @@
     {
       "index": 374,
       "title": "",
-      "twister": "There was a fisherman named Fisher  who fished for some fish in a fissure.\n  Till a fish with a grin,  pulled the fisherman in.\n  Now they\\'re fishing the fissure for Fisher.\n",
+      "twister": "There was a fisherman named Fisher  who fished for some fish in a fissure.\n  Till a fish with a grin,  pulled the fisherman in.\n  Now they're fishing the fissure for Fisher.\n",
       "length": 3,
       "difficulty": 8,
       "icon_url": "",
@@ -3753,12 +3753,12 @@
     {
       "index": 376,
       "title": "",
-      "twister": "The bottle of perfume that Willy sent was highly displeasing to Millicent.\nHer thanks were so cold that they quarreled, I\\'m told o\\'er that silly scent Willy sent Millicent.\n",
+      "twister": "The bottle of perfume that Willy sent was highly displeasing to Millicent.\nHer thanks were so cold that they quarreled, I'm told o'er that silly scent Willy sent Millicent.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 377,
@@ -3773,7 +3773,7 @@
     {
       "index": 378,
       "title": "",
-      "twister": "When I went to Warsaw, I saw a saw that could outsaw any saw that I ever saw.\nNow, if you go to Warsaw and see a saw that could outsaw the saw I saw, I\\'d like to see your saw saw.\n",
+      "twister": "When I went to Warsaw, I saw a saw that could outsaw any saw that I ever saw.\nNow, if you go to Warsaw and see a saw that could outsaw the saw I saw, I'd like to see your saw saw.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3793,7 +3793,7 @@
     {
       "index": 380,
       "title": "",
-      "twister": "How many berries could a bare berry carry, if a bare berry could carry berries?\nWell they can\\'t carry berries (which could make you very wary) but a bare berry carried is more scary!\n",
+      "twister": "How many berries could a bare berry carry, if a bare berry could carry berries?\nWell they can't carry berries (which could make you very wary) but a bare berry carried is more scary!\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3803,7 +3803,7 @@
     {
       "index": 381,
       "title": "",
-      "twister": "How many berries could a bare berry carry, if a bare berry could carry berries?\n Well they can\\'t carry berries (which could make you very wary) but a bare berry carried is more scary!\n",
+      "twister": "How many berries could a bare berry carry, if a bare berry could carry berries?\n Well they can't carry berries (which could make you very wary) but a bare berry carried is more scary!\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3813,7 +3813,7 @@
     {
       "index": 382,
       "title": "",
-      "twister": "She sells sea shells on the sea shore; The shells that she sells are sea shells I\\'m sure.\nSo if she sells sea shells on the sea shore, I\\'m sure that the shells are sea shore shells.\n",
+      "twister": "She sells sea shells on the sea shore; The shells that she sells are sea shells I'm sure.\nSo if she sells sea shells on the sea shore, I'm sure that the shells are sea shore shells.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3823,7 +3823,7 @@
     {
       "index": 383,
       "title": "",
-      "twister": "Snobby Miss.\nNora is sniffing her snuffer  The snuffer\\'s no sniffing it makes Nora sneeze  When Snyda lets Nort know his Nora is sneezing  She snappily snorts Nora\\'s sneezing a breeze ",
+      "twister": "Snobby Miss.\nNora is sniffing her snuffer  The snuffer's no sniffing it makes Nora sneeze  When Snyda lets Nort know his Nora is sneezing  She snappily snorts Nora's sneezing a breeze ",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3833,7 +3833,7 @@
     {
       "index": 384,
       "title": "",
-      "twister": "A fly and flea flew into a flue, said the fly to the flea \\'what shall we do?\n\\' \\'Let us fly\\' said the flea said the fly \\'shall we flee\\' so they flew through a flaw in the flue.\n",
+      "twister": "A fly and flea flew into a flue, said the fly to the flea 'what shall we do?\n'Let us fly' said the flea said the fly 'shall we flee'' so they flew through a flaw in the flue.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3843,7 +3843,7 @@
     {
       "index": 385,
       "title": "",
-      "twister": "Theda thought Thora was thumping her thimble  But Thomas thought Thora was thumping her drum  Said Theda if Thora\\'s not thumping her thimble  I think that she surely is thumping her thumb ",
+      "twister": "Theda thought Thora was thumping her thimble  But Thomas thought Thora was thumping her drum  Said Theda if Thora's not thumping her thimble  I think that she surely is thumping her thumb ",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3853,7 +3853,7 @@
     {
       "index": 386,
       "title": "",
-      "twister": "Silly Sally swiftly shooed seven silly sheep.\n  The seven silly sheep Silly Sally shooed  Shilly-shallied south.\n  These sheep shouldn\\'t sleep in a shack;  Sheep should sleep in a shed.\n",
+      "twister": "Silly Sally swiftly shooed seven silly sheep.\n  The seven silly sheep Silly Sally shooed  Shilly-shallied south.\n  These sheep shouldn't sleep in a shack;  Sheep should sleep in a shed.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3863,7 +3863,7 @@
     {
       "index": 387,
       "title": "",
-      "twister": "Now Kissle will whistle at busty Miss.\nRussell  Who\\'ll rustle and bustle till Kissle will roar  So Russell asked Axle for Kissle\\'s dismissal  And this\\'ll teach Kissle to whistle no more",
+      "twister": "Now Kissle will whistle at busty Miss.\nRussell  Who'll rustle and bustle till Kissle will roar  So Russell asked Axle for Kissle's dismissal  And this'll teach Kissle to whistle no more",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3873,7 +3873,7 @@
     {
       "index": 388,
       "title": "",
-      "twister": "How many berries could a bare berry carry,  if a bare berry could carry berries?\n  Well they can\\'t carry berries  (which could make you very wary)  but a bare berry carried is more scary!\n",
+      "twister": "How many berries could a bare berry carry,  if a bare berry could carry berries?\n  Well they can't carry berries  (which could make you very wary)  but a bare berry carried is more scary!\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3893,7 +3893,7 @@
     {
       "index": 390,
       "title": "",
-      "twister": "A fly and flea flew into a flue,  said the fly to the flea \\'what shall we do?\n\\'  \\'let us fly\\' said the flea  said the fly \\'shall we flee\\'  so they flew through a flaw in the flue.\n",
+      "twister": "\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3933,7 +3933,7 @@
     {
       "index": 394,
       "title": "",
-      "twister": "I thought a thought.\nBut the thought I thought wasn’t the thought I thought I thought.\nIf the thought I thought I thought, had been the thought I thought, I wouldn\\'t have thought I thought.\n",
+      "twister": "I thought a thought.\nBut the thought I thought wasn’t the thought I thought I thought.\nIf the thought I thought I thought, had been the thought I thought, I wouldn't have thought I thought.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3953,7 +3953,7 @@
     {
       "index": 396,
       "title": "",
-      "twister": "I thought a thought.\n But the thought I thought wasn\\'t the thought I thought I thought.\n If the thought I thought I thought had been the thought I thought, I wouldn\\'t have thought so much.\n",
+      "twister": "I thought a thought.\n But the thought I thought wasn't the thought I thought I thought.\n If the thought I thought I thought had been the thought I thought, I wouldn't have thought so much.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3973,7 +3973,7 @@
     {
       "index": 398,
       "title": "",
-      "twister": "As I was in Arkansas I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to be in Arkansas and see a saw that can out saw the saw I saw saw I\\'d like to see the saw you saw saw.\n",
+      "twister": "As I was in Arkansas I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to be in Arkansas and see a saw that can out saw the saw I saw saw I'd like to see the saw you saw saw.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -3983,7 +3983,7 @@
     {
       "index": 399,
       "title": "",
-      "twister": "As I was in Arkansas I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to be in Arkansas and see a saw that can out saw the saw I saw saw I\\'d like to see the saw you saw saw.\n",
+      "twister": "As I was in Arkansas I saw a saw that could out saw any saw I ever saw saw.\nIf you happen to be in Arkansas and see a saw that can out saw the saw I saw saw I'd like to see the saw you saw saw.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4023,7 +4023,7 @@
     {
       "index": 403,
       "title": "",
-      "twister": "Tricky Tristan tracked a trail of tiny turtles.\nHow many tiny turtles did Tricky Tristan track?\nTricky Tristan tracked twenty two tiny turtles; that\\'s how many tiny turtles tricky Tristan tracked.\n",
+      "twister": "Tricky Tristan tracked a trail of tiny turtles.\nHow many tiny turtles did Tricky Tristan track?\nTricky Tristan tracked twenty two tiny turtles; that's how many tiny turtles tricky Tristan tracked.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4053,7 +4053,7 @@
     {
       "index": 406,
       "title": "",
-      "twister": "Luke Luck likes lakes.\n  Luke\\'s duck likes lakes.\n  Luke Luck licks lakes.\n  Luck\\'s duck licks lakes.\n  Duck takes licks in lakes Luke Luck likes.\n  Luke Luck takes licks in lakes duck likes.\n",
+      "twister": "Luke Luck likes lakes.\n  Luke's duck likes lakes.\n  Luke Luck licks lakes.\n  Luck's duck licks lakes.\n  Duck takes licks in lakes Luke Luck likes.\n  Luke Luck takes licks in lakes duck likes.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4093,7 +4093,7 @@
     {
       "index": 410,
       "title": "",
-      "twister": "How many wenches could a witch\\'s wench wrench wrench if a witch\\'s wench wrench could wrench wenches.\nAs many wenches as a witch\\'s wench wrench could, if a witch\\'s wench wrench could wrench wenches.\n",
+      "twister": "How many wenches could a witch's wench wrench wrench if a witch's wench wrench could wrench wenches.\nAs many wenches as a witch's wench wrench could, if a witch's wench wrench could wrench wenches.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4103,7 +4103,7 @@
     {
       "index": 411,
       "title": "",
-      "twister": "Mary Mac\\'s mother\\'s making Mary Mac marry me.\n  My mother\\'s making me marry Mary Mac.\n  Will I always be so Merry when Mary\\'s taking care of me?\n  Will I always be so merry when I marry Mary Mac?\n",
+      "twister": "Mary Mac's mother's making Mary Mac marry me.\n  My mother's making me marry Mary Mac.\n  Will I always be so Merry when Mary's taking care of me?\n  Will I always be so merry when I marry Mary Mac?\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4123,7 +4123,7 @@
     {
       "index": 413,
       "title": "",
-      "twister": "Frustrated from failure and filled with forebodings, he fled for his family.\nFalling at his father\\'s feet, he floundered forlornly.\n\"Father, I have flunked and fruitlessly forfeited further family favors.\n\"",
+      "twister": "Frustrated from failure and filled with forebodings, he fled for his family.\nFalling at his father's feet, he floundered forlornly.\n\"Father, I have flunked and fruitlessly forfeited further family favors.\n\"",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4133,7 +4133,7 @@
     {
       "index": 414,
       "title": "",
-      "twister": "Sister Susie\\'s sewing shirts for soldiers, such saucy soft short shirts for soldiers sister Susie sews, Some soldiers send epistles say they\\'d sooner sleep on thistles, than those saucy soft short shirts for.\n",
+      "twister": "Sister Susie's sewing shirts for soldiers, such saucy soft short shirts for soldiers sister Susie sews, Some soldiers send epistles say they'd sooner sleep on thistles, than those saucy soft short shirts for.\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4153,7 +4153,7 @@
     {
       "index": 416,
       "title": "",
-      "twister": "If you understand, say \"understand\".\n  If you don\\'t understand, say \"don\\'t understand\".\n  But if you understand and say \"don\\'t understand\".\n  how do I understand that you understand.\nUnderstand!\n?\n",
+      "twister": "If you understand, say \"understand\".\n  If you don't understand, say \"don't understand\".\n  But if you understand and say \"don't understand\".\n  how do I understand that you understand.\nUnderstand!\n?\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4163,7 +4163,7 @@
     {
       "index": 417,
       "title": "",
-      "twister": "Oh, the sadness of her sadness when she\\'s sad.\nOh, the gladness of her gladness when she\\'s glad.\nBut the sadness of her sadness, and the gladness of her gladness, Are nothing like her madness when she\\'s mad!\n",
+      "twister": "Oh, the sadness of her sadness when she's sad.\nOh, the gladness of her gladness when she's glad.\nBut the sadness of her sadness, and the gladness of her gladness, Are nothing like her madness when she's mad!\n",
       "length": 3,
       "difficulty": 9,
       "icon_url": "",
@@ -4223,17 +4223,17 @@
     {
       "index": 423,
       "title": "",
-      "twister": "That\\'s tongue twisters  And it seems so easy till the word gets sprung  If you insist you want to try a lisp  Then step up mister and twist your tongue  Twista felt Twister was trying to whistle  But Twister had twisted his tongue",
+      "twister": "That's tongue twisters  And it seems so easy till the word gets sprung  If you insist you want to try a lisp  Then step up mister and twist your tongue  Twista felt Twister was trying to whistle  But Twister had twisted his tongue",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 424,
       "title": "",
-      "twister": "Tommy, Tommy, toiling in a tailor\\'s shop.\nAll day long he fits and tucks, all day long he tucks and fits, and fits and tucks, and tucks and fits, and fits and tucks, and tucks and fits.\nTommy, Tommy, toiling in a tailor\\'s shop.\n",
+      "twister": "Tommy, Tommy, toiling in a tailor's shop.\nAll day long he fits and tucks, all day long he tucks and fits, and fits and tucks, and tucks and fits, and fits and tucks, and tucks and fits.\nTommy, Tommy, toiling in a tailor's shop.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4243,7 +4243,7 @@
     {
       "index": 425,
       "title": "",
-      "twister": "Tommy, Tommy, toiling in a tailor\\'s shop.\n All day long he fits and tucks, all day long he tucks and fits, and fits and tucks, and tucks and fits, and fits and tucks, and tucks and fits.\n Tommy, Tommy, toiling in a tailor\\'s shop.\n",
+      "twister": ".\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4253,7 +4253,7 @@
     {
       "index": 426,
       "title": "",
-      "twister": "Through three cheese trees three free fleas flew.\nWhile these fleas flew, freezy breeze blew.\nFreezy breeze made these three trees freeze.\nFreezy trees made these trees\\' cheese freeze.\nThat\\'s what made these three free fleas sneeze.\n",
+      "twister": "Through three cheese trees three free fleas flew.\nWhile these fleas flew, freezy breeze blew.\nFreezy breeze made these three trees freeze.\nFreezy trees made these trees', cheese freeze.\nThat's what made these three free fleas sneeze.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4273,7 +4273,7 @@
     {
       "index": 428,
       "title": "",
-      "twister": "If your cursor finds a menu item followed by a dash, And the double-clicking icon puts your window in the trash, And your data is corrupted \\'cause the index doesn\\'t hash, then your situation\\'s hopeless, and your system\\'s gonna crash!\n",
+      "twister": "If your cursor finds a menu item followed by a dash, And the double-clicking icon puts your window in the trash, And your data is corrupted 'cause the index doesn't hash, then your situation's hopeless, and your system's gonna crash!\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4283,7 +4283,7 @@
     {
       "index": 429,
       "title": "",
-      "twister": "Yally Bally had a jolly golliwog.\nFeeling folly, Yally Bally Bought his jolly golli\\' a dollie made of holly!\nThe golli\\', feeling jolly, named the holly dollie, Polly.\nSo Yally Bally\\'s jolly golli\\'s holly dollie Polly\\'s also jolly!\n",
+      "twister": "Yally Bally had a jolly golliwog.\nFeeling folly, Yally Bally Bought his jolly golli', a dollie made of holly!\nThe golli'', feeling jolly, named the holly dollie, Polly.\nSo Yally Bally's jolly golli's holly dollie Polly's also jolly!\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4293,7 +4293,7 @@
     {
       "index": 430,
       "title": "",
-      "twister": "Yally Bally had a jolly golliwog.\nFeeling folly, Yally Bally Bought his jolly golli\\' a dollie made of holly!\nThe golli\\', feeling jolly, named the holly dollie, Polly.\nSo Yally Bally\\'s jolly golli\\'s holly dollie Polly\\'s also jolly!\n",
+      "twister": "\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4303,7 +4303,7 @@
     {
       "index": 431,
       "title": "",
-      "twister": "Through three cheese trees three free fleas flew.\n While these fleas flew, freezy breeze blew.\n Freezy breeze made these three trees freeze.\n Freezy trees made these trees\\' cheese freeze.\n That\\'s what made these three free fleas sneeze.\n",
+      "twister": "Through three cheese trees three free fleas flew.\n While these fleas flew, freezy breeze blew.\n Freezy breeze made these three trees freeze.\n Freezy trees made these trees', cheese freeze.\n That's what made these three free fleas sneeze.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4323,7 +4323,7 @@
     {
       "index": 433,
       "title": "",
-      "twister": "When the copy of your floppy\\'s getting sloppy on the disk, And the microcode instructions cause unnecessary risk, Then you have to flash your memory and you\\'ll want to ram your rom.\n Quickly turn off the computer and be sure to tell your mom!\n",
+      "twister": "When the copy of your floppy's getting sloppy on the disk, And the microcode instructions cause unnecessary risk, Then you have to flash your memory and you'll want to ram your rom.\n Quickly turn off the computer and be sure to tell your mom!\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4333,7 +4333,7 @@
     {
       "index": 434,
       "title": "",
-      "twister": "Through three cheese trees three free fleas flew.\n  While these fleas flew, freezy breeze blew.\n  Freezy breeze made these three trees freeze.\n  Freezy trees made these trees\\' cheese freeze.\n  That\\'s what made these three free fleas sneeze.\n",
+      "twister": "Through three cheese trees three free fleas flew.\n  While these fleas flew, freezy breeze blew.\n  Freezy breeze made these three trees freeze.\n  Freezy trees made these trees', cheese freeze.\n  That's what made these three free fleas sneeze.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4373,7 +4373,7 @@
     {
       "index": 438,
       "title": "",
-      "twister": "Yellow butter, purple jelly, red jam, black bread.\n  Spread it thick, say it quick!\n  Yellow butter, purple jelly, red jam, black bread.\n  Spread it thicker, say it quicker!\n  Yellow butter, purple jelly, red jam, black bread.\n  Don\\'t eat with your mouth full!\n",
+      "twister": "Yellow butter, purple jelly, red jam, black bread.\n  Spread it thick, say it quick!\n  Yellow butter, purple jelly, red jam, black bread.\n  Spread it thicker, say it quicker!\n  Yellow butter, purple jelly, red jam, black bread.\n  Don't eat with your mouth full!\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4383,7 +4383,7 @@
     {
       "index": 439,
       "title": "",
-      "twister": "The Leith police dismisseth us They thought we sought to stay;  The Leith police dismisseth us They thought we\\'d stay all day.\n The Leith police dismisseth us, We both sighed sighs apiece;  And the sighs that we sighed as we said goodbye Were the size of the Leith police.\n",
+      "twister": "The Leith police dismisseth us They thought we sought to stay;  The Leith police dismisseth us They thought we'd stay all day.\n The Leith police dismisseth us, We both sighed sighs apiece;  And the sighs that we sighed as we said goodbye Were the size of the Leith police.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4393,7 +4393,7 @@
     {
       "index": 440,
       "title": "",
-      "twister": "Colliding, colt riding cowboys, combining colliding while gliding at night coinciding in their fight.\nIt wasn\\'t quite trite even with slight sight, who was right?\nThe fight like light, flashed bright, fast as bears bite flies flying near the bears eyes the fleeing flies die.\n",
+      "twister": "Colliding, colt riding cowboys, combining colliding while gliding at night coinciding in their fight.\nIt wasn't quite trite even with slight sight, who was right?\nThe fight like light, flashed bright, fast as bears bite flies flying near the bears eyes the fleeing flies die.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4403,7 +4403,7 @@
     {
       "index": 441,
       "title": "",
-      "twister": "Colliding, colt riding cowboys, combining colliding while gliding at night coinciding in their fight.\nIt wasn\\'t quite trite even with slight sight, who was right?\nThe fight like light, flashed bright, fast as bears bite flies flying near the bears eyes the fleeing flies die.\n",
+      "twister": ".\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4413,7 +4413,7 @@
     {
       "index": 442,
       "title": "",
-      "twister": "All I want is a proper cup of coffee, Made in a proper copper coffee pot I may be off my dot But I want a cup of coffee From a proper coffee pot.\n  Tin coffee pots and iron coffee pots They\\'re no use to me - If I can\\'t have a proper cup of coffee In a proper copper coffee pot I\\'ll have a cup of tea.\n",
+      "twister": "All I want is a proper cup of coffee, Made in a proper copper coffee pot I may be off my dot But I want a cup of coffee From a proper coffee pot.\n  Tin coffee pots and iron coffee pots They're no use to me - If I can't have a proper cup of coffee In a proper copper coffee pot I'll have a cup of tea.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4423,7 +4423,7 @@
     {
       "index": 443,
       "title": "",
-      "twister": "What a to do to die today At a minute or two to two.\n A thing distinctly hard to say And harder still to do.\n  For they\\'ll beat a tattoo at twenty to two A rat-tat-tat-Tat-tat-tat-Tat-tat-tat-too And the dragon will come when he hears the drum, At a minute or two to two today,  At a minute or two to two.\n",
+      "twister": "What a to do to die today  at a minute or two to two.\n A thing distinctly hard to say And harder still to do.\n  For they'll beat a tattoo at twenty to two A rat-tat-tat-Tat-tat-tat-Tat-tat-tat-too And the dragon will come when he hears the drum, At a minute or two to two today,  At a minute or two to two.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4433,7 +4433,7 @@
     {
       "index": 444,
       "title": "",
-      "twister": "Bobby Bippy bought a bat.\nBobby Bippy bought a ball.\nWith his bat Bob banged the ball Banged it bump against the wall but so boldly Bobby banged it that he burst his rubber ball \"Boo!\n\" cried Bobby Bad luck ball Bad luck Bobby, bad luck ball Now to drown his many troubles Bobby Bippy\\'s blowing bubbles.\n",
+      "twister": "Bobby Bippy bought a bat.\nBobby Bippy bought a ball.\nWith his bat Bob banged the ball Banged it bump against the wall but so boldly Bobby banged it that he burst his rubber ball \"Boo!\n\" cried Bobby Bad luck ball Bad luck Bobby, bad luck ball Now to drown his many troubles Bobby Bippy's blowing bubbles.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4453,7 +4453,7 @@
     {
       "index": 446,
       "title": "",
-      "twister": "I\\'m a mother pheasant plucker, I pluck mother pheasants.\n I\\'m the most pleasant mother pheasant plucker, to ever pluck a mother pheasant.\nActually, .\n.\n.\n I\\'m Not the pheasant plucker, I\\'m the pheasant plucker\\'s son.\n But I\\'ll stay and pluck the pheasants Till the pheasant plucking \\'s done!\n",
+      "twister": "I'm a mother pheasant plucker, I pluck mother pheasants.\n I'm the most pleasant mother pheasant plucker, to ever pluck a mother pheasant.\nActually, .\n.\n.\n I'm Not the pheasant plucker, I'm the pheasant plucker's son.\n But I'll stay and pluck the pheasants Till the pheasant plucking 's done!\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4483,7 +4483,7 @@
     {
       "index": 449,
       "title": "",
-      "twister": "Bobby Bippy bought a bat.\n  Bobby Bippy bought a ball.\n  With his bat Bob banged the ball  Banged it bump against the wall  But so boldly Bobby banged it  That he burst his rubber ball  \"Boo!\n\" cried Bobby  Bad luck ball  Bad luck Bobby, bad luck ball  Now to drown his many troubles  Bobby Bippy\\'s blowing bubbles.\n",
+      "twister": "Bobby Bippy bought a bat.\n  Bobby Bippy bought a ball.\n  With his bat Bob banged the ball  Banged it bump against the wall  But so boldly Bobby banged it  That he burst his rubber ball  \"Boo!\n\" cried Bobby  Bad luck ball  Bad luck Bobby, bad luck ball  Now to drown his many troubles  Bobby Bippy's blowing bubbles.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4503,7 +4503,7 @@
     {
       "index": 451,
       "title": "",
-      "twister": "There once was a man who had a sister, his name was Mr.\nFister.\nMr.\nFister\\'s sister sold sea shells by the sea shore.\nMr.\nFister didn\\'t sell sea shells, he sold silk sheets.\nMr.\nFister told his sister that he sold six silk sheets to six shieks.\nThe sister of Mr.\nFister said I sold six shells to six shieks too!\n",
+      "twister": "There once was a man who had a sister, his name was Mr.\nFister.\nMr.\nFister's sister sold sea shells by the sea shore.\nMr.\nFister didn't sell sea shells, he sold silk sheets.\nMr.\nFister told his sister that he sold six silk sheets to six shieks.\nThe sister of Mr.\nFister said I sold six shells to six shieks too!\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4513,7 +4513,7 @@
     {
       "index": 452,
       "title": "",
-      "twister": "Federal Express is now called FedEx.\nWhen I retire I\\'ll be a FedEx ex.\nBut if I\\'m an officer when I retire, I\\'ll be an ex Fedex Exec.\nThen after a divorce, my ex-wife will be an ex FedEx exec\\'s ex.\nIf I rejoin FedEx in time, I\\'d be an ex ex FedEx exec.\nWhen we remarry, my wife will be an ex ex FedEx exec\\'s ex.\n",
+      "twister": "Federal Express is now called FedEx.\nWhen I retire I'll be a FedEx ex.\nBut if I'm an officer when I retire, I'll be an ex Fedex Exec.\nThen after a divorce, my ex-wife will be an ex FedEx exec's ex.\nIf I rejoin FedEx in time, I'd be an ex ex FedEx exec.\nWhen we remarry, my wife will be an ex ex FedEx exec's ex.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4523,7 +4523,7 @@
     {
       "index": 453,
       "title": "",
-      "twister": "But the faithful father, forestalling further flinching, frantically flagged his flunkies to fetch forth the finest fatling and fix a feast.\nBut the fugitive\\'s fault finding frater, faithfully farming his father\\'s fields for free, frowned at this fickle forgiveness of former falderal.\nHis fury flashed, but fussing was futile.\n",
+      "twister": "But the faithful father, forestalling further flinching, frantically flagged his flunkies to fetch forth the finest fatling and fix a feast.\nBut the fugitive's fault finding frater, faithfully farming his father's fields for free, frowned at this fickle forgiveness of former falderal.\nHis fury flashed, but fussing was futile.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4533,7 +4533,7 @@
     {
       "index": 454,
       "title": "",
-      "twister": "Everybody\\'s heard of Peter Piper  And the peck of pickled peppers that he picked  That\\'s such a silly simple children\\'s game  It hasn\\'t even got a name  But I\\'d like to bet that it\\'ll trip you  And I bet you\\'re gonna have to say you\\'re licked  If Peter Piper you pronounce with ease  Then twist your tongue around these ",
+      "twister": "Everybody's heard of Peter Piper  And the peck of pickled peppers that he picked  That's such a silly simple children's game  It hasn't even got a name  But I'd like to bet that it'll trip you  And I bet you're gonna have to say you're licked  If Peter Piper you pronounce with ease  Then twist your tongue around these ",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4543,7 +4543,7 @@
     {
       "index": 455,
       "title": "",
-      "twister": "Ken can ken that Ken\\'s kin can ken Ken\\'s kin\\'s ken.\nKing Thistle stuck a thousand thistles in the thistle of his thumb.\nA thousand thistles King Thistle stuck in the thistle of his thumb.\nIf King Thistle stuck a thousand thistles in the thistle of his thumb, How many thistles did King Thistle stick in the thistle of his thumb?\n",
+      "twister": "Ken can ken that Ken's kin can ken Ken's kin's ken.\nKing Thistle stuck a thousand thistles in the thistle of his thumb.\nA thousand thistles King Thistle stuck in the thistle of his thumb.\nIf King Thistle stuck a thousand thistles in the thistle of his thumb, How many thistles did King Thistle stick in the thistle of his thumb?\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4563,7 +4563,7 @@
     {
       "index": 457,
       "title": "",
-      "twister": "How much wood could Chuck Woods\\' woodchuck chuck, if Chuck Woods\\' woodchuck could and would chuck wood?\nIf Chuck Woods\\' woodchuck could and would chuck wood, how much wood could and would Chuck Woods\\' woodchuck chuck?\nChuck Woods\\' woodchuck would chuck, he would, as much as he could, and chuck as much wood as any woodchuck would, if a woodchuck could and would chuck wood.\n",
+      "twister": "How much wood could Chuck Woods', woodchuck chuck, if Chuck Woods'' woodchuck could and would chuck wood?\nIf Chuck Woods'' woodchuck could and would chuck wood, how much wood could and would Chuck Woods'' woodchuck chuck?\nChuck Woods'' woodchuck would chuck, he would, as much as he could, and chuck as much wood as any woodchuck would, if a woodchuck could and would chuck wood.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4573,7 +4573,7 @@
     {
       "index": 458,
       "title": "",
-      "twister": "Ed Nott was shot and Sam Shott was not.\nSo it is better to be Shott than Nott.\nSome say Nott was not shot.\nBut Shott says he shot Nott.\nEither the shot Shott shot at Nott was not shot, or Nott was shot.\nIf the shot Shott shot shot Nott, Nott was shot.\nBut if the shot Shott shot shot Shott, the shot was Shott, not Nott.\nHowever, the shot Shott shot shot not Shott - but Nott.\nSo, Ed Nott was shot and that\\'s hot!\nIs it not?\n",
+      "twister": "Ed Nott was shot and Sam Shott was not.\nSo it is better to be Shott than Nott.\nSome say Nott was not shot.\nBut Shott says he shot Nott.\nEither the shot Shott shot at Nott was not shot, or Nott was shot.\nIf the shot Shott shot shot Nott, Nott was shot.\nBut if the shot Shott shot shot Shott, the shot was Shott, not Nott.\nHowever, the shot Shott shot shot not Shott - but Nott.\nSo, Ed Nott was shot and that's hot!\nIs it not?\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4603,7 +4603,7 @@
     {
       "index": 461,
       "title": "",
-      "twister": "Esau Wood sawed wood.\nAll the wood Esau Wood saw, Esau Wood would saw.\nAll the wood Wood saw, Esau sought to saw.\nOne day Esau Wood\\'s wood-saw would saw no wood.\nSo Esau Wood sought a new wood-saw.\nThe new wood-saw would saw wood.\nOh, the wood Esau Wood would saw.\nEsau sought a saw that would saw wood as no other wood-saw would saw.\nAnd Esau found a saw that would saw as no other wood-saw would saw.\nAnd Esau Wood sawed wood.\n",
+      "twister": "Esau Wood sawed wood.\nAll the wood Esau Wood saw, Esau Wood would saw.\nAll the wood Wood saw, Esau sought to saw.\nOne day Esau Wood's wood-saw would saw no wood.\nSo Esau Wood sought a new wood-saw.\nThe new wood-saw would saw wood.\nOh, the wood Esau Wood would saw.\nEsau sought a saw that would saw wood as no other wood-saw would saw.\nAnd Esau found a saw that would saw as no other wood-saw would saw.\nAnd Esau Wood sawed wood.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4623,7 +4623,7 @@
     {
       "index": 463,
       "title": "",
-      "twister": "A tree toad loved a she-toad,  Who lived up in a tree.\n  He was a three-toed tree toad,  But a two-toed toad was she.\n  The three-toed tree toad tried to win,  The two-toed she-toad\\'s heart,  For the three-toed tree toad loved the ground,  That the two-toed tree toad trod.\n  But the three-toed tree toad tried in vain.\n  He couldn\\'t please her whim.\n  From her tree toad bower,  With her two-toed power,  The she-toad vetoed him.\n",
+      "twister": "A tree toad loved a she-toad,  Who lived up in a tree.\n  He was a three-toed tree toad,  But a two-toed toad was she.\n  The three-toed tree toad tried to win,  The two-toed she-toad's heart,  For the three-toed tree toad loved the ground,  That the two-toed tree toad trod.\n  But the three-toed tree toad tried in vain.\n  He couldn't please her whim.\n  From her tree toad bower,  With her two-toed power,  The she-toad vetoed him.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4633,7 +4633,7 @@
     {
       "index": 464,
       "title": "",
-      "twister": "If the label on the cable on the table at your house, Says the network is connected to the button on your mouse, But your packets want to tunnel on another protocol, That\\'s repeatedly rejected by the printer down the hall, And your screen is all distorted by the side effects of gauss, So your icons in the window are as wavy as a souse, Then you may as well reboot and go out with a bang, \\'Cause as sure as I\\'m a poet, the sucker\\'s gonna hang!\n",
+      "twister": "If the label on the cable on the table at your house, Says the network is connected to the button on your mouse, But your packets want to tunnel on another protocol, That's repeatedly rejected by the printer down the hall, And your screen is all distorted by the side effects of gauss, So your icons in the window are as wavy as a souse, Then you may as well reboot and go out with a bang, 'Cause as sure as I'm a poet, the sucker's gonna hang!\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4643,7 +4643,7 @@
     {
       "index": 465,
       "title": "",
-      "twister": "This is a story about four people named Everybody, Somebody, Anybody and Nobody.\nThere was an important job to be done and Everybody was sure that Somebody would do it.\nAnybody could have done it, but Nobody did it.\nSomebody got angry about that, because it was Everybody\\'s job.\nEverybody thought Anybody could do it, but Nobody realised that Everybody wouldn\\'t do it.\nIt ended up that Everybody blamed Somebody, when Nobody did, what Anybody could have done.\n",
+      "twister": "This is a story about four people named Everybody, Somebody, Anybody and Nobody.\nThere was an important job to be done and Everybody was sure that Somebody would do it.\nAnybody could have done it, but Nobody did it.\nSomebody got angry about that, because it was Everybody's job.\nEverybody thought Anybody could do it, but Nobody realised that Everybody wouldn't do it.\nIt ended up that Everybody blamed Somebody, when Nobody did, what Anybody could have done.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4653,7 +4653,7 @@
     {
       "index": 466,
       "title": "",
-      "twister": "Out in the pasture the nature watcher watches the catcher.\nWhile the catcher watches the pitcher who pitches the balls.\nWhether the temperature\\'s up or whether the temperature\\'s down, the nature watcher, the catcher and the pitcher are always around.\nThe pitcher pitches, the catcher catches and the watcher watches.\nSo whether the temperature\\'s rises or whether the temperature falls the nature watcher just watches the catcher who\\'s watching the pitcher who\\'s watching the balls.\n",
+      "twister": "Out in the pasture the nature watcher watches the catcher.\nWhile the catcher watches the pitcher who pitches the balls.\nWhether the temperature's up or whether the temperature's down, the nature watcher, the catcher and the pitcher are always around.\nThe pitcher pitches, the catcher catches and the watcher watches.\nSo whether the temperature's rises or whether the temperature falls the nature watcher just watches the catcher who's watching the pitcher who's watching the balls.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4673,7 +4673,7 @@
     {
       "index": 468,
       "title": "",
-      "twister": "The Doge did what a Doge does, when a Doge does his duty to a Duke, that is.\nWhen the Doge did his duty and the Duke didn\\'t, that\\'s when the Duchess did the dirt to the Duke with the Doge.\nThere they were in the dark: The Duke with his dagger, the Doge with his dart and the Duchess with her dirk.\nThe Duchess dug at the Duke just when the Duke dove at the Doge.\nNow the Duke ducked, the Doge dodged, and the Duchess didn\\'t.\nSo the Duke got the Duchess, the Duchess got the Doge, and the Doge got the Duke.\n",
+      "twister": "The Doge did what a Doge does, when a Doge does his duty to a Duke, that is.\nWhen the Doge did his duty and the Duke didn't, that's when the Duchess did the dirt to the Duke with the Doge.\nThere they were in the dark: The Duke with his dagger, the Doge with his dart and the Duchess with her dirk.\nThe Duchess dug at the Duke just when the Duke dove at the Doge.\nNow the Duke ducked, the Doge dodged, and the Duchess didn't.\nSo the Duke got the Duchess, the Duchess got the Doge, and the Doge got the Duke.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4683,7 +4683,7 @@
     {
       "index": 469,
       "title": "",
-      "twister": "Give me the gift of a grip-top sock, A clip drape shipshape tip top sock.\nNot your spinslick slapstick slipshod stock, But a plastic, elastic grip-top sock.\nNone of your fantastic slack swap slop from a slap dash flash cash haberdash shop.\nNot a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock.\nNot a supersheet seersucker rucksack sock, not a spot-speckled frog-freckled cheap sheik\\'s sock off a hodgepodge moss-blotched scotch-botched block.\nNothing slipshod drip drop flip flop or glip glop Tip me to a tip top grip top sock.\n",
+      "twister": "Give me the gift of a grip-top sock, A clip drape shipshape tip top sock.\nNot your spinslick slapstick slipshod stock, But a plastic, elastic grip-top sock.\nNone of your fantastic slack swap slop from a slap dash flash cash haberdash shop.\nNot a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock.\nNot a supersheet seersucker rucksack sock, not a spot-speckled frog-freckled cheap sheik's sock off a hodgepodge moss-blotched scotch-botched block.\nNothing slipshod drip drop flip flop or glip glop Tip me to a tip top grip top sock.\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
@@ -4693,12 +4693,12 @@
     {
       "index": 470,
       "title": "",
-      "twister": "Give me the gift of a grip-top sock, A clip drape shipshape tip top sock.\n  Not your spinslick slapstick slipshod stock,  But a plastic, elastic grip-top sock.\n  None of your fantastic slack swap slop From a slap dash flash cash haberdash shop.\n  Not a knick knack knitlock knockneed knickerbocker sock With a mock-shot blob-mottled trick-ticker top clock.\n  Not a supersheet seersucker rucksack sock,  Not a spot-speckled frog-freckled cheap sheik\\'s sock Off a hodge-podge moss-blotched scotch-botched block.\n  Nothing slipshod drip drop flip flop or glip glop Tip me to a tip top grip top sock.\n",
+      "twister": ".\n",
       "length": 3,
       "difficulty": 10,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     },
     {
       "index": 471,
@@ -4708,7 +4708,7 @@
       "difficulty": 10,
       "icon_url": "",
       "hint": "",
-      "is_locked": false
+      "is_locked": true
     }
   ],
   "difficulty": [

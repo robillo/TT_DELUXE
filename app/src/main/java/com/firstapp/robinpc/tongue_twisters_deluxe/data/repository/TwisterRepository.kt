@@ -11,6 +11,10 @@ class TwisterRepository(private val twisterDao: TwisterDao) {
         return twisterDao.getAllTwisters()
     }
 
+    fun getTwistersInRange(startIndex: Int, endIndex: Int): LiveData<List<Twister>> {
+        return twisterDao.getTwistersInRange(startIndex, endIndex)
+    }
+
     fun getTwisterForIndex(index: Int): LiveData<Twister> {
         return twisterDao.getTwisterForIndex(index)
     }
