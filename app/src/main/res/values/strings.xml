@@ -42,5 +42,8 @@
     <string name="twister_type_free">FREE</string>
     <string name="twister_type_paid">OPEN</string>
 
+    <string name="first_item_reached">You are already at the first twister.</string>
+    <string name="last_item_reached">You are already at the last twister.</string>
+
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

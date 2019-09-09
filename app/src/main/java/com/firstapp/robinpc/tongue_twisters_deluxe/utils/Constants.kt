@@ -33,5 +33,12 @@ class Constants {
         const val TWISTER_COUNT = 471
         const val LENGTH_LEVEL_COUNT = 3
         const val DIFFICULTY_LEVEL_COUNT = 10
+
+        //MIN AND MAX
+        const val MIN_TWISTER_INDEX = 1
+        const val MAX_TWISTER_INDEX = 471
+
+        //UNIT VALUES
+        const val UNIT_VALUE_INT = 1
     }
 }

@@ -42,6 +42,7 @@
         android:layout_marginStart="@dimen/padding_30_dp"
         android:layout_marginEnd="@dimen/padding_30_dp"
         android:scrollbars="none"
+        tools:background="@color/browser_actions_bg_grey"
         app:layout_constrainedHeight="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
