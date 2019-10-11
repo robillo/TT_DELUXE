@@ -1,13 +1,17 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.ui.base
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.pm.ActivityInfo
+import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.Drawable
 import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.TwisterApp
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.AppComponent
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
@@ -31,6 +35,8 @@ abstract class BaseActivity : AppCompatActivity() {
 
     abstract fun setup()
 
+    @Suppress("SameParameterValue")
+    @SuppressLint("ObsoleteSdkInt")
     protected fun setStatusBarColor(color: Int, shouldShowLightStatusBar: Boolean) {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
@@ -54,5 +60,18 @@ abstract class BaseActivity : AppCompatActivity() {
 
     protected fun getAppComponent(): AppComponent {
         return TwisterApp.get(this).appComponent()
+    }
+
+    protected fun getDrawableForId(drawableId: Int): Drawable {
+        ContextCompat.getDrawable(this, drawableId)?.let {
+            return it
+        } ?: run {
+            return ColorDrawable(getColorForId(R.color.black))
+        }
+    }
+
+    @Suppress("SameParameterValue")
+    protected fun getColorForId(colorId: Int): Int {
+        return ContextCompat.getColor(this, colorId)
     }
 }

@@ -151,8 +151,10 @@ class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListe
     }
 
     private fun startReadingActivity() {
-        startActivity(ReadingActivity.newIntent(this, dayTwister, TYPE_DAY_TWISTER))
-        animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+        if(::dayTwister.isInitialized) {
+            startActivity(ReadingActivity.newIntent(this, dayTwister, TYPE_DAY_TWISTER))
+            animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+        }
     }
 
     private fun setComponent() {

@@ -2,6 +2,7 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading
 
 import android.content.Context
 import android.content.Intent
+import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
 import android.widget.Toast
@@ -26,9 +27,6 @@ import javax.inject.Inject
 
 class ReadingActivity : BaseActivity() {
 
-    private var isTwisterPlaying: Boolean = false
-    private var launchedFrom: Int = TYPE_DAY_TWISTER
-
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
@@ -36,9 +34,16 @@ class ReadingActivity : BaseActivity() {
     private lateinit var textToSpeech: TextToSpeech
     private lateinit var viewModel: ReadingActivityViewModel
 
+    private var controlsColor: Int = -1
+    private var isTwisterPlaying: Boolean = false
+    private var launchedFrom: Int = TYPE_DAY_TWISTER
+    private var utteranceMap = HashMap<String, String>()
+
     companion object {
 
+        private const val EMPTY_STRING = ""
         private const val EXTRA_TWISTER = "TWISTER"
+        private const val UTTERANCE_ID = "TWISTER_UTTERANCE"
         private const val EXTRA_LAUNCHED_FROM = "LAUNCHED_FROM"
 
         fun newIntent(context: Context, twister: Twister, launchedFrom: Int): Intent {
@@ -56,13 +61,20 @@ class ReadingActivity : BaseActivity() {
     override fun setup() {
         setStatusBarColor(R.color.white, LIGHT_STATUS_BAR)
         getVariables()
+        initVariables()
         setComponent()
         setViews()
         setClickListeners()
     }
 
+    private fun initVariables() {
+        utteranceMap[TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID] = UTTERANCE_ID
+    }
+
     private fun getVariables() {
-        twister = intent.getParcelableExtra(EXTRA_TWISTER)
+        (intent.getParcelableExtra(EXTRA_TWISTER) as Twister).let {
+            twister = it
+        }
         launchedFrom = intent.getIntExtra(EXTRA_LAUNCHED_FROM, TYPE_DAY_TWISTER)
     }
 
@@ -83,7 +95,7 @@ class ReadingActivity : BaseActivity() {
         textToSpeech = TextToSpeech(applicationContext, TextToSpeech.OnInitListener { status ->
 
             if(isTextToSpeechSuccess(status)) {
-                textToSpeech.language = Locale.UK
+                textToSpeech.language = Locale.ENGLISH
                 textToSpeech.setOnUtteranceProgressListener(speechProgressListener)
             }
         })
@@ -94,15 +106,16 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun render(colorId: Int) {
-        val color = getColorFromId(colorId)
-        twisterHeaderTv.setTextColor(color)
-        setControlColors(color)
+        setPlayDrawable()
+        controlsColor = getColorFromId(colorId)
+        twisterHeaderTv.setTextColor(controlsColor)
+        setControlColors()
     }
 
-    private fun setControlColors(color: Int) {
-        nextButtonIv.setColorFilter(color)
-        previousButtonIv.setColorFilter(color)
-        playPauseButtonIv.setColorFilter(color)
+    private fun setControlColors() {
+        nextButtonIv.setColorFilter(controlsColor)
+        previousButtonIv.setColorFilter(controlsColor)
+        playPauseButtonIv.setColorFilter(controlsColor)
     }
 
     private fun setClickListeners() {
@@ -118,17 +131,23 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun playPauseTwister() {
-        if(isTwisterPlaying)
+        if(isTwisterPlaying) {
+            setPlayDrawable()
             stopTextToSpeech()
-        else
+        }
+        else {
+            setPauseDrawable()
             playTextToSpeech()
+        }
     }
 
     private fun markTwisterAsStopped() {
+        setPlayDrawable()
         isTwisterPlaying = false
     }
 
     private fun markTwisterAsPlaying() {
+        setPauseDrawable()
         isTwisterPlaying = true
     }
 
@@ -141,9 +160,23 @@ class ReadingActivity : BaseActivity() {
 
     private fun playTextToSpeech() {
         if(!textToSpeech.isSpeaking) {
-            textToSpeech.speak(twister.twister, TextToSpeech.QUEUE_FLUSH, null, null)
+            textToSpeech.speak(twister.twister, TextToSpeech.QUEUE_FLUSH, getUtteranceParamsBundle(), UTTERANCE_ID)
             markTwisterAsPlaying()
         }
+    }
+
+    private fun getUtteranceParamsBundle(): Bundle {
+        val bundle = Bundle()
+        bundle.putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, EMPTY_STRING)
+        return bundle
+    }
+
+    private fun setPauseDrawable() {
+        playPauseButtonIv.setBackgroundResource(R.drawable.ic_pause_filled)
+    }
+
+    private fun setPlayDrawable() {
+        playPauseButtonIv.setBackgroundResource(R.drawable.ic_play_filled)
     }
 
     override fun onStart() {
