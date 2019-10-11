@@ -13,15 +13,23 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     private lateinit var twisterClickListener: TwisterClickListener
 
-    fun setTwister(twister: Twister, levelType: Int) {
-        inflateViews(twister, levelType)
+    fun setTwister(twister: Twister, levelType: Int, position: Int) {
+        inflateViews(twister, levelType, position)
         setClickListeners(twister)
     }
 
-    private fun inflateViews(twister: Twister, levelType: Int) {
+    private fun inflateViews(twister: Twister, levelType: Int, position: Int) {
         setTwisterTitle(twister.name, levelType)
         setTwisterType(twister.isLocked)
         setOutlineDecoration(levelType)
+        setTwisterBackground(position)
+    }
+
+    private fun setTwisterBackground(position: Int) {
+        if(position % 2 == 0)
+            itemView.cellParent.setBackgroundColor(getColorForId(R.color.twister_cell_color_even))
+        else
+            itemView.cellParent.setBackgroundColor(getColorForId(R.color.twister_cell_color_odd))
     }
 
     private fun setOutlineDecoration(levelType: Int) {
@@ -34,31 +42,6 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     private fun setOutlinesBgColor(bgColor: Int) {
         itemView.startOutlineIv.setBackgroundColor(getColorForId(bgColor))
         itemView.endOutlineIv.setBackgroundColor(getColorForId(bgColor))
-    }
-
-    private fun setTwisterType(istwisterLocked: Boolean) {
-        if(istwisterLocked)
-            setTwisterType(
-                    R.string.twister_type_paid,
-                    R.drawable.bg_paid_twister_type,
-                    R.color.free_twister_type
-            )
-        else
-            setTwisterType(
-                    R.string.twister_type_free,
-                    R.drawable.bg_free_twister_type,
-                    R.color.white
-            )
-    }
-
-    private fun setTwisterType(stringId: Int, drawableId: Int, textColor: Int) {
-        itemView.twisterTypeTv.text = getStringForId(stringId)
-        itemView.twisterTypeTv.setTextColor(getColorForId(textColor))
-        itemView.twisterTypeTv.setBackgroundResource(drawableId)
-    }
-
-    private fun getStringForId(id: Int): String {
-        return itemView.context.getString(id)
     }
 
     private fun getColorForId(id: Int): Int {
@@ -96,5 +79,33 @@ class TwisterHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     interface TwisterClickListener {
         fun onLockedTwisterClicked(twister: Twister)
         fun onUnlockedTwisterClicked(twister: Twister)
+    }
+
+
+    private fun setTwisterType(@Suppress("UNUSED_PARAMETER") istwisterLocked: Boolean) {
+//        if(istwisterLocked)
+//            setTwisterType(
+//                    R.string.twister_type_paid,
+//                    R.drawable.bg_paid_twister_type,
+//                    R.color.free_twister_type
+//            )
+//        else
+//            setTwisterType(
+//                    R.string.twister_type_free,
+//                    R.drawable.bg_free_twister_type,
+//                    R.color.white
+//            )
+    }
+
+    @Suppress("unused", "UNUSED_PARAMETER")
+    private fun setTwisterType(stringId: Int, drawableId: Int, textColor: Int) {
+//        itemView.twisterTypeTv.text = getStringForId(stringId)
+//        itemView.twisterTypeTv.setTextColor(getColorForId(textColor))
+//        itemView.twisterTypeTv.setBackgroundResource(drawableId)
+    }
+
+    @Suppress("unused")
+    private fun getStringForId(id: Int): String {
+        return itemView.context.getString(id)
     }
 }

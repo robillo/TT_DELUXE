@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Tongue Twisters</string>
 
     <string name="ad_test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
@@ -44,6 +44,12 @@
 
     <string name="first_item_reached">You are already at the first twister.</string>
     <string name="last_item_reached">You are already at the last twister.</string>
+
+    <string name="tathastu_subscribe_bitly_link">http://bit.ly/TathastuSubscribe</string>
+    <string name="subscribe_tathastu_prompt">SUBSCRIBE</string>
+    <string name="tathastu_subscribe_help_description">We are working hard to scale our YouTube channel named Tathastu.\n\nWe would be thankful if you contribute by subscribing to it.\n\nThank you for the support.</string>
+    <string name="tathastu_subscribe_help_header">We need your help!</string>
+    <string name="tathastu_subscribe_help_indicator">Hey Buddy,</string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

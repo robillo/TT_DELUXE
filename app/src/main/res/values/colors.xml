@@ -43,6 +43,9 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 
+    <color name="twister_cell_color_even">#FFFFFF</color>
+    <color name="twister_cell_color_odd">#F1F1F1</color>
+
     <color name="separator_color">#C3F1F1F1</color>
     <color name="premium_tv_bg">#FFD23E</color>
 

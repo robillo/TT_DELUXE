@@ -15,17 +15,22 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerReadingActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.MAX_TWISTER_INDEX
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.MIN_TWISTER_INDEX
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DAY_TWISTER
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DIFFICULTY
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_LENGTH
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.UNIT_VALUE_INT
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.TwisterPreferences
 import kotlinx.android.synthetic.main.activity_reading.*
 import java.util.*
 import javax.inject.Inject
 
 class ReadingActivity : BaseActivity() {
+
+    @Inject
+    lateinit var preferences: TwisterPreferences
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
@@ -106,16 +111,16 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun render(colorId: Int) {
-        setPlayDrawable()
         controlsColor = getColorFromId(colorId)
         twisterHeaderTv.setTextColor(controlsColor)
-        setControlColors()
+        setControlsColors()
+        setPlayDrawable()
     }
 
-    private fun setControlColors() {
+    private fun setControlsColors() {
         nextButtonIv.setColorFilter(controlsColor)
-        previousButtonIv.setColorFilter(controlsColor)
         playPauseButtonIv.setColorFilter(controlsColor)
+        previousButtonIv.setColorFilter(controlsColor)
     }
 
     private fun setClickListeners() {
@@ -172,11 +177,11 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun setPauseDrawable() {
-        playPauseButtonIv.setBackgroundResource(R.drawable.ic_pause_filled)
+        playPauseButtonIv.setImageResource(R.drawable.ic_pause_filled)
     }
 
     private fun setPlayDrawable() {
-        playPauseButtonIv.setBackgroundResource(R.drawable.ic_play_filled)
+        playPauseButtonIv.setImageResource(R.drawable.ic_play_filled)
     }
 
     override fun onStart() {
@@ -270,6 +275,10 @@ class ReadingActivity : BaseActivity() {
             object: UtteranceProgressListener() {
 
                 override fun onDone(utteranceId: String?) {
+                    preferences.putInt(
+                            EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT,
+                            preferences.getInt(EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT, 0) + 1
+                    )
                     markTwisterAsStopped()
                 }
 

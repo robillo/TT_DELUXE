@@ -25,7 +25,7 @@ class TwisterListAdaper(private val twisterList: List<Twister>, private val leve
     }
 
     override fun onBindViewHolder(holder: TwisterHolder, position: Int) {
-        holder.setTwister(twisterList[position], levelType)
+        holder.setTwister(twisterList[position], levelType, position)
         holder.setTwisterClickListener(this)
     }
 

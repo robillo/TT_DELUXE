@@ -16,29 +16,43 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.difficulty_l
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.DifficultyAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.length_level.LengthLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.tathastu.popup.SubscribeTathastuDialogFragment
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DAY_TWISTER
 import kotlinx.android.synthetic.main.activity_home.*
 import java.util.*
 import javax.inject.Inject
+import android.net.Uri
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.EXTRA_PREFERENCE_WAS_EVER_SUBSCRIBE_CLICKED
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.SPOKEN_TWISTER_MAX_PROMPT_COUNT
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.TwisterPreferences
 
-class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListener {
+
+class HomeActivity : BaseActivity(),
+        DifficultyAdapter.DifficultyLevelClickListener,
+        SubscribeTathastuDialogFragment.SubscribeClickListener {
 
     @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
+    lateinit var preferences: TwisterPreferences
 
     @Inject
     lateinit var gridLayoutManager: GridLayoutManager
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
 
     private lateinit var dayTwister: Twister
     private lateinit var lengthList: List<LengthLevel>
     private lateinit var viewModel: HomeActivityViewModel
     private lateinit var difficultyList: List<DifficultyLevel>
+    private lateinit var subscribeDialog: SubscribeTathastuDialogFragment
 
     companion object {
-        const val SMALL_LENGTH_LEVEL_INDEX = 0
-        const val MEDIUM_LENGTH_LEVEL_INDEX = 1
-        const val LONG_LENGTH_LEVEL_INDEX = 2
+        private const val SMALL_LENGTH_LEVEL_INDEX = 0
+        private const val MEDIUM_LENGTH_LEVEL_INDEX = 1
+        private const val LONG_LENGTH_LEVEL_INDEX = 2
+        private const val TAG_SUBSCRIBE_DIALOG = "TAG_SUBSCRIBE_DIALOG"
         fun newIntent(context: Context): Intent {
             return Intent(context, HomeActivity::class.java)
         }
@@ -53,6 +67,36 @@ class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListe
         setComponent()
         initLayout()
         setListeners()
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        if(shouldShowSubscribeTathastuDialog())
+            showSubscribeTathastuDialog()
+    }
+
+    private fun shouldShowSubscribeTathastuDialog(): Boolean {
+        return !wasSubscribeButtonEverClicked() && isSpokenTwisterLimitReached()
+    }
+
+    private fun wasSubscribeButtonEverClicked(): Boolean {
+        return preferences.getBoolean(EXTRA_PREFERENCE_WAS_EVER_SUBSCRIBE_CLICKED)
+    }
+
+    private fun isSpokenTwisterLimitReached(): Boolean {
+        return preferences.getInt(
+                EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT, 0
+        ) > SPOKEN_TWISTER_MAX_PROMPT_COUNT
+    }
+
+    private fun showSubscribeTathastuDialog() {
+        if(!::subscribeDialog.isInitialized) {
+            subscribeDialog = SubscribeTathastuDialogFragment.newInstance()
+            subscribeDialog.setSubscribeClickListener(this)
+        }
+
+        subscribeDialog.show(supportFragmentManager, TAG_SUBSCRIBE_DIALOG)
     }
 
     private fun initLayout() {
@@ -165,5 +209,18 @@ class HomeActivity : BaseActivity(), DifficultyAdapter.DifficultyLevelClickListe
 
         viewModel = ViewModelProviders.of(this, viewModelFactory)
                 .get(HomeActivityViewModel::class.java)
+    }
+
+    override fun onSubscribeClicked() {
+        val subscribeLink = getString(R.string.tathastu_subscribe_bitly_link)
+        val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse(subscribeLink))
+        startActivity(webIntent)
+
+        preferences.putBoolean(EXTRA_PREFERENCE_WAS_EVER_SUBSCRIBE_CLICKED, true)
+        preferences.putInt(EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT, 0)
+    }
+
+    override fun onSubscribeDismissed() {
+        preferences.putInt(EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT, 0)
     }
 }

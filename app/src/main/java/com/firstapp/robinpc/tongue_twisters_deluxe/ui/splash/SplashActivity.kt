@@ -24,7 +24,7 @@ class SplashActivity : BaseActivity() {
 
     companion object {
         private const val STEP_VALUE = 200L
-        private const val TIMER_VALUE = 2000L
+        private const val TIMER_VALUE = 1000L
     }
 
     override fun getLayoutResId(): Int {
@@ -63,9 +63,6 @@ class SplashActivity : BaseActivity() {
                 SplashViewModel.Companion.Progress.ARRAYS_CONVERTED.name -> {
                     viewModel.insertListsIntoRoom()
                 }
-                SplashViewModel.Companion.Progress.DATA_STORED.name -> {
-                    startTimer()
-                }
             }
         })
     }
@@ -86,15 +83,15 @@ class SplashActivity : BaseActivity() {
             }
 
             override fun onTick(millisUntilFinished: Long) {
-                loadingProgressBar.progress = getCompletionPercentage(millisUntilFinished)
+                loadingProgressBar.progress = getCompletionPercentage(millisUntilFinished, TIMER_VALUE)
             }
         }
         timer.start()
     }
 
-    private fun getCompletionPercentage(remainingTime: Long): Int {
-        val timeElapsed = TIMER_VALUE - remainingTime + STEP_VALUE
-        return timeElapsed.toInt() * 100 / TIMER_VALUE.toInt()
+    private fun getCompletionPercentage(remainingTime: Long, timerValue: Long): Int {
+        val timeElapsed = timerValue - remainingTime + STEP_VALUE
+        return timeElapsed.toInt() * 100 / timerValue.toInt()
     }
 
     private fun startHomeActivity() {
