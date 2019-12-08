@@ -23,6 +23,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 import java.util.*
 import javax.inject.Inject
 import android.net.Uri
+import android.widget.Toast
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.EXTRA_PREFERENCE_WAS_EVER_SUBSCRIBE_CLICKED
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.SPOKEN_TWISTER_MAX_PROMPT_COUNT
@@ -212,12 +213,19 @@ class HomeActivity : BaseActivity(),
     }
 
     override fun onSubscribeClicked() {
+        showToast(getString(R.string.please_subscribe_toast_text), Toast.LENGTH_LONG)
+
         val subscribeLink = getString(R.string.tathastu_subscribe_bitly_link)
         val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse(subscribeLink))
         startActivity(webIntent)
 
         preferences.putBoolean(EXTRA_PREFERENCE_WAS_EVER_SUBSCRIBE_CLICKED, true)
         preferences.putInt(EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT, 0)
+    }
+
+    @Suppress("SameParameterValue")
+    private fun showToast(text: String, length: Int) {
+        Toast.makeText(this, text, length).show()
     }
 
     override fun onSubscribeDismissed() {

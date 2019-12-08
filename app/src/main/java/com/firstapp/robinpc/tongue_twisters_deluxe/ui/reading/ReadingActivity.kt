@@ -2,6 +2,7 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading
 
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
@@ -15,6 +16,8 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerReadingActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.tathastu.popup.SubscribeTathastuDialogFragment
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.MAX_TWISTER_INDEX
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.MIN_TWISTER_INDEX
@@ -27,7 +30,7 @@ import kotlinx.android.synthetic.main.activity_reading.*
 import java.util.*
 import javax.inject.Inject
 
-class ReadingActivity : BaseActivity() {
+class ReadingActivity : BaseActivity(), SubscribeTathastuDialogFragment.SubscribeClickListener {
 
     @Inject
     lateinit var preferences: TwisterPreferences
@@ -38,6 +41,7 @@ class ReadingActivity : BaseActivity() {
     private lateinit var twister: Twister
     private lateinit var textToSpeech: TextToSpeech
     private lateinit var viewModel: ReadingActivityViewModel
+    private lateinit var subscribeDialog: SubscribeTathastuDialogFragment
 
     private var controlsColor: Int = -1
     private var isTwisterPlaying: Boolean = false
@@ -50,6 +54,7 @@ class ReadingActivity : BaseActivity() {
         private const val EXTRA_TWISTER = "TWISTER"
         private const val UTTERANCE_ID = "TWISTER_UTTERANCE"
         private const val EXTRA_LAUNCHED_FROM = "LAUNCHED_FROM"
+        private const val TAG_SUBSCRIBE_DIALOG = "TAG_SUBSCRIBE_DIALOG"
 
         fun newIntent(context: Context, twister: Twister, launchedFrom: Int): Intent {
             val intent = Intent(context, ReadingActivity::class.java)
@@ -141,10 +146,38 @@ class ReadingActivity : BaseActivity() {
             stopTextToSpeech()
         }
         else {
-            setPauseDrawable()
-            playTextToSpeech()
+            if(shouldShowSubscribeTathastuDialog())
+                showSubscribeTathastuDialog()
+            else {
+                setPauseDrawable()
+                playTextToSpeech()
+            }
         }
     }
+
+    private fun shouldShowSubscribeTathastuDialog(): Boolean {
+        return !wasSubscribeButtonEverClicked() && isSpokenTwisterLimitReached()
+    }
+
+    private fun wasSubscribeButtonEverClicked(): Boolean {
+        return preferences.getBoolean(Constants.EXTRA_PREFERENCE_WAS_EVER_SUBSCRIBE_CLICKED)
+    }
+
+    private fun isSpokenTwisterLimitReached(): Boolean {
+        return preferences.getInt(
+                EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT, 0
+        ) > Constants.SPOKEN_TWISTER_MAX_PROMPT_COUNT
+    }
+
+    private fun showSubscribeTathastuDialog() {
+        if(!::subscribeDialog.isInitialized) {
+            subscribeDialog = SubscribeTathastuDialogFragment.newInstance()
+            subscribeDialog.setSubscribeClickListener(this)
+        }
+
+        subscribeDialog.show(supportFragmentManager, TAG_SUBSCRIBE_DIALOG)
+    }
+
 
     private fun markTwisterAsStopped() {
         setPlayDrawable()
@@ -207,7 +240,7 @@ class ReadingActivity : BaseActivity() {
             setTwisterObserver(viewModel.getTwisterForIndex(twisterIndex))
 
         else
-            showToast(getStringFromId(R.string.last_item_reached))
+            showToast(getStringFromId(R.string.last_item_reached), Toast.LENGTH_SHORT)
     }
 
     private fun goPrevious(twisterIndex: Int) {
@@ -216,7 +249,7 @@ class ReadingActivity : BaseActivity() {
             setTwisterObserver(viewModel.getTwisterForIndex(twisterIndex))
 
         else
-            showToast(getStringFromId(R.string.first_item_reached))
+            showToast(getStringFromId(R.string.first_item_reached), Toast.LENGTH_SHORT)
     }
 
     private fun setTwisterObserver(twister: LiveData<Twister>) {
@@ -239,8 +272,8 @@ class ReadingActivity : BaseActivity() {
         return twisterIndex > MIN_TWISTER_INDEX
     }
 
-    private fun showToast(text: String) {
-        Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+    private fun showToast(text: String, length: Int) {
+        Toast.makeText(this, text, length).show()
     }
 
     private fun getColorFromId(colorId: Int): Int {
@@ -268,6 +301,21 @@ class ReadingActivity : BaseActivity() {
 
         viewModel = ViewModelProviders.of(this, viewModelFactory)
                 .get(ReadingActivityViewModel::class.java)
+    }
+
+    override fun onSubscribeClicked() {
+        showToast(getString(R.string.please_subscribe_toast_text), Toast.LENGTH_LONG)
+
+        val subscribeLink = getString(R.string.tathastu_subscribe_bitly_link)
+        val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse(subscribeLink))
+        startActivity(webIntent)
+
+        preferences.putBoolean(Constants.EXTRA_PREFERENCE_WAS_EVER_SUBSCRIBE_CLICKED, true)
+        preferences.putInt(EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT, 0)
+    }
+
+    override fun onSubscribeDismissed() {
+        preferences.putInt(EXTRA_PREFERENCE_TWISTERS_SINCE_LAST_LIMIT, 0)
     }
 
     private var speechProgressListener: UtteranceProgressListener =

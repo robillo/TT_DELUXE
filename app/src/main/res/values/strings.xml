@@ -50,6 +50,7 @@
     <string name="tathastu_subscribe_help_description">We are working hard to scale our YouTube channel named Tathastu.\n\nWe would be thankful if you contribute by subscribing to it.\n\nThank you for the support.</string>
     <string name="tathastu_subscribe_help_header">We need your help!</string>
     <string name="tathastu_subscribe_help_indicator">Hey Buddy,</string>
+    <string name="please_subscribe_toast_text">Please Subscribe. Thank You!</string>
 
     <!-- actual id ca-app-pub-8103354595257586~5155276805-->
 </resources>

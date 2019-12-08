@@ -26,7 +26,7 @@ class Constants {
         const val EXTRA_PREFERENCE_WAS_EVER_SUBSCRIBE_CLICKED = "WAS_EVER_SUBSCRIBE_CLICKED"
 
         //LIMITS
-        const val SPOKEN_TWISTER_MAX_PROMPT_COUNT = 10
+        const val SPOKEN_TWISTER_MAX_PROMPT_COUNT = 6
 
         //JSON DB CONSTANTS
         const val ALL_TWISTERS = "twister"
