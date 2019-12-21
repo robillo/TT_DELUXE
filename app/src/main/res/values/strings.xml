@@ -1,10 +1,6 @@
 <resources>
     <string name="app_name">Tongue Twisters</string>
 
-    <string name="ad_test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_app_id">ca-app-pub-8103354595257586~5155276805</string>
-    <string name="banner_ad_unit_id">ca-app-pub-8103354595257586/8711378438</string>
-    <string name="hmd_global_test_id">14A8111EAF056776E18C7EE8317F5AD2</string>
     <string name="loading">LOADING…</string>
     <string name="app_name_caps">TONGUE TWISTERS</string>
     <string name="you_are_a">YOU ARE A</string>
@@ -52,5 +48,8 @@
     <string name="tathastu_subscribe_help_indicator">Hey Buddy,</string>
     <string name="please_subscribe_toast_text">Please Subscribe. Thank You!</string>
 
-    <!-- actual id ca-app-pub-8103354595257586~5155276805-->
+    <string name="ad_test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_app_id">ca-app-pub-8103354595257586~5155276805</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8103354595257586/8711378438</string>
+    <string name="samsung_afifty_global_device_id">74571B45624EA85653BFE56B0398FAE1</string>
 </resources>

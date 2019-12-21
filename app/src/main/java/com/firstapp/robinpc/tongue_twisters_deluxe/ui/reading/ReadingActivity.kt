@@ -24,6 +24,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.UNI
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.TwisterPreferences
 import com.google.android.gms.ads.AdRequest
 import kotlinx.android.synthetic.main.activity_reading.*
+import kotlinx.android.synthetic.main.activity_reading.adView
 import java.util.*
 import javax.inject.Inject
 
@@ -74,9 +75,7 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun initialiseAds() {
-        //MobileAds.initialize(this) {
         refreshAd()
-        //}
     }
 
     private fun initVariables() {
@@ -265,7 +264,11 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun refreshAd() {
-        adView.loadAd(AdRequest.Builder().build())
+        adView.loadAd(
+                AdRequest.Builder()
+                        .addTestDevice(getString(R.string.samsung_afifty_global_device_id))
+                        .build()
+        )
     }
 
     override fun onBackPressed() {

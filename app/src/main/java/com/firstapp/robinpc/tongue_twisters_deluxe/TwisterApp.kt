@@ -6,6 +6,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.DaggerAppCompone
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.AppComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.module.others.ContextModule
 import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.initialization.InitializationStatus
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor
@@ -34,7 +35,9 @@ class TwisterApp : Application() {
     }
 
     private fun initialiseAds() {
-        MobileAds.initialize(this)
+        MobileAds.initialize(this) {
+
+        }
     }
 
     fun appComponent(): AppComponent {

@@ -16,7 +16,6 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.Twis
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_LENGTH
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_length_level.*
 import javax.inject.Inject
 
@@ -52,13 +51,15 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
     }
 
     private fun initialiseAds() {
-        //MobileAds.initialize(this) {
         refreshAd()
-        //}
     }
 
     private fun refreshAd() {
-        adView.loadAd(AdRequest.Builder().build())
+        adView.loadAd(
+                AdRequest.Builder()
+                        .addTestDevice(getString(R.string.samsung_afifty_global_device_id))
+                        .build()
+        )
     }
 
     private fun setViews() {

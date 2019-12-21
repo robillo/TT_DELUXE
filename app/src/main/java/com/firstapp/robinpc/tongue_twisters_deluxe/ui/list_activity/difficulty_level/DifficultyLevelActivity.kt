@@ -16,8 +16,10 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.Twis
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DIFFICULTY
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
-import kotlinx.android.synthetic.main.activity_difficulty_level.*
+import kotlinx.android.synthetic.main.activity_difficulty_level.adView
+import kotlinx.android.synthetic.main.activity_difficulty_level.bottomOutlineIv
+import kotlinx.android.synthetic.main.activity_difficulty_level.levelHeaderTv
+import kotlinx.android.synthetic.main.activity_difficulty_level.twisterRecycler
 import javax.inject.Inject
 
 class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListener {
@@ -52,13 +54,15 @@ class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickLi
     }
 
     private fun initialiseAds() {
-        //MobileAds.initialize(this) {
         refreshAd()
-        //}
     }
 
     private fun refreshAd() {
-        adView.loadAd(AdRequest.Builder().build())
+        adView.loadAd(
+                AdRequest.Builder()
+                        .addTestDevice(getString(R.string.samsung_afifty_global_device_id))
+                        .build()
+        )
     }
 
     private fun setViews() {
@@ -81,7 +85,7 @@ class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickLi
     }
 
     private fun getArguments() {
-        difficultyLevel = intent.getParcelableExtra(EXTRA_DIFFICULTY_LEVEL)
+        difficultyLevel = intent.getParcelableExtra(EXTRA_DIFFICULTY_LEVEL)!!
     }
 
     private fun loadData() {
