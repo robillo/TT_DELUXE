@@ -15,9 +15,9 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.TwisterListAdaper
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DIFFICULTY
-import kotlinx.android.synthetic.main.activity_difficulty_level.bottomOutlineIv
-import kotlinx.android.synthetic.main.activity_difficulty_level.levelHeaderTv
-import kotlinx.android.synthetic.main.activity_difficulty_level.twisterRecycler
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
+import kotlinx.android.synthetic.main.activity_difficulty_level.*
 import javax.inject.Inject
 
 class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListener {
@@ -48,6 +48,17 @@ class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickLi
         setComponent()
         loadData()
         setViews()
+        initialiseAds()
+    }
+
+    private fun initialiseAds() {
+        //MobileAds.initialize(this) {
+        refreshAd()
+        //}
+    }
+
+    private fun refreshAd() {
+        adView.loadAd(AdRequest.Builder().build())
     }
 
     private fun setViews() {

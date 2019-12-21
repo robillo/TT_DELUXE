@@ -5,6 +5,7 @@ import android.app.Application
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.DaggerAppComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.AppComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.module.others.ContextModule
+import com.google.android.gms.ads.MobileAds
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor
@@ -28,6 +29,12 @@ class TwisterApp : Application() {
         component = DaggerAppComponent.builder()
                 .contextModule(ContextModule(this))
                 .build()
+
+        initialiseAds()
+    }
+
+    private fun initialiseAds() {
+        MobileAds.initialize(this)
     }
 
     fun appComponent(): AppComponent {

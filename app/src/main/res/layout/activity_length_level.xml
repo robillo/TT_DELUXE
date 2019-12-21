@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--suppress AndroidUnknownAttribute -->
-<androidx.core.widget.NestedScrollView
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,81 +9,101 @@
     android:background="@color/white"
     tools:context=".ui.list_activity.length_level.LengthLevelActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_lottie_activity_length_level"
-            app:lottie_fileName="lottie/professional_guy.json"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/lengthRecyclerHolder"
-            android:layout_marginBottom="@dimen/padding_4_dp"
-            android:layout_marginTop="@dimen/padding_24_dp"
-            tools:background="@color/skeleton_two"
-            app:lottie_loop="true"
-            app:lottie_autoPlay="true"
-            android:id="@+id/lengthLevelLottie"/>
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/adView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lengthRecyclerHolder"
-            android:layout_marginTop="@dimen/y_padding_level_recycler_top"
-            android:layout_marginBottom="@dimen/y_padding_level_recycler_bottom"
-            android:layout_marginStart="@dimen/x_padding_level_recycler"
-            android:layout_marginEnd="@dimen/x_padding_level_recycler"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/lengthLevelLottie">
+            android:layout_height="wrap_content">
 
-            <TextView
+            <com.airbnb.lottie.LottieAnimationView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/height_lottie_activity_length_level"
+                app:lottie_fileName="lottie/professional_guy.json"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/twisterRecycler"
-                android:paddingTop="@dimen/padding_12_dp"
-                android:paddingBottom="@dimen/padding_12_dp"
-                android:textColor="@color/white"
-                tools:text="LEVEL 2"
-                android:gravity="center"
-                tools:textStyle="bold"
-                fontPath="fonts/Montserrat-Bold.ttf"
-                android:textSize="@dimen/font_26_sp"
-                android:id="@+id/levelHeaderTv"
-                android:background="@drawable/bg_length_level_header"
-                tools:ignore="MissingPrefix" />
+                app:layout_constraintBottom_toTopOf="@id/lengthRecyclerHolder"
+                android:layout_marginBottom="@dimen/padding_4_dp"
+                android:layout_marginTop="@dimen/padding_24_dp"
+                tools:background="@color/skeleton_two"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:id="@+id/lengthLevelLottie"/>
 
-            <androidx.recyclerview.widget.RecyclerView
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/bottomOutlineIv"
-                app:layout_constraintTop_toBottomOf="@id/levelHeaderTv"
-                tools:listitem="@layout/cell_twister_level"
-                android:nestedScrollingEnabled="false"
-                android:id="@+id/twisterRecycler"
-                tools:ignore="UnusedAttribute" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@color/length_level_header_bg"
+                android:id="@+id/lengthRecyclerHolder"
+                android:layout_marginTop="@dimen/y_padding_level_recycler_top"
+                android:layout_marginBottom="@dimen/y_padding_level_recycler_bottom"
+                android:layout_marginStart="@dimen/x_padding_level_recycler"
+                android:layout_marginEnd="@dimen/x_padding_level_recycler"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:id="@+id/bottomOutlineIv"
-                app:layout_constraintTop_toBottomOf="@id/twisterRecycler"
-                tools:ignore="ContentDescription" />
+                app:layout_constraintTop_toBottomOf="@id/lengthLevelLottie">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/twisterRecycler"
+                    android:paddingTop="@dimen/padding_12_dp"
+                    android:paddingBottom="@dimen/padding_12_dp"
+                    android:textColor="@color/white"
+                    tools:text="LEVEL 2"
+                    android:gravity="center"
+                    tools:textStyle="bold"
+                    fontPath="fonts/Montserrat-Bold.ttf"
+                    android:textSize="@dimen/font_26_sp"
+                    android:id="@+id/levelHeaderTv"
+                    android:background="@drawable/bg_length_level_header"
+                    tools:ignore="MissingPrefix" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/bottomOutlineIv"
+                    app:layout_constraintTop_toBottomOf="@id/levelHeaderTv"
+                    tools:listitem="@layout/cell_twister_level"
+                    android:nestedScrollingEnabled="false"
+                    android:id="@+id/twisterRecycler"
+                    tools:ignore="UnusedAttribute" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/length_level_header_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/bottomOutlineIv"
+                    app:layout_constraintTop_toBottomOf="@id/twisterRecycler"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 
-</androidx.core.widget.NestedScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

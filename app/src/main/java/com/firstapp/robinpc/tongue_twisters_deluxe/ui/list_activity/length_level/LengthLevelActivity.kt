@@ -15,6 +15,8 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.TwisterListAdaper
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_LENGTH
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_length_level.*
 import javax.inject.Inject
 
@@ -46,6 +48,17 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
         setComponent()
         loadData()
         setViews()
+        initialiseAds()
+    }
+
+    private fun initialiseAds() {
+        //MobileAds.initialize(this) {
+        refreshAd()
+        //}
+    }
+
+    private fun refreshAd() {
+        adView.loadAd(AdRequest.Builder().build())
     }
 
     private fun setViews() {
@@ -68,7 +81,7 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
     }
 
     private fun getArguments() {
-        lengthLevel = intent.getParcelableExtra(EXTRA_LENGTH_LEVEL)
+        lengthLevel = intent.getParcelableExtra(EXTRA_LENGTH_LEVEL)!!
     }
 
     private fun loadData() {
