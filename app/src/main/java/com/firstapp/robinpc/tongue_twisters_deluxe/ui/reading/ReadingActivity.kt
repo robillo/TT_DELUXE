@@ -3,6 +3,7 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
 import android.view.View
@@ -11,11 +12,11 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.bumptech.glide.Glide
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerReadingActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ads_pager_adapter.AdsPagerAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.MAX_TWISTER_INDEX
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.MIN_TWISTER_INDEX
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DAY_TWISTER
@@ -23,10 +24,9 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYP
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_LENGTH
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.UNIT_VALUE_INT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.TwisterPreferences
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.view_pager_transformers.ZoomOutSlideTransformer
 import com.google.android.gms.ads.formats.UnifiedNativeAd
 import kotlinx.android.synthetic.main.activity_reading.*
-import kotlinx.android.synthetic.main.cell_view_pager_ad.*
-import kotlinx.android.synthetic.main.cell_view_pager_ad.view.*
 import java.util.*
 import javax.inject.Inject
 import kotlin.collections.ArrayList
@@ -39,13 +39,19 @@ class ReadingActivity : BaseActivity() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
+    private lateinit var adsPagerAdapter: AdsPagerAdapter
     private lateinit var twister: Twister
     private lateinit var textToSpeech: TextToSpeech
     private lateinit var viewModel: ReadingActivityViewModel
+    private lateinit var loopHandler: Handler
+    private lateinit var runnable: Runnable
+
+    private val loopInterval = 8000L
 
     private var controlsColor: Int = -1
     private var isTwisterPlaying: Boolean = false
     private var launchedFrom: Int = TYPE_DAY_TWISTER
+    private var shouldLoopViewPager = false
     private var utteranceMap = HashMap<String, String>()
 
     companion object {
@@ -64,38 +70,30 @@ class ReadingActivity : BaseActivity() {
     }
 
     override fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>) {
-        //TODO - set adapter or view pager for these ads
-        loadUnifiedAd(loadedAds[0])
+        shouldLoopViewPager = true
+        adsPagerAdapter = AdsPagerAdapter(supportFragmentManager, loadedAds)
+        adsViewPager.visibility = View.VISIBLE
+        adsViewPager.adapter = adsPagerAdapter
+        adsViewPager.setPageTransformer(false, ZoomOutSlideTransformer())
+        loopViewPager()
     }
 
-    private fun loadUnifiedAd(unifiedNativeAd: UnifiedNativeAd) {
-        //TODo - set these in view holder of the adapter or the view pager
-        unifiedAdViewHolder.visibility = View.VISIBLE
+    private fun loopViewPager() {
+        loopHandler = Handler()
+        runnable = Runnable {
 
-        unifiedAdViewHolder.installAppTitleTv.text = unifiedNativeAd.headline
-        unifiedAdViewHolder.headlineView = unifiedAdViewHolder.installAppTitleTv
+            if(adsViewPager.currentItem == adsPagerAdapter.count - 1)
+                adsViewPager.currentItem = 0
+            else
+                adsViewPager.currentItem = adsViewPager.currentItem + 1
 
-        unifiedNativeAd.body?.let {
-            unifiedAdViewHolder.installAppDescriptionTv.text = it
-            unifiedAdViewHolder.bodyView = unifiedAdViewHolder.installAppDescriptionTv
+            loopHandler.postDelayed(runnable, loopInterval)
         }
-        unifiedNativeAd.starRating?.let {
-            unifiedAdViewHolder.installAppNumericRatingTv.text = it.toString()
-            unifiedAdViewHolder.appNumbersHolder.visibility = View.VISIBLE
-            unifiedAdViewHolder.starRatingView = unifiedAdViewHolder.installAppNumericRatingTv
-        } ?: run {
-            unifiedAdViewHolder.appNumbersHolder.visibility = View.GONE
-        }
-        unifiedNativeAd.icon?.uri?.let {
-            unifiedAdViewHolder.installAppIconIv.clipToOutline = true
-            Glide.with(this).load(it).into(unifiedAdViewHolder.installAppIconIv)
-            unifiedAdViewHolder.iconView = unifiedAdViewHolder.installAppIconIv
-        }
-        unifiedNativeAd.callToAction?.let {
-            unifiedAdViewHolder.callToActionTv.text = it
-            unifiedAdViewHolder.callToActionView = unifiedAdViewHolder.callToActionTv
-        }
-        unifiedAdViewHolder.setNativeAd(unifiedNativeAd)
+        loopHandler.postDelayed(runnable, loopInterval)
+    }
+
+    private fun stopViewPagerLoop() {
+        loopHandler.removeCallbacks(runnable)
     }
 
     override fun getLayoutResId(): Int {
@@ -230,12 +228,20 @@ class ReadingActivity : BaseActivity() {
     }
 
     override fun onStart() {
+        if(shouldLoopViewPager)
+            loopViewPager()
+
         initTextToSpeech()
+
         super.onStart()
     }
 
     override fun onStop() {
         killTextToSpeech()
+
+        if(shouldLoopViewPager)
+            stopViewPagerLoop()
+
         super.onStop()
     }
 

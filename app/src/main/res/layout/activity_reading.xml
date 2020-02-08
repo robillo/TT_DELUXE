@@ -38,18 +38,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintVertical_weight="1"
-        android:layout_marginTop="@dimen/padding_40_dp"
+        android:layout_marginTop="@dimen/padding_20_dp"
         android:layout_marginStart="@dimen/padding_30_dp"
         android:layout_marginEnd="@dimen/padding_30_dp"
+        android:layout_marginBottom="@dimen/padding_10_dp"
         android:scrollbars="none"
         android:paddingTop="@dimen/padding_40_dp"
         android:paddingBottom="@dimen/padding_40_dp"
         android:clipToPadding="false"
         tools:background="@color/browser_actions_bg_grey"
         app:layout_constrainedHeight="true"
+        app:layout_constraintTop_toBottomOf="@id/twisterHeaderTv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/twisterHeaderTv"
         app:layout_constraintBottom_toTopOf="@id/playerControlsHolder"
         android:id="@+id/twisterContentScrollView">
 
@@ -75,7 +76,7 @@
         android:layout_marginEnd="@dimen/padding_24_dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/adContainer"
+        app:layout_constraintBottom_toTopOf="@id/adsViewPager"
         android:id="@+id/playerControlsHolder">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -154,17 +155,17 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/adsViewPager"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/adContainer">
-
-        <include layout="@layout/cell_view_pager_ad"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constrainedHeight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_max="156dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

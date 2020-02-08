@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.reading.ads_pager_fragment.ReadingAdsPageFragment">
+
+    <include
+        layout="@layout/cell_view_pager_ad"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
