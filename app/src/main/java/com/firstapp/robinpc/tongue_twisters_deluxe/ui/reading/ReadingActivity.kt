@@ -49,6 +49,7 @@ class ReadingActivity : BaseActivity() {
     private val loopInterval = 8000L
 
     private var controlsColor: Int = -1
+    private var isTextToSpeechLoaded = false
     private var isTwisterPlaying: Boolean = false
     private var launchedFrom: Int = TYPE_DAY_TWISTER
     private var shouldLoopViewPager = false
@@ -111,7 +112,6 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun initialiseAds() {
-        //refreshAd()
         initAdLoader()
     }
 
@@ -143,6 +143,11 @@ class ReadingActivity : BaseActivity() {
         textToSpeech = TextToSpeech(applicationContext, TextToSpeech.OnInitListener { status ->
 
             if(isTextToSpeechSuccess(status)) {
+                isTextToSpeechLoaded = true
+
+                if(!isTwisterPlaying)
+                    playPauseHolder.performClick()
+
                 textToSpeech.language = Locale.ENGLISH
                 textToSpeech.setOnUtteranceProgressListener(speechProgressListener)
             }
@@ -171,7 +176,8 @@ class ReadingActivity : BaseActivity() {
             goPrevious((twister.id - UNIT_VALUE_INT))
         }
         playPauseHolder.setOnClickListener {
-            playPauseTwister()
+            if(isTextToSpeechLoaded)
+                playPauseTwister()
         }
         nextHolder.setOnClickListener {
             goNext((twister.id + UNIT_VALUE_INT))
@@ -306,6 +312,9 @@ class ReadingActivity : BaseActivity() {
     private fun setTwister() {
         twisterHeaderTv.text = twister.name
         twisterContentTv.text = twister.twister
+
+        if(!isTwisterPlaying && isTextToSpeechLoaded)
+            playPauseHolder.performClick()
     }
 
     override fun onBackPressed() {
