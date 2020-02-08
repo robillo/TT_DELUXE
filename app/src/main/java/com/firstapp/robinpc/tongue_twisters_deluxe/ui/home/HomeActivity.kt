@@ -3,7 +3,6 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.home
 import android.content.Context
 import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.DifficultyLevel
@@ -22,7 +21,8 @@ import kotlinx.android.synthetic.main.activity_home.*
 import java.util.*
 import javax.inject.Inject
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.TwisterPreferences
-
+import com.google.android.gms.ads.formats.UnifiedNativeAd
+import kotlin.collections.ArrayList
 
 class HomeActivity : BaseActivity(),
         DifficultyAdapter.DifficultyLevelClickListener {
@@ -50,6 +50,10 @@ class HomeActivity : BaseActivity(),
         }
     }
 
+    override fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>) {
+        //TODO - show ads
+    }
+
     override fun getLayoutResId(): Int {
         return R.layout.activity_home
     }
@@ -59,6 +63,13 @@ class HomeActivity : BaseActivity(),
         setComponent()
         initLayout()
         setListeners()
+        initAdLoader()
+
+        //FirebaseInstanceId.getInstance().instanceId
+                //.addOnCompleteListener { task ->
+                    //val token = task.result?.token
+                    //Log.e("myTag", "$token")
+                //}
     }
 
     private fun initLayout() {
@@ -169,7 +180,7 @@ class HomeActivity : BaseActivity(),
                 .homeActivityModule(HomeActivityModule(this))
                 .build().injectHomeActivity(this)
 
-        viewModel = ViewModelProviders.of(this, viewModelFactory)
+        viewModel = ViewModelProvider(this, viewModelFactory)
                 .get(HomeActivityViewModel::class.java)
     }
 }

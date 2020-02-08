@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Tongue Twisters</string>
 
+    <string name="ad_app_id" translatable="false">ca-app-pub-8103354595257586~5155276805</string>
+
+    <string name="ad_test_banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8103354595257586/8711378438</string>
+
+    <string name="ad_test_native_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_ad_unit_id" translatable="false">ca-app-pub-8103354595257586/6477914644</string>
+
+    <string name="samsung_afifty_global_device_id" translatable="false">74571B45624EA85653BFE56B0398FAE1</string>
+
     <string name="loading">LOADING…</string>
     <string name="app_name_caps">TONGUE TWISTERS</string>
     <string name="you_are_a">YOU ARE A</string>
@@ -48,8 +58,9 @@
     <string name="tathastu_subscribe_help_indicator">Hey Buddy,</string>
     <string name="please_subscribe_toast_text">Please Subscribe. Thank You!</string>
 
-    <string name="ad_test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ad_app_id">ca-app-pub-8103354595257586~5155276805</string>
-    <string name="banner_ad_unit_id">ca-app-pub-8103354595257586/8711378438</string>
-    <string name="samsung_afifty_global_device_id">74571B45624EA85653BFE56B0398FAE1</string>
+    <string name="dummy_ad_app_description">Indian Constitution is a wonderful app for law students and the general public to know about the world\'s longest constitution.</string>
+    <string name="dummy_install_app_name">Indian Constitution</string>
+    <string name="dummy_install_app_rating">4.4</string>
+    <string name="free">FREE</string>
+    <string name="dummy_call_to_action">GET STARTED</string>
 </resources>

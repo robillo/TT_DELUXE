@@ -5,12 +5,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
+import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
+import com.bumptech.glide.Glide
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerReadingActivityComponent
@@ -22,11 +23,13 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYP
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_LENGTH
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.UNIT_VALUE_INT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.TwisterPreferences
-import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.formats.UnifiedNativeAd
 import kotlinx.android.synthetic.main.activity_reading.*
-import kotlinx.android.synthetic.main.activity_reading.adView
+import kotlinx.android.synthetic.main.cell_view_pager_ad.*
+import kotlinx.android.synthetic.main.cell_view_pager_ad.view.*
 import java.util.*
 import javax.inject.Inject
+import kotlin.collections.ArrayList
 
 class ReadingActivity : BaseActivity() {
 
@@ -60,6 +63,41 @@ class ReadingActivity : BaseActivity() {
         }
     }
 
+    override fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>) {
+        //TODO - set adapter or view pager for these ads
+        loadUnifiedAd(loadedAds[0])
+    }
+
+    private fun loadUnifiedAd(unifiedNativeAd: UnifiedNativeAd) {
+        //TODo - set these in view holder of the adapter or the view pager
+        unifiedAdViewHolder.visibility = View.VISIBLE
+
+        unifiedAdViewHolder.installAppTitleTv.text = unifiedNativeAd.headline
+        unifiedAdViewHolder.headlineView = unifiedAdViewHolder.installAppTitleTv
+
+        unifiedNativeAd.body?.let {
+            unifiedAdViewHolder.installAppDescriptionTv.text = it
+            unifiedAdViewHolder.bodyView = unifiedAdViewHolder.installAppDescriptionTv
+        }
+        unifiedNativeAd.starRating?.let {
+            unifiedAdViewHolder.installAppNumericRatingTv.text = it.toString()
+            unifiedAdViewHolder.appNumbersHolder.visibility = View.VISIBLE
+            unifiedAdViewHolder.starRatingView = unifiedAdViewHolder.installAppNumericRatingTv
+        } ?: run {
+            unifiedAdViewHolder.appNumbersHolder.visibility = View.GONE
+        }
+        unifiedNativeAd.icon?.uri?.let {
+            unifiedAdViewHolder.installAppIconIv.clipToOutline = true
+            Glide.with(this).load(it).into(unifiedAdViewHolder.installAppIconIv)
+            unifiedAdViewHolder.iconView = unifiedAdViewHolder.installAppIconIv
+        }
+        unifiedNativeAd.callToAction?.let {
+            unifiedAdViewHolder.callToActionTv.text = it
+            unifiedAdViewHolder.callToActionView = unifiedAdViewHolder.callToActionTv
+        }
+        unifiedAdViewHolder.setNativeAd(unifiedNativeAd)
+    }
+
     override fun getLayoutResId(): Int {
         return R.layout.activity_reading
     }
@@ -75,7 +113,8 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun initialiseAds() {
-        refreshAd()
+        //refreshAd()
+        initAdLoader()
     }
 
     private fun initVariables() {
@@ -263,14 +302,6 @@ class ReadingActivity : BaseActivity() {
         twisterContentTv.text = twister.twister
     }
 
-    private fun refreshAd() {
-        adView.loadAd(
-                AdRequest.Builder()
-                        .addTestDevice(getString(R.string.samsung_afifty_global_device_id))
-                        .build()
-        )
-    }
-
     override fun onBackPressed() {
         super.onBackPressed()
         animateActivityTransition(R.anim.slide_in_left_activity, R.anim.slide_out_right_activity)
@@ -281,7 +312,7 @@ class ReadingActivity : BaseActivity() {
                 .appComponent(getAppComponent())
                 .build().injectReadingActivity(this)
 
-        viewModel = ViewModelProviders.of(this, viewModelFactory)
+        viewModel = ViewModelProvider(this, viewModelFactory)
                 .get(ReadingActivityViewModel::class.java)
     }
 

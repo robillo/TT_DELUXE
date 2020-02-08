@@ -19,10 +19,10 @@
     <dimen name="y_padding_level_recycler_bottom">30dp</dimen>
 
     <!-- reading activity -->
-    <dimen name="size_prev_next_controls_outer">85dp</dimen>
-    <dimen name="size_play_pause_control_outer">110dp</dimen>
-    <dimen name="size_prev_next_control_buttons">50dp</dimen>
-    <dimen name="size_play_pause_control_button">60dp</dimen>
+    <dimen name="size_prev_next_controls_outer">55dp</dimen>
+    <dimen name="size_play_pause_control_outer">75dp</dimen>
+    <dimen name="size_prev_next_control_buttons">30dp</dimen>
+    <dimen name="size_play_pause_control_button">50dp</dimen>
 
     <!-- font -->
     <dimen name="font_rewards">48sp</dimen>

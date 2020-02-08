@@ -3,7 +3,6 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash
 import android.os.CountDownTimer
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.activity.DaggerSplashActivityComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.base.BaseActivity
@@ -11,6 +10,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.HomeActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.DIFFICULTY_LEVEL_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LENGTH_LEVEL_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
+import com.google.android.gms.ads.formats.UnifiedNativeAd
 import kotlinx.android.synthetic.main.activity_splash.*
 import javax.inject.Inject
 
@@ -25,6 +25,9 @@ class SplashActivity : BaseActivity() {
     companion object {
         private const val STEP_VALUE = 200L
         private const val TIMER_VALUE = 1000L
+    }
+
+    override fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>) {
     }
 
     override fun getLayoutResId(): Int {
@@ -89,6 +92,7 @@ class SplashActivity : BaseActivity() {
         timer.start()
     }
 
+    @Suppress("SameParameterValue")
     private fun getCompletionPercentage(remainingTime: Long, timerValue: Long): Int {
         val timeElapsed = timerValue - remainingTime + STEP_VALUE
         return timeElapsed.toInt() * 100 / timerValue.toInt()
@@ -104,7 +108,7 @@ class SplashActivity : BaseActivity() {
                 .appComponent(getAppComponent())
                 .build().injectSplashActivity(this)
 
-        viewModel = ViewModelProviders.of(this, viewModelFactory)
+        viewModel = ViewModelProvider(this, viewModelFactory)
                 .get(SplashViewModel::class.java)
     }
 }

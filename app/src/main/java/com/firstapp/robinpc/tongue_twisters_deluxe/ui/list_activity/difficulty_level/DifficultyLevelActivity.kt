@@ -16,6 +16,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.Twis
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DIFFICULTY
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.formats.UnifiedNativeAd
 import kotlinx.android.synthetic.main.activity_difficulty_level.adView
 import kotlinx.android.synthetic.main.activity_difficulty_level.bottomOutlineIv
 import kotlinx.android.synthetic.main.activity_difficulty_level.levelHeaderTv
@@ -38,6 +39,9 @@ class DifficultyLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickLi
             intent.putExtra(EXTRA_DIFFICULTY_LEVEL, difficultyLevel)
             return intent
         }
+    }
+
+    override fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>) {
     }
 
     override fun getLayoutResId(): Int {

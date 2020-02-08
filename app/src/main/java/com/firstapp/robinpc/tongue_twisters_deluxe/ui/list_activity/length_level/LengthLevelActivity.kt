@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.LengthLevel
@@ -16,6 +15,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.adapter.Twis
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_LENGTH
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.formats.UnifiedNativeAd
 import kotlinx.android.synthetic.main.activity_length_level.*
 import javax.inject.Inject
 
@@ -35,6 +35,9 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
             intent.putExtra(EXTRA_LENGTH_LEVEL, lengthLevel)
             return intent
         }
+    }
+
+    override fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>) {
     }
 
     override fun getLayoutResId(): Int {
@@ -129,7 +132,7 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
                 .appComponent(getAppComponent())
                 .build().injectLengthLevelActivity(this)
 
-        viewModel = ViewModelProviders.of(this, viewModelFactory)
+        viewModel = ViewModelProvider(this, viewModelFactory)
                 .get(LengthLevelActivityViewModel::class.java)
     }
 }
