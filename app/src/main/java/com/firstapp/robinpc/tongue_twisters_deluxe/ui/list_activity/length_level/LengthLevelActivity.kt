@@ -58,11 +58,11 @@ class LengthLevelActivity : BaseActivity(), TwisterListAdaper.TwisterClickListen
     }
 
     private fun refreshAd() {
-        adView.loadAd(
-                AdRequest.Builder()
-                        .addTestDevice(getString(R.string.samsung_afifty_global_device_id))
-                        .build()
-        )
+//        adView.loadAd(
+//                AdRequest.Builder()
+//                        .addTestDevice(getString(R.string.samsung_afifty_global_device_id))
+//                        .build()
+//        )
     }
 
     private fun setViews() {

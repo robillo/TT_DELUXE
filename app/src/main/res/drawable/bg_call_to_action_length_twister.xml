@@ -3,12 +3,12 @@
     <item
         android:state_pressed="true"
         android:state_enabled="true"
-        android:drawable="@drawable/bg_call_to_action_day_twister_pressed" />
+        android:drawable="@drawable/bg_call_to_action_length_twister_pressed" />
     <item
         android:state_focused="true"
         android:state_enabled="true"
-        android:drawable="@drawable/bg_call_to_action_day_twister_pressed" />
+        android:drawable="@drawable/bg_call_to_action_length_twister_pressed" />
     <item
         android:state_enabled="true"
-        android:drawable="@drawable/bg_call_to_action_day_twister_normal" />
+        android:drawable="@drawable/bg_call_to_action_length_twister_normal" />
 </selector>

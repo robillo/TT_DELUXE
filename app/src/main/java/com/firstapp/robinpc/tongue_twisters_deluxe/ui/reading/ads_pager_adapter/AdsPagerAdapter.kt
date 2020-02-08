@@ -6,7 +6,11 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ads_pager_fragment.ReadingAdsPageFragment
 import com.google.android.gms.ads.formats.UnifiedNativeAd
 
-class AdsPagerAdapter(fragmentManager: FragmentManager, private val loadedAds: ArrayList<UnifiedNativeAd>):
+class AdsPagerAdapter(
+        fragmentManager: FragmentManager,
+        private val loadedAds: ArrayList<UnifiedNativeAd>,
+        private val pageType: Int
+):
         FragmentStatePagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
     private var firstFragment: ReadingAdsPageFragment = ReadingAdsPageFragment.newInstance()
@@ -18,12 +22,12 @@ class AdsPagerAdapter(fragmentManager: FragmentManager, private val loadedAds: A
 
     override fun getItem(position: Int): Fragment {
         return when(position) {
-            0 -> firstFragment.setUnifiedAd(loadedAds[position])
-            1 -> secondFragment.setUnifiedAd(loadedAds[position])
-            2 -> thirdFragment.setUnifiedAd(loadedAds[position])
-            3 -> fourthFragment.setUnifiedAd(loadedAds[position])
-            4 -> fifthFragment.setUnifiedAd(loadedAds[position])
-            else -> elseFragment.setUnifiedAd(loadedAds[position])
+            0 -> firstFragment.setUnifiedAd(loadedAds[position], pageType)
+            1 -> secondFragment.setUnifiedAd(loadedAds[position], pageType)
+            2 -> thirdFragment.setUnifiedAd(loadedAds[position], pageType)
+            3 -> fourthFragment.setUnifiedAd(loadedAds[position], pageType)
+            4 -> fifthFragment.setUnifiedAd(loadedAds[position], pageType)
+            else -> elseFragment.setUnifiedAd(loadedAds[position], pageType)
         }
     }
 

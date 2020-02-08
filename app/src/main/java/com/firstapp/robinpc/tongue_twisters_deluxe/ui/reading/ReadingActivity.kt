@@ -46,7 +46,7 @@ class ReadingActivity : BaseActivity() {
     private lateinit var loopHandler: Handler
     private lateinit var runnable: Runnable
 
-    private val loopInterval = 8000L
+    private val loopInterval = 5000L
 
     private var controlsColor: Int = -1
     private var isTextToSpeechLoaded = false
@@ -60,7 +60,7 @@ class ReadingActivity : BaseActivity() {
         private const val EMPTY_STRING = ""
         private const val EXTRA_TWISTER = "TWISTER"
         private const val UTTERANCE_ID = "TWISTER_UTTERANCE"
-        private const val EXTRA_LAUNCHED_FROM = "LAUNCHED_FROM"
+        const val EXTRA_LAUNCHED_FROM = "LAUNCHED_FROM"
 
         fun newIntent(context: Context, twister: Twister, launchedFrom: Int): Intent {
             val intent = Intent(context, ReadingActivity::class.java)
@@ -72,7 +72,7 @@ class ReadingActivity : BaseActivity() {
 
     override fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>) {
         shouldLoopViewPager = true
-        adsPagerAdapter = AdsPagerAdapter(supportFragmentManager, loadedAds)
+        adsPagerAdapter = AdsPagerAdapter(supportFragmentManager, loadedAds, launchedFrom)
         adsViewPager.visibility = View.VISIBLE
         adsViewPager.adapter = adsPagerAdapter
         adsViewPager.setPageTransformer(false, ZoomOutSlideTransformer())
@@ -252,6 +252,9 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun killTextToSpeech() {
+        if(isTwisterPlaying)
+            markTwisterAsStopped()
+
         if(::textToSpeech.isInitialized) {
             textToSpeech.stop()
             textToSpeech.shutdown()

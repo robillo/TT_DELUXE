@@ -60,9 +60,9 @@ abstract class BaseActivity : AppCompatActivity() {
     private fun loadNativeAdsForCount() {
         adLoader.loadAds(
                 AdRequest.Builder()
-                        .addTestDevice(getString(R.string.samsung_afifty_global_device_id))
                         .build(), adLoadCount
         )
+        //.addTestDevice(getString(R.string.samsung_afifty_global_device_id))
     }
 
     abstract fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>)

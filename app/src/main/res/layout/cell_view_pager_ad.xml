@@ -32,7 +32,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/bg_call_to_action_day_twister"
+            tools:background="@drawable/bg_image_placeholder"
             tools:ignore="ContentDescription"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
