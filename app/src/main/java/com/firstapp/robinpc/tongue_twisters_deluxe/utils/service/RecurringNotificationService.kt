@@ -11,6 +11,7 @@ import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.*
+import androidx.lifecycle.Observer
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
 import com.firstapp.robinpc.tongue_twisters_deluxe.TwisterApp
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.database.TwisterDatabase
@@ -20,7 +21,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.service.DaggerRe
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash.SplashActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.background.AlarmSchedulerUtil
-import java.util.concurrent.ThreadLocalRandom
+import java.util.*
 import javax.inject.Inject
 
 class RecurringNotificationService : LifecycleService() {
@@ -31,18 +32,21 @@ class RecurringNotificationService : LifecycleService() {
     private lateinit var twisterRepo: TwisterRepository
 
     companion object {
-        const val ALARM_INTERVAL_MILLIS = 60 * 1000L
+        const val ALARM_INTERVAL_MILLIS = 6 * 60 * 60 * 1000L
+        const val ALARM_INTERVAL_MILLIS_RELEASE = 6 * 60 * 60 * 1000L
+        private const val ALARM_INTERVAL_MILLIS_TESTING = 60 * 1000L
         private const val INTRO_STRING_SMALL = "Hey buddy. Here is a new twister for you - "
-        private const val INTRO_STRING_BIG = "Hey buddy. Here is a new twister for you."
+        private const val INTRO_STRING_BIG = "Hey buddy. Here is a new twister for you named "
         private const val OUTRO_STRING = "Open the app to read out loud."
-        private const val LINE_SEPARATOR_STRING = "\n"
+        private const val ACTION_NAME_STRING = "OPEN IN APP"
+        private const val LINE_BREAKER_STRING = "."
         private const val LINE_SPACER_STRING = " "
         private const val MIN_BOUND = 0
         private const val MAX_BOUND = TWISTER_COUNT
         private const val CHANNEL_ID = "tongue_twisters_default"
         private const val CHANNEL_NAME = "Tongue Twisters Deluxe"
         private const val CHANNEL_DESCRIPTION = "Pronunciation Improvement"
-        private const val NOTIFICATION_ID = 1234
+        const val NOTIFICATION_ID = 1234
         fun newIntent(context: Context): Intent {
             return Intent(context, RecurringNotificationService::class.java)
         }
@@ -77,7 +81,7 @@ class RecurringNotificationService : LifecycleService() {
     }
 
     private fun generateRandomIndex(): Int {
-        return ThreadLocalRandom.current().nextInt(MIN_BOUND, MAX_BOUND)
+        return Random().nextInt(MAX_BOUND - MIN_BOUND + 1) + MIN_BOUND
     }
 
     private fun setComponent() {
@@ -94,17 +98,19 @@ class RecurringNotificationService : LifecycleService() {
                 .setContentTitle(twister.name)
                 .setContentIntent(getTwisterIntent(twister.id))
                 .setContentText(INTRO_STRING_SMALL.plus(twister.twister))
+                .setAutoCancel(true)
                 .setStyle(
                         NotificationCompat
                                 .BigTextStyle()
                                 .bigText(
-                                        LINE_SEPARATOR_STRING
-                                                .plus(INTRO_STRING_BIG)
+                                        INTRO_STRING_BIG
+                                                .plus(twister.name)
+                                                .plus(LINE_BREAKER_STRING)
                                                 .plus(LINE_SPACER_STRING)
                                                 .plus(OUTRO_STRING)
-                                                .plus(LINE_SEPARATOR_STRING)
                                 )
                 )
+                .addAction(R.drawable.ic_next_filled, ACTION_NAME_STRING, getTwisterIntent(twister.id))
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
         sendNotification(builder)

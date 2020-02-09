@@ -2,8 +2,8 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash
 
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
 import android.os.CountDownTimer
+import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.firstapp.robinpc.tongue_twisters_deluxe.R
@@ -15,6 +15,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LEN
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.background.AlarmSchedulerUtil
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.service.RecurringNotificationService.Companion.ALARM_INTERVAL_MILLIS
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.service.RecurringNotificationService.Companion.NOTIFICATION_ID
 import com.google.android.gms.ads.formats.UnifiedNativeAd
 import kotlinx.android.synthetic.main.activity_splash.*
 import javax.inject.Inject
@@ -54,6 +55,13 @@ class SplashActivity : BaseActivity() {
         setObservers()
         checkForDatabaseCompletion()
         startNotificationAlarm()
+        dismissActiveNotifications()
+    }
+
+    private fun dismissActiveNotifications() {
+        with(NotificationManagerCompat.from(this)) {
+            cancel(NOTIFICATION_ID)
+        }
     }
 
     private fun getParameters() {
