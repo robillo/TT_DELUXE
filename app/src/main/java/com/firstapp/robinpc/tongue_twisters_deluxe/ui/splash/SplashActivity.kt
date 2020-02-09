@@ -14,7 +14,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.DIF
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LENGTH_LEVEL_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.background.AlarmSchedulerUtil
-import com.firstapp.robinpc.tongue_twisters_deluxe.utils.service.RecurringNotificationService.Companion.ALARM_INTERVAL_MILLIS
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.service.RecurringNotificationService.Companion.WAIT_DURATION_MILLIS
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.service.RecurringNotificationService.Companion.NOTIFICATION_ID
 import com.google.android.gms.ads.formats.UnifiedNativeAd
 import kotlinx.android.synthetic.main.activity_splash.*
@@ -71,7 +71,7 @@ class SplashActivity : BaseActivity() {
     }
 
     private fun startNotificationAlarm() {
-        AlarmSchedulerUtil.setAlarm(this, System.currentTimeMillis() + ALARM_INTERVAL_MILLIS)
+        AlarmSchedulerUtil.setAlarm(this, System.currentTimeMillis() + WAIT_DURATION_MILLIS)
     }
 
     private fun setDefaultValues() {

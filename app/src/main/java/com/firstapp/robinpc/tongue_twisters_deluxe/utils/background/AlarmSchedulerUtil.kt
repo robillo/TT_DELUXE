@@ -23,24 +23,22 @@ object AlarmSchedulerUtil {
                 PendingIntent.FLAG_UPDATE_CURRENT
         )
 
-        if (System.currentTimeMillis() < alarmTime) {
-            alarmManager.cancel(pendingIntent)
+        alarmManager.cancel(pendingIntent)
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                alarmManager.setExactAndAllowWhileIdle(
-                        AlarmManager.RTC_WAKEUP,
-                        alarmTime,
-                        pendingIntent
-                )
-            }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            alarmManager.setExactAndAllowWhileIdle(
+                    AlarmManager.RTC_WAKEUP,
+                    alarmTime,
+                    pendingIntent
+            )
+        }
 
-            else {
-                alarmManager.setExact(
-                        AlarmManager.RTC_WAKEUP,
-                        alarmTime,
-                        pendingIntent
-                )
-            }
+        else {
+            alarmManager.setExact(
+                    AlarmManager.RTC_WAKEUP,
+                    alarmTime,
+                    pendingIntent
+            )
         }
     }
 }

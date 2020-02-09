@@ -32,9 +32,7 @@ class RecurringNotificationService : LifecycleService() {
     private lateinit var twisterRepo: TwisterRepository
 
     companion object {
-        const val ALARM_INTERVAL_MILLIS = 6 * 60 * 60 * 1000L
-        const val ALARM_INTERVAL_MILLIS_RELEASE = 6 * 60 * 60 * 1000L
-        private const val ALARM_INTERVAL_MILLIS_TESTING = 60 * 1000L
+        const val WAIT_DURATION_MILLIS = 6 * 60 * 60 * 1000
         private const val INTRO_STRING_SMALL = "Hey buddy. Here is a new twister for you - "
         private const val INTRO_STRING_BIG = "Hey buddy. Here is a new twister for you named "
         private const val OUTRO_STRING = "Open the app to read out loud."
@@ -130,7 +128,7 @@ class RecurringNotificationService : LifecycleService() {
     }
 
     private fun rescheduleAlarmForRecurringTrigger() {
-        AlarmSchedulerUtil.setAlarm(this, System.currentTimeMillis() + ALARM_INTERVAL_MILLIS)
+        AlarmSchedulerUtil.setAlarm(this, System.currentTimeMillis() + WAIT_DURATION_MILLIS)
     }
 
     private fun createNotificationChannel() {
