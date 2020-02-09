@@ -2,6 +2,7 @@ package com.firstapp.robinpc.tongue_twisters_deluxe
 
 import android.app.Activity
 import android.app.Application
+import android.app.Service
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.DaggerAppComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.AppComponent
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.module.others.ContextModule
@@ -46,6 +47,9 @@ class TwisterApp : Application() {
     companion object {
         fun get(activity: Activity): TwisterApp {
             return activity.application as TwisterApp
+        }
+        fun get(service: Service): TwisterApp {
+            return service.application as TwisterApp
         }
     }
 }

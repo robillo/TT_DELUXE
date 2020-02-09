@@ -10,6 +10,8 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.HomeActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.DIFFICULTY_LEVEL_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.LENGTH_LEVEL_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.background.AlarmSchedulerUtil
+import com.firstapp.robinpc.tongue_twisters_deluxe.utils.service.RecurringNotificationService.Companion.ALARM_INTERVAL_MILLIS
 import com.google.android.gms.ads.formats.UnifiedNativeAd
 import kotlinx.android.synthetic.main.activity_splash.*
 import javax.inject.Inject
@@ -40,6 +42,11 @@ class SplashActivity : BaseActivity() {
         setComponent()
         setObservers()
         checkForDatabaseCompletion()
+        startNotificationAlarm()
+    }
+
+    private fun startNotificationAlarm() {
+        AlarmSchedulerUtil.setAlarm(this, System.currentTimeMillis() + ALARM_INTERVAL_MILLIS)
     }
 
     private fun setDefaultValues() {
