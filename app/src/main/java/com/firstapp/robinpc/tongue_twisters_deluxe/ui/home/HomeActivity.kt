@@ -15,6 +15,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.difficulty_l
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.home.adapters.DifficultyAdapter
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.list_activity.length_level.LengthLevelActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.ui.reading.ReadingActivity
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash.SplashActivity.Companion.EXTRA_LAUNCH_ELEMENT_INDEX
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TYPE_DAY_TWISTER
 import kotlinx.android.synthetic.main.activity_home.*
@@ -36,6 +37,9 @@ class HomeActivity : BaseActivity(),
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
+    private var launchElementIndex = -1
+
+    private lateinit var launchTwister: Twister
     private lateinit var dayTwister: Twister
     private lateinit var lengthList: List<LengthLevel>
     private lateinit var viewModel: HomeActivityViewModel
@@ -45,8 +49,10 @@ class HomeActivity : BaseActivity(),
         private const val SMALL_LENGTH_LEVEL_INDEX = 0
         private const val MEDIUM_LENGTH_LEVEL_INDEX = 1
         private const val LONG_LENGTH_LEVEL_INDEX = 2
-        fun newIntent(context: Context): Intent {
-            return Intent(context, HomeActivity::class.java)
+        fun newIntent(context: Context, launchElementIndex: Int): Intent {
+            val intent = Intent(context, HomeActivity::class.java)
+            intent.putExtra(EXTRA_LAUNCH_ELEMENT_INDEX, launchElementIndex)
+            return intent
         }
     }
 
@@ -99,6 +105,9 @@ class HomeActivity : BaseActivity(),
     }
 
     private fun loadData() {
+        intent?.let {
+            launchElementIndex = it.getIntExtra(EXTRA_LAUNCH_ELEMENT_INDEX, -1)
+        }
         loadLengthList()
         loadDifficultyList()
         loadTwisterOfTheDay()
@@ -136,6 +145,21 @@ class HomeActivity : BaseActivity(),
                 renderForDayTwister()
             }
         })
+        if(launchElementIndex > -1) {
+            viewModel.getTwisterForIndex(launchElementIndex).observe(this, androidx.lifecycle.Observer {
+                it?.let {
+                    launchTwister = it
+                    launchNotificationTwister()
+                }
+            })
+        }
+    }
+
+    private fun launchNotificationTwister() {
+        if(::launchTwister.isInitialized) {
+            startActivity(ReadingActivity.newIntent(this, launchTwister, TYPE_DAY_TWISTER))
+            animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
+        }
     }
 
     private fun renderForDayTwister() {

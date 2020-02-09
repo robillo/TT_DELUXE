@@ -2,6 +2,8 @@ package com.firstapp.robinpc.tongue_twisters_deluxe.utils.service
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.PendingIntent
+import android.app.TaskStackBuilder
 import android.content.Context
 import android.content.Intent
 import android.os.Build
@@ -15,6 +17,7 @@ import com.firstapp.robinpc.tongue_twisters_deluxe.data.database.TwisterDatabase
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.model.Twister
 import com.firstapp.robinpc.tongue_twisters_deluxe.data.repository.TwisterRepository
 import com.firstapp.robinpc.tongue_twisters_deluxe.di.component.service.DaggerRecurringNotificationServiceComponent
+import com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash.SplashActivity
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.Constants.Companion.TWISTER_COUNT
 import com.firstapp.robinpc.tongue_twisters_deluxe.utils.background.AlarmSchedulerUtil
 import java.util.concurrent.ThreadLocalRandom
@@ -29,9 +32,11 @@ class RecurringNotificationService : LifecycleService() {
 
     companion object {
         const val ALARM_INTERVAL_MILLIS = 60 * 1000L
-        private const val INTRO_STRING = "A new twister for you:\n"
-        private const val OUTRO_STRING = "Want more? Open the app and read out aloud!"
+        private const val INTRO_STRING_SMALL = "Hey buddy. Here is a new twister for you - "
+        private const val INTRO_STRING_BIG = "Hey buddy. Here is a new twister for you."
+        private const val OUTRO_STRING = "Open the app to read out loud."
         private const val LINE_SEPARATOR_STRING = "\n"
+        private const val LINE_SPACER_STRING = " "
         private const val MIN_BOUND = 0
         private const val MAX_BOUND = TWISTER_COUNT
         private const val CHANNEL_ID = "tongue_twisters_default"
@@ -83,20 +88,33 @@ class RecurringNotificationService : LifecycleService() {
         component.injectRecurringNotificationService(this)
     }
 
-    //TODO - create pending intent
     private fun buildNotification(twister: Twister) {
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentTitle(twister.name)
-                .setContentText(INTRO_STRING.plus(twister.twister))
+                .setContentIntent(getTwisterIntent(twister.id))
+                .setContentText(INTRO_STRING_SMALL.plus(twister.twister))
                 .setStyle(
                         NotificationCompat
                                 .BigTextStyle()
-                                .bigText(INTRO_STRING.plus(twister.twister).plus(LINE_SEPARATOR_STRING).plus(OUTRO_STRING))
+                                .bigText(
+                                        LINE_SEPARATOR_STRING
+                                                .plus(INTRO_STRING_BIG)
+                                                .plus(LINE_SPACER_STRING)
+                                                .plus(OUTRO_STRING)
+                                                .plus(LINE_SEPARATOR_STRING)
+                                )
                 )
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
         sendNotification(builder)
+    }
+
+    private fun getTwisterIntent(twisterIndex: Int): PendingIntent {
+        val splashIntent = SplashActivity.newIntent(this, twisterIndex)
+        val taskStackBuilder = TaskStackBuilder.create(this)
+        taskStackBuilder.addNextIntent(splashIntent)
+        return taskStackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT)
     }
 
     private fun sendNotification(builder: NotificationCompat.Builder) {

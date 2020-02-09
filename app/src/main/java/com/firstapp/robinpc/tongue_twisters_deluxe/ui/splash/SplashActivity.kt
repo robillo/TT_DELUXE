@@ -1,5 +1,8 @@
 package com.firstapp.robinpc.tongue_twisters_deluxe.ui.splash
 
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -21,12 +24,19 @@ class SplashActivity : BaseActivity() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
+    private var launchElementIndex = -1
     private lateinit var currentProgress: String
     private lateinit var viewModel: SplashViewModel
 
     companion object {
         private const val STEP_VALUE = 200L
         private const val TIMER_VALUE = 1000L
+        const val EXTRA_LAUNCH_ELEMENT_INDEX = "LAUNCH_ELEMENT_INDEX"
+        fun newIntent(context: Context, elementIndex: Int): Intent {
+            val intent = Intent(context, SplashActivity::class.java)
+            intent.putExtra(EXTRA_LAUNCH_ELEMENT_INDEX, elementIndex)
+            return intent
+        }
     }
 
     override fun onNativeAdsLoaded(loadedAds: ArrayList<UnifiedNativeAd>) {
@@ -40,9 +50,16 @@ class SplashActivity : BaseActivity() {
         setStatusBarColor(R.color.white, LIGHT_STATUS_BAR)
         setDefaultValues()
         setComponent()
+        getParameters()
         setObservers()
         checkForDatabaseCompletion()
         startNotificationAlarm()
+    }
+
+    private fun getParameters() {
+        intent?.let {
+            launchElementIndex = it.getIntExtra(EXTRA_LAUNCH_ELEMENT_INDEX, -1)
+        }
     }
 
     private fun startNotificationAlarm() {
@@ -106,7 +123,7 @@ class SplashActivity : BaseActivity() {
     }
 
     private fun startHomeActivity() {
-        startActivity(HomeActivity.newIntent(this))
+        startActivity(HomeActivity.newIntent(this, launchElementIndex))
         animateActivityTransition(R.anim.slide_in_right_activity, R.anim.slide_out_left_activity)
     }
 
